@@ -275,4 +275,27 @@ Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni port
 
 # 2. Andmekataloogi ja selle olemite kirjelduselemendid
 
-(WIP)
+Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on RIHA, Eesti avaandmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.
+
+## 2.1 Andmekataloogi kirjeldus
+
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
+|----|--------------|--------------|--------------|--------------|----------------|
+| 1 | kirjeldus | Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestike, mida kataloog sisaldab. | 1..1 | Ruumiandmete lehelt leiad Maa-ameti ruumiandmete kirjeldused. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
+| 2 | omanik | Organisatsiooni nimetus, kes kataloogi peab. | 1..1 | Statistikaamet<br>Maksu-ja Tolliamet | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher)<br>vahemik:<br>DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
+| 3 | pealkiri | Kataloogi nimetus või tähis. | 1..1 | (Statistikaamet) Statistika andmebaas<br>(Maksu- ja Tolliamet) Statistika ja avaandmed | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
+| 4 | veebisait | Viide veebisaidile, millel kataloog on juurdepääsetav. | 0..1 | https://andmed.stat.ee/ | viide: <br>- DCAT: [homepage](https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage)<br>- DCAT-AP: [homepage](https://xmlns.com/foaf/spec/)<br>vahemik:<br>DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
+
+## 2.2 Andmestiku kirjeldus
+
+## 2.3 Andmestiku levituse kirjeldus
+
+## 2.4 Andmestike sarja kirjeldus
+
+## 2.5 Andmeteenuse kirjeldus
+
+## 2.6 Andmebaasi tabeli kirjeldus
+
+## 2.7 Andmeelemendi kirjeldus
+
+## 2.8 Andmeelementide grupp
