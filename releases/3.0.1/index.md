@@ -34,12 +34,24 @@ Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
 
 ## Lühendid
 
-(WIP)
+- DCAT – andmekataloogi sõnastik (*Data Catalog Vocabulary*), mis on W3C standard. 
+- DCAT-AP – andmekataloogi sõnastiku rakendusprofiil (*Data Catalog Vocabulary Application Profile*) Euroopa Liidu riikide vahel andmestike ja andmeteenuste kirjelduste vahetamiseks.
+- DGA – Euroopa Parlamendi ja nõukogu määrus (EL) 2022/868, 30. mai 2022, Euroopa  andmehalduse kohta ning millega muudetakse määrust (EL) 2018/1724 (andmehalduse määrus, *Data Governance Act*).
+- HVD – väärtuslikud andmestikud (*high value datasets*) nagu need on määratletud Euroopa Liidu väärtuslike andmestike nimekirja rakendusmääruses ja mis käsitleb andmestikke valdkondi; neid nimetatakse ka kõrgväärtuslikud andmestikud.
+- RIHA – riigi infosüsteemi haldussüsteemi käitlev rakendus.
+- RIHAKE – asutustele loodud rakendus andmekirjeluste koostamiseks ja edastamiseks RIHAsse.
+- ODD – Euroopa Parlamendi ja nõukogu direktiiv (EL) 2019/1024, 20. juuni 2019, avaandmete ja avaliku sektori valduses oleva teabe taaskasutamise kohta. 
 
 
 ## Muudatuste ajalugu
 
-(WIP)
+Võrreldes versiooniga 2.0 on sisse toodud järgmised muudatused:
+- Sissejuhatava peatüki muutmine. Lisatud on kirjeldusstandardisse kuuluvate komponentide ja olemite ülevaade ja seosed. 
+- Ühildatud järgmiste alusstandardite versioonidega: DCAT 3.0 ja DCAT-AP 3.0.0 
+- Lisatud objektide kirjeldused: andmekataloog, andmeteenus. 
+- Muudetud  kirjelduse  tabeli  struktuuri.  Veerg  DCAT-AP  viide  koondab  endas  nii  viite kirjelduselemendi  terminile  (Dublin  Core  või  muu),  DCAT-ile  (W3C  standardis)  ja  selles kirjeldatud  semantilisele  väärtuste  vahemikule  (range,  lühendatult  standardis  vahemik) ning samale DCAT-AP osas. 
+- Tehtud on sisulised kirjelduselementide muutused vastavalt muutunud alusstandarditele ja kasutuspraktikale. Selles on silmas peetud riigi kesksete andmekirjeldusi kasutatavate süsteemide eesmärke ja vajadusi.  
+- Kirjelduselemendid on olemi piires järjestatud alfabeetiliselt. 
 
 
 # 1. Sissejuhatus
