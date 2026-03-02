@@ -387,6 +387,14 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.6 Andmebaasi tabeli kirjeldus
 
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | andmehoidla | Tegelikult olemasoleva füüsilise andmebaasi tähis või lühinimetus, millesse tabel kuulub. | 1..1 | riha<br>ehr<br>rr |
+| 2 | kirjelduse muutmise aeg | Tabeli kirjelduse viimase muutmise kuupäev ja kellaaeg. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: RIHAKEses kattub viimase muutmise aeg andmebaasi viimase skaneerimise ajaga. | 0..1 | 2022-03-17T10:10:34,9344 |
+| 3 | kommentaar | Tabeli kommentaar andmebaasis.<br>Märkus: kommentaari on koostanud andmebaasi arendaja või andmebaasi administraator. | 0..1 | Ehitise üldandmete tabel |
+| 4 | nimetus | Tabeli tähis täpselt sellisel kujul, nagu see on esitatud relatsioonilises andmebaasis.  | 1..1 | SYS_LOG<br>EHITIS<br>ISIK |
+| 5 | skeem | Andmebaasi skeemi nimetus, millesse tabel kuulub. | 0..1 | SYS<br>RIHA<br>RIHA_vana |
+
 ## 2.7 Andmeelemendi kirjeldus
 
 ## 2.8 Andmeelementide grupp
