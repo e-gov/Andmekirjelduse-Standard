@@ -397,6 +397,30 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.7 Andmeelemendi kirjeldus
 
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | andmetüüp | Andmeelemendi andmetüübi tähis algses andmebaasis<br>Märkus: Andmeelemendi andmetüübi loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | int4(10)<br>varchar(255)<br>uuid |
+| 2 | GUID | Andmeelemendi globaalselt unikaalne identifikaator.<br>Märkus: Andmeelemendi GUIDi loob RIHAKE automaatselt. | 0..1 | 123e4567-e89b-12d3-a456-426655440000 |
+| 3 | kirjeldus | Kasutajale mõeldud andmeelemendi sisu, tähenduse, ärireegli ja/või tehniline selgitus.<br>Märkus: Andmeelemendi kirjelduse loob RIHAKE andmebaasi skaneerimise käigus automaatselt (kui see on andmebaasis olemas). | 0..1 | Püsielukoht: elukoht, kus isik veedab enamiku oma igapäevasest puhke- ja uneajast. |
+| 4 | kirjelduse muutmise aeg | Andmeelemendi kirjelduse viimase muutmise kuupäev ja kellaaeg.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: Kirjelduselemendi täidab RIHAKE automaatselt. | 0..1 | 2022-03-17T10:10:34,9344 |
+| 5 | mõõtühik | Andmeelemendi mõõtühik SI-süsteemist.<br>Märkus: Üldjuhul kasutatakse mõõtühiku tähist. | 0..1 | isiku pikkust mõõdetakse meetrites, meetri tähis on m;<br>sündmuse kestust mõõdetakse tundides, tunni tähis on h. |
+| 6 | märkused | Täiendav selgitus andmeelemendi kohta. | 0..1 | Ilmselt muutub haldusreformi tulemusena. |
+| 7 | on primaarvõti | Kirjelduselement näitab, kas kirjeldatav andmeelement (tabeli veerg) on andmebaasi tabeli primaarvõti.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 0..1 | false<br>true |
+| 8 | seotud loend | Andmeelemendi täitmisel kasutatud mujalt saadud väärtuste, loendi, koodiloendi või klassifikaatori nimetus või tähis.<br>Loendid on tunnuste (muutujate) nimekirjad, mille hulgast saab valida sobiva väärtuse. Loendid võivad olla muudetavad või mittemuudetavad.<br>Märkus: RIHAKEse kasutajaliideses saab kasutaja valida süsteemi sisestatud loendite hulgast sobiva, RIHAKEse-sisene viide klassifikaatorile sisestatakse automaatselt. | 0..1 | - |
+| 8.1 | seotud loendi nimetus | Kasutatava loendi täielik nimetus või lühend.<br>Märkus: Soovitav on kasutada nii nimetust kui ka lühendit, kui viimane on olemas. Mitte kasutada nimetuses versiooni tähist. | 1..1 | EHAK<br>Valitsusfunktsioonide klassifikaator<br>Anesteesia liigid |
+| 8.2 | seotud loendi URI | Viide seotud loendi URI-le, esitatakse URI-vormingus.Märkus: URI võib viidata nii andmetele samas andmestikus kui ka välistele andmetele. | 0..1 | https://estat.stat.ee/codelists/codelist/AK2008ap<br>http://pub.e-tervis.ee/classifications/Anesteesia%20liigid/1<br>Selgitus: ühele loendile vastav URI |
+| 8.3 | seotud loendi versioon | Kasutatava loendi versiooni tähis.<br>Märkus: Eraldi rühma moodustavad aegpidevad klassifikaatorid ja loendid, milles hallatakse elementide kehtivust. | 0..1 | AK 2008ap |
+| 9 | staatus | Andmeelemendi kirjeldatavuse ja kasutatavuse staatus.<br>Kasutatakse selleks, et piiritleda kirjeldatavate elementide hulka ning mitte kirjeldada neid elemente, milles olevatel andmetel pole sisulist tähendust või ei ole andmeelement üldse tegelikult kasutusel.<br>Märkus: RIHAKEses on staatusel kolm võimalikku väärtust: „KIRJELDATAV“, „EI KIRJELDATA“, „EI OLE KASUTUSEL“. | 0..1 | KIRJELDATAV<br>EI KIRJELDATA<br>EI OLE KASUTUSEL |
+| 10 | seos andmesõnastiku terminiga | Viide andmesõnastiku terminile.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | müügipakkumise number;<br>ehitise suletud netopind |
+| 10.1 | seotud termin | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.  | 0..1 | müügipakkumise number;<br>ehitise suletud netopind |
+| 10.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/DD/89c0607b-2940-4b67-8783-2817c92c2ce4/term1234<br>Selgitus: ühele andmesõnastiku terminile vastav URI |
+| 11 | seos andmeelementide grupiga | Viide andmeelementide grupile. | 0..1 | - |
+| 11.1 | seotud grupi nimi | Andmeelementide grupi nimetus. | 0..1 | ostuõiguse kehtetuks tunnistamise andmed |
+| 11.2 | seotud grupi URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/123 |
+| 12 | tähis | Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | algus_kpv<br>haridus<br>eluk_EHAK<br>jt28 |
+| 13 | URI | Nimest, aadressist või tähisest koosnev URI, mis viitab andmeelemendile ainuliselt.<br>Märkus: Andmeelemendi URI loob RIHAKE automaatselt. | 0..1 | http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI |
+| 14 | viide primaarvõtmele | Kirjelduselement esitab viite andmeelemendiga seotud primaarvõtmele.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 0..1 | riha.comment_id.comment |
+
 ## 2.8 Andmeelementide grupp
 
 [^21]: 
