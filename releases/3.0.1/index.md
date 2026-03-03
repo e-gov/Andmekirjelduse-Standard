@@ -1,8 +1,7 @@
-# Andmekirjelduse juhis lisa 1. Andmekirjelduse standard
-
-Veebruar 2026
-
-Versioon 3.0.1
+# Andmekirjelduse juhis - lisa 1  
+## Andmekirjelduse standard  
+**Veebruar 2026**  
+**Versioon 3.0.1**
 
 
 ## Dokumendi ajalugu
@@ -436,6 +435,70 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 | 5 | URI | astavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/1234 |
 
 
+# 3. Sõnastikud
+
+## 3.1 Andmesõnastiku kirjeldus
+
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | kasutusele võtmise kuupäev | Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 1..1 | 2002-09-23 |
+| 2 | kirjeldus | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. | 1..1 | Loomeliitude ja looviisikute andmestiku terminite loend |
+| 3 | nimi | Sõnastiku pealkiri.<br>Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“. | 1..1 | Loomeliitude andmekogu (LLA) andmesõnastik |
+| 4 | omanik | Sõnastikku haldava isiku nimi. | 1..n | Jüri Kask |
+| 5 | seotud sõnastiku nimi | Viide sõnastikus kasutatavatele teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide ärisõnastikule. | 0..n | Kultuuriministeeriumi ärisõnastik |
+| 6 | seotud sõnastiku URI | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. | 0..n | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7 |
+| 7 | URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse andmesõnastike jaoks kasutusele koos RIHAKEse juurutamisega. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7 |
+| 8 | viimase muutmise kuupäev | Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP) | 0..1 | 2021-10-19 |
+
+## 3.2 Andmesõnastiku termini kirjeldus
+
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | allikas | Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina. | 0..1 | Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik, võib-olla esitatud lingina.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina. |
+| 2 | kehtivus | Märge selle kohta, kas termin on kasutusel.<br>Termin võib olla kasutusest maha võetud mitmesugustel põhjustel, näiteks andmekoosseisu muutuse tagajärjel.<br>Märkus: kui element ei ole täidetud, eeldatakse, et termin on kasutusel. | 0..1 | Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms. |
+| 3 | määratlus | Kindlast terminiallikast võetud definitsioon või selgitus.<br>Võimalusel kasutatakse sobivat ärisõnastiku termini määratlust. Sobiva termini määratluse puudumisel ärisõnastikus koostatakse uus termini selgitus andmekirjelduse koostamise käigus.<br>Kui termin on end ise lahti seletav, pole otstarbekas elementi dubleerivalt täita.<br>Märkus: elemendi nimetus on „määratlus“, kuid selle alla kuulub ka selgitus, mis ei ole definitsioon. | 0..1 | igal aastal ühest algav neljakohaline number, mis pannakse pakkumisele selle registreerimisel.<br>Selgitus: määratlus terminile müügipakkumise number.<br>Hoone suletud netopind on kõigi korruste suletud netopindade summa.<br>Selgitus: selgitus termiline ehitise suletud netopind. |
+| 4 | termin | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.<br>Märkus: oluline on teada, et iga termini taga on teadmusüksus ehk mõiste, kuid kõik mõisted on esitatud terminite ehk oskussõnadena.<br>Andmesõnastiku terminid ja mõisted on seotud ärisõnastiku terminite ja mõistetega ning kasutavad terminite tähistamisel ärisõnastiku sõnavara. | 1..1 | müügipakkumise number;<br>ehitise suletud netopind |
+| 5 | loomise kuupäev | Kuupäev, mil termini kirjeldus lisati andmesõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2018-02-16 |
+| 6 | muutmise kuupäev |  Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-12-11 |
+| 7 | märkused | Andmesõnastiku mõiste ja termini koostamist, kasutamist jms avav kirjeldus. | 0..1 | Ilmselt muutub haldusreformi tulemusena.<br>Kasutusotstarve ebamäärane |
+| 8 | seos ärisõnastiku terminiga | Viide terminile ärisõnastikus. Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda ärisõnastiku ja andmesõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..n | andmesõnastikus: müüdud erimärgistatud kütuse kasutusotstarve – ärisõnastikus: erimärgistatud kütus;<br>andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudteeinfrastruktuur |
+| 8.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | erimärgistatud kütus;<br>raudteeinfrastruktuur |
+| 8.2 | seotud termid URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI. |
+| 9 | termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI. |
+
+## 3.3 Ärisõnastiku kirjeldus
+
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | kasutusele võtmise kuupäev | Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 1..1 | 2002-09-23 |
+| 2 | kirjeldus | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. | 1..1 | Spordi, loomemajanduse ja etenduskunstide andmestike ärisõnastik<br>Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seotud terminikogu koos definitsioonide ja allikaviidetega. |
+| 3 | nimi | Sõnastiku pealkiri.<br>Soovitatav on sõnastik pealkirjastada nii, et selles on ka viide sõnastikku haldavale organisatsioonile.<br>Märkus: Kui organisatsioonil on ärisõnastikke mitu, siis on soovitav pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“. | 1..1 | Kultuuriministeeriumi ärisõnastik<br>Selgitus: pealkirjas on viide sõnastikku haldavale organisatsioonile.<br>Eesti Spordiregistri (ESR) ärisõnastik<br>Selgitus: spordiregistri andmestiku ärisõnastik. |
+| 4 | omanik | Sõnastikku haldava isiku nimi. | 1..n | Mari Maasikas |
+| 5 | seotud sõnastiku nimi | Viide sõnastikus kasutatava teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide nii andmesõnastikule, valdkonna sõnastikule kui ka üldisele märksõnastikule. | 0..n | Loomeliitude andmekogu (LLA) andmesõnastik<br>Kultuurivaldkonna sõnastik<br>Eesti Märksõnastik |
+| 6 | seotud sõnastiku URI | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. | 0..n | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d |
+| 7 | URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse ärisõnastike jaoks kasutusele koos RIHAKEse juurutamisega. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7<br>Selgitus: ühele ärisõnastikule vastav URI. |
+| 8 | viimase muutmise kuupäev | Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2021-10-19 |
+
+## 3.4 Ärisõnastiku termini kirjeldus
+
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | allikas | Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina. | 0..1 | Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina. |
+| 2 | loomise kuupäev |  Kuupäev, mil termini kirjeldus lisati ärisõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-02-16 |
+| 3 | märkused | Ärisõnastiku termini koostamist, kasutamist jms avav kirjeldus. | 0..1 | Ilmselt muutub haldusreformi tulemusena;<br>Kasutusotstarve ebamäärane |
+| 4 | määratlus | Terminile antud määratlus ehk definitsioon või selgitus. | 1..1 | Seletavas sõnaraamatus: püsielukoha riik – riik, kus inimene on pidevalt elanud või kavatseb elada vähemalt 12 kuud.<br>Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles iga mõiste kohta on esitatud terminid ning mis on organiseeritud, tuues selgelt välja mõistete vahelised suhted ning milles eelisterminitele on lisatud sünonüümid või osasünonüümid.<br>Õigusaktis: Üksikandmed käesoleva seaduse tähenduses on konkreetset statistilist üksust iseloomustavad detailsed andmed. |
+| 5 | määratlus (inglise keeles) | Termini määratlus või selgitus inglise keeles. | 0..1 | (vastavate terminite ametlik definitsioon või kasutuskontekstist tulenev tõlge) |
+| 6 | muutmise kuupäev |  Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-12-11 |
+| 7 | on eelistermin | Kirjelduselement näitab, kas termin on sünonüümidega võrreldes eelistatav või mitte. | 0..1 | Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms. |
+| 8 | seos ärisõnastiku teise terminiga | Viide terminile ärisõnastikus.<br>Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda omavahel ärisõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..n | assotsiatiivsuhe:<br>termin arst – termin patsient<br>termin perearst – termin tervisekaart; termin patsient |
+| 8.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..n | patsient; tervisekaart; hüvitis |
+| 8.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1 |
+| 8.3 | seose tüüp | Kirjelduselement näitab, millise seose tüübi kaudu on terminid omavahel suhestunud. Seose tüübid on: <br>- hierarhiline suhe – termin on kitsam või laiem; <br>- assotsiatiivsuhe ehk lihtsalt seos; <br>- grupeeriv suhe – termin on ise grupeeriv või kuulub gruppi; <br>- sünonüümsuhe – terminid on samatähenduslikud.<br>Assotsiatiivsuhe väljendab seost terminite vahel, mis on omavahel seotud semantiliselt või kontekstuaalselt ning kui see seos ei ole hierarhiline. Terminite vahel kirjeldatakse see seos, et näidata alternatiive või seost kindlas kasutuskontekstis.<br>Hierarhilises suhtes mahub kitsam termin laiemasse täielikult.<br>Grupeeriv suhe on olemuselt assotsiatiivsuhe, milles termin on seotud kontekstuaalselt ja kontekst on andmestik või osa sellest.<br>Sünonüümsuhe moodustub häälikuliselt erinevate, kuid tähenduselt samade terminite vahel. | 1..1 | hierarhiline suhe:<br>- arst <br>- - kirurg <br>- - - neurokirurg<br>C - Töötlev tööstus <br>10 - Toiduainete tootmine <br>105 - Piimatoodete tootmine<br>Assotsiatiivsuhe:<br>- linnud ja ornitoloogia <br>- raudtee ja sõidupiirkond <br>grupeeriv suhe:<br>- kontaktandmed <br>- - (koha)aadress <br>- - - adressaat <br>sünonüüm:<br>pass – isikutunnistus <br>isik – persoon <br>biograafia – elulugu |
+| 9 | termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | elektrivõrk<br>spordiklubi<br>liiklusõnnetus |
+| 10 | termin (inglise keeles)[^36] | Mõiste tähistus inglise keeles. | 0..1 | (vastavate terminite ametlik või kasutuskontekstist tulenev tõlge) |
+| 11 | termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234 |
+
+
 [^21]: 
     [EU Vocabularies – Controlled vocabularies – Frequency (versioon 20190619-0)](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 [^22]: 
@@ -454,3 +517,5 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 [^33]: Internet Assigned Numbers Authority (IANA). [Media types](https://www.iana.org/assignments/media-types/media-types.xhtml).
 [^34]: EU Vocabularies. [Frequency](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 [^35]: [Creative Commons licenses](https://creativecommons.org/share-your-work/cclicenses/)
+[^36]: Andmekirjeldus ja sõnastik võivad olla läbivalt mitmekeelsed, kuid käesolevas standardi versioonis on ingliskeelsed kirjelduselemendid toodud välja ainult nende 
+elementide kohta, mis on selliselt olemas rakendustes RIHAKE või avaandmete teabevärav.
