@@ -423,6 +423,19 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.8 Andmeelementide grupp
 
+| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
+|----|--------------|--------------|--------------|--------------|
+| 1 | kirjeldus | Kasutajale mõeldud andmeelementide selgitus selle sisu ja tähenduse järgi. | 0..1 | ostuõiguse taotluse ja ostuõiguse kehtivuse andmed ning nõuete täitmise üle järelevalve teostamise andmed |
+| 2 | nimetus | Andmeelementide kogumit kirjeldav ühine nimetaja. | 1..1 | ostuõiguse kehtetuks tunnistamise andmed |
+| 3 | seos andmeelemendiga | Viide andmeelemendile. | 0..n | - |
+| 3.1 | seotud andmeelemendi tähis | Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | algus_kpv<br>haridus<br>eluk_EHAK<br>jt28 |
+| 3.2 | seotud andmeelemendi URI | astavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..1 | http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI. |
+| 4 | seos ärisõnastiku terminiga | Viide terminile ärisõnastikus. | 0..n | andmeelemendi grupp: ostuõiguse kehtetuks tunnistamise andmed – ärisõnastikus: ostuõigus; ostuõiguse taotlus<br>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234 |
+| 4.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | ostuõigus; ostuõiguse taotlus<br>Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõiguse taotlus. |
+| 4.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele ärisõnastiku terminile vastav URI. |
+| 5 | URI | astavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/1234 |
+
+
 [^21]: 
     [EU Vocabularies – Controlled vocabularies – Frequency (versioon 20190619-0)](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 [^22]: 
