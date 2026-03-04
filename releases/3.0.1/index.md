@@ -28,41 +28,41 @@ Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
 
 ## Sisukord
 
--[**1 Sissejuhatus**](#1-sissejuhatus1)
---[1.1 Eessõna](#11-eessõna)
---[1.2 Käsitlusala](#12-käsitlusala)
---[1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed](#13-kirjeldusstandardisse-kuuluvate-olemite-ülevaade-ja-seosed)
----[1.3.1 Komponendid ja olemid](#131-komponendid-ja-olemid)
----[1.3.2 Andmekataloog](#132-andmekataloog)
----[1.3.3 Andmestike sari](#133-andmestike-sari)
----[1.3.4 Andmestik](#134-andmestik)
----[1.3.5 Alamandmestik](#135-alamandmestik)
----[1.3.6 Levitus](#136-levitus)
----[1.3.7 Andmetabel](#137-andmetabel)
----[1.3.8 Andmeelement](#138-andmeelement)
----[1.3.9 Andmeelementide grupp](#139-andmeelementide-grupp)
----[1.3.10 Andmeteenus](#1310-andmeteenus)
----[1.3.11 Andmesõnastik ja ärisõnastik](#1311-andmesõnastik-ja-ärisõnastik)
----[1.3.12 Andmesõnastiku ja ärisõnastiku termin](#1312-andmesõnastiku-ja-ärisõnastiku-termin)
---[1.4 Andmekirjelduse standardi kasutusjuhend](#14-andmekirjelduse-standardi-kasutusjuhud)
----[1.4.1 Integeeriv lähenemine andmekirjeldusele](#141-integreeriv-lähenemine-andmekirjeldusele)
----[1.4.2 Andmekirjeldus organisatsioonis kasutamiseks](#142-andmekirjeldus-organisatsioonis-kasutamiseks)
+-[**1 Sissejuhatus**](#1-sissejuhatus1)<br>
+--[1.1 Eessõna](#11-eessõna)<br>
+--[1.2 Käsitlusala](#12-käsitlusala)<br>
+--[1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed](#13-kirjeldusstandardisse-kuuluvate-olemite-ülevaade-ja-seosed)<br>
+---[1.3.1 Komponendid ja olemid](#131-komponendid-ja-olemid)<br>
+---[1.3.2 Andmekataloog](#132-andmekataloog)<br>
+---[1.3.3 Andmestike sari](#133-andmestike-sari)<br>
+---[1.3.4 Andmestik](#134-andmestik)<br>
+---[1.3.5 Alamandmestik](#135-alamandmestik)<br>
+---[1.3.6 Levitus](#136-levitus)<br>
+---[1.3.7 Andmetabel](#137-andmetabel)<br>
+---[1.3.8 Andmeelement](#138-andmeelement)<br>
+---[1.3.9 Andmeelementide grupp](#139-andmeelementide-grupp)<br>
+---[1.3.10 Andmeteenus](#1310-andmeteenus)<br>
+---[1.3.11 Andmesõnastik ja ärisõnastik](#1311-andmesõnastik-ja-ärisõnastik)<br>
+---[1.3.12 Andmesõnastiku ja ärisõnastiku termin](#1312-andmesõnastiku-ja-ärisõnastiku-termin)<br>
+--[1.4 Andmekirjelduse standardi kasutusjuhend](#14-andmekirjelduse-standardi-kasutusjuhud)<br>
+---[1.4.1 Integeeriv lähenemine andmekirjeldusele](#141-integreeriv-lähenemine-andmekirjeldusele)<br>
+---[1.4.2 Andmekirjeldus organisatsioonis kasutamiseks](#142-andmekirjeldus-organisatsioonis-kasutamiseks)<br>
 ---[1.4.3 Andmekirjeldus kirjelduste avaldamiseks ja edastamiseks](#143-andmekirjeldus-kirjelduste-avaldamiseks-ja-edastamiseks)
 
--[**2 Andmekataloogi ja selle olemite kirjelduselemendid**](#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid)
---[2.1 Andmekataloogi kirjeldus](#21-andmekataloogi-kirjeldus)
---[2.2 Andmestiku kirjeldus](#22-andmestiku-kirjeldus)
---[2.3 Andmestiku levituse kirjeldus](#23-andmestiku-levituse-kirjeldus)
---[2.4 Andmestike sarja kirjeldus](#24-andmestike-sarja-kirjeldus)
---[2.5 Andmeteenuse kirjeldus](#25-andmeteenuse-kirjeldus)
---[2.6 Andmebaasi tabeli kirjeldus](#26-andmebaasi-tabeli-kirjeldus)
---[2.7 Andmeelemendi kirjeldus](#27-andmeelemendi-kirjeldus)
+-[**2 Andmekataloogi ja selle olemite kirjelduselemendid**](#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid)<br>
+--[2.1 Andmekataloogi kirjeldus](#21-andmekataloogi-kirjeldus)<br>
+--[2.2 Andmestiku kirjeldus](#22-andmestiku-kirjeldus)<br>
+--[2.3 Andmestiku levituse kirjeldus](#23-andmestiku-levituse-kirjeldus)<br>
+--[2.4 Andmestike sarja kirjeldus](#24-andmestike-sarja-kirjeldus)<br>
+--[2.5 Andmeteenuse kirjeldus](#25-andmeteenuse-kirjeldus)<br>
+--[2.6 Andmebaasi tabeli kirjeldus](#26-andmebaasi-tabeli-kirjeldus)<br>
+--[2.7 Andmeelemendi kirjeldus](#27-andmeelemendi-kirjeldus)<br>
 --[2.8 Andmeelementide grupp](#28-andmeelementide-grupp)
 
--[**3 Sõnastikud**](#3-sõnastikud)
---[3.1 Andmesõnastiku kirjeldus](#31-andmesõnastiku-kirjeldus)
---[3.2 Andmesõnastiku termini kirjeldus](#32-andmesõnastiku-termini-kirjeldus)
---[3.3 Ärisõnastiku kirjeldus](#33-ärisõnastiku-kirjeldus)
+-[**3 Sõnastikud**](#3-sõnastikud)<br>
+--[3.1 Andmesõnastiku kirjeldus](#31-andmesõnastiku-kirjeldus)<br>
+--[3.2 Andmesõnastiku termini kirjeldus](#32-andmesõnastiku-termini-kirjeldus)<br>
+--[3.3 Ärisõnastiku kirjeldus](#33-ärisõnastiku-kirjeldus)<br>
 --[3.4 Ärisõnastiku termini kirjeldus](#34-ärisõnastiku-termini-kirjeldus)
 
 
