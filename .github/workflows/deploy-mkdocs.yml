@@ -3,7 +3,7 @@ name: Deploy MkDocs to GitHub Pages
 on:
   push:
     branches:
-      - release-3.0.1-html
+      - main
   workflow_dispatch:
 
 permissions:
