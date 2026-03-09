@@ -1,0 +1,20 @@
+site_name: Andmekirjelduse standard (preview)
+docs_dir: releases/3.0.1
+site_dir: _site
+
+theme:
+  name: material
+  language: et
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 6
+
+nav:
+  - Avaleht: index.md
+  - Legacy: legacy/index.md

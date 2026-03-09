@@ -1,40 +1,40 @@
-# Andmekirjelduse juhis - lisa 1  
-## Andmekirjelduse standard  
-**Juuli 2024**  
+# Andmekirjelduse juhis
+## Lisa 1 andmekirjelduse standard
+**X 2026**
 **Versioon 3.0.1**
 
+---
 
-## Dokumendi ajalugu
+## Kiirlingid
+- **Vana PDF-versioon**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
+- **Eelmine versioon**: [Legacy 3.0.1](legacy/index.md)
 
-| ver | muutuse sisu | autor | kuupäev |
-|-----|--------------|--------|----------|
-| 1.0 | Juhise aluseks on 2019–2020. a koostatud juhis „Eesti andmehalduse metoodikaprojekt. Andmekirjelduse juhis“. Selle üheks osaks on Lisa 2 Andmekirjelduse standard. | Raivo Ruusalepp, Kuldar Aas, Siim Aben, Veiko Berendsen | aug 2020 |
-| 1.1 | Versiooni 1.0 Lisa 2 Andmekirjelduse standard on tõstetud eraldi dokumendiks. | Veiko Berendsen | märts 2021 |
-| 1.7 | Sisse on viidud versioon 1.0 tagasiside ja RIHAKEse arendusel tekkinud vajadused, täpsustatud DCAT võrdlus.<br><br>MKM, STAT, RIA tagasisideks edastamine. | Kuldar Aas | aprill 2022 |
-| 1.8 | Sisse viidud v1.7 tagasiside kommentaarid ja parandused.<br>Üle vaadatud MKM, RIA, SA. Keeletoimetatud.<br><br>Edastamine andmete võrgustiku tagasisideks. | Kuldar Aas, Veiko Berendsen, Eero Vegmann, Reana Parve | mai 2022 |
-| 2.0 | Lõppversioon | Kuldar Aas, Veiko Berendsen | mai 2022 |
-| 2.1 | Kirjelduselementide nimekirja täiendamine Euroopa andmehalduse määruse ([andmehaldust käsitlev õigusakt](https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:52020PC0767) – DGA) ja [väärtuslike andmestike nimekirja rakendusmääruse](https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:32023R0138) (HVD) nõuetest tuleneva katmiseks.<br><br>Täiendamine lähtuvalt asutuste tagasisidest. | Kuldar Aas, Annika Uibopuu, Eero Vegmann | nov 2023 |
-| 2.2 | Märkuste sisseviimine. Üle vaadatud MKM, RIA, SA. | Veiko Berendsen, Annika Uibopuu, Kuldar Aas | jaan 2024 |
-| 2.3 | Otsesed osutused RIHAKEsele välja jäetud, sest vajab eraldi RIHAKEse rakendusjuhist. Keeletoimetatud. | Veiko Berendsen, Kuldar Aas | jaan 2024 |
-| 3.0 | Lõppversioon, avalikustamine. | Veiko Berendsen, Annika Uibopuu, Kuldar Aas | juuli 2024 |
+## Tagasiside ja muudatusettepanekud
+- **Soovitused ja parandused** esitada *GitHub Issues* kaudu.
+- **Juhend issue loomiseks**: [Juhend]()
+- **Link Issues lehele**: [Issues]()
 
+## Versioonihaldus
+- **Selle väljalaske tag**: `v3.0.1`
+- **Muutuste ajalugu**: [GitHub Commits]()
 
-Kommentaarid standardi kohta on oodatud: 
+---
 
-Statistikaamet (andmehaldus@stat.ee), 
+## Abstract
 
-Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
-
+---
 
 ## Sisukord
 
-- [Andmekirjelduse juhis - lisa 1](#andmekirjelduse-juhis---lisa-1)
-  - [Andmekirjelduse standard](#andmekirjelduse-standard)
-  - [Dokumendi ajalugu](#dokumendi-ajalugu)
+- [Andmekirjelduse juhis](#andmekirjelduse-juhis)
+  - [Lisa 1 andmekirjelduse standard](#lisa-1-andmekirjelduse-standard)
+  - [Kiirlingid](#kiirlingid)
+  - [Tagasiside ja muudatusettepanekud](#tagasiside-ja-muudatusettepanekud)
+  - [Versioonihaldus](#versioonihaldus)
+  - [Abstract](#abstract)
   - [Sisukord](#sisukord)
   - [Lühendid](#lühendid)
-  - [Muudatuste ajalugu](#muudatuste-ajalugu)
-- [1. Sissejuhatus](#1-sissejuhatus)
+  - [1. Sissejuhatus](#1-sissejuhatus)
   - [1.1 Eessõna](#11-eessõna)
   - [1.2 Käsitlusala](#12-käsitlusala)
   - [1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed](#13-kirjeldusstandardisse-kuuluvate-olemite-ülevaade-ja-seosed)
@@ -54,7 +54,7 @@ Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
     - [1.4.1 Integreeriv lähenemine andmekirjeldusele](#141-integreeriv-lähenemine-andmekirjeldusele)
     - [1.4.2 Andmekirjeldus organisatsioonis kasutamiseks](#142-andmekirjeldus-organisatsioonis-kasutamiseks)
     - [1.4.3 Andmekirjeldus kirjelduste avaldamiseks ja edastamiseks](#143-andmekirjeldus-kirjelduste-avaldamiseks-ja-edastamiseks)
-- [2. Andmekataloogi ja selle olemite kirjelduselemendid](#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid)
+  - [2. Andmekataloogi ja selle olemite kirjelduselemendid](#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid)
   - [2.1 Andmekataloogi kirjeldus](#21-andmekataloogi-kirjeldus)
   - [2.2 Andmestiku kirjeldus](#22-andmestiku-kirjeldus)
   - [2.3 Andmestiku levituse kirjeldus](#23-andmestiku-levituse-kirjeldus)
@@ -63,12 +63,13 @@ Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
   - [2.6 Andmebaasi tabeli kirjeldus](#26-andmebaasi-tabeli-kirjeldus)
   - [2.7 Andmeelemendi kirjeldus](#27-andmeelemendi-kirjeldus)
   - [2.8 Andmeelementide grupp](#28-andmeelementide-grupp)
-- [3. Sõnastikud](#3-sõnastikud)
+  - [3. Sõnastikud](#3-sõnastikud)
   - [3.1 Andmesõnastiku kirjeldus](#31-andmesõnastiku-kirjeldus)
   - [3.2 Andmesõnastiku termini kirjeldus](#32-andmesõnastiku-termini-kirjeldus)
   - [3.3 Ärisõnastiku kirjeldus](#33-ärisõnastiku-kirjeldus)
   - [3.4 Ärisõnastiku termini kirjeldus](#34-ärisõnastiku-termini-kirjeldus)
 
+---
 
 ## Lühendid
 
@@ -80,19 +81,9 @@ Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).
 - RIHAKE – asutustele loodud rakendus andmekirjelduste koostamiseks ja edastamiseks RIHAsse.
 - ODD – Euroopa Parlamendi ja nõukogu direktiiv (EL) 2019/1024, 20. juuni 2019, avaandmete ja avaliku sektori valduses oleva teabe taaskasutamise kohta. 
 
+---
 
-## Muudatuste ajalugu
-
-Võrreldes versiooniga 2.0 on sisse toodud järgmised muudatused:
-- Sissejuhatava peatüki muutmine. Lisatud on kirjeldusstandardisse kuuluvate komponentide ja olemite ülevaade ja seosed. 
-- Ühildatud järgmiste alusstandardite versioonidega: DCAT 3.0 ja DCAT-AP 3.0.0 
-- Lisatud objektide kirjeldused: andmekataloog, andmeteenus. 
-- Muudetud  kirjelduse  tabeli  struktuuri.  Veerg  DCAT-AP  viide  koondab  endas  nii  viite kirjelduselemendi  terminile  (Dublin  Core  või  muu),  DCAT-ile  (W3C  standardis)  ja  selles kirjeldatud  semantilisele  väärtuste  vahemikule  (range,  lühendatult  standardis  vahemik) ning samale DCAT-AP osas. 
-- Tehtud on sisulised kirjelduselementide muutused vastavalt muutunud alusstandarditele ja kasutuspraktikale. Selles on silmas peetud riigi kesksete andmekirjeldusi kasutatavate süsteemide eesmärke ja vajadusi.  
-- Kirjelduselemendid on olemi piires järjestatud alfabeetiliselt. 
-
-
-# 1. Sissejuhatus
+## 1. Sissejuhatus
 
 ## 1.1 Eessõna
 
@@ -111,7 +102,6 @@ Sõnastike kirjelduselementide osas on arvestatud Eesti standardiks üle võetud
 [^5]: EVS-ISO 15836-1:2019 Informatsioon ja dokumentatsioon. Dublin Core’i metaandmeelemendid. Osa 1: Põhielemendid (kehtiv alates 15.05.2019) ja EVS-ISO 15836-2:2023 Osa 2: DCMI atribuudid ja klassid (kehtiv alates 02.05.2023).
 [^6]: EVS-ISO 25964-1:2023 Informatsioon ja dokumentatsioon. Tesaurused ja nende koostalitusvõime teiste sõnastikega. Osa 1: Infootsingu tesaurused ja EVS-ISO 25964-2:2023 Informatsioon ja dokumentatsioon. Tesaurused ja nende koostalitusvõime teiste sõnastikega. Osa 2: Koostalitusvõime teiste sõnastikega (kehtiv alates 02.05.2023).
 
-
 ## 1.2 Käsitlusala
 
 Standard käsitleb organisatsiooni andmestike kirjeldamise osasid: komponente ja olemeid.  
@@ -123,7 +113,6 @@ Standard käsitleb organisatsiooni andmestike kirjeldamise osasid: komponente ja
 Standard  on  koostatud  ühilduvana  DCAT-AP  3.0.0-ga.  See  võimaldab  organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. 
 
 Standard  käsitleb andmestiku  struktuuri  detailset sisemist  kirjeldust. See on  kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.
-
 
 ## 1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed
 
@@ -269,7 +258,6 @@ Andmeelement võib olla tähistatud tähendust omava ja arusaadava sõnaga, aga 
 
 Ärisõnastik on mõistete ja terminite kogum, mida kasutatakse asutuses igapäevaselt rääkides või mis on kasutusel õigusaktides või tehnoloogias. Ärisõnastik peaks olema organisatsiooni tegevuste ja andmete kohta piisavalt täielik. Samas peaks see olema mõisteid piisavalt üldistav (laiemad ja grupeerivad mõisted) ja detailiseeriv (kitsamad ja seotud mõisted) ning lisaks veel ohjama sõnavara.
 
-
 ## 1.4 Andmekirjelduse standardi kasutusjuhud
 
 ### 1.4.1 Integreeriv lähenemine andmekirjeldusele
@@ -310,233 +298,1987 @@ Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni port
 [^19]: [Open Archives Initiative Protocol for Metadata Harvesting](https://www.openarchives.org/pmh/)
 [^20]: [European data](https://data.europa.eu/en)
 
+---
 
-# 2. Andmekataloogi ja selle olemite kirjelduselemendid
+## 2. Andmekataloogi ja selle olemite kirjelduselemendid
 
 Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on RIHA, Eesti avaandmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.
 
+---
+
 ## 2.1 Andmekataloogi kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
-|----|--------------|--------------|--------------|--------------|----------------|
-| 1 | kirjeldus | Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestikke, mida kataloog sisaldab. | 1..1 | Ruumiandmete lehelt leiad Maa-ameti ruumiandmete kirjeldused. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 2 | omanik | Organisatsiooni nimetus, kes kataloogi peab. | 1..1 | Statistikaamet<br>Maksu- ja Tolliamet | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher)<br>vahemik:<br>DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
-| 3 | pealkiri | Kataloogi nimetus või tähis. | 1..1 | (Statistikaamet) Statistika andmebaas<br>(Maksu- ja Tolliamet) Statistika ja avaandmed | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 4 | veebisait | Viide veebisaidile, millel kataloog on juurdepääsetav. | 0..1 | https://andmed.stat.ee/ | viide: <br>- DCAT: [homepage](https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage)<br>- DCAT-AP: [homepage](https://xmlns.com/foaf/spec/)<br>vahemik:<br>DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog)
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#211-kirjeldus), [omanik](#212-omanik), [pealkiri](#213-pealkiri), [veebisait](#214-veebisait)*
+
+---
+<a id="211-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestikke, mida kataloog sisaldab. |
+!!! example "Näide"
+    Ruumiandmete lehelt leiad Maa-ameti ruumiandmete kirjeldused.
+
+---
+<a id="212-omanik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Organisatsiooni nimetus, kes kataloogi peab. |
+!!! example "Näide"
+    - Statistikaamet  
+    - Maksu- ja Tolliamet
+
+---
+<a id="213-pealkiri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **pealkiri** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi nimetus või tähis. |
+!!! example "Näide"
+    - (Statistikaamet) Statistika andmebaas  
+    - (Maksu- ja Tolliamet) Statistika ja avaandmed
+
+---
+<a id="214-veebisait"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millel kataloog on juurdepääsetav. |
+!!! example "Näide"
+    https://andmed.stat.ee/
+
+---
 
 ## 2.2 Andmestiku kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
-|----|--------------|--------------|--------------|--------------|----------------|
-| 1 | andmestiku identifikaator | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav. | 1..1 | 28289ed9-8472-44c4-958b-91cef59eaada<br>Selgitus: on GUID kujul ning seda võib kasutada URI osana | DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
-| 2 | andmete piirdaatumid | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP).<br>Märkus 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga.<br>Märkus 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882) .Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | 0..1 | 1993-11-05/2007-06-30<br>Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
-| 3 | andmete uuendamise regulaarsus | Andmestiku andmete uuendamise regulaarsus. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust (EU Frequency Vocabulary).[^21] Täita juhul, kui andmete kogumine või loomine ei toimu pidevalt, vaid perioodiliselt. | 0..1 | Kord aastas | viide: [dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity)<br>- DCAT: [frequency](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency)<br>- DCAT-AP: [frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Frequency](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency)<br>- DCAT-AP: [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) |
-| 4 | andmestiku seos teise andmestikuga | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. | 0..n | b49f330-e207-430e-87dd-ca8d5859438b; isPartOf<br>Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartOf) andmestikust “Valimiste andmed” (identifikaatoriga: 8b49f330-e207-430e-87dd-ca8d5859438b)  | - |
-| 4.1 | seotud andmestiku identifikaator | Andmestikuga seotud teise andmestiku identifikaator. | 1..1 | 8b49f330-e207-430e-87dd-ca8d5859438b | - |
-| 4.2 | seose tüüp | Andmestike vahelise seose tüüp Dublin Core seoste klassifikaatori alusel. Täpsemalt on Eesti andmekirjelduse standardis kasutusel neli seose tüüpi:<br>- isPartOf (kirjeldatav andmestik on osa teisest andmestikust)<br>- hasPart (kirjeldatav andmestik sisaldab teist andmestikku)<br>- replaces (eelkäija; kirjeldatav andmestik asendab teist andmestikku)<br>- isReplacedBy (järeltulija; kirjeldatavat andmestikku asendab teine andmestik) | 1..1 | Selgitus: isPartOf ja hasPart on kasutusel andmestiku ja alamandmestiku juures.<br>Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versioneeritavate andmestikega. | viide: [dcterms:isPartOf](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isPartOf)<br>viide: [dcterms:hasPart](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#hasPart)<br>- DCAT: [has part](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_part)<br>viide: [dcterms:replaces](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#replaces)<br>- DCAT: [replaces](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_replaces)<br>viide: [dcterms:isReplacedBy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReplacedBy) |
-| 5 | andmesõnastiku nimi | Sõnastiku pealkiri.<br>Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“. | 1..1 | Loomeliitude andmekogu (LLA) andmesõnastik | - |
-| 6 | andmete päritolu |  Teise andmestiku pealkiri, mida on  kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks.<br>Märkus: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid.  | 0..n | Taimekasvatus<br>Selgitus: Kirjeldatavas andmestikus „Taimekaitsevahendite kasutamine“ on taaskasutatud põllukultuuride kasvupinna andmeid andmestikust „Taimekasvatus“.Andmekogude puhul: Maakataster (MIS)Selgitus: Ehitise aluse maaüksuse katastritunnused ehitisregistris on pärit maakatastrist. | - |
-| 6.1 | päritolu andmestiku pealkiri | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus.Muu andmestiku puhul selle praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | 1..1 | Taimekasvatus<br>Andmekogude puhul: Maakataster (MIS) | viide:<br>- DCAT-AP: [provenance](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#provenance)<br>vahemik:<br>- DCAT-AP: [Provenance Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement) |
-| 6.2 | päritolu andmestiku URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | b49f330-e207-430e-87dd-ca8d5859427b<br>Selgitus: ühele andmestikule vastav URI | - |
-| 7 | geograafiline kaetus | Andmetega kaetud piirkond või asukoht.<br>Märkus: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding box vormingus koordinaatide esitust.<br>Märkus: kui geograafiline kaetus on märkimata, arvestatakse selle väärtuseks vaikimisi „kogu Eesti“. | 0..n | - | - |
-| 7.1 | asukoha nimetus | Piirkonna või asukoha sõnaline nimetus.<br>Eesti asukohtade märkimisel on soovituslik kasutada Eesti haldus- ja asustusjaotuse klassifikaatoris (EHAK) ja kohanimeregistris (KNR) toodud väärtusi.[^22] <br>Välismaiste asukohtade märkimisel on soovituslik kasutada GeoNames kohanimede loetelu.[^23] <br>Märkus: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. | 0..1 | kogu Eesti;<br>Harju maakond, Kiili vald | viide: [dcterms:spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial)<br>- DCAT: [spatial/geographic coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial)<br>- DCAT-AP: [geographical coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Location](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location)<br>- DCAT-AP: [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) |
-| 7.2 | asukoha koordinaadid | Piirkonna või asukoha määratlus koordinaatsüsteemis.<br>Asukoha koordinaadid tuleb märkida *bounding box* kujul, ehk kahe pikkuskraadi ja kahe laiuskraadi alusel moodustuva väikseima ristkülikuna, mille piiridesse andmed jäävad.<br>Koordinaadid tuleb esitada rahvusvahelises geodeetiliste koordinaatide süsteemis WGS 84 kümnendkraadides vähemalt kahe kümnendkoha täpsusega.<br>Märkus: Integreeritava aadressiotsingu (In-ADS) kasutamisel geograafilise kaetuse märkimiseks esitatakse asukoha koordinaadid automaatselt, asukoha nimetuse valimisel. | 0..1 | "x": "6456676.27"<br>"y": "641451.91"<br>"b": "58.22807"<br>"l": "26.40804" | - |
-| 8 | avalikustamise kuupäev | Ametliku avalikustamise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).<br>Märkus: on kasutusel avaandmete puhul | 0..1 | 2022-05-25 | viide: [dcterms:issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued)<br>- DCAT: [release date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date)<br>- DCAT-AP: [release date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
-| 9 | HVD kategooria | Väärtusliku andmestiku (HVD – *high value dataset*) kategooria vastavalt rakendusmäärusele.[^24]<br>2023 lõpus on määratletud kuus väärtuslike andmestike kategooriat: 1) georuumilised andmed; 2) maa seire ja keskkond; 3) meteoroloogiateave; 4) statistika; 5) äriühingud ja äriühingu omandisuhted ning 6) liikuvus.<br>Kirjelduselemendi kasutamine on kohustuslik väärtuslike andmestike kirjeldamisel. | 0..n | high-value-dataset-category.rdf<br>- georuumilised andmed;<br>- maa seire ja keskkond;<br>- meteoroloogiateave;<br>- statistika;<br>- äriühingud ja äriühingu omandisuhted;<br>- liikuvus. | - |
-| 10 | juurdepääsutase | Andmestiku juurdepääsutaseme kirjeldus.[^25]<br>Juurdepääsutaseme kirjeldamisel tuleb rakendada Euroopa Liidu Ametlike Teadaannete Talituse poolt loodud kontrollitud sõnastiku väärtuseid:<br>- konfidentsiaalne (*confidential*)<br>- mitteavalik (*non-public*)<br>- avalik (*public*)<br>- piiratud (*restricted*)<br>- tundlik (*sensitive*)<br>Märkus: Juurdepääsutaseme märkimine on kohustuslik andmehalduse määruse skoopi kuuluvate andmestike puhul.<br>[^26]Märkus: Eestis on üldjuhul juurdepääsutaseme märkimisel vaja kasutada väärtusi “avalik” või “piiratud”. | 0..1 | avalik<br>piiratud | viide: [dcterms:accessRights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights)<br>- DCAT: [access rights](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights)<br>- DCAT-AP: [access rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights)<br>vahemik: <br>- DCAT:(RDF) [rdfs:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
-| 11 | kasutusele võtmise kuupäev | Andmestiku elektroonilise pidamise algusaeg. Kattub enamasti esimese vastava andmestiku kogumiseks, haldamiseks ja avaldamiseks loodud infosüsteemi kasutusele võtmise kuupäevaga.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).[^27]<br>Märkus: mitte segi ajada elemendiga „andmete piirdaatumid“.<br>Märkus: on kohustuslik andmekogude jaoks, milles see on andmekogu kasutusele võtmise kuupäev | 0..1 | 2010-01-01<br>Selgitus: Andmete infosüsteemi sisestamise, seega kasutusele võtmise kuupäeva jaoks sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aastast. | - |
-| 12 | keel | Andmestikus kasutatud keel(ed). Kui kirjeldus pole täidetud, eeldatakse vaikimisi eesti keele kasutamist.<br>Andmevahetuses kasutatakse ISO 639-2 standardi alusel defineeritud kolmetähelisi keele koode.[^28] | 0..n | est, ukr | viide: [dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#language)<br>- DCAT: [language](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language)<br>- DCAT-AP: [language](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language)<br>vahemik: <br>- DCAT:(RDF) [rdfs:LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)<br>- DCAT-AP: [Linguistic system](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem) |
-| 13 | kirjeldus | Andmete sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus.<br>Andmekogu kirjeldus on selle asutamise õigusaktis toodud andmete kogumise eesmärk ja andmestiku sisu kirjeldus.<br>Märkus: mitte segi ajada elemendiga „koostamiseesmärk“, mille abil kajastatakse (organisatsiooni) funktsioone ja tegevusi, mille käigus andmed tekivad. | 1..1 | Ehitisregister on andmekogu, mille eesmärk on hoida, anda ja avalikustada teavet kavandatavate, ehitatavate ja olemasolevate ehitiste ning nendega seotud menetluste kohta.<br>Selgitus: andmekogu eesmärk põhimäärusest. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 14 | kirjelduse muutmiskuupäev | Andmestiku kirjelduse viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2020-05-25 | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
-| 15 | kohalduvad õigusaktid | Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | 0..n | http://data.europa.eu/eli/reg_impl/2023/138/oj<br>Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.<br>http://data.europa.eu/eli/reg/2020/868/oj<br>Selgitus: Euroopa andmehalduse määruse kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
-| 16 | kontaktpunkt | Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.[^29]<br>Märkus: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).[^30] | 0..n | Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
-| 16.1 | kontakti nimi | Kontakti täisnimi. Igas kontakti kirjes peab sisalduma täpselt üks nimi. | 1..1 | Kultuuriministeerium<br>Selgitus: organisatsiooni nimi.<br>Jüri Tamm<br>Selgitus: kontaktisiku nimi. | - |
-| 16.2 | kontakti e-posti aadress | Kontakti e-posti aadress. Igas kontakti kirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. | 0..1 | min@kul.ee<br>Selgitus: organisatsiooni e-posti aadress.<br>jyri.tamm@mmit.ee<br>Selgitus: kontaktisiku e-posti aadress. | - |
-| 16.3 | kontakti telefoninumber | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber.<br>Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis. | 0..1 | (372) 678 9012 | - |
-| 17 | levituse identifikaator | Viide andmestiku baasil loodud levitusele.<br>Märkus: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | 0..n | 336a3add-efc9-40dc-8830-091205fe20a5 | - |
-| 18 | lühinimetus | Andmestikule viitamisel kasutatav lühinimetus, mis on sageli akronüüm.<br>Kui andmestik (andmekogu) on juba RIHAs kirjeldatud, kasutatakse RIHA lühinimetust. Andmekogude korral on lühinimetuse kasutamine kohustuslik. | 0..1 | haudi<br>Selgitus: Järva valla kalmistregistri lühinimetus.<br>LLA<br>Selgitus: Loomeliitude andmekogu lühinimetus. | - |
-| 19 | muu identifikaator |  Teisene viit andmestikule, näiteks DOI, valdkonnapõhine andmestiku identifikaator vms.<br>Märkus: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. | 0..n | doi: 10.1308/11340470510582432 | viide:<br>- DCAT-AP: [other identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier)<br>vahemik:<br>- DCAT-AP: [Identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier) |
-| 19.1 | muu identifikaatori tüüp | Identifikaatori tüüp. | 0..1 | doi | - |
-| 19.2 | muu identifikaatori väärtus | Teisene viit andmestikule. | 1..1 | 10.1308/11340470510582432  | - |
-| 20 | märksõna | Kontrollitud märksõnastikust võetud üks või mitu andmestiku sisu iseloomustavat märksõna. Märksõna on märksõnastamise käigus dokumendile (siin andmestikule) määratud termin. Märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu.<br>Andmestiku märksõnastamisel kasutatakse üldist või valdkondlikku märksõnastikku. Nendeks võivad olla Eesti märksõnastik ([EMS](https://ems.elnet.ee/index.php)), [EuroVoc](https://op.europa.eu/et/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) või muu. | 0..n | - | - |
-| 20.1 | märksõna termin | Märksõna tekstiline esitus. | 1..1 | ehitus, arhitektuur | viide: [dcat:keyword](https://www.w3.org/ns/dcat#keyword)<br>- DCAT: [keyword/tag](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword)<br>- DCAT-AP: [keyword](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 20.2 | märksõna URI | Märksõna viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga märksõna kohta. | 0..1 | https://ems.elnet.ee/id/EMS008645  | - |
-| 21 | omanik | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. | 1..1 | Kliimaministeerium<br>Selgitus: ehitisregistrit haldav organisatsioon. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher)<br>vahemik:<br>- DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
-| 22 | pealkiri | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus.<br>Muu andmestiku puhul praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | 1..1 | Andmekogu: EhitisregisterSelgitus: Ehitisregistri põhimääruses on registri ametlik nimetus ehitisregister.Muu andmestik (kuup): Maakondade vaheline ränne soo järgi.Selgitus: Statistikaameti andmebaasis kuubi pealkiri. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 23 | seotud tegevused |  Loetelu organisatsiooni ülesannetest / teenustest, mille käigus andmestik tekib ja täieneb.<br>Andmekogu korral sisestada selle asutamise õigusaktis toodud tegevused. Muude andmestike puhul või kui õigusakt tegevusi ei kajasta, organisatsiooni teabe/dokumentide liigitusskeemis toodud sobivad funktsioonid või sarjade aluseks olevad tegevused.<br>Märkus: mitte segi ajada elemendiga „kirjeldus“, milles esitatakse ülevaade andmestiku sisust (kogutavatest andmetest) ja andmekogumise eesmärkidest. | 0..n | sündmuse registreerimine; ehitise rekonstrueerimisvigade ja lammutamise põhjuste analüüsimine; statistika ja teadusliku uurimistöö tegemine<br>Selgitus: andmetega seotud ülesanded. | viide: [prov:wasGeneratedBy](https://www.w3.org/TR/prov-o/#wasGeneratedBy)<br>- DCAT: [was generated by](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by)<br>- DCAT-AP: [was generated by](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby)<br>vahemik: <br>- DCAT:(RDF) [prov:Activity](https://www.w3.org/TR/prov-o/#Activity)<br>- DCAT-AP: [Activity](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity) |
-| 24 | tüüp | Kirjeldatava andmestiku tüüp Dublin Core Type Vocabulary[^31] loendi alusel.<br>Märkus: Vaikimisi on kirjelduselemendi väärtuseks "dataset" ehk andmestik. Saab kasutada ka muud väärtust, näiteks "text" või "picture". | 0..1 | Dataset | viide: [dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#type)<br>- DCAT: [type/genre](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type)<br>- DCAT-AP: [type](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Class](https://www.w3.org/2000/01/rdf-schema#Class)<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
-| 25 | valdkond | Andmestiku valdkond Eesti märksõnastiku ([EMS](https://ems.elnet.ee/index.php)), [EuroVoc](https://op.europa.eu/et/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc) või muu alusel.<br>Märkus: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad [Euroopa andmete ametliku portaali](https://data.europa.eu/et) valdkondadega (kategooriatega). | 1..n | - | - |
-| 25.1 | ainevaldkond | Valdkonna nimetus EMSis, EuroVocis või mujal. | 1..1 | 44 EHITUS. SANITAARTEHNIKA | viide: [dcat:theme](https://www.w3.org/ns/dcat#theme)<br>- DCAT: [theme/category](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme)<br>- DCAT-AP: [theme](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme)<br>vahemik:<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
-| 25.2 | valdkonna URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. | 1..1 | https://ems.elnet.ee/id/EMS023309 | - |
-| 26 | vastab standardile | Tehniline vorming või standard, mis kehtestab andmetele põhjalikumad nõuded või struktuuri.<br>Märkus: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement.  | 0..n | “Euroopa vähiregistrite käsiraamat ja standard”, mis koondab kõik soovitused ja juhised, mis on seni koostanud ENCRI-töörühmad, samuti Rahvusvahelise Vähiregistrite Assotsiatsiooni (IACR) koostatud ja võrgustiku poolt kohandatud soovitused. | viide: [dcterms:conformsTo](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#conformsTo)<br>- DCAT: [conforms to](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to)<br>- DCAT-AP: [conforms to](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Standard](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Standard)<br>- DCAT-AP: [Standard](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard) |
-| 27 | veebisait | Viide veebisaidile, millelt saab ligipääsu andmestikule ja/või leiab rohkem teavet andmestiku taaskasutustingimuste ja -võimaluste kohta.<br>Märkus: Mitte segi ajada levituse kirjelduselemendiga „juurdepääsupunkt“. | 0..1 | https://www.ehr.ee/<br>Selgitus: ehitisregistri veebisait. | viide: [dcterms:landingPage](https://www.w3.org/ns/dcat#landingPage)<br>- DCAT: [landing page](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page)<br>- DCAT-AP: [landing page](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage)<br>vahemik: <br>- DCAT:(RDF) [foaf:Document](https://xmlns.com/foaf/spec/)<br>- DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
-| 28 | õiguslik alus | Andmestiku loomise ja haldamise aluseks oleva õigusakti nimetus ja link allikale.<br>Olemasolul õigusakti nimetus ja link (URL) Riigi Teatajas. Kui õigusakt ei ole Riigi Teatajas avaldatud, lisatakse organisatsiooni kodulehel avaldatud õigusakti link (URL).<br>Märkus: kirjeldusse ei kanta kaudselt andmestiku aluseks olevaid õigusakte,näiteks avaliku teabe seadus, Eesti Vabariigi põhiseadus, vaid ainult otseselt andmestiku aluseks olevaid seaduseid või määruseid.  | 0..n | - | viide: [dcterms:isReferencedBy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReferencedBy)<br>- DCAT: [is referenced by](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_is_referenced_by)<br>- DCAT-AP: [is referenced by](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby)<br>vahemik:<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
-| 28.1 | õigusakti nimetus |  Andmestiku loomise ja haldamise aluseks oleva õigusakti pealkiri. | 1..1 | Ehitisregistri põhimäärus | - |
-| 28.2 | õigusakti link | Viide andmestiku aluseks olevale õigusaktile.<br>Märkus: Riigi Teatajas on võimalik esitada viide hetkel kehtivale tervikteksti versioonile: https://www.riigiteataja.ee/akt/115032019011?leiaKehtiv. Eelistada tuleb viitamist konkreetsele tervikteksti versioonile. | 1..1 | https://www.riigiteataja.ee/akt/105072023239 | - |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[andmestiku identifikaator](#221-andmestiku-identifikaator), [andmete piirdaatumid](#222-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [seose tüüp](#2242-seose-tuup), [andmesõnastiku nimi](#225-andmesonastiku-nimi), [andmete päritolu](#226-andmete-paritolu), [päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [päritolu andmestiku URI](#2262-paritolu-andmestiku-uri), [geograafiline kaetus](#227-geograafiline-kaetus), [asukoha nimetus](#2271-asukoha-nimetus), [asukoha koordinaadid](#2272-asukoha-koordinaadid), [avalikustamise kuupäev](#228-avalikustamise-kuupaev), [HVD kategooria](#229-hvd-kategooria), [juurdepääsutase](#2210-juurdepaasutase), [kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [keel](#2212-keel), [kirjeldus](#2213-kirjeldus), [kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [kontaktpunkt](#2216-kontaktpunkt), [kontakti nimi](#22161-kontakti-nimi), [kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [kontakti telefoninumber](#22163-kontakti-telefoninumber), [levituse identifikaator](#2217-levituse-identifikaator), [lühinimetus](#2218-luhinimetus), [muu identifikaator](#2219-muu-identifikaator), [muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [märksõna](#2220-marksona), [märksõna termin](#22201-marksona-termin), [märksõna URI](#22202-marksona-uri), [omanik](#2221-omanik), [pealkiri](#2222-pealkiri), [seotud tegevused](#2223-seotud-tegevused), [tüüp](#2224-tuup), [valdkond](#2225-valdkond), [ainevaldkond](#22251-ainevaldkond), [valdkonna URI](#22252-valdkonna-uri), [vastab standardile](#2226-vastab-standardile), [veebisait](#2227-veebisait), [õiguslik alus](#2228-oiguslik-alus), [õigusakti nimetus](#22281-oigusakti-nimetus), [õigusakti link](#22282-oigusakti-link)*
+
+---
+
+<a id="221-andmestiku-identifikaator"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmestiku identifikaator** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 1..1 | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav. |
+
+!!! example "Näide"
+    28289ed9-8472-44c4-958b-91cef59eaada  
+    Selgitus: on GUID kujul ning seda võib kasutada URI osana
+
+---
+
+<a id="222-andmete-piirdaatumid"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus** 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus** 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. |
+
+!!! example "Näide"
+    1993-11-05/2007-06-30  
+    Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.
+
+---
+
+<a id="223-andmete-uuendamise-regulaarsus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Andmestiku andmete uuendamise regulaarsus. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust (EU Frequency Vocabulary)[^21]. Täita juhul, kui andmete kogumine või loomine ei toimu pidevalt, vaid perioodiliselt. |
+
+!!! example "Näide"
+    Kord aastas
+
+---
+
+<a id="224-andmestiku-seos-teise-andmestikuga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmestiku seos teise andmestikuga** | - | 0..n | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. |
+
+!!! example "Näide"
+    b49f330-e207-430e-87dd-ca8d5859438b; isPartOf  
+    Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartOf) andmestikust “Valimiste andmed” (identifikaatoriga: 8b49f330-e207-430e-87dd-ca8d5859438b)
+
+---
+
+<a id="2241-seotud-andmestiku-identifikaator"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud andmestiku identifikaator** | - | 1..1 | Andmestikuga seotud teise andmestiku identifikaator. |
+
+!!! example "Näide"
+    8b49f330-e207-430e-87dd-ca8d5859438b
+
+---
+
+<a id="2242-seose-tuup"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seose tüüp** | - | 1..1 | Andmestike vahelise seose tüüp Dublin Core seoste klassifikaatori alusel. Täpsemalt on Eesti andmekirjelduse standardis kasutusel neli seose tüüpi: isPartOf; hasPart; replaces; isReplacedBy. |
+
+!!! example "Näide"
+    Selgitus: isPartOf ja hasPart on kasutusel andmestiku ja alamandmestiku juures.  
+    Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versioneeritavate andmestikega.
+
+---
+
+<a id="225-andmesonastiku-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmesõnastiku nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. |
+
+!!! example "Näide"
+    Loomeliitude andmekogu (LLA) andmesõnastik
+
+---
+
+<a id="226-andmete-paritolu"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete päritolu** | - | 0..n | Teise andmestiku pealkiri, mida on kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks. **Märkus**: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid. |
+
+!!! example "Näide"
+    Taimekasvatus  
+    Selgitus: Kirjeldatavas andmestikus „Taimekaitsevahendite kasutamine“ on taaskasutatud põllukultuuride kasvupinna andmeid andmestikust „Taimekasvatus“.  
+    Andmekogude puhul: Maakataster (MIS)  
+    Selgitus: Ehitise aluse maaüksuse katastritunnused ehitisregistris on pärit maakatastrist.
+
+---
+
+<a id="2261-paritolu-andmestiku-pealkiri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **päritolu andmestiku pealkiri** | [Provenance Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul selle praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+
+!!! example "Näide"
+    Taimekasvatus  
+    Andmekogude puhul: Maakataster (MIS)
+
+---
+
+<a id="2262-paritolu-andmestiku-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **päritolu andmestiku URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    b49f330-e207-430e-87dd-ca8d5859427b  
+    Selgitus: ühele andmestikule vastav URI
+
+---
+
+<a id="227-geograafiline-kaetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding box vormingus koordinaatide esitust. **Märkus**: kui geograafiline kaetus on märkimata, arvestatakse selle väärtuseks vaikimisi „kogu Eesti“. |
+
+---
+
+<a id="2271-asukoha-nimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **asukoha nimetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..1 | Piirkonna või asukoha sõnaline nimetus. Eesti asukohtade märkimisel on soovituslik kasutada EHAK ja KNR väärtusi.[^22] Välismaiste asukohtade märkimisel on soovituslik kasutada GeoNames loetelu.[^23] **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. |
+
+!!! example "Näide"
+    kogu Eesti;  
+    Harju maakond, Kiili vald
+
+---
+
+<a id="2272-asukoha-koordinaadid"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **asukoha koordinaadid** | - | 0..1 | Piirkonna või asukoha määratlus koordinaatsüsteemis. Asukoha koordinaadid tuleb märkida *bounding box* kujul… Koordinaadid tuleb esitada WGS 84 kümnendkraadides vähemalt kahe kümnendkoha täpsusega. **Märkus**: In-ADS kasutamisel esitatakse koordinaadid automaatselt. |
+
+!!! example "Näide"
+    "x": "6456676.27"  
+    "y": "641451.91"  
+    "b": "58.22807"  
+    "l": "26.40804"
+
+---
+
+<a id="228-avalikustamise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: on kasutusel avaandmete puhul. |
+
+!!! example "Näide"
+    2022-05-25
+
+---
+
+<a id="229-hvd-kategooria"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **HVD kategooria** | - | 0..n | Väärtusliku andmestiku (HVD – *high value dataset*) kategooria vastavalt rakendusmäärusele.[^24] |
+
+!!! example "Näide"
+    high-value-dataset-category.rdf  
+    - georuumilised andmed  
+    - maa seire ja keskkond  
+    - meteoroloogiateave  
+    - statistika  
+    - äriühingud ja äriühingu omandisuhted  
+    - liikuvus
+
+---
+
+<a id="2210-juurdepaasutase"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **juurdepääsutase** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Andmestiku juurdepääsutaseme kirjeldus.[^25] Juurdepääsutaseme kirjeldamisel tuleb rakendada kontrollitud sõnastiku väärtuseid (confidential, non-public, public, restricted, sensitive). Märkus: Juurdepääsutaseme märkimine on kohustuslik andmehalduse määruse skoopi kuuluvate andmestike puhul.[^26] **Märkus**: Eestis on üldjuhul juurdepääsutaseme märkimisel vaja kasutada väärtusi “avalik” või “piiratud”. |
+
+!!! example "Näide"
+    avalik  
+    piiratud
+
+---
+
+<a id="2211-kasutusele-votmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kasutusele võtmise kuupäev** | - | 0..1 | Andmestiku elektroonilise pidamise algusaeg… Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).[^27] **Märkus**: mitte segi ajada elemendiga „andmete piirdaatumid“. **Märkus**: on kohustuslik andmekogude jaoks, milles see on andmekogu kasutusele võtmise kuupäev. |
+
+!!! example "Näide"
+    2010-01-01  
+    Selgitus: ... sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aastast.
+
+---
+
+<a id="2212-keel"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **keel** | [Linguistic system](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem) | 0..n | Andmestikus kasutatud keel(ed). Kui kirjeldus pole täidetud, eeldatakse vaikimisi eesti keele kasutamist. Andmevahetuses kasutatakse ISO 639-2 kolmetähelisi keele koode.[^28] |
+
+!!! example "Näide"
+    est, ukr
+
+---
+
+<a id="2213-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmete sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus… |
+
+!!! example "Näide"
+    Ehitisregister on andmekogu, mille eesmärk on hoida, anda ja avalikustada teavet kavandatavate, ehitatavate ja olemasolevate ehitiste ning nendega seotud menetluste kohta.  
+    Selgitus: andmekogu eesmärk põhimäärusest.
+
+---
+
+<a id="2214-kirjelduse-muutmiskuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestiku kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2020-05-25
+
+---
+
+<a id="2215-kohalduvad-oigusaktid"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kohalduvad õigusaktid** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. |
+
+!!! example "Näide"
+    http://data.europa.eu/eli/reg_impl/2023/138/oj  
+    Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.  
+    http://data.europa.eu/eli/reg/2020/868/oj  
+    Selgitus: Euroopa andmehalduse määruse kohaldumisel.
+
+---
+
+<a id="2216-kontaktpunkt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.[^29] **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).[^30] |
+
+!!! example "Näide"
+    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    Selgitus: organisatsiooni kontaktandmed.  
+    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Selgitus: üksikisiku kontaktandmed.
+
+---
+
+<a id="22161-kontakti-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontakti nimi** | - | 1..1 | Kontakti täisnimi. Igas kontakti kirjes peab sisalduma täpselt üks nimi. |
+
+!!! example "Näide"
+    Kultuuriministeerium  
+    Selgitus: organisatsiooni nimi.  
+    Jüri Tamm  
+    Selgitus: kontaktisiku nimi.
+
+---
+
+<a id="22162-kontakti-e-posti-aadress"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontakti e-posti aadress** | - | 0..1 | Kontakti e-posti aadress. Igas kontakti kirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. |
+
+!!! example "Näide"
+    min@kul.ee  
+    Selgitus: organisatsiooni e-posti aadress.  
+    jyri.tamm@mmit.ee  
+    Selgitus: kontaktisiku e-posti aadress.
+
+---
+
+<a id="22163-kontakti-telefoninumber"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontakti telefoninumber** | - | 0..1 | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis. |
+
+!!! example "Näide"
+    (372) 678 9012
+
+---
+
+<a id="2217-levituse-identifikaator"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **levituse identifikaator** | - | 0..n | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. |
+
+!!! example "Näide"
+    336a3add-efc9-40dc-8830-091205fe20a5
+
+---
+
+<a id="2218-luhinimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **lühinimetus** | - | 0..1 | Andmestikule viitamisel kasutatav lühinimetus, mis on sageli akronüüm. Kui andmestik (andmekogu) on juba RIHAs kirjeldatud, kasutatakse RIHA lühinimetust. Andmekogude korral on lühinimetuse kasutamine kohustuslik. |
+
+!!! example "Näide"
+    haudi  
+    Selgitus: Järva valla kalmistregistri lühinimetus.  
+    LLA  
+    Selgitus: Loomeliitude andmekogu lühinimetus.
+
+---
+
+<a id="2219-muu-identifikaator"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **muu identifikaator** | [Identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier) | 0..n | Teisene viit andmestikule, näiteks DOI, valdkonnapõhine andmestiku identifikaator vms. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. |
+
+!!! example "Näide"
+    doi: 10.1308/11340470510582432
+
+---
+
+<a id="22191-muu-identifikaatori-tuup"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **muu identifikaatori tüüp** | - | 0..1 | Identifikaatori tüüp. |
+
+!!! example "Näide"
+    doi
+
+---
+
+<a id="22192-muu-identifikaatori-vaartus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **muu identifikaatori väärtus** | - | 1..1 | Teisene viit andmestikule. |
+
+!!! example "Näide"
+    10.1308/11340470510582432
+
+---
+
+<a id="2220-marksona"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märksõna** | - | 0..n | Kontrollitud märksõnastikust võetud üks või mitu andmestiku sisu iseloomustavat märksõna. Märksõna on märksõnastamise käigus dokumendile (siin andmestikule) määratud termin. Märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu. Andmestiku märksõnastamisel kasutatakse üldist või valdkondlikku märksõnastikku. Nendeks võivad olla Eesti märksõnastik (EMS), EuroVoc või muu. |
+
+---
+
+<a id="22201-marksona-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märksõna termin** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Märksõna tekstiline esitus. |
+
+!!! example "Näide"
+    ehitus, arhitektuur
+
+---
+
+<a id="22202-marksona-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märksõna URI** | - | 0..1 | Märksõna viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga märksõna kohta. |
+
+!!! example "Näide"
+    https://ems.elnet.ee/id/EMS008645
+
+---
+
+<a id="2221-omanik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. |
+
+!!! example "Näide"
+    Kliimaministeerium  
+    Selgitus: ehitisregistrit haldav organisatsioon.
+
+---
+
+<a id="2222-pealkiri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+
+!!! example "Näide"
+    Andmekogu: Ehitisregister  
+    Selgitus: Ehitisregistri põhimääruses on registri ametlik nimetus ehitisregister.  
+    Muu andmestik (kuup): Maakondade vaheline ränne soo järgi.  
+    Selgitus: Statistikaameti andmebaasis kuubi pealkiri.
+
+---
+
+<a id="2223-seotud-tegevused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud tegevused** | [Activity](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity) | 0..n | Loetelu organisatsiooni ülesannetest / teenustest, mille käigus andmestik tekib ja täieneb. Andmekogu korral sisestada selle asutamise õigusaktis toodud tegevused. Muude andmestike puhul või kui õigusakt tegevusi ei kajasta, organisatsiooni teabe/dokumentide liigitusskeemis toodud sobivad funktsioonid või sarjade aluseks olevad tegevused. **Märkus**: mitte segi ajada elemendiga „kirjeldus“, milles esitatakse ülevaade andmestiku sisust (kogutavatest andmetest) ja andmekogumise eesmärkidest. |
+
+!!! example "Näide"
+    sündmuse registreerimine; ehitise rekonstrueerimisvigade ja lammutamise põhjuste analüüsimine; statistika ja teadusliku uurimistöö tegemine  
+    Selgitus: andmetega seotud ülesanded.
+
+---
+
+<a id="2224-tuup"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **tüüp** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kirjeldatava andmestiku tüüp Dublin Core Type Vocabulary[^31] loendi alusel. **Märkus**: Vaikimisi on kirjelduselemendi väärtuseks "dataset" ehk andmestik. Saab kasutada ka muud väärtust, näiteks "text" või "picture". |
+
+!!! example "Näide"
+    Dataset
+
+---
+
+<a id="2225-valdkond"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **valdkond** | - | 1..n | Andmestiku valdkond Eesti märksõnastiku (EMS), EuroVoc või muu alusel. **Märkus**: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad Euroopa andmete ametliku portaali valdkondadega (kategooriatega). |
+
+---
+
+<a id="22251-ainevaldkond"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **ainevaldkond** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 1..1 | Valdkonna nimetus EMSis, EuroVocis või mujal. |
+
+!!! example "Näide"
+    44 EHITUS. SANITAARTEHNIKA
+
+---
+
+<a id="22252-valdkonna-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **valdkonna URI** | - | 1..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. |
+
+!!! example "Näide"
+    https://ems.elnet.ee/id/EMS023309
+
+---
+
+<a id="2226-vastab-standardile"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **vastab standardile** | [Standard](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard) | 0..n | Tehniline vorming või standard, mis kehtestab andmetele põhjalikumad nõuded või struktuuri. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. |
+
+!!! example "Näide"
+    “Euroopa vähiregistrite käsiraamat ja standard”, mis koondab kõik soovitused ja juhised, mis on seni koostanud ENCRI-töörühmad, samuti Rahvusvahelise Vähiregistrite Assotsiatsiooni (IACR) koostatud ja võrgustiku poolt kohandatud soovitused.
+
+---
+
+<a id="2227-veebisait"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millelt saab ligipääsu andmestikule ja/või leiab rohkem teavet andmestiku taaskasutustingimuste ja -võimaluste kohta. **Märkus**: Mitte segi ajada levituse kirjelduselemendiga „juurdepääsupunkt“. |
+
+!!! example "Näide"
+    https://www.ehr.ee/  
+    Selgitus: ehitisregistri veebisait.
+
+---
+
+<a id="2228-oiguslik-alus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **õiguslik alus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Andmestiku loomise ja haldamise aluseks oleva õigusakti nimetus ja link allikale. Olemasolul õigusakti nimetus ja link (URL) Riigi Teatajas. Kui õigusakt ei ole Riigi Teatajas avaldatud, lisatakse organisatsiooni kodulehel avaldatud õigusakti link (URL). **Märkus**: kirjeldusse ei kanta kaudselt andmestiku aluseks olevaid õigusakte, näiteks avaliku teabe seadus, Eesti Vabariigi põhiseadus, vaid ainult otseselt andmestiku aluseks olevaid seaduseid või määruseid. |
+
+---
+
+<a id="22281-oigusakti-nimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **õigusakti nimetus** | - | 1..1 | Andmestiku loomise ja haldamise aluseks oleva õigusakti pealkiri. |
+
+!!! example "Näide"
+    Ehitisregistri põhimäärus
+
+---
+
+<a id="22282-oigusakti-link"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **õigusakti link** | - | 1..1 | Viide andmestiku aluseks olevale õigusaktile. **Märkus**: Riigi Teatajas on võimalik esitada viide hetkel kehtivale tervikteksti versioonile (nt `...?leiaKehtiv`). Eelistada tuleb viitamist konkreetsele tervikteksti versioonile. |
+
+!!! example "Näide"
+    https://www.riigiteataja.ee/akt/105072023239
+
+---
 
 ## 2.3 Andmestiku levituse kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
-|----|--------------|--------------|--------------|--------------|----------------|
-| 1 | ajaline täpsus | Element viitab levituses sisalduvates andmetes minimaalsele eristatavale ajaperioodile. | 0..1 | tund<br>ööpäev<br>aasta | viide: [dcat:temporalResolution](https://www.w3.org/ns/dcat#temporalResolution)<br>- DCAT: [temporal resolution](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution)<br>- DCAT-AP: [temporal resolution](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution)<br>vahemik: <br>- DCAT:(RDF) [xsd:duration](https://www.w3.org/TR/xmlschema11-2/#duration)<br>- DCAT-AP: [xsd:duration](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration) |
-| 2 | andmete staatus | Element viitab levitatavate andmete kindlale kvaliteediseisundile.<br>Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud. | 0..1 |valmis<br>ebasoovitav<br>arenduses<br>mahavõetud | viide:<br>- DCAT-AP: [status](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
-| 3 | avalikustamise kestus | Kuupäev, millal levitus viimast päeva kättesaadav on.Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP) | 0..1 | 2025-06-31 | viide:<br>- DCAT-AP: [availability](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
-| 4 | HVD kategooria | Vt elemendi kasutamist andmestiku tabelis | 0..n | - | - |
-| 5 | juurdepääsupunkt | Levituse kasutamist võimaldav või toetav veebileht. Esitab teavet andmestiku juurdepääsukoha kohta.<br>Märkus: mitte segi ajada andmestiku kirjelduselemendiga „veebisait“. Veebisait viitab andmestiku kui terviku kohta lisainfot andvale veebilehele, „juurdepääsupunkt“ asukohale kust on võimalik kirjeldatavat levitust kasutada (avaandmete levituse korral) või selle juurdepääsutingimuste kohta infot saada (piiratud juurdepääsuga levituste korral). | 1..n | https://andmed.stat.ee/et/stat/majandus__infotehnoloogia__infotehnoloogia-leibkonnas/IT621<br>Selgitus: viit statistika andmebaasi tabelile.<br>https://nma.vta.ee/<br>Selgitus: viit navigatsioonimärkide andmekogumile. | viide: [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)<br>- DCAT: [access URL](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url)<br>- DCAT-AP: [access URL](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
-| 6 | juurdepääsutingimused | Levituse juurdepääsutingimusi põhjalikumalt kirjeldava veebilehe aadress või vabatekstiline juurdepääsuõiguste kirjeldus.<br>Märkus: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. | 0..1 | https://www.stat.ee/sites/default/files/2020-08/Konfidentsiaalsete%20andmete%20teaduslikel%20eesm%c3%a4rkidel%20edastamise%20kord%202015.pdf<br>Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid ja tingimusi konfidentsiaalsete andmete taaskasutamisel. | viide: [dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights)<br>- DCAT: [rights](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights)<br>- DCAT-AP: [rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights)<br>vahemik: <br>- DCAT:(RDF) [dcterms:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
-| 7 | kasutuslitsents | Kogu andmestikule kohalduv kasutuslitsents, kui see on määratud.<br>Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^32] | 0..1 | CC BY-SA 4.0 | viide: [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)<br>- DCAT: [license](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license)<br>- DCAT-AP: [license](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence)<br>vahemik: <br>- DCAT:(RDF) [dcterms:LicenseDocument](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument)<br>- DCAT-AP: [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) |
-| 8 | kohalduv õigusakt | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | 0..n | http://data.europa.eu/eli/reg_impl/2023/138/oj<br>Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.<br>http://data.europa.eu/eli/reg/2020/868/oj<br>Selgitus: Euroopa andmehalduse määruse kohaldumisel:<br>http://data.europa.eu/eli/dir/2019/1024/oj | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
-| 9 | levituse identifikaator | Viide andmestiku baasil loodud levitusele.<br>Märkus: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine | 1..1 | 336a3add-efc9-40dc-8830-091205fe20a5 | - |
-| 10 | levituse vorming | Levituses sisalduvate andmete failivorming.<br>Vormingu märkimisel tuleb kasutada IANA poolt defineeritud vormingute loendit (nn mime-tüübid).[^33]<br>Märkus: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. | 0..1 | application/json<br>text/csv | viide: [dcterms:format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#format)<br>- DCAT: [format](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format)<br>- DCAT-AP: [format](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format)<br>vahemik: <br>- DCAT:(RDF) [dcterms:MediaTypeOrExtent](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#MediaTypeOrExtent)<br>- DCAT-AP: [Media Type or Extent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent) |
-| 11 | levituse suurus | Levituse faili suurus baitides<br>Märkus: kirjelduselemendi täitmine on andmehalduse määruses toodudandmestike puhul kohustuslik, mh tuleb dünaamiliste teenuste kirjeldamisel väärtuseks märkida kogu andmestiku suurus. | 0..1 | 160000<br>Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB. | viide: [dcat:byteSize](https://www.w3.org/ns/dcat#byteSize)<br>- DCAT: [byte size](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size)<br>- DCAT-AP: [byte size](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [xsd:nonNegativeInteger](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger) |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[ajaline täpsus](#231-ajaline-tapsus), [andmete staatus](#232-andmete-staatus), [avalikustamise kestus](#233-avalikustamise-kestus), [HVD kategooria](#234-hvd-kategooria), [juurdepääsupunkt](#235-juurdepaasupunkt), [juurdepääsutingimused](#236-juurdepaasutingimused), [kasutuslitsents](#237-kasutuslitsents), [kohalduv õigusakt](#238-kohalduv-oigusakt), [levituse identifikaator](#239-levituse-identifikaator), [levituse vorming](#2310-levituse-vorming), [levituse suurus](#2311-levituse-suurus)*
+
+---
+
+<a id="231-ajaline-tapsus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **ajaline täpsus** | [xsd:duration](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration) | 0..1 | Element viitab levituses sisalduvates andmetes minimaalsele eristatavale ajaperioodile. |
+
+!!! example "Näide"
+    tund  
+    ööpäev  
+    aasta
+
+---
+
+<a id="232-andmete-staatus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete staatus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Element viitab levitatavate andmete kindlale kvaliteediseisundile. Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud. |
+
+!!! example "Näide"
+    valmis  
+    ebasoovitav  
+    arenduses  
+    mahavõetud
+
+---
+
+<a id="233-avalikustamise-kestus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **avalikustamise kestus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kuupäev, millal levitus viimast päeva kättesaadav on. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2025-06-31
+
+---
+
+<a id="234-hvd-kategooria"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. |
+
+---
+
+<a id="235-juurdepaasupunkt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **juurdepääsupunkt** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Levituse kasutamist võimaldav või toetav veebileht. Esitab teavet andmestiku juurdepääsukoha kohta. **Märkus**: mitte segi ajada andmestiku kirjelduselemendiga „veebisait“. Veebisait viitab andmestiku kui terviku kohta lisainfot andvale veebilehele, „juurdepääsupunkt“ asukohale, kust on võimalik kirjeldatavat levitust kasutada (avaandmete levituse korral) või selle juurdepääsutingimuste kohta infot saada (piiratud juurdepääsuga levituste korral). |
+
+!!! example "Näide"
+    https://andmed.stat.ee/et/stat/majandus__infotehnoloogia__infotehnoloogia-leibkonnas/IT621  
+    Selgitus: viit statistika andmebaasi tabelile.  
+    https://nma.vta.ee/  
+    Selgitus: viit navigatsioonimärkide andmekogumile.
+
+---
+
+<a id="236-juurdepaasutingimused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Levituse juurdepääsutingimusi põhjalikumalt kirjeldava veebilehe aadress või vabatekstiline juurdepääsuõiguste kirjeldus. **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. |
+
+!!! example "Näide"
+    https://www.stat.ee/sites/default/files/2020-08/Konfidentsiaalsete%20andmete%20teaduslikel%20eesm%c3%a4rkidel%20edastamise%20kord%202015.pdf  
+    Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid ja tingimusi konfidentsiaalsete andmete taaskasutamisel.
+
+---
+
+<a id="237-kasutuslitsents"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Kogu andmestikule kohalduv kasutuslitsents, kui see on määratud. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^32] |
+
+!!! example "Näide"
+    CC BY-SA 4.0
+
+---
+
+<a id="238-kohalduv-oigusakt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. |
+
+!!! example "Näide"
+    http://data.europa.eu/eli/reg_impl/2023/138/oj  
+    Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.  
+    http://data.europa.eu/eli/reg/2020/868/oj  
+    Selgitus: Euroopa andmehalduse määruse kohaldumisel.  
+    http://data.europa.eu/eli/dir/2019/1024/oj
+
+---
+
+<a id="239-levituse-identifikaator"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **levituse identifikaator** | - | 1..1 | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. |
+
+!!! example "Näide"
+    336a3add-efc9-40dc-8830-091205fe20a5
+
+---
+
+<a id="2310-levituse-vorming"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **levituse vorming** | [Media Type or Extent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent) | 0..1 | Levituses sisalduvate andmete failivorming. Vormingu märkimisel tuleb kasutada IANA poolt defineeritud vormingute loendit (nn mime-tüübid).[^33] **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. |
+
+!!! example "Näide"
+    application/json  
+    text/csv
+
+---
+
+<a id="2311-levituse-suurus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **levituse suurus** | [xsd:nonNegativeInteger](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger) | 0..1 | Levituse faili suurus baitides. **Märkus**: kirjelduselemendi täitmine on andmehalduse määruses toodud andmestike puhul kohustuslik, mh tuleb dünaamiliste teenuste kirjeldamisel väärtuseks märkida kogu andmestiku suurus. |
+
+!!! example "Näide"
+    160000  
+    Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.
+
+---
 
 ## 2.4 Andmestike sarja kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
-|----|--------------|--------------|--------------|--------------|----------------|
-| 1 | andmete piirdaatumid | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP)<br>Märkus: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga.<br>Märkus: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882).<br>Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | 0..1 | 1993-11-05/2007-06-30<br>Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
-| 2 | andmete uuendamise regulaarsus | Sarja uuendamise regulaarsus; uute andmestike sarja lisamise periood. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust.[^34] | 0..1 | Kord aastas | viide: [dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity)<br>- DCAT: [frequency](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency)<br>- DCAT-AP: [frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Frequency](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency)<br>- DCAT-AP: [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) |
-| 3 | avalikustamise kuupäev | Sarja ametliku avalikustamise kuupäev.Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-05-25 | viide: [dcterms:issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued)<br>- DCAT: [release date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date)<br>- DCAT-AP: [release date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
-| 4 | esimene andmestik | Andmestik on esimene selle sarjas. | 0..1 | Remondi- ja rekonstrueerimistööde hinnaindeks, 2017 (kuud) | viide: [dcat:first](https://www.w3.org/ns/dcat#first)<br>- DCAT: [first](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_first)<br>vahemik: <br>- DCAT-AP: [Dataset member of a Dataset Series](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries) |
-| 5 | geograafiline kaetus | Andmetega kaetud piirkond või asukoht.<br>Märkus: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel.<br>Märkus: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding boxvormingus koordinaatide esitust. | 0..n | Kogu Eesti;<br>Harju maakond, Kiili vald<br>Selgitus: piirkond/asukoht tekstina. | viide: [dcterms:spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial)<br>- DCAT: [spatial/geographic coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial)<br>- DCAT-AP: [geographical coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Location](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location)<br>- DCAT-AP: [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) |
-| 6 | kirjeldus | Sarja kuuluvate andmestike sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus.<br>Soovitav on kirjeldada ka andmestiku sarja komponentide ulatus, mis jaotuse tingis. | 1..1 | Remondi- ja rekonstrueerimistööde hinnaindeks aastate võrdluses, mida iseloomustab nimetatud töödele iseloomuliku ehitustegevuse maksumuse muutus ametihoonete puhul ehitusplatsi otsekulude tasemel. Lisaks on 2017. aasta andmed kuude ja kvartalite kaupa. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 7 | kirjelduse muutmiskuupäev | Andmestike sarja kirjelduse viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-05-25 | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
-| 8 | kontaktpunkt | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.<br>Märkus: kasutatakse vCard ontoloogiat10, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. | 0..1 | Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
-| 9 | omanik | Andmestike sarja sisu haldav organisatsioon, kes andmestikku levitab.<br>Märkus 1: RIHAKE täidab andmestiku omaniku kirjelduse automaatselt kirjeldajaga seotud organisatsiooni nimetusega. | 0..1 | Majandus- ja Kommunikatsiooniministeerium;<br>Kihnu vallavalitsus | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher)<br>vahemik:<br>DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
-| 10 | pealkiri | Andmestike sarja täielik nimetus.<br>Üksikutest tabelitest koosneva andmestike sarja defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | 1..1 | Remondi- ja rekonstrueerimistööde hinnanindeks võrreldes eelmise aastaga<br>Liiklusõnnetused aastate kaupa | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 11 | viimane andmestik | Andmestik on viimane selles sarjas. | 0..1 | Remondi- ja rekonstrueerimistööde hinnanindeks, 2022 | viide: [dcat:last](https://www.w3.org/ns/dcat#last)<br>- DCAT: [last](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_last) |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[andmete piirdaatumid](#241-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#242-andmete-uuendamise-regulaarsus), [avalikustamise kuupäev](#243-avalikustamise-kuupaev), [esimene andmestik](#244-esimene-andmestik), [geograafiline kaetus](#245-geograafiline-kaetus), [kirjeldus](#246-kirjeldus), [kirjelduse muutmiskuupäev](#247-kirjelduse-muutmiskuupaev), [kontaktpunkt](#248-kontaktpunkt), [omanik](#249-omanik), [pealkiri](#2410-pealkiri), [viimane andmestik](#2411-viimane-andmestik)*
+
+---
+
+<a id="241-andmete-piirdaatumid"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus**: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus**: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. |
+
+!!! example "Näide"
+    1993-11-05/2007-06-30  
+    Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.
+
+---
+
+<a id="242-andmete-uuendamise-regulaarsus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Sarja uuendamise regulaarsus; uute andmestike sarja lisamise periood. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust.[^34] |
+
+!!! example "Näide"
+    Kord aastas
+
+---
+
+<a id="243-avalikustamise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Sarja ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2022-05-25
+
+---
+
+<a id="244-esimene-andmestik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **esimene andmestik** | [Dataset member of a Dataset Series](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries) | 0..1 | Andmestik on esimene selle sarjas. |
+
+!!! example "Näide"
+    Remondi- ja rekonstrueerimistööde hinnaindeks, 2017 (kuud)
+
+---
+
+<a id="245-geograafiline-kaetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding boxvormingus koordinaatide esitust. |
+
+!!! example "Näide"
+    Kogu Eesti;  
+    Harju maakond, Kiili vald  
+    Selgitus: piirkond/asukoht tekstina.
+
+---
+
+<a id="246-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Sarja kuuluvate andmestike sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus. Soovitav on kirjeldada ka andmestiku sarja komponentide ulatus, mis jaotuse tingis. |
+
+!!! example "Näide"
+    Remondi- ja rekonstrueerimistööde hinnaindeks aastate võrdluses, mida iseloomustab nimetatud töödele iseloomuliku ehitustegevuse maksumuse muutus ametihoonete puhul ehitusplatsi otsekulude tasemel. Lisaks on 2017. aasta andmed kuude ja kvartalite kaupa.
+
+---
+
+<a id="247-kirjelduse-muutmiskuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestike sarja kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2022-05-25
+
+---
+
+<a id="248-kontaktpunkt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. |
+
+!!! example "Näide"
+    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    Selgitus: organisatsiooni kontaktandmed.  
+    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Selgitus: üksikisiku kontaktandmed.
+
+---
+
+<a id="249-omanik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 0..1 | Andmestike sarja sisu haldav organisatsioon, kes andmestikku levitab. **Märkus**: RIHAKE täidab andmestiku omaniku kirjelduse automaatselt kirjeldajaga seotud organisatsiooni nimetusega. |
+
+!!! example "Näide"
+    Majandus- ja Kommunikatsiooniministeerium;  
+    Kihnu vallavalitsus
+
+---
+
+<a id="2410-pealkiri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmestike sarja täielik nimetus. Üksikutest tabelitest koosneva andmestike sarja defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+
+!!! example "Näide"
+    Remondi- ja rekonstrueerimistööde hinnanindeks võrreldes eelmise aastaga  
+    Liiklusõnnetused aastate kaupa
+
+---
+
+<a id="2411-viimane-andmestik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viimane andmestik** | - | 0..1 | Andmestik on viimane selles sarjas. |
+
+!!! example "Näide"
+    Remondi- ja rekonstrueerimistööde hinnanindeks, 2022
+
+---
 
 ## 2.5 Andmeteenuse kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide | DCAT-AP viide |
-|----|--------------|--------------|--------------|--------------|----------------|
-| 1 | e-posti aadress |  E-posti aadress tagasiside edastamiseks. | 0..1 | info@mmit.ee | - |
-| 2 | HVD kategooria | Vt elemendi kasutamist andmestiku tabelis | 0..n | - | - |
-| 3 | juurdepääsutingimused | Juhul, kui andmeteenust kasutatakse levituse pakkumiseks, võimaldab lisada viite juurdepääsutingimusi põhjalikumalt kirjeldavale veebilehele või vabatekstilise juurdepääsuõiguste kirjelduse. | 0..1 | Teenuses kasutatavad andmed on avaandmed. | viide: [dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights)<br>- DCAT: [rights](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights)<br>- DCAT-AP: [access rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights)<br>vahemik: <br>- DCAT:(RDF) [rdfs:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
-| 4 | kasutuslitsents | Andmeteenusele kohalduv kasutuslitsents.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel.<br>Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^35] | 0..1 | CC BY-SA 4.0 | viide: [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)<br>- DCAT: [license](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license)<br>- DCAT-AP: [license](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence)<br>vahemik: <br>- DCAT:(RDF) [dcterms:LicenseDocument](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument)<br>- DCAT-AP: [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) |
-| 5 | kohalduv õigusakt | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel.<br>Märkus: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga. | 0..n | Tööturuteenuste ja -toetuste seadus<br>https://www.riigiteataja.ee/akt/948762<br>http://data.europa.eu/eli/reg_impl/2023/138/oj | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
-| 6 | kontaktileht | Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada. | 0..1 | https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside | - |
-| 7 | kontaktpunkt |  Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks.<br>Märkus: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. | 0..1 | https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasisideinfo@rik.ee<br>Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
-| 8 | otspunkti kirjeldus | Viide otspunkti kaudu kättesaadavate teenuste kirjeldusele (päringute tüübid, parameetrid jne). | 0..n | https://avaandmed.ariregister.rik.ee/et/ariregistri-avaandmete-api/ettevotja-lihtandmete-paring-staatuse-paring | viide: [dcat:endpointDescription](https://www.w3.org/ns/dcat#endpointDescription)<br>- DCAT: [endpoint description](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description)<br>- DCAT-AP: [endpoint description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
-| 9 | pealkiri | Andmeteenuse nimi. | 0..1 | Riigikogu liikme sõnavõttude statistika | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
-| 10 | viide andmestikule | Viide andmestikule, mille andmeid andmeteenus pakub.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. | 0..n | andmestiku ID | viide: [dcat:servesDataset](https://www.w3.org/ns/dcat#servesdataset)<br>- DCAT: [serves dataset](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_serves_dataset)<br>- DCAT-AP: [serves dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset)<br>vahemik: <br>- DCAT:(RDF) [dcat:Dataset](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)<br>- DCAT-AP: [Dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset) |
-| 11 | viide otspunktile | Viide API peamisele otspunktile või pöördumisteele. Kasutama peaks püsivat viidet. | 1..n | https://www.riha.ee/api/v1 | viide: [dcat:endpointURL](https://www.w3.org/ns/dcat#endpointURL)<br>- DCAT: [endpoint URL](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url)<br>- DCAT-AP: [endpoint URL](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
-| 12 | viide teenuse kättesaadavuse tingimustele  | Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. | 0..n | https://opendata.digilugu.ee/docs/#/et/howto | - |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[e-posti aadress](#251-e-posti-aadress), [HVD kategooria](#252-hvd-kategooria), [juurdepääsutingimused](#253-juurdepaasutingimused), [kasutuslitsents](#254-kasutuslitsents), [kohalduv õigusakt](#255-kohalduv-oigusakt), [kontaktileht](#256-kontaktileht), [kontaktpunkt](#257-kontaktpunkt), [otspunkti kirjeldus](#258-otspunkti-kirjeldus), [pealkiri](#259-pealkiri), [viide andmestikule](#2510-viide-andmestikule), [viide otspunktile](#2511-viide-otspunktile), [viide teenuse kättesaadavuse tingimustele](#2512-viide-teenuse-kattesaadavuse-tingimustele)*
+
+---
+
+<a id="251-e-posti-aadress"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **e-posti aadress** | - | 0..1 | E-posti aadress tagasiside edastamiseks. |
+
+!!! example "Näide"
+    info@mmit.ee
+
+---
+
+<a id="252-hvd-kategooria"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. |
+
+---
+
+<a id="253-juurdepaasutingimused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Juhul, kui andmeteenust kasutatakse levituse pakkumiseks, võimaldab lisada viite juurdepääsutingimusi põhjalikumalt kirjeldavale veebilehele või vabatekstilise juurdepääsuõiguste kirjelduse. |
+
+!!! example "Näide"
+    Teenuses kasutatavad andmed on avaandmed.
+
+---
+
+<a id="254-kasutuslitsents"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Andmeteenusele kohalduv kasutuslitsents. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^35] |
+
+!!! example "Näide"
+    CC BY-SA 4.0
+
+---
+
+<a id="255-kohalduv-oigusakt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. **Märkus**: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga. |
+
+!!! example "Näide"
+    Tööturuteenuste ja -toetuste seadus  
+    https://www.riigiteataja.ee/akt/948762  
+    http://data.europa.eu/eli/reg_impl/2023/138/oj
+
+---
+
+<a id="256-kontaktileht"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontaktileht** | - | 0..1 | Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada. |
+
+!!! example "Näide"
+    https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside
+
+---
+
+<a id="257-kontaktpunkt"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. |
+
+!!! example "Näide"
+    https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasisideinfo@rik.ee  
+    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    Selgitus: organisatsiooni kontaktandmed.  
+    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Selgitus: üksikisiku kontaktandmed.
+
+---
+
+<a id="258-otspunkti-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **otspunkti kirjeldus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Viide otspunkti kaudu kättesaadavate teenuste kirjeldusele (päringute tüübid, parameetrid jne). |
+
+!!! example "Näide"
+    https://avaandmed.ariregister.rik.ee/et/ariregistri-avaandmete-api/ettevotja-lihtandmete-paring-staatuse-paring
+
+---
+
+<a id="259-pealkiri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 0..1 | Andmeteenuse nimi. |
+
+!!! example "Näide"
+    Riigikogu liikme sõnavõttude statistika
+
+---
+
+<a id="2510-viide-andmestikule"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viide andmestikule** | [Dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset) | 0..n | Viide andmestikule, mille andmeid andmeteenus pakub. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. |
+
+!!! example "Näide"
+    andmestiku ID
+
+---
+
+<a id="2511-viide-otspunktile"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viide otspunktile** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Viide API peamisele otspunktile või pöördumisteele. Kasutama peaks püsivat viidet. |
+
+!!! example "Näide"
+    https://www.riha.ee/api/v1
+
+---
+
+<a id="2512-viide-teenuse-kattesaadavuse-tingimustele"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viide teenuse kättesaadavuse tingimustele** | - | 0..n | Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. |
+
+!!! example "Näide"
+    https://opendata.digilugu.ee/docs/#/et/howto
+
+---
 
 ## 2.6 Andmebaasi tabeli kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | andmehoidla | Tegelikult olemasoleva füüsilise andmebaasi tähis või lühinimetus, millesse tabel kuulub. | 1..1 | riha<br>ehr<br>rr |
-| 2 | kirjelduse muutmise aeg | Tabeli kirjelduse viimase muutmise kuupäev ja kellaaeg. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: RIHAKEses kattub viimase muutmise aeg andmebaasi viimase skaneerimise ajaga. | 0..1 | 2022-03-17T10:10:34,9344 |
-| 3 | kommentaar | Tabeli kommentaar andmebaasis.<br>Märkus: kommentaari on koostanud andmebaasi arendaja või andmebaasi administraator. | 0..1 | Ehitise üldandmete tabel |
-| 4 | nimetus | Tabeli tähis täpselt sellisel kujul, nagu see on esitatud relatsioonilises andmebaasis.  | 1..1 | SYS_LOG<br>EHITIS<br>ISIK |
-| 5 | skeem | Andmebaasi skeemi nimetus, millesse tabel kuulub. | 0..1 | SYS<br>RIHA<br>RIHA_vana |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[andmehoidla](#261-andmehoidla), [kirjelduse muutmise aeg](#262-kirjelduse-muutmise-aeg), [kommentaar](#263-kommentaar), [nimetus](#264-nimetus), [skeem](#265-skeem)*
+
+---
+
+<a id="261-andmehoidla"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmehoidla** | - | 1..1 | Tegelikult olemasoleva füüsilise andmebaasi tähis või lühinimetus, millesse tabel kuulub. |
+
+!!! example "Näide"
+    riha  
+    ehr  
+    rr
+
+---
+
+<a id="262-kirjelduse-muutmise-aeg"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjelduse muutmise aeg** | - | 0..1 | Tabeli kirjelduse viimase muutmise kuupäev ja kellaaeg. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: RIHAKEses kattub viimase muutmise aeg andmebaasi viimase skaneerimise ajaga. |
+
+!!! example "Näide"
+    2022-03-17T10:10:34,9344
+
+---
+
+<a id="263-kommentaar"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kommentaar** | - | 0..1 | Tabeli kommentaar andmebaasis. **Märkus**: kommentaari on koostanud andmebaasi arendaja või andmebaasi administraator. |
+
+!!! example "Näide"
+    Ehitise üldandmete tabel
+
+---
+
+<a id="264-nimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **nimetus** | - | 1..1 | Tabeli tähis täpselt sellisel kujul, nagu see on esitatud relatsioonilises andmebaasis. |
+
+!!! example "Näide"
+    SYS_LOG  
+    EHITIS  
+    ISIK
+
+---
+
+<a id="265-skeem"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **skeem** | - | 0..1 | Andmebaasi skeemi nimetus, millesse tabel kuulub. |
+
+!!! example "Näide"
+    SYS  
+    RIHA  
+    RIHA_vana
+
+---
 
 ## 2.7 Andmeelemendi kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | andmetüüp | Andmeelemendi andmetüübi tähis algses andmebaasis<br>Märkus: Andmeelemendi andmetüübi loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | int4(10)<br>varchar(255)<br>uuid |
-| 2 | GUID | Andmeelemendi globaalselt unikaalne identifikaator.<br>Märkus: Andmeelemendi GUIDi loob RIHAKE automaatselt. | 0..1 | 123e4567-e89b-12d3-a456-426655440000 |
-| 3 | kirjeldus | Kasutajale mõeldud andmeelemendi sisu, tähenduse, ärireegli ja/või tehniline selgitus.<br>Märkus: Andmeelemendi kirjelduse loob RIHAKE andmebaasi skaneerimise käigus automaatselt (kui see on andmebaasis olemas). | 0..1 | Püsielukoht: elukoht, kus isik veedab enamiku oma igapäevasest puhke- ja uneajast. |
-| 4 | kirjelduse muutmise aeg | Andmeelemendi kirjelduse viimase muutmise kuupäev ja kellaaeg.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: Kirjelduselemendi täidab RIHAKE automaatselt. | 0..1 | 2022-03-17T10:10:34,9344 |
-| 5 | mõõtühik | Andmeelemendi mõõtühik SI-süsteemist.<br>Märkus: Üldjuhul kasutatakse mõõtühiku tähist. | 0..1 | isiku pikkust mõõdetakse meetrites, meetri tähis on m;<br>sündmuse kestust mõõdetakse tundides, tunni tähis on h. |
-| 6 | märkused | Täiendav selgitus andmeelemendi kohta. | 0..1 | Ilmselt muutub haldusreformi tulemusena. |
-| 7 | on primaarvõti | Kirjelduselement näitab, kas kirjeldatav andmeelement (tabeli veerg) on andmebaasi tabeli primaarvõti.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 0..1 | false<br>true |
-| 8 | seotud loend | Andmeelemendi täitmisel kasutatud mujalt saadud väärtuste, loendi, koodiloendi või klassifikaatori nimetus või tähis.<br>Loendid on tunnuste (muutujate) nimekirjad, mille hulgast saab valida sobiva väärtuse. Loendid võivad olla muudetavad või mittemuudetavad.<br>Märkus: RIHAKEse kasutajaliideses saab kasutaja valida süsteemi sisestatud loendite hulgast sobiva, RIHAKEse-sisene viide klassifikaatorile sisestatakse automaatselt. | 0..1 | - |
-| 8.1 | seotud loendi nimetus | Kasutatava loendi täielik nimetus või lühend.<br>Märkus: Soovitav on kasutada nii nimetust kui ka lühendit, kui viimane on olemas. Mitte kasutada nimetuses versiooni tähist. | 1..1 | EHAK<br>Valitsusfunktsioonide klassifikaator<br>Anesteesia liigid |
-| 8.2 | seotud loendi URI | Viide seotud loendi URI-le, esitatakse URI-vormingus.Märkus: URI võib viidata nii andmetele samas andmestikus kui ka välistele andmetele. | 0..1 | https://estat.stat.ee/codelists/codelist/AK2008ap<br>http://pub.e-tervis.ee/classifications/Anesteesia%20liigid/1<br>Selgitus: ühele loendile vastav URI |
-| 8.3 | seotud loendi versioon | Kasutatava loendi versiooni tähis.<br>Märkus: Eraldi rühma moodustavad aegpidevad klassifikaatorid ja loendid, milles hallatakse elementide kehtivust. | 0..1 | AK 2008ap |
-| 9 | staatus | Andmeelemendi kirjeldatavuse ja kasutatavuse staatus.<br>Kasutatakse selleks, et piiritleda kirjeldatavate elementide hulka ning mitte kirjeldada neid elemente, milles olevatel andmetel pole sisulist tähendust või ei ole andmeelement üldse tegelikult kasutusel.<br>Märkus: RIHAKEses on staatusel kolm võimalikku väärtust: „KIRJELDATAV“, „EI KIRJELDATA“, „EI OLE KASUTUSEL“. | 0..1 | KIRJELDATAV<br>EI KIRJELDATA<br>EI OLE KASUTUSEL |
-| 10 | seos andmesõnastiku terminiga | Viide andmesõnastiku terminile.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | müügipakkumise number;<br>ehitise suletud netopind |
-| 10.1 | seotud termin | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.  | 0..1 | müügipakkumise number;<br>ehitise suletud netopind |
-| 10.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/DD/89c0607b-2940-4b67-8783-2817c92c2ce4/term1234<br>Selgitus: ühele andmesõnastiku terminile vastav URI |
-| 11 | seos andmeelementide grupiga | Viide andmeelementide grupile. | 0..1 | - |
-| 11.1 | seotud grupi nimi | Andmeelementide grupi nimetus. | 0..1 | ostuõiguse kehtetuks tunnistamise andmed |
-| 11.2 | seotud grupi URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/123 |
-| 12 | tähis | Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | algus_kpv<br>haridus<br>eluk_EHAK<br>jt28 |
-| 13 | URI | Nimest, aadressist või tähisest koosnev URI, mis viitab andmeelemendile ainuliselt.<br>Märkus: Andmeelemendi URI loob RIHAKE automaatselt. | 0..1 | http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI |
-| 14 | viide primaarvõtmele | Kirjelduselement esitab viite andmeelemendiga seotud primaarvõtmele.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. | 0..1 | riha.comment_id.comment |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[andmetüüp](#271-andmetuup), [GUID](#272-guid), [kirjeldus](#273-kirjeldus), [kirjelduse muutmise aeg](#274-kirjelduse-muutmise-aeg), [mõõtühik](#275-mootuhik), [märkused](#276-markused), [on primaarvõti](#277-on-primaarvoti), [seotud loend](#278-seotud-loend), [seotud loendi nimetus](#2781-seotud-loendi-nimetus), [seotud loendi URI](#2782-seotud-loendi-uri), [seotud loendi versioon](#2783-seotud-loendi-versioon), [staatus](#279-staatus), [seos andmesõnastiku terminiga](#2710-seos-andmesonastiku-terminiga), [seotud termin](#27101-seotud-termin), [seotud termini URI](#27102-seotud-termini-uri), [seos andmeelementide grupiga](#2711-seos-andmeelementide-grupiga), [seotud grupi nimi](#27111-seotud-grupi-nimi), [seotud grupi URI](#27112-seotud-grupi-uri), [tähis](#2712-tahis), [URI](#2713-uri), [viide primaarvõtmele](#2714-viide-primaarvotmele)*
+
+---
+
+<a id="271-andmetuup"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **andmetüüp** | - | 1..1 | Andmeelemendi andmetüübi tähis algses andmebaasis. **Märkus**: Andmeelemendi andmetüübi loob RIHAKE andmebaasi skaneerimise käigus automaatselt. |
+
+!!! example "Näide"
+    int4(10)  
+    varchar(255)  
+    uuid
+
+---
+
+<a id="272-guid"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **GUID** | - | 0..1 | Andmeelemendi globaalselt unikaalne identifikaator. **Märkus**: Andmeelemendi GUIDi loob RIHAKE automaatselt. |
+
+!!! example "Näide"
+    123e4567-e89b-12d3-a456-426655440000
+
+---
+
+<a id="273-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | - | 0..1 | Kasutajale mõeldud andmeelemendi sisu, tähenduse, ärireegli ja/või tehniline selgitus. **Märkus**: Andmeelemendi kirjelduse loob RIHAKE andmebaasi skaneerimise käigus automaatselt (kui see on andmebaasis olemas). |
+
+!!! example "Näide"
+    Püsielukoht: elukoht, kus isik veedab enamiku oma igapäevasest puhke- ja uneajast.
+
+---
+
+<a id="274-kirjelduse-muutmise-aeg"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjelduse muutmise aeg** | - | 0..1 | Andmeelemendi kirjelduse viimase muutmise kuupäev ja kellaaeg. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: Kirjelduselemendi täidab RIHAKE automaatselt. |
+
+!!! example "Näide"
+    2022-03-17T10:10:34,9344
+
+---
+
+<a id="275-mootuhik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **mõõtühik** | - | 0..1 | Andmeelemendi mõõtühik SI-süsteemist. **Märkus**: Üldjuhul kasutatakse mõõtühiku tähist. |
+
+!!! example "Näide"
+    isiku pikkust mõõdetakse meetrites, meetri tähis on m;  
+    sündmuse kestust mõõdetakse tundides, tunni tähis on h.
+
+---
+
+<a id="276-markused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märkused** | - | 0..1 | Täiendav selgitus andmeelemendi kohta. |
+
+!!! example "Näide"
+    Ilmselt muutub haldusreformi tulemusena.
+
+---
+
+<a id="277-on-primaarvoti"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **on primaarvõti** | - | 0..1 | Kirjelduselement näitab, kas kirjeldatav andmeelement (tabeli veerg) on andmebaasi tabeli primaarvõti. **Märkus**: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. |
+
+!!! example "Näide"
+    false  
+    true
+
+---
+
+<a id="278-seotud-loend"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud loend** | - | 0..1 | Andmeelemendi täitmisel kasutatud mujalt saadud väärtuste, loendi, koodiloendi või klassifikaatori nimetus või tähis. Loendid on tunnuste (muutujate) nimekirjad, mille hulgast saab valida sobiva väärtuse. Loendid võivad olla muudetavad või mittemuudetavad. **Märkus**: RIHAKEse kasutajaliideses saab kasutaja valida süsteemi sisestatud loendite hulgast sobiva, RIHAKEse-sisene viide klassifikaatorile sisestatakse automaatselt. |
+
+---
+
+<a id="2781-seotud-loendi-nimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud loendi nimetus** | - | 1..1 | Kasutatava loendi täielik nimetus või lühend. **Märkus**: Soovitav on kasutada nii nimetust kui ka lühendit, kui viimane on olemas. Mitte kasutada nimetuses versiooni tähist. |
+
+!!! example "Näide"
+    EHAK  
+    Valitsusfunktsioonide klassifikaator  
+    Anesteesia liigid
+
+---
+
+<a id="2782-seotud-loendi-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud loendi URI** | - | 0..1 | Viide seotud loendi URI-le, esitatakse URI-vormingus. **Märkus**: URI võib viidata nii andmetele samas andmestikus kui ka välistele andmetele. |
+
+!!! example "Näide"
+    https://estat.stat.ee/codelists/codelist/AK2008ap  
+    http://pub.e-tervis.ee/classifications/Anesteesia%20liigid/1  
+    Selgitus: ühele loendile vastav URI
+
+---
+
+<a id="2783-seotud-loendi-versioon"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud loendi versioon** | - | 0..1 | Kasutatava loendi versiooni tähis. **Märkus**: Eraldi rühma moodustavad aegpidevad klassifikaatorid ja loendid, milles hallatakse elementide kehtivust. |
+
+!!! example "Näide"
+    AK 2008ap
+
+---
+
+<a id="279-staatus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **staatus** | - | 0..1 | Andmeelemendi kirjeldatavuse ja kasutatavuse staatus. Kasutatakse selleks, et piiritleda kirjeldatavate elementide hulka ning mitte kirjeldada neid elemente, milles olevatel andmetel pole sisulist tähendust või ei ole andmeelement üldse tegelikult kasutusel. **Märkus**: RIHAKEses on staatusel kolm võimalikku väärtust: „KIRJELDATAV“, „EI KIRJELDATA“, „EI OLE KASUTUSEL“. |
+
+!!! example "Näide"
+    KIRJELDATAV  
+    EI KIRJELDATA  
+    EI OLE KASUTUSEL
+
+---
+
+<a id="2710-seos-andmesonastiku-terminiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos andmesõnastiku terminiga** | - | 0..1 | Viide andmesõnastiku terminile. **Märkus**: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. |
+
+!!! example "Näide"
+    müügipakkumise number;  
+    ehitise suletud netopind
+
+---
+
+<a id="27101-seotud-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termin** | - | 0..1 | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin. |
+
+!!! example "Näide"
+    müügipakkumise number;  
+    ehitise suletud netopind
+
+---
+
+<a id="27102-seotud-termini-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    http://rihake/70006317/DD/89c0607b-2940-4b67-8783-2817c92c2ce4/term1234  
+    Selgitus: ühele andmesõnastiku terminile vastav URI
+
+---
+
+<a id="2711-seos-andmeelementide-grupiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos andmeelementide grupiga** | - | 0..1 | Viide andmeelementide grupile. |
+
+---
+
+<a id="27111-seotud-grupi-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud grupi nimi** | - | 0..1 | Andmeelementide grupi nimetus. |
+
+!!! example "Näide"
+    ostuõiguse kehtetuks tunnistamise andmed
+
+---
+
+<a id="27112-seotud-grupi-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud grupi URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/123
+
+---
+
+<a id="2712-tahis"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **tähis** | - | 1..1 | Andmeelemendi tehniline tähis andmebaasis (veeru nimi). Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla. **Märkus**: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. |
+
+!!! example "Näide"
+    algus_kpv  
+    haridus  
+    eluk_EHAK  
+    jt28
+
+---
+
+<a id="2713-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **URI** | - | 0..1 | Nimest, aadressist või tähisest koosnev URI, mis viitab andmeelemendile ainuliselt. **Märkus**: Andmeelemendi URI loob RIHAKE automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section  
+    Selgitus: ühele andmeelemendile vastav URI
+
+---
+
+<a id="2714-viide-primaarvotmele"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viide primaarvõtmele** | - | 0..1 | Kirjelduselement esitab viite andmeelemendiga seotud primaarvõtmele. **Märkus**: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt. |
+
+!!! example "Näide"
+    riha.comment_id.comment
+
+---
 
 ## 2.8 Andmeelementide grupp
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | kirjeldus | Kasutajale mõeldud andmeelementide selgitus selle sisu ja tähenduse järgi. | 0..1 | ostuõiguse taotluse ja ostuõiguse kehtivuse andmed ning nõuete täitmise üle järelevalve teostamise andmed |
-| 2 | nimetus | Andmeelementide kogumit kirjeldav ühine nimetaja. | 1..1 | ostuõiguse kehtetuks tunnistamise andmed |
-| 3 | seos andmeelemendiga | Viide andmeelemendile. | 0..n | - |
-| 3.1 | seotud andmeelemendi tähis | Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. | 1..1 | algus_kpv<br>haridus<br>eluk_EHAK<br>jt28 |
-| 3.2 | seotud andmeelemendi URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..1 | http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI. |
-| 4 | seos ärisõnastiku terminiga | Viide terminile ärisõnastikus. | 0..n | andmeelemendi grupp: ostuõiguse kehtetuks tunnistamise andmed – ärisõnastikus: ostuõigus; ostuõiguse taotlus<br>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234 |
-| 4.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | ostuõigus; ostuõiguse taotlus<br>Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõiguse taotlus. |
-| 4.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele ärisõnastiku terminile vastav URI. |
-| 5 | URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/1234 |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#281-kirjeldus), [nimetus](#282-nimetus), [seos andmeelemendiga](#283-seos-andmeelemendiga), [seotud andmeelemendi tähis](#2831-seotud-andmeelemendi-tahis), [seotud andmeelemendi URI](#2832-seotud-andmeelemendi-uri), [seos ärisõnastiku terminiga](#284-seos-arisõnastiku-terminiga), [seotud termin](#2841-seotud-termin), [seotud termini URI](#2842-seotud-termini-uri), [URI](#285-uri)*
 
+---
 
-# 3. Sõnastikud
+<a id="281-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | - | 0..1 | Kasutajale mõeldud andmeelementide selgitus selle sisu ja tähenduse järgi. |
+
+!!! example "Näide"
+    ostuõiguse taotluse ja ostuõiguse kehtivuse andmed ning nõuete täitmise üle järelevalve teostamise andmed
+
+---
+
+<a id="282-nimetus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **nimetus** | - | 1..1 | Andmeelementide kogumit kirjeldav ühine nimetaja. |
+
+!!! example "Näide"
+    ostuõiguse kehtetuks tunnistamise andmed
+
+---
+
+<a id="283-seos-andmeelemendiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos andmeelemendiga** | - | 0..n | Viide andmeelemendile. |
+
+---
+
+<a id="2831-seotud-andmeelemendi-tahis"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud andmeelemendi tähis** | - | 1..1 | Andmeelemendi tehniline tähis andmebaasis (veeru nimi). Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla. **Märkus**: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt. |
+
+!!! example "Näide"
+    algus_kpv  
+    haridus  
+    eluk_EHAK  
+    jt28
+
+---
+
+<a id="2832-seotud-andmeelemendi-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud andmeelemendi URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section  
+    Selgitus: ühele andmeelemendile vastav URI.
+
+---
+
+<a id="284-seos-arisõnastiku-terminiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos ärisõnastiku terminiga** | - | 0..n | Viide terminile ärisõnastikus. |
+
+!!! example "Näide"
+    andmeelemendi grupp: ostuõiguse kehtetuks tunnistamise andmed – ärisõnastikus: ostuõigus; ostuõiguse taotlus  
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234
+
+---
+
+<a id="2841-seotud-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termin** | - | 1..1 | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. |
+
+!!! example "Näide"
+    ostuõigus; ostuõiguse taotlus  
+    Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõiguse taotlus.
+
+---
+
+<a id="2842-seotud-termini-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234  
+    Selgitus: ühele ärisõnastiku terminile vastav URI.
+
+---
+
+<a id="285-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/1234
+
+---
+
+## 3. Sõnastikud
 
 ## 3.1 Andmesõnastiku kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | kasutusele võtmise kuupäev | Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 1..1 | 2002-09-23 |
-| 2 | kirjeldus | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. | 1..1 | Loomeliitude ja looviisikute andmestiku terminite loend |
-| 3 | nimi | Sõnastiku pealkiri.<br>Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“. | 1..1 | Loomeliitude andmekogu (LLA) andmesõnastik |
-| 4 | omanik | Sõnastikku haldava isiku nimi. | 1..n | Jüri Kask |
-| 5 | seotud sõnastiku nimi | Viide sõnastikus kasutatavatele teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide ärisõnastikule. | 0..n | Kultuuriministeeriumi ärisõnastik |
-| 6 | seotud sõnastiku URI | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. | 0..n | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7 |
-| 7 | URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse andmesõnastike jaoks kasutusele koos RIHAKEse juurutamisega. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7 |
-| 8 | viimase muutmise kuupäev | Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP) | 0..1 | 2021-10-19 |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#311-kasutusele-votmise-kuupaev), [kirjeldus](#312-kirjeldus), [nimi](#313-nimi), [omanik](#314-omanik), [seotud sõnastiku nimi](#315-seotud-sonastiku-nimi), [seotud sõnastiku URI](#316-seotud-sonastiku-uri), [URI](#317-uri), [viimase muutmise kuupäev](#318-viimase-muutmise-kuupaev)*
+
+---
+
+<a id="311-kasutusele-votmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kasutusele võtmise kuupäev** | - | 1..1 | Sõnastiku kasutusse võtmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2002-09-23
+
+---
+
+<a id="312-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | - | 1..1 | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. |
+
+!!! example "Näide"
+    Loomeliitude ja looviisikute andmestiku terminite loend
+
+---
+
+<a id="313-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. |
+
+!!! example "Näide"
+    Loomeliitude andmekogu (LLA) andmesõnastik
+
+---
+
+<a id="314-omanik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **omanik** | - | 1..n | Sõnastikku haldava isiku nimi. |
+
+!!! example "Näide"
+    Jüri Kask
+
+---
+
+<a id="315-seotud-sonastiku-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud sõnastiku nimi** | - | 0..n | Viide sõnastikus kasutatavatele teise sõnastiku pealkirjale. **Märkus**: RIHAKEses viide ärisõnastikule. |
+
+!!! example "Näide"
+    Kultuuriministeeriumi ärisõnastik
+
+---
+
+<a id="316-seotud-sonastiku-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud sõnastiku URI** | - | 0..n | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus. **Märkus**: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7
+
+---
+
+<a id="317-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse andmesõnastike jaoks kasutusele koos RIHAKEse juurutamisega. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7
+
+---
+
+<a id="318-viimase-muutmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viimase muutmise kuupäev** | - | 0..1 | Sõnastiku viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2021-10-19
+
+---
 
 ## 3.2 Andmesõnastiku termini kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | allikas | Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina. | 0..1 | Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik, võib-olla esitatud lingina.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina. |
-| 2 | kehtivus | Märge selle kohta, kas termin on kasutusel.<br>Termin võib olla kasutusest maha võetud mitmesugustel põhjustel, näiteks andmekoosseisu muutuse tagajärjel.<br>Märkus: kui element ei ole täidetud, eeldatakse, et termin on kasutusel. | 0..1 | Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms. |
-| 3 | määratlus | Kindlast terminiallikast võetud definitsioon või selgitus.<br>Võimalusel kasutatakse sobivat ärisõnastiku termini määratlust. Sobiva termini määratluse puudumisel ärisõnastikus koostatakse uus termini selgitus andmekirjelduse koostamise käigus.<br>Kui termin on end ise lahti seletav, pole otstarbekas elementi dubleerivalt täita.<br>Märkus: elemendi nimetus on „määratlus“, kuid selle alla kuulub ka selgitus, mis ei ole definitsioon. | 0..1 | igal aastal ühest algav neljakohaline number, mis pannakse pakkumisele selle registreerimisel.<br>Selgitus: määratlus terminile müügipakkumise number.<br>Hoone suletud netopind on kõigi korruste suletud netopindade summa.<br>Selgitus: selgitus termiline ehitise suletud netopind. |
-| 4 | termin | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.<br>Märkus: oluline on teada, et iga termini taga on teadmusüksus ehk mõiste, kuid kõik mõisted on esitatud terminite ehk oskussõnadena.<br>Andmesõnastiku terminid ja mõisted on seotud ärisõnastiku terminite ja mõistetega ning kasutavad terminite tähistamisel ärisõnastiku sõnavara. | 1..1 | müügipakkumise number;<br>ehitise suletud netopind |
-| 5 | loomise kuupäev | Kuupäev, mil termini kirjeldus lisati andmesõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2018-02-16 |
-| 6 | muutmise kuupäev |  Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-12-11 |
-| 7 | märkused | Andmesõnastiku mõiste ja termini koostamist, kasutamist jms avav kirjeldus. | 0..1 | Ilmselt muutub haldusreformi tulemusena.<br>Kasutusotstarve ebamäärane |
-| 8 | seos ärisõnastiku terminiga | Viide terminile ärisõnastikus. Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda ärisõnastiku ja andmesõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..n | andmesõnastikus: müüdud erimärgistatud kütuse kasutusotstarve – ärisõnastikus: erimärgistatud kütus;<br>andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudteeinfrastruktuur |
-| 8.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | erimärgistatud kütus;<br>raudteeinfrastruktuur |
-| 8.2 | seotud termid URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI. |
-| 9 | termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI. |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[allikas](#321-allikas), [kehtivus](#322-kehtivus), [määratlus](#323-maaratlus), [termin](#324-termin), [loomise kuupäev](#325-loomise-kuupaev), [muutmise kuupäev](#326-muutmise-kuupaev), [märkused](#327-markused), [seos ärisõnastiku terminiga](#328-seos-arisõnastiku-terminiga), [seotud termin](#3281-seotud-termin), [seotud termid URI](#3282-seotud-termid-uri), [termini URI](#329-termini-uri)*
+
+---
+
+<a id="321-allikas"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **allikas** | - | 0..1 | Terminiallika nimi või pealkiri. **Märkus 1**: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt. **Märkus 2**: terminiallika nimi või pealkiri võib olla esitatud ka lingina. |
+
+!!! example "Näide"
+    Statistikaleksikon;  
+    Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/  
+    Selgitus: termini allikas on sõnastik, võib-olla esitatud lingina.  
+    Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068  
+    Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.
+
+---
+
+<a id="322-kehtivus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kehtivus** | - | 0..1 | Märge selle kohta, kas termin on kasutusel. Termin võib olla kasutusest maha võetud mitmesugustel põhjustel, näiteks andmekoosseisu muutuse tagajärjel. **Märkus**: kui element ei ole täidetud, eeldatakse, et termin on kasutusel. |
+
+!!! example "Näide"
+    Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms.
+
+---
+
+<a id="323-maaratlus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **määratlus** | - | 0..1 | Kindlast terminiallikast võetud definitsioon või selgitus. Võimalusel kasutatakse sobivat ärisõnastiku termini määratlust. Sobiva termini määratluse puudumisel ärisõnastikus koostatakse uus termini selgitus andmekirjelduse koostamise käigus. Kui termin on end ise lahti seletav, pole otstarbekas elementi dubleerivalt täita. **Märkus**: elemendi nimetus on „määratlus“, kuid selle alla kuulub ka selgitus, mis ei ole definitsioon. |
+
+!!! example "Näide"
+    igal aastal ühest algav neljakohaline number, mis pannakse pakkumisele selle registreerimisel.  
+    Selgitus: määratlus terminile müügipakkumise number.  
+    Hoone suletud netopind on kõigi korruste suletud netopindade summa.  
+    Selgitus: selgitus terminile ehitise suletud netopind.
+
+---
+
+<a id="324-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **termin** | - | 1..1 | Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin. **Märkus**: oluline on teada, et iga termini taga on teadmusüksus ehk mõiste, kuid kõik mõisted on esitatud terminite ehk oskussõnadena. Andmesõnastiku terminid ja mõisted on seotud ärisõnastiku terminite ja mõistetega ning kasutavad terminite tähistamisel ärisõnastiku sõnavara. |
+
+!!! example "Näide"
+    müügipakkumise number;  
+    ehitise suletud netopind
+
+---
+
+<a id="325-loomise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **loomise kuupäev** | - | 0..1 | Kuupäev, mil termini kirjeldus lisati andmesõnastikku. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2018-02-16
+
+---
+
+<a id="326-muutmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **muutmise kuupäev** | - | 0..1 | Kuupäev, mil termini kirjeldust viimati muudeti. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2022-12-11
+
+---
+
+<a id="327-markused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märkused** | - | 0..1 | Andmesõnastiku mõiste ja termini koostamist, kasutamist jms avav kirjeldus. |
+
+!!! example "Näide"
+    Ilmselt muutub haldusreformi tulemusena.  
+    Kasutusotstarve ebamäärane
+
+---
+
+<a id="328-seos-arisõnastiku-terminiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos ärisõnastiku terminiga** | - | 0..n | Viide terminile ärisõnastikus. **Märkus**: RIHAKEse rakendus võimaldab kasutajaliideses siduda ärisõnastiku ja andmesõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. |
+
+!!! example "Näide"
+    andmesõnastikus: müüdud erimärgistatud kütuse kasutusotstarve – ärisõnastikus: erimärgistatud kütus;  
+    andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudteeinfrastruktuur
+
+---
+
+<a id="3281-seotud-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termin** | - | 1..1 | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. |
+
+!!! example "Näide"
+    erimärgistatud kütus;  
+    raudteeinfrastruktuur
+
+---
+
+<a id="3282-seotud-termid-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termid URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234  
+    Selgitus: ühele terminile vastav URI.
+
+---
+
+<a id="329-termini-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234  
+    Selgitus: ühele terminile vastav URI.
+
+---
 
 ## 3.3 Ärisõnastiku kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | kasutusele võtmise kuupäev | Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 1..1 | 2002-09-23 |
-| 2 | kirjeldus | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. | 1..1 | Spordi, loomemajanduse ja etenduskunstide andmestike ärisõnastik<br>Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seotud terminikogu koos definitsioonide ja allikaviidetega. |
-| 3 | nimi | Sõnastiku pealkiri.<br>Soovitatav on sõnastik pealkirjastada nii, et selles on ka viide sõnastikku haldavale organisatsioonile.<br>Märkus: Kui organisatsioonil on ärisõnastikke mitu, siis on soovitav pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“. | 1..1 | Kultuuriministeeriumi ärisõnastik<br>Selgitus: pealkirjas on viide sõnastikku haldavale organisatsioonile.<br>Eesti Spordiregistri (ESR) ärisõnastik<br>Selgitus: spordiregistri andmestiku ärisõnastik. |
-| 4 | omanik | Sõnastikku haldava isiku nimi. | 1..n | Mari Maasikas |
-| 5 | seotud sõnastiku nimi | Viide sõnastikus kasutatava teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide nii andmesõnastikule, valdkonna sõnastikule kui ka üldisele märksõnastikule. | 0..n | Loomeliitude andmekogu (LLA) andmesõnastik<br>Kultuurivaldkonna sõnastik<br>Eesti Märksõnastik |
-| 6 | seotud sõnastiku URI | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. | 0..n | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d |
-| 7 | URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse ärisõnastike jaoks kasutusele koos RIHAKEse juurutamisega. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7<br>Selgitus: ühele ärisõnastikule vastav URI. |
-| 8 | viimase muutmise kuupäev | Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2021-10-19 |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#331-kasutusele-votmise-kuupaev), [kirjeldus](#332-kirjeldus), [nimi](#333-nimi), [omanik](#334-omanik), [seotud sõnastiku nimi](#335-seotud-sonastiku-nimi), [seotud sõnastiku URI](#336-seotud-sonastiku-uri), [URI](#337-uri), [viimase muutmise kuupäev](#338-viimase-muutmise-kuupaev)*
+
+---
+
+<a id="331-kasutusele-votmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kasutusele võtmise kuupäev** | - | 1..1 | Sõnastiku kasutusse võtmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2002-09-23
+
+---
+
+<a id="332-kirjeldus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **kirjeldus** | - | 1..1 | Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse. |
+
+!!! example "Näide"
+    Spordi, loomemajanduse ja etenduskunstide andmestike ärisõnastik  
+    Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seotud terminikogu koos definitsioonide ja allikaviidetega.
+
+---
+
+<a id="333-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on sõnastik pealkirjastada nii, et selles on ka viide sõnastikku haldavale organisatsioonile. **Märkus**: Kui organisatsioonil on ärisõnastikke mitu, siis on soovitav pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. |
+
+!!! example "Näide"
+    Kultuuriministeeriumi ärisõnastik  
+    Selgitus: pealkirjas on viide sõnastikku haldavale organisatsioonile.  
+    Eesti Spordiregistri (ESR) ärisõnastik  
+    Selgitus: spordiregistri andmestiku ärisõnastik.
+
+---
+
+<a id="334-omanik"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **omanik** | - | 1..n | Sõnastikku haldava isiku nimi. |
+
+!!! example "Näide"
+    Mari Maasikas
+
+---
+
+<a id="335-seotud-sonastiku-nimi"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud sõnastiku nimi** | - | 0..n | Viide sõnastikus kasutatava teise sõnastiku pealkirjale. **Märkus**: RIHAKEses viide nii andmesõnastikule, valdkonna sõnastikule kui ka üldisele märksõnastikule. |
+
+!!! example "Näide"
+    Loomeliitude andmekogu (LLA) andmesõnastik  
+    Kultuurivaldkonna sõnastik  
+    Eesti Märksõnastik
+
+---
+
+<a id="336-seotud-sonastiku-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud sõnastiku URI** | - | 0..n | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus. **Märkus**: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d
+
+---
+
+<a id="337-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse ärisõnastike jaoks kasutusele koos RIHAKEse juurutamisega. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7  
+    Selgitus: ühele ärisõnastikule vastav URI.
+
+---
+
+<a id="338-viimase-muutmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **viimase muutmise kuupäev** | - | 0..1 | Sõnastiku viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2021-10-19
+
+---
 
 ## 3.4 Ärisõnastiku termini kirjeldus
 
-| # | elemendi nimetus | määratlus ja kasutamine | kohustuslik / korduv | näide |
-|----|--------------|--------------|--------------|--------------|
-| 1 | allikas | Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina. | 0..1 | Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina. |
-| 2 | loomise kuupäev |  Kuupäev, mil termini kirjeldus lisati ärisõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-02-16 |
-| 3 | märkused | Ärisõnastiku termini koostamist, kasutamist jms avav kirjeldus. | 0..1 | Ilmselt muutub haldusreformi tulemusena;<br>Kasutusotstarve ebamäärane |
-| 4 | määratlus | Terminile antud määratlus ehk definitsioon või selgitus. | 1..1 | Seletavas sõnaraamatus: püsielukoha riik – riik, kus inimene on pidevalt elanud või kavatseb elada vähemalt 12 kuud.<br>Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles iga mõiste kohta on esitatud terminid ning mis on organiseeritud, tuues selgelt välja mõistete vahelised suhted ning milles eelisterminitele on lisatud sünonüümid või osasünonüümid.<br>Õigusaktis: Üksikandmed käesoleva seaduse tähenduses on konkreetset statistilist üksust iseloomustavad detailsed andmed. |
-| 5 | määratlus (inglise keeles) | Termini määratlus või selgitus inglise keeles. | 0..1 | (vastavate terminite ametlik definitsioon või kasutuskontekstist tulenev tõlge) |
-| 6 | muutmise kuupäev |  Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | 0..1 | 2022-12-11 |
-| 7 | on eelistermin | Kirjelduselement näitab, kas termin on sünonüümidega võrreldes eelistatav või mitte. | 0..1 | Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms. |
-| 8 | seos ärisõnastiku teise terminiga | Viide terminile ärisõnastikus.<br>Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda omavahel ärisõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. | 0..n | assotsiatiivsuhe:<br>termin arst – termin patsient<br>termin perearst – termin tervisekaart; termin patsient |
-| 8.1 | seotud termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..n | patsient; tervisekaart; hüvitis |
-| 8.2 | seotud termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1 |
-| 8.3 | seose tüüp | Kirjelduselement näitab, millise seose tüübi kaudu on terminid omavahel suhestunud. Seose tüübid on: <br>- hierarhiline suhe – termin on kitsam või laiem; <br>- assotsiatiivsuhe ehk lihtsalt seos; <br>- grupeeriv suhe – termin on ise grupeeriv või kuulub gruppi; <br>- sünonüümsuhe – terminid on samatähenduslikud.<br>Assotsiatiivsuhe väljendab seost terminite vahel, mis on omavahel seotud semantiliselt või kontekstuaalselt ning kui see seos ei ole hierarhiline. Terminite vahel kirjeldatakse see seos, et näidata alternatiive või seost kindlas kasutuskontekstis.<br>Hierarhilises suhtes mahub kitsam termin laiemasse täielikult.<br>Grupeeriv suhe on olemuselt assotsiatiivsuhe, milles termin on seotud kontekstuaalselt ja kontekst on andmestik või osa sellest.<br>Sünonüümsuhe moodustub häälikuliselt erinevate, kuid tähenduselt samade terminite vahel. | 1..1 | hierarhiline suhe:<br>- arst <br>- - kirurg <br>- - - neurokirurg<br>C - Töötlev tööstus <br>10 - Toiduainete tootmine <br>105 - Piimatoodete tootmine<br>Assotsiatiivsuhe:<br>- linnud ja ornitoloogia <br>- raudtee ja sõidupiirkond <br>grupeeriv suhe:<br>- kontaktandmed <br>- - (koha)aadress <br>- - - adressaat <br>sünonüüm:<br>pass – isikutunnistus <br>isik – persoon <br>biograafia – elulugu |
-| 9 | termin | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. | 1..1 | elektrivõrk<br>spordiklubi<br>liiklusõnnetus |
-| 10 | termin (inglise keeles)[^36] | Mõiste tähistus inglise keeles. | 0..1 | (vastavate terminite ametlik või kasutuskontekstist tulenev tõlge) |
-| 11 | termini URI | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. | 0..1 | http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234 |
+- **Definitsioon**: (siia tuleb klassi definitsioon)
+- [**DCAT Viide**]()
+- **Atribuudid**
+    - Selles klassis esinevad järgmised atribuudid: *[allikas](#341-allikas), [loomise kuupäev](#342-loomise-kuupaev), [märkused](#343-markused), [määratlus](#344-maaratlus), [määratlus (inglise keeles)](#345-maaratlus-inglise-keeles), [muutmise kuupäev](#346-muutmise-kuupaev), [on eelistermin](#347-on-eelistermin), [seos ärisõnastiku teise terminiga](#348-seos-arisõnastiku-teise-terminiga), [seotud termin](#3481-seotud-termin), [seotud termini URI](#3482-seotud-termini-uri), [seose tüüp](#3483-seose-tuup), [termin](#349-termin), [termin (inglise keeles)](#3410-termin-inglise-keeles), [termini URI](#3411-termini-uri)*
 
+---
+
+<a id="341-allikas"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **allikas** | - | 0..1 | Terminiallika nimi või pealkiri. **Märkus 1**: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt. **Märkus 2**: terminiallika nimi või pealkiri võib olla esitatud ka lingina. |
+
+!!! example "Näide"
+    Statistikaleksikon;  
+    Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/  
+    Selgitus: termini allikas on sõnastik.  
+    Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068  
+    Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.
+
+---
+
+<a id="342-loomise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **loomise kuupäev** | - | 0..1 | Kuupäev, mil termini kirjeldus lisati ärisõnastikku. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2022-02-16
+
+---
+
+<a id="343-markused"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **märkused** | - | 0..1 | Ärisõnastiku termini koostamist, kasutamist jms avav kirjeldus. |
+
+!!! example "Näide"
+    Ilmselt muutub haldusreformi tulemusena;  
+    Kasutusotstarve ebamäärane
+
+---
+
+<a id="344-maaratlus"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **määratlus** | - | 1..1 | Terminile antud määratlus ehk definitsioon või selgitus. |
+
+!!! example "Näide"
+    Seletavas sõnaraamatus: püsielukoha riik – riik, kus inimene on pidevalt elanud või kavatseb elada vähemalt 12 kuud.  
+    Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles iga mõiste kohta on esitatud terminid ning mis on organiseeritud, tuues selgelt välja mõistete vahelised suhted ning milles eelisterminitele on lisatud sünonüümid või osasünonüümid.  
+    Õigusaktis: Üksikandmed käesoleva seaduse tähenduses on konkreetset statistilist üksust iseloomustavad detailsed andmed.
+
+---
+
+<a id="345-maaratlus-inglise-keeles"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **määratlus (inglise keeles)** | - | 0..1 | Termini määratlus või selgitus inglise keeles. |
+
+!!! example "Näide"
+    (vastavate terminite ametlik definitsioon või kasutuskontekstist tulenev tõlge)
+
+---
+
+<a id="346-muutmise-kuupaev"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **muutmise kuupäev** | - | 0..1 | Kuupäev, mil termini kirjeldust viimati muudeti. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+
+!!! example "Näide"
+    2022-12-11
+
+---
+
+<a id="347-on-eelistermin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **on eelistermin** | - | 0..1 | Kirjelduseelement näitab, kas termin on sünonüümidega võrreldes eelistatav või mitte. |
+
+!!! example "Näide"
+    Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: *true* ja *false* jms.
+
+---
+
+<a id="348-seos-arisõnastiku-teise-terminiga"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seos ärisõnastiku teise terminiga** | - | 0..n | Viide terminile ärisõnastikus. **Märkus**: RIHAKEse rakendus võimaldab kasutajaliideses siduda omavahel ärisõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt. |
+
+!!! example "Näide"
+    assotsiatiivsuhe:  
+    termin arst – termin patsient  
+    termin perearst – termin tervisekaart; termin patsient
+
+---
+
+<a id="3481-seotud-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termin** | - | 1..n | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. |
+
+!!! example "Näide"
+    patsient; tervisekaart; hüvitis
+
+---
+
+<a id="3482-seotud-termini-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seotud termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1
+
+---
+
+<a id="3483-seose-tuup"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **seose tüüp** | - | 1..1 | Kirjelduseelement näitab, millise seose tüübi kaudu on terminid omavahel suhestunud. Seose tüübid on: hierarhiline suhe; assotsiatiivsuhe; grupeeriv suhe; sünonüümsuhe. Assotsiatiivsuhe väljendab seost terminite vahel, mis on omavahel seotud semantiliselt või kontekstuaalselt ning kui see seos ei ole hierarhiline. Terminite vahel kirjeldatakse see seos, et näidata alternatiive või seost kindlas kasutuskontekstis. Hierarhilises suhtes mahub kitsam termin laiemasse täielikult. Grupeeriv suhe on olemuselt assotsiatiivsuhe, milles termin on seotud kontekstuaalselt ja kontekst on andmestik või osa sellest. Sünonüümsuhe moodustub häälikuliselt erinevate, kuid tähenduselt samade terminite vahel. |
+
+!!! example "Näide"
+    hierarhiline suhe:  
+    - arst  
+    - - kirurg  
+    - - - neurokirurg  
+    C - Töötlev tööstus  
+    10 - Toiduainete tootmine  
+    105 - Piimatoodete tootmine  
+    Assotsiatiivsuhe:  
+    - linnud ja ornitoloogia  
+    - raudtee ja sõidupiirkond  
+    grupeeriv suhe:  
+    - kontaktandmed  
+    - - (koha)aadress  
+    - - - adressaat  
+    sünonüüm:  
+    pass – isikutunnistus  
+    isik – persoon  
+    biograafia – elulugu
+
+---
+
+<a id="349-termin"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **termin** | - | 1..1 | Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna. |
+
+!!! example "Näide"
+    elektrivõrk  
+    spordiklubi  
+    liiklusõnnetus
+
+---
+
+<a id="3410-termin-inglise-keeles"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **termin (inglise keeles)**[^36] | - | 0..1 | Mõiste tähistus inglise keeles. |
+
+!!! example "Näide"
+    (vastavate terminite ametlik või kasutuskontekstist tulenev tõlge)
+
+---
+
+<a id="3411-termini-uri"></a>
+
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---|---|---:|---|
+| **termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. **Märkus**: RIHAKEse rakenduses luuakse igale terminile URI automaatselt. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234
 
 [^21]: 
     [EU Vocabularies – Controlled vocabularies – Frequency (versioon 20190619-0)](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
