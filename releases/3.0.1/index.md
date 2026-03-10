@@ -12,7 +12,7 @@
 
 ## Tagasiside ja muudatusettepanekud
 - **Soovitused ja parandused** esitada *GitHub Issues* kaudu.
-- **Juhend issue loomiseks**: [Juhend]()
+- **Juhend issue loomiseks**: [Juhend](https://github.com/e-gov/Andmekirjelduse-Standard/wiki/Tagasiside-esitamine)
 - **Link Issues lehele**: [Issues](https://github.com/e-gov/Andmekirjelduse-Standard/issues)
 
 ## Versioonihaldus
