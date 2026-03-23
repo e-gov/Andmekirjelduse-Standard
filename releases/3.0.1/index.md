@@ -1,12 +1,11 @@
-# Andmekirjelduse juhis
-## Lisa 1 andmekirjelduse standard
-**X 2026**
+# Andmekirjelduse juhis. Lisa 1 andmekirjelduse standard
 **Versioon 3.0.1**
+**Aprill 2024**
 
 ---
 
 ## Kiirlingid
-- **Vana PDF-versioon**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
+- **PDF kujul**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
 - **Eelmine versioon**: [Legacy 3.0.1](legacy/index.md)
 - **Viimane mustandversioon**: [Latest editor's draft]()
 
@@ -19,21 +18,15 @@
 - **Selle väljalaske tag**: `v3.0.1`
 - **Muutuste ajalugu**: [GitHub Commits](https://github.com/e-gov/Andmekirjelduse-Standard/commits)
 
----
-
-## Abstract
+## Autorid ja toimetajad
+- Veiko Berendsen, Statistikaamet
+- Kuldar Aas, Majandus- ja Kommunikatsiooniministeerium
+- Annika Uibopuu, Statistikaamet
 
 ---
 
 ## Sisukord
 
-- [Andmekirjelduse juhis](#andmekirjelduse-juhis)
-  - [Lisa 1 andmekirjelduse standard](#lisa-1-andmekirjelduse-standard)
-  - [Kiirlingid](#kiirlingid)
-  - [Tagasiside ja muudatusettepanekud](#tagasiside-ja-muudatusettepanekud)
-  - [Versioonihaldus](#versioonihaldus)
-  - [Abstract](#abstract)
-  - [Sisukord](#sisukord)
   - [Lühendid](#lühendid)
   - [1. Sissejuhatus](#1-sissejuhatus)
   - [1.1 Eessõna](#11-eessõna)
@@ -107,13 +100,13 @@ Sõnastike kirjelduselementide osas on arvestatud Eesti standardiks üle võetud
 
 Standard käsitleb organisatsiooni andmestike kirjeldamise osasid: komponente ja olemeid.  
 
-**Komponentidena** on käsitletud andmestiku kui terviku ülevaatlikku kirjeldust,  andmestiku sisu  detailset kirjeldust ning sõnastike osa kirjeldust ehk mõistelist kirjeldust, mis aitab hallata sõnavara. 
+**Komponentidena** on käsitletud andmestiku kui terviku ülevaatlikku kirjeldust, andmestiku sisu detailset kirjeldust ning sõnastike osa kirjeldust ehk mõistelist kirjeldust, mis aitab hallata sõnavara. 
 
-**Olemitena**  on  käsitletud  andmekirjelduse  standardi  eraldi hallatavaid  ja  kirjeldatavaid objekte, mis koos moodustavad mudeli.  
+**Olemitena**  on käsitletud andmekirjelduse standardi eraldi hallatavaid ja kirjeldatavaid objekte, mis koos moodustavad mudeli.  
 
-Standard  on  koostatud  ühilduvana  DCAT-AP  3.0.0-ga.  See  võimaldab  organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. 
+Standard on koostatud ühilduvana DCAT-AP 3.0.0-ga. See võimaldab organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. 
 
-Standard  käsitleb andmestiku  struktuuri  detailset sisemist  kirjeldust. See on  kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.
+Standard käsitleb andmestiku struktuuri detailset sisemist kirjeldust. See on kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.
 
 ## 1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed
 
@@ -309,7 +302,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.1 Andmekataloogi kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#211-kirjeldus), [omanik](#212-omanik), [pealkiri](#213-pealkiri), [veebisait](#214-veebisait)*
@@ -356,7 +348,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.2 Andmestiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmestiku identifikaator](#221-andmestiku-identifikaator), [andmete piirdaatumid](#222-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [seose tüüp](#2242-seose-tuup), [andmesõnastiku nimi](#225-andmesonastiku-nimi), [andmete päritolu](#226-andmete-paritolu), [päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [päritolu andmestiku URI](#2262-paritolu-andmestiku-uri), [geograafiline kaetus](#227-geograafiline-kaetus), [asukoha nimetus](#2271-asukoha-nimetus), [asukoha koordinaadid](#2272-asukoha-koordinaadid), [avalikustamise kuupäev](#228-avalikustamise-kuupaev), [HVD kategooria](#229-hvd-kategooria), [juurdepääsutase](#2210-juurdepaasutase), [kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [keel](#2212-keel), [kirjeldus](#2213-kirjeldus), [kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [kontaktpunkt](#2216-kontaktpunkt), [kontakti nimi](#22161-kontakti-nimi), [kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [kontakti telefoninumber](#22163-kontakti-telefoninumber), [levituse identifikaator](#2217-levituse-identifikaator), [lühinimetus](#2218-luhinimetus), [muu identifikaator](#2219-muu-identifikaator), [muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [märksõna](#2220-marksona), [märksõna termin](#22201-marksona-termin), [märksõna URI](#22202-marksona-uri), [omanik](#2221-omanik), [pealkiri](#2222-pealkiri), [seotud tegevused](#2223-seotud-tegevused), [tüüp](#2224-tuup), [valdkond](#2225-valdkond), [ainevaldkond](#22251-ainevaldkond), [valdkonna URI](#22252-valdkonna-uri), [vastab standardile](#2226-vastab-standardile), [veebisait](#2227-veebisait), [õiguslik alus](#2228-oiguslik-alus), [õigusakti nimetus](#22281-oigusakti-nimetus), [õigusakti link](#22282-oigusakti-link)*
@@ -891,7 +882,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.3 Andmestiku levituse kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[ajaline täpsus](#231-ajaline-tapsus), [andmete staatus](#232-andmete-staatus), [avalikustamise kestus](#233-avalikustamise-kestus), [HVD kategooria](#234-hvd-kategooria), [juurdepääsupunkt](#235-juurdepaasupunkt), [juurdepääsutingimused](#236-juurdepaasutingimused), [kasutuslitsents](#237-kasutuslitsents), [kohalduv õigusakt](#238-kohalduv-oigusakt), [levituse identifikaator](#239-levituse-identifikaator), [levituse vorming](#2310-levituse-vorming), [levituse suurus](#2311-levituse-suurus)*
@@ -1033,7 +1023,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.4 Andmestike sarja kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmete piirdaatumid](#241-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#242-andmete-uuendamise-regulaarsus), [avalikustamise kuupäev](#243-avalikustamise-kuupaev), [esimene andmestik](#244-esimene-andmestik), [geograafiline kaetus](#245-geograafiline-kaetus), [kirjeldus](#246-kirjeldus), [kirjelduse muutmiskuupäev](#247-kirjelduse-muutmiskuupaev), [kontaktpunkt](#248-kontaktpunkt), [omanik](#249-omanik), [pealkiri](#2410-pealkiri), [viimane andmestik](#2411-viimane-andmestik)*
@@ -1171,7 +1160,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.5 Andmeteenuse kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[e-posti aadress](#251-e-posti-aadress), [HVD kategooria](#252-hvd-kategooria), [juurdepääsutingimused](#253-juurdepaasutingimused), [kasutuslitsents](#254-kasutuslitsents), [kohalduv õigusakt](#255-kohalduv-oigusakt), [kontaktileht](#256-kontaktileht), [kontaktpunkt](#257-kontaktpunkt), [otspunkti kirjeldus](#258-otspunkti-kirjeldus), [pealkiri](#259-pealkiri), [viide andmestikule](#2510-viide-andmestikule), [viide otspunktile](#2511-viide-otspunktile), [viide teenuse kättesaadavuse tingimustele](#2512-viide-teenuse-kattesaadavuse-tingimustele)*
@@ -1315,8 +1303,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.6 Andmebaasi tabeli kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmehoidla](#261-andmehoidla), [kirjelduse muutmise aeg](#262-kirjelduse-muutmise-aeg), [kommentaar](#263-kommentaar), [nimetus](#264-nimetus), [skeem](#265-skeem)*
 
@@ -1385,8 +1371,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.7 Andmeelemendi kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmetüüp](#271-andmetuup), [GUID](#272-guid), [kirjeldus](#273-kirjeldus), [kirjelduse muutmise aeg](#274-kirjelduse-muutmise-aeg), [mõõtühik](#275-mootuhik), [märkused](#276-markused), [on primaarvõti](#277-on-primaarvoti), [seotud loend](#278-seotud-loend), [seotud loendi nimetus](#2781-seotud-loendi-nimetus), [seotud loendi URI](#2782-seotud-loendi-uri), [seotud loendi versioon](#2783-seotud-loendi-versioon), [staatus](#279-staatus), [seos andmesõnastiku terminiga](#2710-seos-andmesonastiku-terminiga), [seotud termin](#27101-seotud-termin), [seotud termini URI](#27102-seotud-termini-uri), [seos andmeelementide grupiga](#2711-seos-andmeelementide-grupiga), [seotud grupi nimi](#27111-seotud-grupi-nimi), [seotud grupi URI](#27112-seotud-grupi-uri), [tähis](#2712-tahis), [URI](#2713-uri), [viide primaarvõtmele](#2714-viide-primaarvotmele)*
 
@@ -1636,8 +1620,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.8 Andmeelementide grupp
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#281-kirjeldus), [nimetus](#282-nimetus), [seos andmeelemendiga](#283-seos-andmeelemendiga), [seotud andmeelemendi tähis](#2831-seotud-andmeelemendi-tahis), [seotud andmeelemendi URI](#2832-seotud-andmeelemendi-uri), [seos ärisõnastiku terminiga](#284-seos-arisõnastiku-terminiga), [seotud termin](#2841-seotud-termin), [seotud termini URI](#2842-seotud-termini-uri), [URI](#285-uri)*
 
@@ -1750,8 +1732,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.1 Andmesõnastiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() - 
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#311-kasutusele-votmise-kuupaev), [kirjeldus](#312-kirjeldus), [nimi](#313-nimi), [omanik](#314-omanik), [seotud sõnastiku nimi](#315-seotud-sonastiku-nimi), [seotud sõnastiku URI](#316-seotud-sonastiku-uri), [URI](#317-uri), [viimase muutmise kuupäev](#318-viimase-muutmise-kuupaev)*
 
@@ -1847,8 +1827,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.2 Andmesõnastiku termini kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[allikas](#321-allikas), [kehtivus](#322-kehtivus), [määratlus](#323-maaratlus), [termin](#324-termin), [loomise kuupäev](#325-loomise-kuupaev), [muutmise kuupäev](#326-muutmise-kuupaev), [märkused](#327-markused), [seos ärisõnastiku terminiga](#328-seos-arisõnastiku-terminiga), [seotud termin](#3281-seotud-termin), [seotud termid URI](#3282-seotud-termid-uri), [termini URI](#329-termini-uri)*
 
@@ -1990,8 +1968,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.3 Ärisõnastiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#331-kasutusele-votmise-kuupaev), [kirjeldus](#332-kirjeldus), [nimi](#333-nimi), [omanik](#334-omanik), [seotud sõnastiku nimi](#335-seotud-sonastiku-nimi), [seotud sõnastiku URI](#336-seotud-sonastiku-uri), [URI](#337-uri), [viimase muutmise kuupäev](#338-viimase-muutmise-kuupaev)*
 
@@ -2094,8 +2070,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.4 Ärisõnastiku termini kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() - 
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[allikas](#341-allikas), [loomise kuupäev](#342-loomise-kuupaev), [märkused](#343-markused), [määratlus](#344-maaratlus), [määratlus (inglise keeles)](#345-maaratlus-inglise-keeles), [muutmise kuupäev](#346-muutmise-kuupaev), [on eelistermin](#347-on-eelistermin), [seos ärisõnastiku teise terminiga](#348-seos-arisõnastiku-teise-terminiga), [seotud termin](#3481-seotud-termin), [seotud termini URI](#3482-seotud-termini-uri), [seose tüüp](#3483-seose-tuup), [termin](#349-termin), [termin (inglise keeles)](#3410-termin-inglise-keeles), [termini URI](#3411-termini-uri)*
 
