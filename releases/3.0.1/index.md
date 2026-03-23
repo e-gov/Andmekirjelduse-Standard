@@ -1,12 +1,11 @@
-# Andmekirjelduse juhis
-## Lisa 1 andmekirjelduse standard
-**X 2026**
+# Andmekirjelduse juhis. Lisa 1 andmekirjelduse standard
 **Versioon 3.0.1**
+**Aprill 2024**
 
 ---
 
 ## Kiirlingid
-- **Vana PDF-versioon**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
+- **PDF kujul**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
 - **Eelmine versioon**: [Legacy 3.0.1](legacy/index.md)
 - **Viimane mustandversioon**: [Latest editor's draft]()
 
@@ -19,21 +18,15 @@
 - **Selle väljalaske tag**: `v3.0.1`
 - **Muutuste ajalugu**: [GitHub Commits](https://github.com/e-gov/Andmekirjelduse-Standard/commits)
 
----
-
-## Abstract
+## Autorid ja toimetajad
+- Veiko Berendsen, Statistikaamet
+- Kuldar Aas, Majandus- ja Kommunikatsiooniministeerium
+- Annika Uibopuu, Statistikaamet
 
 ---
 
 ## Sisukord
 
-- [Andmekirjelduse juhis](#andmekirjelduse-juhis)
-  - [Lisa 1 andmekirjelduse standard](#lisa-1-andmekirjelduse-standard)
-  - [Kiirlingid](#kiirlingid)
-  - [Tagasiside ja muudatusettepanekud](#tagasiside-ja-muudatusettepanekud)
-  - [Versioonihaldus](#versioonihaldus)
-  - [Abstract](#abstract)
-  - [Sisukord](#sisukord)
   - [Lühendid](#lühendid)
   - [1. Sissejuhatus](#1-sissejuhatus)
   - [1.1 Eessõna](#11-eessõna)
@@ -107,13 +100,13 @@ Sõnastike kirjelduselementide osas on arvestatud Eesti standardiks üle võetud
 
 Standard käsitleb organisatsiooni andmestike kirjeldamise osasid: komponente ja olemeid.  
 
-**Komponentidena** on käsitletud andmestiku kui terviku ülevaatlikku kirjeldust,  andmestiku sisu  detailset kirjeldust ning sõnastike osa kirjeldust ehk mõistelist kirjeldust, mis aitab hallata sõnavara. 
+**Komponentidena** on käsitletud andmestiku kui terviku ülevaatlikku kirjeldust, andmestiku sisu detailset kirjeldust ning sõnastike osa kirjeldust ehk mõistelist kirjeldust, mis aitab hallata sõnavara. 
 
-**Olemitena**  on  käsitletud  andmekirjelduse  standardi  eraldi hallatavaid  ja  kirjeldatavaid objekte, mis koos moodustavad mudeli.  
+**Olemitena**  on käsitletud andmekirjelduse standardi eraldi hallatavaid ja kirjeldatavaid objekte, mis koos moodustavad mudeli.  
 
-Standard  on  koostatud  ühilduvana  DCAT-AP  3.0.0-ga.  See  võimaldab  organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. 
+Standard on koostatud ühilduvana DCAT-AP 3.0.0-ga. See võimaldab organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. 
 
-Standard  käsitleb andmestiku  struktuuri  detailset sisemist  kirjeldust. See on  kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.
+Standard käsitleb andmestiku struktuuri detailset sisemist kirjeldust. See on kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.
 
 ## 1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed
 
@@ -309,7 +302,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.1 Andmekataloogi kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#211-kirjeldus), [omanik](#212-omanik), [pealkiri](#213-pealkiri), [veebisait](#214-veebisait)*
@@ -317,18 +309,18 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 ---
 <a id="211-kirjeldus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kirjeldus** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestikke, mida kataloog sisaldab. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kirjeldus** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestikke, mida kataloog sisaldab. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 !!! example "Näide"
     Ruumiandmete lehelt leiad Maa-ameti ruumiandmete kirjeldused.
 
 ---
 <a id="212-omanik"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Organisatsiooni nimetus, kes kataloogi peab. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Organisatsiooni nimetus, kes kataloogi peab. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher)<br>vahemik:<br>DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
 !!! example "Näide"
     - Statistikaamet  
     - Maksu- ja Tolliamet
@@ -336,9 +328,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 ---
 <a id="213-pealkiri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **pealkiri** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi nimetus või tähis. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **pealkiri** | [Literal](https://www.w3.org/2000/01/rdf-schema#Literal) | 1..1 | Kataloogi nimetus või tähis. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 !!! example "Näide"
     - (Statistikaamet) Statistika andmebaas  
     - (Maksu- ja Tolliamet) Statistika ja avaandmed
@@ -346,9 +338,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 ---
 <a id="214-veebisait"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millel kataloog on juurdepääsetav. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millel kataloog on juurdepääsetav. |viide: <br>- DCAT: [homepage](https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage)<br>- DCAT-AP: [homepage](https://xmlns.com/foaf/spec/)<br>vahemik:<br>DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
 !!! example "Näide"
     https://andmed.stat.ee/
 
@@ -356,7 +348,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.2 Andmestiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmestiku identifikaator](#221-andmestiku-identifikaator), [andmete piirdaatumid](#222-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [seose tüüp](#2242-seose-tuup), [andmesõnastiku nimi](#225-andmesonastiku-nimi), [andmete päritolu](#226-andmete-paritolu), [päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [päritolu andmestiku URI](#2262-paritolu-andmestiku-uri), [geograafiline kaetus](#227-geograafiline-kaetus), [asukoha nimetus](#2271-asukoha-nimetus), [asukoha koordinaadid](#2272-asukoha-koordinaadid), [avalikustamise kuupäev](#228-avalikustamise-kuupaev), [HVD kategooria](#229-hvd-kategooria), [juurdepääsutase](#2210-juurdepaasutase), [kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [keel](#2212-keel), [kirjeldus](#2213-kirjeldus), [kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [kontaktpunkt](#2216-kontaktpunkt), [kontakti nimi](#22161-kontakti-nimi), [kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [kontakti telefoninumber](#22163-kontakti-telefoninumber), [levituse identifikaator](#2217-levituse-identifikaator), [lühinimetus](#2218-luhinimetus), [muu identifikaator](#2219-muu-identifikaator), [muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [märksõna](#2220-marksona), [märksõna termin](#22201-marksona-termin), [märksõna URI](#22202-marksona-uri), [omanik](#2221-omanik), [pealkiri](#2222-pealkiri), [seotud tegevused](#2223-seotud-tegevused), [tüüp](#2224-tuup), [valdkond](#2225-valdkond), [ainevaldkond](#22251-ainevaldkond), [valdkonna URI](#22252-valdkonna-uri), [vastab standardile](#2226-vastab-standardile), [veebisait](#2227-veebisait), [õiguslik alus](#2228-oiguslik-alus), [õigusakti nimetus](#22281-oigusakti-nimetus), [õigusakti link](#22282-oigusakti-link)*
@@ -365,9 +356,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="221-andmestiku-identifikaator"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmestiku identifikaator** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 1..1 | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmestiku identifikaator** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 1..1 | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav. | DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
 
 !!! example "Näide"
     28289ed9-8472-44c4-958b-91cef59eaada  
@@ -377,9 +368,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="222-andmete-piirdaatumid"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus** 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus** 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus** 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus** 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
 
 !!! example "Näide"
     1993-11-05/2007-06-30  
@@ -389,9 +380,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="223-andmete-uuendamise-regulaarsus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Andmestiku andmete uuendamise regulaarsus. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust (EU Frequency Vocabulary)[^21]. Täita juhul, kui andmete kogumine või loomine ei toimu pidevalt, vaid perioodiliselt. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Andmestiku andmete uuendamise regulaarsus. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust (EU Frequency Vocabulary)[^21]. Täita juhul, kui andmete kogumine või loomine ei toimu pidevalt, vaid perioodiliselt. | viide: [dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity)<br>- DCAT: [frequency](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency)<br>- DCAT-AP: [frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Frequency](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency)<br>- DCAT-AP: [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) |
 
 !!! example "Näide"
     Kord aastas
@@ -400,9 +391,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="224-andmestiku-seos-teise-andmestikuga"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmestiku seos teise andmestikuga** | - | 0..n | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmestiku seos teise andmestikuga** | - | 0..n | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. | - |
 
 !!! example "Näide"
     b49f330-e207-430e-87dd-ca8d5859438b; isPartOf  
@@ -412,9 +403,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2241-seotud-andmestiku-identifikaator"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **seotud andmestiku identifikaator** | - | 1..1 | Andmestikuga seotud teise andmestiku identifikaator. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **seotud andmestiku identifikaator** | - | 1..1 | Andmestikuga seotud teise andmestiku identifikaator. | - |
 
 !!! example "Näide"
     8b49f330-e207-430e-87dd-ca8d5859438b
@@ -423,9 +414,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2242-seose-tuup"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **seose tüüp** | - | 1..1 | Andmestike vahelise seose tüüp Dublin Core seoste klassifikaatori alusel. Täpsemalt on Eesti andmekirjelduse standardis kasutusel neli seose tüüpi: isPartOf; hasPart; replaces; isReplacedBy. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **seose tüüp** | - | 1..1 | Andmestike vahelise seose tüüp Dublin Core seoste klassifikaatori alusel. Täpsemalt on Eesti andmekirjelduse standardis kasutusel neli seose tüüpi: isPartOf; hasPart; replaces; isReplacedBy. | viide: [dcterms:isPartOf](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isPartOf)<br>viide: [dcterms:hasPart](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#hasPart)<br>- DCAT: [has part](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_part)<br>viide: [dcterms:replaces](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#replaces)<br>- DCAT: [replaces](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_replaces)<br>viide: [dcterms:isReplacedBy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReplacedBy) |
 
 !!! example "Näide"
     Selgitus: isPartOf ja hasPart on kasutusel andmestiku ja alamandmestiku juures.  
@@ -435,9 +426,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="225-andmesonastiku-nimi"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmesõnastiku nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmesõnastiku nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. | - |
 
 !!! example "Näide"
     Loomeliitude andmekogu (LLA) andmesõnastik
@@ -446,9 +437,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="226-andmete-paritolu"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete päritolu** | - | 0..n | Teise andmestiku pealkiri, mida on kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks. **Märkus**: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete päritolu** | - | 0..n | Teise andmestiku pealkiri, mida on kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks. **Märkus**: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid. | - |
 
 !!! example "Näide"
     Taimekasvatus  
@@ -460,9 +451,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2261-paritolu-andmestiku-pealkiri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **päritolu andmestiku pealkiri** | [Provenance Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul selle praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **päritolu andmestiku pealkiri** | [Provenance Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul selle praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | viide:<br>- DCAT-AP: [provenance](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#provenance)<br>vahemik:<br>- DCAT-AP: [Provenance Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement) |
 
 !!! example "Näide"
     Taimekasvatus  
@@ -472,9 +463,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2262-paritolu-andmestiku-uri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **päritolu andmestiku URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **päritolu andmestiku URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | - |
 
 !!! example "Näide"
     b49f330-e207-430e-87dd-ca8d5859427b  
@@ -484,17 +475,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="227-geograafiline-kaetus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding box vormingus koordinaatide esitust. **Märkus**: kui geograafiline kaetus on märkimata, arvestatakse selle väärtuseks vaikimisi „kogu Eesti“. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding box vormingus koordinaatide esitust. **Märkus**: kui geograafiline kaetus on märkimata, arvestatakse selle väärtuseks vaikimisi „kogu Eesti“. | - |
 
 ---
 
 <a id="2271-asukoha-nimetus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **asukoha nimetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..1 | Piirkonna või asukoha sõnaline nimetus. Eesti asukohtade märkimisel on soovituslik kasutada EHAK ja KNR väärtusi.[^22] Välismaiste asukohtade märkimisel on soovituslik kasutada GeoNames loetelu.[^23] **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **asukoha nimetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..1 | Piirkonna või asukoha sõnaline nimetus. Eesti asukohtade märkimisel on soovituslik kasutada EHAK ja KNR väärtusi.[^22] Välismaiste asukohtade märkimisel on soovituslik kasutada GeoNames loetelu.[^23] **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. | viide: [dcterms:spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial)<br>- DCAT: [spatial/geographic coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial)<br>- DCAT-AP: [geographical coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Location](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location)<br>- DCAT-AP: [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) |
 
 !!! example "Näide"
     kogu Eesti;  
@@ -504,9 +495,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2272-asukoha-koordinaadid"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **asukoha koordinaadid** | - | 0..1 | Piirkonna või asukoha määratlus koordinaatsüsteemis. Asukoha koordinaadid tuleb märkida *bounding box* kujul… Koordinaadid tuleb esitada WGS 84 kümnendkraadides vähemalt kahe kümnendkoha täpsusega. **Märkus**: In-ADS kasutamisel esitatakse koordinaadid automaatselt. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **asukoha koordinaadid** | - | 0..1 | Piirkonna või asukoha määratlus koordinaatsüsteemis. Asukoha koordinaadid tuleb märkida *bounding box* kujul… Koordinaadid tuleb esitada WGS 84 kümnendkraadides vähemalt kahe kümnendkoha täpsusega. **Märkus**: In-ADS kasutamisel esitatakse koordinaadid automaatselt. | - |
 
 !!! example "Näide"
     "x": "6456676.27"  
@@ -518,9 +509,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="228-avalikustamise-kuupaev"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: on kasutusel avaandmete puhul. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: on kasutusel avaandmete puhul. | viide: [dcterms:issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued)<br>- DCAT: [release date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date)<br>- DCAT-AP: [release date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2022-05-25
@@ -529,9 +520,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="229-hvd-kategooria"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **HVD kategooria** | - | 0..n | Väärtusliku andmestiku (HVD – *high value dataset*) kategooria vastavalt rakendusmäärusele.[^24] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **HVD kategooria** | - | 0..n | Väärtusliku andmestiku (HVD – *high value dataset*) kategooria vastavalt rakendusmäärusele.[^24] | - |
 
 !!! example "Näide"
     high-value-dataset-category.rdf  
@@ -546,9 +537,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2210-juurdepaasutase"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **juurdepääsutase** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Andmestiku juurdepääsutaseme kirjeldus.[^25] Juurdepääsutaseme kirjeldamisel tuleb rakendada kontrollitud sõnastiku väärtuseid (confidential, non-public, public, restricted, sensitive). Märkus: Juurdepääsutaseme märkimine on kohustuslik andmehalduse määruse skoopi kuuluvate andmestike puhul.[^26] **Märkus**: Eestis on üldjuhul juurdepääsutaseme märkimisel vaja kasutada väärtusi “avalik” või “piiratud”. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **juurdepääsutase** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Andmestiku juurdepääsutaseme kirjeldus.[^25] Juurdepääsutaseme kirjeldamisel tuleb rakendada kontrollitud sõnastiku väärtuseid (confidential, non-public, public, restricted, sensitive). Märkus: Juurdepääsutaseme märkimine on kohustuslik andmehalduse määruse skoopi kuuluvate andmestike puhul.[^26] **Märkus**: Eestis on üldjuhul juurdepääsutaseme märkimisel vaja kasutada väärtusi “avalik” või “piiratud”. | viide: [dcterms:accessRights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights)<br>- DCAT: [access rights](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights)<br>- DCAT-AP: [access rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights)<br>vahemik: <br>- DCAT:(RDF) [rdfs:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
 
 !!! example "Näide"
     avalik  
@@ -558,9 +549,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2211-kasutusele-votmise-kuupaev"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kasutusele võtmise kuupäev** | - | 0..1 | Andmestiku elektroonilise pidamise algusaeg… Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).[^27] **Märkus**: mitte segi ajada elemendiga „andmete piirdaatumid“. **Märkus**: on kohustuslik andmekogude jaoks, milles see on andmekogu kasutusele võtmise kuupäev. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kasutusele võtmise kuupäev** | - | 0..1 | Andmestiku elektroonilise pidamise algusaeg… Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).[^27] **Märkus**: mitte segi ajada elemendiga „andmete piirdaatumid“. **Märkus**: on kohustuslik andmekogude jaoks, milles see on andmekogu kasutusele võtmise kuupäev. | - |
 
 !!! example "Näide"
     2010-01-01  
@@ -570,9 +561,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2212-keel"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **keel** | [Linguistic system](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem) | 0..n | Andmestikus kasutatud keel(ed). Kui kirjeldus pole täidetud, eeldatakse vaikimisi eesti keele kasutamist. Andmevahetuses kasutatakse ISO 639-2 kolmetähelisi keele koode.[^28] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **keel** | [Linguistic system](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem) | 0..n | Andmestikus kasutatud keel(ed). Kui kirjeldus pole täidetud, eeldatakse vaikimisi eesti keele kasutamist. Andmevahetuses kasutatakse ISO 639-2 kolmetähelisi keele koode.[^28] | viide: [dcterms:language](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#language)<br>- DCAT: [language](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language)<br>- DCAT-AP: [language](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language)<br>vahemik: <br>- DCAT:(RDF) [rdfs:LinguisticSystem](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem)<br>- DCAT-AP: [Linguistic system](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem) |
 
 !!! example "Näide"
     est, ukr
@@ -581,9 +572,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2213-kirjeldus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmete sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus… |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmete sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus… | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     Ehitisregister on andmekogu, mille eesmärk on hoida, anda ja avalikustada teavet kavandatavate, ehitatavate ja olemasolevate ehitiste ning nendega seotud menetluste kohta.  
@@ -593,9 +584,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2214-kirjelduse-muutmiskuupaev"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestiku kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestiku kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2020-05-25
@@ -604,9 +595,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2215-kohalduvad-oigusaktid"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kohalduvad õigusaktid** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kohalduvad õigusaktid** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
 !!! example "Näide"
     http://data.europa.eu/eli/reg_impl/2023/138/oj  
@@ -618,9 +609,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2216-kontaktpunkt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.[^29] **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).[^30] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.[^29] **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).[^30] | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
     Kultuuriministeerium, min@kul.ee, (372) 628 2222  
@@ -632,9 +623,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22161-kontakti-nimi"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontakti nimi** | - | 1..1 | Kontakti täisnimi. Igas kontakti kirjes peab sisalduma täpselt üks nimi. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontakti nimi** | - | 1..1 | Kontakti täisnimi. Igas kontakti kirjes peab sisalduma täpselt üks nimi. | - |
 
 !!! example "Näide"
     Kultuuriministeerium  
@@ -646,9 +637,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22162-kontakti-e-posti-aadress"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontakti e-posti aadress** | - | 0..1 | Kontakti e-posti aadress. Igas kontakti kirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontakti e-posti aadress** | - | 0..1 | Kontakti e-posti aadress. Igas kontakti kirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. | - |
 
 !!! example "Näide"
     min@kul.ee  
@@ -660,9 +651,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22163-kontakti-telefoninumber"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontakti telefoninumber** | - | 0..1 | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontakti telefoninumber** | - | 0..1 | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis. | - |
 
 !!! example "Näide"
     (372) 678 9012
@@ -671,9 +662,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2217-levituse-identifikaator"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **levituse identifikaator** | - | 0..n | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **levituse identifikaator** | - | 0..n | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | - |
 
 !!! example "Näide"
     336a3add-efc9-40dc-8830-091205fe20a5
@@ -682,9 +673,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2218-luhinimetus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **lühinimetus** | - | 0..1 | Andmestikule viitamisel kasutatav lühinimetus, mis on sageli akronüüm. Kui andmestik (andmekogu) on juba RIHAs kirjeldatud, kasutatakse RIHA lühinimetust. Andmekogude korral on lühinimetuse kasutamine kohustuslik. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **lühinimetus** | - | 0..1 | Andmestikule viitamisel kasutatav lühinimetus, mis on sageli akronüüm. Kui andmestik (andmekogu) on juba RIHAs kirjeldatud, kasutatakse RIHA lühinimetust. Andmekogude korral on lühinimetuse kasutamine kohustuslik. | - |
 
 !!! example "Näide"
     haudi  
@@ -696,9 +687,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2219-muu-identifikaator"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **muu identifikaator** | [Identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier) | 0..n | Teisene viit andmestikule, näiteks DOI, valdkonnapõhine andmestiku identifikaator vms. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **muu identifikaator** | [Identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier) | 0..n | Teisene viit andmestikule, näiteks DOI, valdkonnapõhine andmestiku identifikaator vms. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. | viide:<br>- DCAT-AP: [other identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier)<br>vahemik:<br>- DCAT-AP: [Identifier](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier) |
 
 !!! example "Näide"
     doi: 10.1308/11340470510582432
@@ -707,9 +698,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22191-muu-identifikaatori-tuup"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **muu identifikaatori tüüp** | - | 0..1 | Identifikaatori tüüp. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **muu identifikaatori tüüp** | - | 0..1 | Identifikaatori tüüp. | - |
 
 !!! example "Näide"
     doi
@@ -718,9 +709,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22192-muu-identifikaatori-vaartus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **muu identifikaatori väärtus** | - | 1..1 | Teisene viit andmestikule. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **muu identifikaatori väärtus** | - | 1..1 | Teisene viit andmestikule. | - |
 
 !!! example "Näide"
     10.1308/11340470510582432
@@ -729,17 +720,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2220-marksona"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **märksõna** | - | 0..n | Kontrollitud märksõnastikust võetud üks või mitu andmestiku sisu iseloomustavat märksõna. Märksõna on märksõnastamise käigus dokumendile (siin andmestikule) määratud termin. Märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu. Andmestiku märksõnastamisel kasutatakse üldist või valdkondlikku märksõnastikku. Nendeks võivad olla Eesti märksõnastik (EMS), EuroVoc või muu. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **märksõna** | - | 0..n | Kontrollitud märksõnastikust võetud üks või mitu andmestiku sisu iseloomustavat märksõna. Märksõna on märksõnastamise käigus dokumendile (siin andmestikule) määratud termin. Märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu. Andmestiku märksõnastamisel kasutatakse üldist või valdkondlikku märksõnastikku. Nendeks võivad olla Eesti märksõnastik (EMS), EuroVoc või muu. | - |
 
 ---
 
 <a id="22201-marksona-termin"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **märksõna termin** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Märksõna tekstiline esitus. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **märksõna termin** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Märksõna tekstiline esitus. | viide: [dcat:keyword](https://www.w3.org/ns/dcat#keyword)<br>- DCAT: [keyword/tag](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword)<br>- DCAT-AP: [keyword](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     ehitus, arhitektuur
@@ -748,9 +739,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22202-marksona-uri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **märksõna URI** | - | 0..1 | Märksõna viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga märksõna kohta. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **märksõna URI** | - | 0..1 | Märksõna viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga märksõna kohta. | - |
 
 !!! example "Näide"
     https://ems.elnet.ee/id/EMS008645
@@ -759,9 +750,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2221-omanik"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher)<br>vahemik:<br>- DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
 
 !!! example "Näide"
     Kliimaministeerium  
@@ -771,9 +762,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2222-pealkiri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus. Muu andmestiku puhul praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     Andmekogu: Ehitisregister  
@@ -785,9 +776,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2223-seotud-tegevused"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **seotud tegevused** | [Activity](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity) | 0..n | Loetelu organisatsiooni ülesannetest / teenustest, mille käigus andmestik tekib ja täieneb. Andmekogu korral sisestada selle asutamise õigusaktis toodud tegevused. Muude andmestike puhul või kui õigusakt tegevusi ei kajasta, organisatsiooni teabe/dokumentide liigitusskeemis toodud sobivad funktsioonid või sarjade aluseks olevad tegevused. **Märkus**: mitte segi ajada elemendiga „kirjeldus“, milles esitatakse ülevaade andmestiku sisust (kogutavatest andmetest) ja andmekogumise eesmärkidest. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **seotud tegevused** | [Activity](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity) | 0..n | Loetelu organisatsiooni ülesannetest / teenustest, mille käigus andmestik tekib ja täieneb. Andmekogu korral sisestada selle asutamise õigusaktis toodud tegevused. Muude andmestike puhul või kui õigusakt tegevusi ei kajasta, organisatsiooni teabe/dokumentide liigitusskeemis toodud sobivad funktsioonid või sarjade aluseks olevad tegevused. **Märkus**: mitte segi ajada elemendiga „kirjeldus“, milles esitatakse ülevaade andmestiku sisust (kogutavatest andmetest) ja andmekogumise eesmärkidest. | viide: [prov:wasGeneratedBy](https://www.w3.org/TR/prov-o/#wasGeneratedBy)<br>- DCAT: [was generated by](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by)<br>- DCAT-AP: [was generated by](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby)<br>vahemik: <br>- DCAT:(RDF) [prov:Activity](https://www.w3.org/TR/prov-o/#Activity)<br>- DCAT-AP: [Activity](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity) |
 
 !!! example "Näide"
     sündmuse registreerimine; ehitise rekonstrueerimisvigade ja lammutamise põhjuste analüüsimine; statistika ja teadusliku uurimistöö tegemine  
@@ -797,9 +788,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2224-tuup"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **tüüp** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kirjeldatava andmestiku tüüp Dublin Core Type Vocabulary[^31] loendi alusel. **Märkus**: Vaikimisi on kirjelduselemendi väärtuseks "dataset" ehk andmestik. Saab kasutada ka muud väärtust, näiteks "text" või "picture". |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **tüüp** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kirjeldatava andmestiku tüüp Dublin Core Type Vocabulary[^31] loendi alusel. **Märkus**: Vaikimisi on kirjelduselemendi väärtuseks "dataset" ehk andmestik. Saab kasutada ka muud väärtust, näiteks "text" või "picture". | viide: [dcterms:type](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#type)<br>- DCAT: [type/genre](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type)<br>- DCAT-AP: [type](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Class](https://www.w3.org/2000/01/rdf-schema#Class)<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
 !!! example "Näide"
     Dataset
@@ -808,17 +799,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2225-valdkond"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **valdkond** | - | 1..n | Andmestiku valdkond Eesti märksõnastiku (EMS), EuroVoc või muu alusel. **Märkus**: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad Euroopa andmete ametliku portaali valdkondadega (kategooriatega). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **valdkond** | - | 1..n | Andmestiku valdkond Eesti märksõnastiku (EMS), EuroVoc või muu alusel. **Märkus**: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad Euroopa andmete ametliku portaali valdkondadega (kategooriatega). | - |
 
 ---
 
 <a id="22251-ainevaldkond"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **ainevaldkond** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 1..1 | Valdkonna nimetus EMSis, EuroVocis või mujal. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **ainevaldkond** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 1..1 | Valdkonna nimetus EMSis, EuroVocis või mujal. | viide: [dcat:theme](https://www.w3.org/ns/dcat#theme)<br>- DCAT: [theme/category](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme)<br>- DCAT-AP: [theme](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme)<br>vahemik:<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
 !!! example "Näide"
     44 EHITUS. SANITAARTEHNIKA
@@ -827,9 +818,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22252-valdkonna-uri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **valdkonna URI** | - | 1..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **valdkonna URI** | - | 1..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. | - |
 
 !!! example "Näide"
     https://ems.elnet.ee/id/EMS023309
@@ -838,9 +829,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2226-vastab-standardile"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **vastab standardile** | [Standard](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard) | 0..n | Tehniline vorming või standard, mis kehtestab andmetele põhjalikumad nõuded või struktuuri. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **vastab standardile** | [Standard](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard) | 0..n | Tehniline vorming või standard, mis kehtestab andmetele põhjalikumad nõuded või struktuuri. **Märkus**: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement. | viide: [dcterms:conformsTo](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#conformsTo)<br>- DCAT: [conforms to](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to)<br>- DCAT-AP: [conforms to](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Standard](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Standard)<br>- DCAT-AP: [Standard](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard) |
 
 !!! example "Näide"
     “Euroopa vähiregistrite käsiraamat ja standard”, mis koondab kõik soovitused ja juhised, mis on seni koostanud ENCRI-töörühmad, samuti Rahvusvahelise Vähiregistrite Assotsiatsiooni (IACR) koostatud ja võrgustiku poolt kohandatud soovitused.
@@ -849,9 +840,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2227-veebisait"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millelt saab ligipääsu andmestikule ja/või leiab rohkem teavet andmestiku taaskasutustingimuste ja -võimaluste kohta. **Märkus**: Mitte segi ajada levituse kirjelduselemendiga „juurdepääsupunkt“. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **veebisait** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 0..1 | Viide veebisaidile, millelt saab ligipääsu andmestikule ja/või leiab rohkem teavet andmestiku taaskasutustingimuste ja -võimaluste kohta. **Märkus**: Mitte segi ajada levituse kirjelduselemendiga „juurdepääsupunkt“. | viide: [dcterms:landingPage](https://www.w3.org/ns/dcat#landingPage)<br>- DCAT: [landing page](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page)<br>- DCAT-AP: [landing page](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage)<br>vahemik: <br>- DCAT:(RDF) [foaf:Document](https://xmlns.com/foaf/spec/)<br>- DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
 
 !!! example "Näide"
     https://www.ehr.ee/  
@@ -861,17 +852,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2228-oiguslik-alus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **õiguslik alus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Andmestiku loomise ja haldamise aluseks oleva õigusakti nimetus ja link allikale. Olemasolul õigusakti nimetus ja link (URL) Riigi Teatajas. Kui õigusakt ei ole Riigi Teatajas avaldatud, lisatakse organisatsiooni kodulehel avaldatud õigusakti link (URL). **Märkus**: kirjeldusse ei kanta kaudselt andmestiku aluseks olevaid õigusakte, näiteks avaliku teabe seadus, Eesti Vabariigi põhiseadus, vaid ainult otseselt andmestiku aluseks olevaid seaduseid või määruseid. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **õiguslik alus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Andmestiku loomise ja haldamise aluseks oleva õigusakti nimetus ja link allikale. Olemasolul õigusakti nimetus ja link (URL) Riigi Teatajas. Kui õigusakt ei ole Riigi Teatajas avaldatud, lisatakse organisatsiooni kodulehel avaldatud õigusakti link (URL). **Märkus**: kirjeldusse ei kanta kaudselt andmestiku aluseks olevaid õigusakte, näiteks avaliku teabe seadus, Eesti Vabariigi põhiseadus, vaid ainult otseselt andmestiku aluseks olevaid seaduseid või määruseid. | viide: [dcterms:isReferencedBy](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReferencedBy)<br>- DCAT: [is referenced by](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_is_referenced_by)<br>- DCAT-AP: [is referenced by](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby)<br>vahemik:<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
 
 ---
 
 <a id="22281-oigusakti-nimetus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **õigusakti nimetus** | - | 1..1 | Andmestiku loomise ja haldamise aluseks oleva õigusakti pealkiri. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **õigusakti nimetus** | - | 1..1 | Andmestiku loomise ja haldamise aluseks oleva õigusakti pealkiri. | - |
 
 !!! example "Näide"
     Ehitisregistri põhimäärus
@@ -880,9 +871,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="22282-oigusakti-link"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **õigusakti link** | - | 1..1 | Viide andmestiku aluseks olevale õigusaktile. **Märkus**: Riigi Teatajas on võimalik esitada viide hetkel kehtivale tervikteksti versioonile (nt `...?leiaKehtiv`). Eelistada tuleb viitamist konkreetsele tervikteksti versioonile. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **õigusakti link** | - | 1..1 | Viide andmestiku aluseks olevale õigusaktile. **Märkus**: Riigi Teatajas on võimalik esitada viide hetkel kehtivale tervikteksti versioonile (nt `...?leiaKehtiv`). Eelistada tuleb viitamist konkreetsele tervikteksti versioonile. | - |
 
 !!! example "Näide"
     https://www.riigiteataja.ee/akt/105072023239
@@ -891,7 +882,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.3 Andmestiku levituse kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[ajaline täpsus](#231-ajaline-tapsus), [andmete staatus](#232-andmete-staatus), [avalikustamise kestus](#233-avalikustamise-kestus), [HVD kategooria](#234-hvd-kategooria), [juurdepääsupunkt](#235-juurdepaasupunkt), [juurdepääsutingimused](#236-juurdepaasutingimused), [kasutuslitsents](#237-kasutuslitsents), [kohalduv õigusakt](#238-kohalduv-oigusakt), [levituse identifikaator](#239-levituse-identifikaator), [levituse vorming](#2310-levituse-vorming), [levituse suurus](#2311-levituse-suurus)*
@@ -900,9 +890,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="231-ajaline-tapsus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **ajaline täpsus** | [xsd:duration](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration) | 0..1 | Element viitab levituses sisalduvates andmetes minimaalsele eristatavale ajaperioodile. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **ajaline täpsus** | [xsd:duration](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration) | 0..1 | Element viitab levituses sisalduvates andmetes minimaalsele eristatavale ajaperioodile. | viide: [dcat:temporalResolution](https://www.w3.org/ns/dcat#temporalResolution)<br>- DCAT: [temporal resolution](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution)<br>- DCAT-AP: [temporal resolution](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution)<br>vahemik: <br>- DCAT:(RDF) [xsd:duration](https://www.w3.org/TR/xmlschema11-2/#duration)<br>- DCAT-AP: [xsd:duration](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration) |
 
 !!! example "Näide"
     tund  
@@ -913,9 +903,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="232-andmete-staatus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete staatus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Element viitab levitatavate andmete kindlale kvaliteediseisundile. Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete staatus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Element viitab levitatavate andmete kindlale kvaliteediseisundile. Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud. | viide:<br>- DCAT-AP: [status](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
 !!! example "Näide"
     valmis  
@@ -927,9 +917,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="233-avalikustamise-kestus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **avalikustamise kestus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kuupäev, millal levitus viimast päeva kättesaadav on. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **avalikustamise kestus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kuupäev, millal levitus viimast päeva kättesaadav on. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide:<br>- DCAT-AP: [availability](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
 !!! example "Näide"
     2025-06-31
@@ -938,17 +928,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="234-hvd-kategooria"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. | - |
 
 ---
 
 <a id="235-juurdepaasupunkt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **juurdepääsupunkt** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Levituse kasutamist võimaldav või toetav veebileht. Esitab teavet andmestiku juurdepääsukoha kohta. **Märkus**: mitte segi ajada andmestiku kirjelduselemendiga „veebisait“. Veebisait viitab andmestiku kui terviku kohta lisainfot andvale veebilehele, „juurdepääsupunkt“ asukohale, kust on võimalik kirjeldatavat levitust kasutada (avaandmete levituse korral) või selle juurdepääsutingimuste kohta infot saada (piiratud juurdepääsuga levituste korral). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **juurdepääsupunkt** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Levituse kasutamist võimaldav või toetav veebileht. Esitab teavet andmestiku juurdepääsukoha kohta. **Märkus**: mitte segi ajada andmestiku kirjelduselemendiga „veebisait“. Veebisait viitab andmestiku kui terviku kohta lisainfot andvale veebilehele, „juurdepääsupunkt“ asukohale, kust on võimalik kirjeldatavat levitust kasutada (avaandmete levituse korral) või selle juurdepääsutingimuste kohta infot saada (piiratud juurdepääsuga levituste korral). | viide: [dcat:accessURL](https://www.w3.org/ns/dcat#accessURL)<br>- DCAT: [access URL](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url)<br>- DCAT-AP: [access URL](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
 
 !!! example "Näide"
     https://andmed.stat.ee/et/stat/majandus__infotehnoloogia__infotehnoloogia-leibkonnas/IT621  
@@ -960,9 +950,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="236-juurdepaasutingimused"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Levituse juurdepääsutingimusi põhjalikumalt kirjeldava veebilehe aadress või vabatekstiline juurdepääsuõiguste kirjeldus. **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Levituse juurdepääsutingimusi põhjalikumalt kirjeldava veebilehe aadress või vabatekstiline juurdepääsuõiguste kirjeldus. **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. | viide: [dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights)<br>- DCAT: [rights](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights)<br>- DCAT-AP: [rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights)<br>vahemik: <br>- DCAT:(RDF) [dcterms:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
 
 !!! example "Näide"
     https://www.stat.ee/sites/default/files/2020-08/Konfidentsiaalsete%20andmete%20teaduslikel%20eesm%c3%a4rkidel%20edastamise%20kord%202015.pdf  
@@ -972,9 +962,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="237-kasutuslitsents"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Kogu andmestikule kohalduv kasutuslitsents, kui see on määratud. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^32] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Kogu andmestikule kohalduv kasutuslitsents, kui see on määratud. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^32] | viide: [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)<br>- DCAT: [license](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license)<br>- DCAT-AP: [license](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence)<br>vahemik: <br>- DCAT:(RDF) [dcterms:LicenseDocument](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument)<br>- DCAT-AP: [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) |
 
 !!! example "Näide"
     CC BY-SA 4.0
@@ -983,9 +973,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="238-kohalduv-oigusakt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
 !!! example "Näide"
     http://data.europa.eu/eli/reg_impl/2023/138/oj  
@@ -998,9 +988,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="239-levituse-identifikaator"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **levituse identifikaator** | - | 1..1 | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **levituse identifikaator** | - | 1..1 | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | - |
 
 !!! example "Näide"
     336a3add-efc9-40dc-8830-091205fe20a5
@@ -1009,9 +999,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2310-levituse-vorming"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **levituse vorming** | [Media Type or Extent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent) | 0..1 | Levituses sisalduvate andmete failivorming. Vormingu märkimisel tuleb kasutada IANA poolt defineeritud vormingute loendit (nn mime-tüübid).[^33] **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **levituse vorming** | [Media Type or Extent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent) | 0..1 | Levituses sisalduvate andmete failivorming. Vormingu märkimisel tuleb kasutada IANA poolt defineeritud vormingute loendit (nn mime-tüübid).[^33] **Märkus**: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul. | viide: [dcterms:format](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#format)<br>- DCAT: [format](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format)<br>- DCAT-AP: [format](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format)<br>vahemik: <br>- DCAT:(RDF) [dcterms:MediaTypeOrExtent](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#MediaTypeOrExtent)<br>- DCAT-AP: [Media Type or Extent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent) |
 
 !!! example "Näide"
     application/json  
@@ -1021,9 +1011,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2311-levituse-suurus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **levituse suurus** | [xsd:nonNegativeInteger](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger) | 0..1 | Levituse faili suurus baitides. **Märkus**: kirjelduselemendi täitmine on andmehalduse määruses toodud andmestike puhul kohustuslik, mh tuleb dünaamiliste teenuste kirjeldamisel väärtuseks märkida kogu andmestiku suurus. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **levituse suurus** | [xsd:nonNegativeInteger](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger) | 0..1 | Levituse faili suurus baitides. **Märkus**: kirjelduselemendi täitmine on andmehalduse määruses toodud andmestike puhul kohustuslik, mh tuleb dünaamiliste teenuste kirjeldamisel väärtuseks märkida kogu andmestiku suurus. | viide: [dcat:byteSize](https://www.w3.org/ns/dcat#byteSize)<br>- DCAT: [byte size](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size)<br>- DCAT-AP: [byte size](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [xsd:nonNegativeInteger](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger) |
 
 !!! example "Näide"
     160000  
@@ -1033,7 +1023,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.4 Andmestike sarja kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmete piirdaatumid](#241-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#242-andmete-uuendamise-regulaarsus), [avalikustamise kuupäev](#243-avalikustamise-kuupaev), [esimene andmestik](#244-esimene-andmestik), [geograafiline kaetus](#245-geograafiline-kaetus), [kirjeldus](#246-kirjeldus), [kirjelduse muutmiskuupäev](#247-kirjelduse-muutmiskuupaev), [kontaktpunkt](#248-kontaktpunkt), [omanik](#249-omanik), [pealkiri](#2410-pealkiri), [viimane andmestik](#2411-viimane-andmestik)*
@@ -1042,9 +1031,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="241-andmete-piirdaatumid"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus**: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus**: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus**: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus**: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
 
 !!! example "Näide"
     1993-11-05/2007-06-30  
@@ -1054,9 +1043,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="242-andmete-uuendamise-regulaarsus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Sarja uuendamise regulaarsus; uute andmestike sarja lisamise periood. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust.[^34] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **andmete uuendamise regulaarsus** | [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) | 0..1 | Sarja uuendamise regulaarsus; uute andmestike sarja lisamise periood. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust.[^34] | viide: [dcterms:accrualPeriodicity](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity)<br>- DCAT: [frequency](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency)<br>- DCAT-AP: [frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Frequency](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency)<br>- DCAT-AP: [Frequency](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency) |
 
 !!! example "Näide"
     Kord aastas
@@ -1065,9 +1054,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="243-avalikustamise-kuupaev"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Sarja ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **avalikustamise kuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Sarja ametliku avalikustamise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide: [dcterms:issued](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued)<br>- DCAT: [release date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date)<br>- DCAT-AP: [release date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2022-05-25
@@ -1076,9 +1065,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="244-esimene-andmestik"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **esimene andmestik** | [Dataset member of a Dataset Series](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries) | 0..1 | Andmestik on esimene selle sarjas. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **esimene andmestik** | [Dataset member of a Dataset Series](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries) | 0..1 | Andmestik on esimene selle sarjas. | viide: [dcat:first](https://www.w3.org/ns/dcat#first)<br>- DCAT: [first](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_first)<br>vahemik: <br>- DCAT-AP: [Dataset member of a Dataset Series](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries) |
 
 !!! example "Näide"
     Remondi- ja rekonstrueerimistööde hinnaindeks, 2017 (kuud)
@@ -1087,9 +1076,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="245-geograafiline-kaetus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding boxvormingus koordinaatide esitust. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **geograafiline kaetus** | [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) | 0..n | Andmetega kaetud piirkond või asukoht. **Märkus**: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel. **Märkus**: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding boxvormingus koordinaatide esitust. | viide: [dcterms:spatial](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial)<br>- DCAT: [spatial/geographic coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial)<br>- DCAT-AP: [geographical coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:Location](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location)<br>- DCAT-AP: [Location](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location) |
 
 !!! example "Näide"
     Kogu Eesti;  
@@ -1100,9 +1089,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="246-kirjeldus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Sarja kuuluvate andmestike sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus. Soovitav on kirjeldada ka andmestiku sarja komponentide ulatus, mis jaotuse tingis. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Sarja kuuluvate andmestike sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus. Soovitav on kirjeldada ka andmestiku sarja komponentide ulatus, mis jaotuse tingis. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     Remondi- ja rekonstrueerimistööde hinnaindeks aastate võrdluses, mida iseloomustab nimetatud töödele iseloomuliku ehitustegevuse maksumuse muutus ametihoonete puhul ehitusplatsi otsekulude tasemel. Lisaks on 2017. aasta andmed kuude ja kvartalite kaupa.
@@ -1111,9 +1100,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="247-kirjelduse-muutmiskuupaev"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestike sarja kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestike sarja kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2022-05-25
@@ -1122,9 +1111,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="248-kontaktpunkt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
     Kultuuriministeerium, min@kul.ee, (372) 628 2222  
@@ -1136,9 +1125,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="249-omanik"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 0..1 | Andmestike sarja sisu haldav organisatsioon, kes andmestikku levitab. **Märkus**: RIHAKE täidab andmestiku omaniku kirjelduse automaatselt kirjeldajaga seotud organisatsiooni nimetusega. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 0..1 | Andmestike sarja sisu haldav organisatsioon, kes andmestikku levitab. **Märkus**: RIHAKE täidab andmestiku omaniku kirjelduse automaatselt kirjeldajaga seotud organisatsiooni nimetusega. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher)<br>vahemik:<br>DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
 
 !!! example "Näide"
     Majandus- ja Kommunikatsiooniministeerium;  
@@ -1148,9 +1137,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2410-pealkiri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmestike sarja täielik nimetus. Üksikutest tabelitest koosneva andmestike sarja defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..1 | Andmestike sarja täielik nimetus. Üksikutest tabelitest koosneva andmestike sarja defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     Remondi- ja rekonstrueerimistööde hinnanindeks võrreldes eelmise aastaga  
@@ -1160,9 +1149,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2411-viimane-andmestik"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **viimane andmestik** | - | 0..1 | Andmestik on viimane selles sarjas. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **viimane andmestik** | - | 0..1 | Andmestik on viimane selles sarjas. | viide: [dcat:last](https://www.w3.org/ns/dcat#last)<br>- DCAT: [last](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_last) |
 
 !!! example "Näide"
     Remondi- ja rekonstrueerimistööde hinnanindeks, 2022
@@ -1171,7 +1160,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.5 Andmeteenuse kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service)
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[e-posti aadress](#251-e-posti-aadress), [HVD kategooria](#252-hvd-kategooria), [juurdepääsutingimused](#253-juurdepaasutingimused), [kasutuslitsents](#254-kasutuslitsents), [kohalduv õigusakt](#255-kohalduv-oigusakt), [kontaktileht](#256-kontaktileht), [kontaktpunkt](#257-kontaktpunkt), [otspunkti kirjeldus](#258-otspunkti-kirjeldus), [pealkiri](#259-pealkiri), [viide andmestikule](#2510-viide-andmestikule), [viide otspunktile](#2511-viide-otspunktile), [viide teenuse kättesaadavuse tingimustele](#2512-viide-teenuse-kattesaadavuse-tingimustele)*
@@ -1180,9 +1168,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="251-e-posti-aadress"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **e-posti aadress** | - | 0..1 | E-posti aadress tagasiside edastamiseks. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **e-posti aadress** | - | 0..1 | E-posti aadress tagasiside edastamiseks. | - |
 
 !!! example "Näide"
     info@mmit.ee
@@ -1191,17 +1179,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="252-hvd-kategooria"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **HVD kategooria** | - | 0..n | Vt elemendi kasutamist andmestiku tabelis. | - |
 
 ---
 
 <a id="253-juurdepaasutingimused"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Juhul, kui andmeteenust kasutatakse levituse pakkumiseks, võimaldab lisada viite juurdepääsutingimusi põhjalikumalt kirjeldavale veebilehele või vabatekstilise juurdepääsuõiguste kirjelduse. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **juurdepääsutingimused** | [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) | 0..1 | Juhul, kui andmeteenust kasutatakse levituse pakkumiseks, võimaldab lisada viite juurdepääsutingimusi põhjalikumalt kirjeldavale veebilehele või vabatekstilise juurdepääsuõiguste kirjelduse. | viide: [dcterms:rights](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights)<br>- DCAT: [rights](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights)<br>- DCAT-AP: [access rights](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights)<br>vahemik: <br>- DCAT:(RDF) [rdfs:RightsStatement](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement)<br>- DCAT-AP: [Rights Statement](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement) |
 
 !!! example "Näide"
     Teenuses kasutatavad andmed on avaandmed.
@@ -1210,9 +1198,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="254-kasutuslitsents"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Andmeteenusele kohalduv kasutuslitsents. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^35] |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kasutuslitsents** | [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) | 0..1 | Andmeteenusele kohalduv kasutuslitsents. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.[^35] | viide: [dcterms:license](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license)<br>- DCAT: [license](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license)<br>- DCAT-AP: [license](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence)<br>vahemik: <br>- DCAT:(RDF) [dcterms:LicenseDocument](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument)<br>- DCAT-AP: [License Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument) |
 
 !!! example "Näide"
     CC BY-SA 4.0
@@ -1221,9 +1209,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="255-kohalduv-oigusakt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. **Märkus**: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. **Märkus**: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
 !!! example "Näide"
     Tööturuteenuste ja -toetuste seadus  
@@ -1234,9 +1222,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="256-kontaktileht"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontaktileht** | - | 0..1 | Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontaktileht** | - | 0..1 | Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada. | - |
 
 !!! example "Näide"
     https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside
@@ -1245,9 +1233,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="257-kontaktpunkt"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
     https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasisideinfo@rik.ee  
@@ -1260,9 +1248,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="258-otspunkti-kirjeldus"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **otspunkti kirjeldus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Viide otspunkti kaudu kättesaadavate teenuste kirjeldusele (päringute tüübid, parameetrid jne). |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **otspunkti kirjeldus** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 0..n | Viide otspunkti kaudu kättesaadavate teenuste kirjeldusele (päringute tüübid, parameetrid jne). | viide: [dcat:endpointDescription](https://www.w3.org/ns/dcat#endpointDescription)<br>- DCAT: [endpoint description](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description)<br>- DCAT-AP: [endpoint description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
 
 !!! example "Näide"
     https://avaandmed.ariregister.rik.ee/et/ariregistri-avaandmete-api/ettevotja-lihtandmete-paring-staatuse-paring
@@ -1271,9 +1259,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="259-pealkiri"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 0..1 | Andmeteenuse nimi. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 0..1 | Andmeteenuse nimi. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
 
 !!! example "Näide"
     Riigikogu liikme sõnavõttude statistika
@@ -1282,9 +1270,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2510-viide-andmestikule"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **viide andmestikule** | [Dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset) | 0..n | Viide andmestikule, mille andmeid andmeteenus pakub. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **viide andmestikule** | [Dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset) | 0..n | Viide andmestikule, mille andmeid andmeteenus pakub. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. | viide: [dcat:servesDataset](https://www.w3.org/ns/dcat#servesdataset)<br>- DCAT: [serves dataset](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_serves_dataset)<br>- DCAT-AP: [serves dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset)<br>vahemik: <br>- DCAT:(RDF) [dcat:Dataset](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)<br>- DCAT-AP: [Dataset](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset) |
 
 !!! example "Näide"
     andmestiku ID
@@ -1293,9 +1281,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2511-viide-otspunktile"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **viide otspunktile** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Viide API peamisele otspunktile või pöördumisteele. Kasutama peaks püsivat viidet. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **viide otspunktile** | [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) | 1..n | Viide API peamisele otspunktile või pöördumisteele. Kasutama peaks püsivat viidet. | viide: [dcat:endpointURL](https://www.w3.org/ns/dcat#endpointURL)<br>- DCAT: [endpoint URL](https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url)<br>- DCAT-AP: [endpoint URL](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Resource](https://www.w3.org/2000/01/rdf-schema#Resource)<br>- DCAT-AP: [Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource) |
 
 !!! example "Näide"
     https://www.riha.ee/api/v1
@@ -1304,9 +1292,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 <a id="2512-viide-teenuse-kattesaadavuse-tingimustele"></a>
 
-| Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---|---|---:|---|
-| **viide teenuse kättesaadavuse tingimustele** | - | 0..n | Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. |
+| Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---|---|---:|---|---|
+| **viide teenuse kättesaadavuse tingimustele** | - | 0..n | Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. | - |
 
 !!! example "Näide"
     https://opendata.digilugu.ee/docs/#/et/howto
@@ -1315,8 +1303,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.6 Andmebaasi tabeli kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmehoidla](#261-andmehoidla), [kirjelduse muutmise aeg](#262-kirjelduse-muutmise-aeg), [kommentaar](#263-kommentaar), [nimetus](#264-nimetus), [skeem](#265-skeem)*
 
@@ -1385,8 +1371,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.7 Andmeelemendi kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[andmetüüp](#271-andmetuup), [GUID](#272-guid), [kirjeldus](#273-kirjeldus), [kirjelduse muutmise aeg](#274-kirjelduse-muutmise-aeg), [mõõtühik](#275-mootuhik), [märkused](#276-markused), [on primaarvõti](#277-on-primaarvoti), [seotud loend](#278-seotud-loend), [seotud loendi nimetus](#2781-seotud-loendi-nimetus), [seotud loendi URI](#2782-seotud-loendi-uri), [seotud loendi versioon](#2783-seotud-loendi-versioon), [staatus](#279-staatus), [seos andmesõnastiku terminiga](#2710-seos-andmesonastiku-terminiga), [seotud termin](#27101-seotud-termin), [seotud termini URI](#27102-seotud-termini-uri), [seos andmeelementide grupiga](#2711-seos-andmeelementide-grupiga), [seotud grupi nimi](#27111-seotud-grupi-nimi), [seotud grupi URI](#27112-seotud-grupi-uri), [tähis](#2712-tahis), [URI](#2713-uri), [viide primaarvõtmele](#2714-viide-primaarvotmele)*
 
@@ -1636,8 +1620,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 2.8 Andmeelementide grupp
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kirjeldus](#281-kirjeldus), [nimetus](#282-nimetus), [seos andmeelemendiga](#283-seos-andmeelemendiga), [seotud andmeelemendi tähis](#2831-seotud-andmeelemendi-tahis), [seotud andmeelemendi URI](#2832-seotud-andmeelemendi-uri), [seos ärisõnastiku terminiga](#284-seos-arisõnastiku-terminiga), [seotud termin](#2841-seotud-termin), [seotud termini URI](#2842-seotud-termini-uri), [URI](#285-uri)*
 
@@ -1750,8 +1732,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.1 Andmesõnastiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() - 
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#311-kasutusele-votmise-kuupaev), [kirjeldus](#312-kirjeldus), [nimi](#313-nimi), [omanik](#314-omanik), [seotud sõnastiku nimi](#315-seotud-sonastiku-nimi), [seotud sõnastiku URI](#316-seotud-sonastiku-uri), [URI](#317-uri), [viimase muutmise kuupäev](#318-viimase-muutmise-kuupaev)*
 
@@ -1847,8 +1827,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.2 Andmesõnastiku termini kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[allikas](#321-allikas), [kehtivus](#322-kehtivus), [määratlus](#323-maaratlus), [termin](#324-termin), [loomise kuupäev](#325-loomise-kuupaev), [muutmise kuupäev](#326-muutmise-kuupaev), [märkused](#327-markused), [seos ärisõnastiku terminiga](#328-seos-arisõnastiku-terminiga), [seotud termin](#3281-seotud-termin), [seotud termid URI](#3282-seotud-termid-uri), [termini URI](#329-termini-uri)*
 
@@ -1990,8 +1968,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.3 Ärisõnastiku kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() -
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[kasutusele võtmise kuupäev](#331-kasutusele-votmise-kuupaev), [kirjeldus](#332-kirjeldus), [nimi](#333-nimi), [omanik](#334-omanik), [seotud sõnastiku nimi](#335-seotud-sonastiku-nimi), [seotud sõnastiku URI](#336-seotud-sonastiku-uri), [URI](#337-uri), [viimase muutmise kuupäev](#338-viimase-muutmise-kuupaev)*
 
@@ -2094,8 +2070,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ## 3.4 Ärisõnastiku termini kirjeldus
 
-- **Definitsioon**: (siia tuleb klassi definitsioon)
-- [**DCAT Viide**]() - 
 - **Atribuudid**
     - Selles klassis esinevad järgmised atribuudid: *[allikas](#341-allikas), [loomise kuupäev](#342-loomise-kuupaev), [märkused](#343-markused), [määratlus](#344-maaratlus), [määratlus (inglise keeles)](#345-maaratlus-inglise-keeles), [muutmise kuupäev](#346-muutmise-kuupaev), [on eelistermin](#347-on-eelistermin), [seos ärisõnastiku teise terminiga](#348-seos-arisõnastiku-teise-terminiga), [seotud termin](#3481-seotud-termin), [seotud termini URI](#3482-seotud-termini-uri), [seose tüüp](#3483-seose-tuup), [termin](#349-termin), [termin (inglise keeles)](#3410-termin-inglise-keeles), [termini URI](#3411-termini-uri)*
 
