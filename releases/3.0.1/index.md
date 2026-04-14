@@ -1,6 +1,6 @@
 # Andmekirjelduse juhis. Lisa 1 andmekirjelduse standard
 **Versioon 3.0.1**
-**Aprill 2024**
+**Aprill 2026**
 
 ---
 
@@ -11,8 +11,8 @@
 
 ## Tagasiside ja muudatusettepanekud
 - **Soovitused ja parandused** esitada *GitHub Issues* kaudu.
-- **Juhend issue loomiseks**: [Juhend](https://github.com/e-gov/Andmekirjelduse-Standard/wiki/Tagasiside-esitamine)
-- **Link Issues lehele**: [Issues](https://github.com/e-gov/Andmekirjelduse-Standard/issues)
+- **Juhend tagasiside esitamiseks**: [Juhend](https://github.com/e-gov/Andmekirjelduse-Standard/wiki/Tagasiside-esitamine)
+- **Link issue'de lehele**: [Issues](https://github.com/e-gov/Andmekirjelduse-Standard/issues)
 
 ## Versioonihaldus
 - **Selle väljalaske tag**: `v3.0.1`
