@@ -1,6 +1,6 @@
 site_name: Andmekirjelduse standard
-docs_dir: releases/3.0.1
-site_dir: _site
+docs_dir: docs
+site_url: https://e-gov.github.io/Andmekirjelduse-Standard/
 
 theme:
   name: material
@@ -15,6 +15,10 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 6
+
+extra:
+  version:
+    provider: mike
 
 nav:
   - Avaleht: index.md
