@@ -1,0 +1,2148 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://e-gov.github.io/Andmekirjelduse-Standard/v3.0.1/legacy/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Legacy (vana versioon) - Andmekirjelduse standard</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#andmekirjelduse-juhis-lisa-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Andmekirjelduse standard" class="md-header__button md-logo" aria-label="Andmekirjelduse standard" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Andmekirjelduse standard
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Legacy (vana versioon)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Andmekirjelduse standard" class="md-nav__button md-logo" aria-label="Andmekirjelduse standard" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Andmekirjelduse standard
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Avaleht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy (vana versioon)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy (vana versioon)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#andmekirjelduse-standard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Andmekirjelduse standard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dokumendi-ajalugu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dokumendi ajalugu
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sisukord" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sisukord
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luhendid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lühendid
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#muudatuste-ajalugu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Muudatuste ajalugu
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="andmekirjelduse-juhis-lisa-1">Andmekirjelduse juhis - lisa 1<a class="headerlink" href="#andmekirjelduse-juhis-lisa-1" title="Permanent link">&para;</a></h1>
+<h2 id="andmekirjelduse-standard">Andmekirjelduse standard<a class="headerlink" href="#andmekirjelduse-standard" title="Permanent link">&para;</a></h2>
+<p><strong>Juuli 2024</strong><br />
+<strong>Versioon 3.0.1</strong></p>
+<h2 id="dokumendi-ajalugu">Dokumendi ajalugu<a class="headerlink" href="#dokumendi-ajalugu" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>ver</th>
+<th>muutuse sisu</th>
+<th>autor</th>
+<th>kuupäev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.0</td>
+<td>Juhise aluseks on 2019–2020. a koostatud juhis „Eesti andmehalduse metoodikaprojekt. Andmekirjelduse juhis“. Selle üheks osaks on Lisa 2 Andmekirjelduse standard.</td>
+<td>Raivo Ruusalepp, Kuldar Aas, Siim Aben, Veiko Berendsen</td>
+<td>aug 2020</td>
+</tr>
+<tr>
+<td>1.1</td>
+<td>Versiooni 1.0 Lisa 2 Andmekirjelduse standard on tõstetud eraldi dokumendiks.</td>
+<td>Veiko Berendsen</td>
+<td>märts 2021</td>
+</tr>
+<tr>
+<td>1.7</td>
+<td>Sisse on viidud versioon 1.0 tagasiside ja RIHAKEse arendusel tekkinud vajadused, täpsustatud DCAT võrdlus.<br><br>MKM, STAT, RIA tagasisideks edastamine.</td>
+<td>Kuldar Aas</td>
+<td>aprill 2022</td>
+</tr>
+<tr>
+<td>1.8</td>
+<td>Sisse viidud v1.7 tagasiside kommentaarid ja parandused.<br>Üle vaadatud MKM, RIA, SA. Keeletoimetatud.<br><br>Edastamine andmete võrgustiku tagasisideks.</td>
+<td>Kuldar Aas, Veiko Berendsen, Eero Vegmann, Reana Parve</td>
+<td>mai 2022</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>Lõppversioon</td>
+<td>Kuldar Aas, Veiko Berendsen</td>
+<td>mai 2022</td>
+</tr>
+<tr>
+<td>2.1</td>
+<td>Kirjelduselementide nimekirja täiendamine Euroopa andmehalduse määruse (<a href="https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:52020PC0767">andmehaldust käsitlev õigusakt</a> – DGA) ja <a href="https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:32023R0138">väärtuslike andmestike nimekirja rakendusmääruse</a> (HVD) nõuetest tuleneva katmiseks.<br><br>Täiendamine lähtuvalt asutuste tagasisidest.</td>
+<td>Kuldar Aas, Annika Uibopuu, Eero Vegmann</td>
+<td>nov 2023</td>
+</tr>
+<tr>
+<td>2.2</td>
+<td>Märkuste sisseviimine. Üle vaadatud MKM, RIA, SA.</td>
+<td>Veiko Berendsen, Annika Uibopuu, Kuldar Aas</td>
+<td>jaan 2024</td>
+</tr>
+<tr>
+<td>2.3</td>
+<td>Otsesed osutused RIHAKEsele välja jäetud, sest vajab eraldi RIHAKEse rakendusjuhist. Keeletoimetatud.</td>
+<td>Veiko Berendsen, Kuldar Aas</td>
+<td>jaan 2024</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>Lõppversioon, avalikustamine.</td>
+<td>Veiko Berendsen, Annika Uibopuu, Kuldar Aas</td>
+<td>juuli 2024</td>
+</tr>
+</tbody>
+</table>
+<p>Kommentaarid standardi kohta on oodatud: </p>
+<p>Statistikaamet (andmehaldus@stat.ee), </p>
+<p>Majandus- ja Kommunikatsiooniministeerium (andmed@mkm.ee).</p>
+<h2 id="sisukord">Sisukord<a class="headerlink" href="#sisukord" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#andmekirjelduse-juhis---lisa-1">Andmekirjelduse juhis - lisa 1</a></li>
+<li><a href="#andmekirjelduse-standard">Andmekirjelduse standard</a></li>
+<li><a href="#dokumendi-ajalugu">Dokumendi ajalugu</a></li>
+<li><a href="#sisukord">Sisukord</a></li>
+<li><a href="#lühendid">Lühendid</a></li>
+<li><a href="#muudatuste-ajalugu">Muudatuste ajalugu</a></li>
+<li><a href="#1-sissejuhatus">1. Sissejuhatus</a></li>
+<li><a href="#11-eessõna">1.1 Eessõna</a></li>
+<li><a href="#12-käsitlusala">1.2 Käsitlusala</a></li>
+<li><a href="#13-kirjeldusstandardisse-kuuluvate-olemite-ülevaade-ja-seosed">1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed</a><ul>
+<li><a href="#131-komponendid-ja-olemid">1.3.1 Komponendid ja olemid</a></li>
+<li><a href="#132-andmekataloog">1.3.2 Andmekataloog</a></li>
+<li><a href="#133-andmestike-sari">1.3.3 Andmestike sari</a></li>
+<li><a href="#134-andmestik">1.3.4 Andmestik</a></li>
+<li><a href="#135-alamandmestik">1.3.5 Alamandmestik</a></li>
+<li><a href="#136-levitus">1.3.6 Levitus</a></li>
+<li><a href="#137-andmetabel">1.3.7 Andmetabel</a></li>
+<li><a href="#138-andmeelement">1.3.8 Andmeelement</a></li>
+<li><a href="#139-andmeelementide-grupp">1.3.9 Andmeelementide grupp</a></li>
+<li><a href="#1310-andmeteenus">1.3.10 Andmeteenus</a></li>
+<li><a href="#1311-andmesõnastik-ja-ärisõnastik">1.3.11 Andmesõnastik ja ärisõnastik</a></li>
+<li><a href="#1312-andmesõnastiku-ja-ärisõnastiku-termin">1.3.12 Andmesõnastiku ja ärisõnastiku termin</a></li>
+</ul>
+</li>
+<li><a href="#14-andmekirjelduse-standardi-kasutusjuhud">1.4 Andmekirjelduse standardi kasutusjuhud</a><ul>
+<li><a href="#141-integreeriv-lähenemine-andmekirjeldusele">1.4.1 Integreeriv lähenemine andmekirjeldusele</a></li>
+<li><a href="#142-andmekirjeldus-organisatsioonis-kasutamiseks">1.4.2 Andmekirjeldus organisatsioonis kasutamiseks</a></li>
+<li><a href="#143-andmekirjeldus-kirjelduste-avaldamiseks-ja-edastamiseks">1.4.3 Andmekirjeldus kirjelduste avaldamiseks ja edastamiseks</a></li>
+</ul>
+</li>
+<li><a href="#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid">2. Andmekataloogi ja selle olemite kirjelduselemendid</a></li>
+<li><a href="#21-andmekataloogi-kirjeldus">2.1 Andmekataloogi kirjeldus</a></li>
+<li><a href="#22-andmestiku-kirjeldus">2.2 Andmestiku kirjeldus</a></li>
+<li><a href="#23-andmestiku-levituse-kirjeldus">2.3 Andmestiku levituse kirjeldus</a></li>
+<li><a href="#24-andmestike-sarja-kirjeldus">2.4 Andmestike sarja kirjeldus</a></li>
+<li><a href="#25-andmeteenuse-kirjeldus">2.5 Andmeteenuse kirjeldus</a></li>
+<li><a href="#26-andmebaasi-tabeli-kirjeldus">2.6 Andmebaasi tabeli kirjeldus</a></li>
+<li><a href="#27-andmeelemendi-kirjeldus">2.7 Andmeelemendi kirjeldus</a></li>
+<li><a href="#28-andmeelementide-grupp">2.8 Andmeelementide grupp</a></li>
+<li><a href="#3-sõnastikud">3. Sõnastikud</a></li>
+<li><a href="#31-andmesõnastiku-kirjeldus">3.1 Andmesõnastiku kirjeldus</a></li>
+<li><a href="#32-andmesõnastiku-termini-kirjeldus">3.2 Andmesõnastiku termini kirjeldus</a></li>
+<li><a href="#33-ärisõnastiku-kirjeldus">3.3 Ärisõnastiku kirjeldus</a></li>
+<li><a href="#34-ärisõnastiku-termini-kirjeldus">3.4 Ärisõnastiku termini kirjeldus</a></li>
+</ul>
+<h2 id="luhendid">Lühendid<a class="headerlink" href="#luhendid" title="Permanent link">&para;</a></h2>
+<ul>
+<li>DCAT – andmekataloogi sõnastik (<em>Data Catalog Vocabulary</em>), mis on W3C standard. </li>
+<li>DCAT-AP – andmekataloogi sõnastiku rakendusprofiil (<em>Data Catalog Vocabulary Application Profile</em>) Euroopa Liidu riikide vahel andmestike ja andmeteenuste kirjelduste vahetamiseks.</li>
+<li>DGA – Euroopa Parlamendi ja nõukogu määrus (EL) 2022/868, 30. mai 2022, Euroopa  andmehalduse kohta ning millega muudetakse määrust (EL) 2018/1724 (andmehalduse määrus, <em>Data Governance Act</em>).</li>
+<li>HVD – väärtuslikud andmestikud (<em>high value datasets</em>) nagu need on määratletud Euroopa Liidu väärtuslike andmestike nimekirja rakendusmääruses ja mis käsitleb andmestikke valdkondi; neid nimetatakse ka kõrgväärtuslikud andmestikud.</li>
+<li>RIHA – riigi infosüsteemi haldussüsteemi käitlev rakendus.</li>
+<li>RIHAKE – asutustele loodud rakendus andmekirjelduste koostamiseks ja edastamiseks RIHAsse.</li>
+<li>ODD – Euroopa Parlamendi ja nõukogu direktiiv (EL) 2019/1024, 20. juuni 2019, avaandmete ja avaliku sektori valduses oleva teabe taaskasutamise kohta. </li>
+</ul>
+<h2 id="muudatuste-ajalugu">Muudatuste ajalugu<a class="headerlink" href="#muudatuste-ajalugu" title="Permanent link">&para;</a></h2>
+<p>Võrreldes versiooniga 2.0 on sisse toodud järgmised muudatused:
+- Sissejuhatava peatüki muutmine. Lisatud on kirjeldusstandardisse kuuluvate komponentide ja olemite ülevaade ja seosed. 
+- Ühildatud järgmiste alusstandardite versioonidega: DCAT 3.0 ja DCAT-AP 3.0.0 
+- Lisatud objektide kirjeldused: andmekataloog, andmeteenus. 
+- Muudetud  kirjelduse  tabeli  struktuuri.  Veerg  DCAT-AP  viide  koondab  endas  nii  viite kirjelduselemendi  terminile  (Dublin  Core  või  muu),  DCAT-ile  (W3C  standardis)  ja  selles kirjeldatud  semantilisele  väärtuste  vahemikule  (range,  lühendatult  standardis  vahemik) ning samale DCAT-AP osas. 
+- Tehtud on sisulised kirjelduselementide muutused vastavalt muutunud alusstandarditele ja kasutuspraktikale. Selles on silmas peetud riigi kesksete andmekirjeldusi kasutatavate süsteemide eesmärke ja vajadusi.<br />
+- Kirjelduselemendid on olemi piires järjestatud alfabeetiliselt. </p>
+<h1 id="1-sissejuhatus">1. Sissejuhatus<a class="headerlink" href="#1-sissejuhatus" title="Permanent link">&para;</a></h1>
+<h2 id="11-eessona">1.1 Eessõna<a class="headerlink" href="#11-eessona" title="Permanent link">&para;</a></h2>
+<p>Käesolev andmekirjelduse juhise lisa 1 esitab andmekirjelduse standardi. Standard on loetelu kohustuslikest ja soovituslikest kirjelduselementidest, nende tähendusest näidetega ning tehnilistest ja semantilistest seostest. Standardi rakendamine organisatsioonis tagab andmekirjelduste kokkulepitud semantikaga masintöödeldavuse. Standard võimaldab liidestuste tegemist andmekirjelduste ja ka andmete vahetamiseks nii organisatsioonide vahel kui ka riigi keskselt hallatavate andmete valdkonna infosüsteemidega.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<p>Andmekirjelduse standardi väljatöötamisel on võimalikult palju kasutatud rahvusvahelist praktikat ja taotletud sellega semantilist ühildumist. Peamiseks rahvusvaheliseks aluseks on andmekataloogi sõnastiku versioon 3.0<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> ja selle rakendusprofiil DCAT-AP. Lähtutud on rakendusprofiili versioonist DCAT-AP 3.0.0.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<p>Andmekataloogi sõnastiku DCAT paljud kirjelduselemendid on seotud kirjeldusstandardiga Dublin Core.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup> Dublin Core on ka Eestis üle võetud rahvusvaheline standard üldiseks inforessursside kirjeldamiseks.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup> Samuti toetavad nii Dublin Core kui DCAT lingitud andmete kasutuselevõttu. Rahvusvahelise praktika kasutamine võimaldab kirjeldusi vahetada rahvusvaheliselt ning vähendab standardi pikaajalise haldamise kulusid.</p>
+<p>Sõnastike kirjelduselementide osas on arvestatud Eesti standardiks üle võetud rahvusvahelise standardiga ISO 25964 „Tesaurused ja nende koostalitusvõime teiste sõnastikega.“<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup> Seda eelkõige kasutatava terminoloogia osas.</p>
+<h2 id="12-kasitlusala">1.2 Käsitlusala<a class="headerlink" href="#12-kasitlusala" title="Permanent link">&para;</a></h2>
+<p>Standard käsitleb organisatsiooni andmestike kirjeldamise osasid: komponente ja olemeid.  </p>
+<p><strong>Komponentidena</strong> on käsitletud andmestiku kui terviku ülevaatlikku kirjeldust,  andmestiku sisu  detailset kirjeldust ning sõnastike osa kirjeldust ehk mõistelist kirjeldust, mis aitab hallata sõnavara. </p>
+<p><strong>Olemitena</strong>  on  käsitletud  andmekirjelduse  standardi  eraldi hallatavaid  ja  kirjeldatavaid objekte, mis koos moodustavad mudeli.  </p>
+<p>Standard  on  koostatud  ühilduvana  DCAT-AP  3.0.0-ga.  See  võimaldab  organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. </p>
+<p>Standard  käsitleb andmestiku  struktuuri  detailset sisemist  kirjeldust. See on  kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.</p>
+<h2 id="13-kirjeldusstandardisse-kuuluvate-olemite-ulevaade-ja-seosed">1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed<a class="headerlink" href="#13-kirjeldusstandardisse-kuuluvate-olemite-ulevaade-ja-seosed" title="Permanent link">&para;</a></h2>
+<h3 id="131-komponendid-ja-olemid">1.3.1 Komponendid ja olemid<a class="headerlink" href="#131-komponendid-ja-olemid" title="Permanent link">&para;</a></h3>
+<p>Kirjeldusstandardisse kuuluvad komponendid ja olemid on omavahel seotud. Olemite vahelised seosed on esitatud joonisel 1 ning moodustavad andmekirjelduse.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> Sellel on kujutatud, kuidas andmestikud ja nende sarjad on hierarhiliselt osad andmekataloogist. On näidatud, kuidas andmestik on kirjeldatav levitusena, mis on kasutatav andmeteenusena, mida saab edastada organisatsioonist välja ja mida saab pärida.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
+<p>Andmestikud ja levitused on andmestruktuurid (üldiselt failid ja/või tabelid). Tabel või muu hästi struktureeritud andmete hulk koosneb andmeelementidest. Andmeelemendid on kirjeldatavad sõnastikes kui terminid ja mõisted. Andmeelemendid on ka grupeeritavad ning see andmeelementide grupp on ka eraldi hallatav. Nii andmetabel kui ka andmeelementide grupp on käsitletav andmeobjektina. Selline andmeobjekt luuakse kas arusaadavuse ehk andmete mõistmise parandamiseks või halduslikult seotud objektina nagu põhiandmete (master data) objekt või kui toimingu või teenuse kontekstis kokku kuuluv kirje (record).</p>
+<p><img alt="Joonis 1" src="images/joonis1.png" /></p>
+<p><em>Joonis 1: Tervikliku andmekirjelduse koostamisel komponentide vahel toimivad seosed.</em></p>
+<p>Järgnevalt on esitatud kirjeldusstandardisse kuuluvate olemite lühikirjeldused ning kui need on seotud standardiga DCAT 3.0, siis olemi määratlused eesti ja inglise keeles. DCAT standard nimetab neid olemeid klassideks.</p>
+<h3 id="132-andmekataloog">1.3.2 Andmekataloog<a class="headerlink" href="#132-andmekataloog" title="Permanent link">&para;</a></h3>
+<p>Andmekataloog (Catalog) on nimekiri kataloogitud objektidest, mis andmehalduses on andmestikud ja mille kohta on kataloogis metaandmekirje. Andmekataloog võib ka toimida repositooriumina, millisel juhul on selles lisaks metaandmetele halduse all ka andmestikud ise.</p>
+<p>Andmestikud võivad olla rühmitatud sarjadesse. Tavaliselt on organisatsioonil üks andmekataloog. Andmekataloog on vahend, mille abil saab muu hulgas hallata andmestike pealt osutatavaid andmeteenuseid.</p>
+<p><strong>DCAT määratlus</strong>
+- Inforessursside hallatud metaandmete kogum.
+- A curated collection of metadata about resources.</p>
+<h3 id="133-andmestike-sari">1.3.3 Andmestike sari<a class="headerlink" href="#133-andmestike-sari" title="Permanent link">&para;</a></h3>
+<p>Andmestike sarja (Dataset Series) moodustavad mingi kindla rühmitamiskriteeriumi alusel kokku kuuluvad andmestikud. Andmestike esitamine andmekataloogis sarjades võimaldab ühelt poolt terve kataloogi jagada osadeks ja teiselt poolt rühmitada andmestikud. Tavalised rühmitamiskriteeriumid on: temaatiline, kronoloogiline, seotus teenuse või protsessiga. Harvemini on kriteeriumiteks aktiivne ja arhiivi osa ning faili vorming. Sarjade moodustamine ei ole kohustuslik, kuid kui sarjad on kasutusel, on need kohustuslik kirjeldada st koostada sarja metaandmekirje.</p>
+<p>Sarja mõiste on kasutusel arhiivi- ja dokumendihalduses. Arhiivieeskirjas on punkt, mis ütleb, et sarja saab moodustada andmete kogumitest, mida saab identifitseerida ja koos hallata.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup> Sarjade moodustamise põhimõtted andmekataloogis ja liigitusskeemis on andmestike sarjadena haldamist soodustavana kokkulangevad. Soovitav on organisatsioonis tekkivad andmestikud liigitada sarjadesse.</p>
+<p><strong>DCAT määratlus</strong>
+- Eraldi avaldatav andmestike kogum, millel on mingid ühised tunnused, mille alusel need on rühmitatud.
+- A collection of datasets that are published separately, but share some characteristics that group them.</p>
+<h3 id="134-andmestik">1.3.4 Andmestik<a class="headerlink" href="#134-andmestik" title="Permanent link">&para;</a></h3>
+<p>Andmestik (Dataset) on terviklikult identifitseeritav ja hallatav andmete kogum.<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup> Andmestiku tüüpe on mitmesuguseid ning kataloogis on need kokku viidavad Dublin Core inforessursi tüüpidega.<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup> Dublin Core inforessursi tüüpide märksõnastikus on andmestik (dataset) üks märksõna. Praktikas on andmekataloogis enamasti andmestiku tüüpi inforessursid. See tähendab, et andmestik võib olla terve õiguslikult kehtestatud andmekogu või ka infosüsteem. Samas on võimalik nii andmekogusid kui infosüsteeme hallata sisuliselt või tehniliselt määratletud ja eristatavate osade kaupa, mida võib nimetada alamandmestikeks. Kui andmekogu kui andmestikku määravad kriteeriumid on peamiselt selle eraldi õiguslik olemasolu, siis paljud infosüsteemid, andmebaasid või nende osad on organisatsiooniliselt või tehniliselt hallatavad andmestikena ning samuti on avaandmete portaalides ja mujal andmestikeks teksti, pildi jms tüüpi andmestikud. </p>
+<p><strong>DCAT määratlus</strong>
+- Ühe isiku [või organisatsiooni] avaldatud või hallatud andmete kogum, mis on tehtud kättesaadavaks või alla laetavaks ühel või enamal esituskujul.
+- A collection of data, published or curated by a single agent, and available for access or download in one or more representations.</p>
+<h3 id="135-alamandmestik">1.3.5 Alamandmestik<a class="headerlink" href="#135-alamandmestik" title="Permanent link">&para;</a></h3>
+<p>Alamandmestik on objektitüübina sarnane andmestikuga. Vajadus alamandmetiku eristamiseks tuleneb sellest, et andmekogudes (infosüsteemides, andmebaasides) on loogiliselt või tehniliselt eristuvad osad, mida on otstarbekas hallata eraldi. Need võivad olla hulk tabeleid või terve skeem relatsioonilises andmebaasis.</p>
+<p>DCATis alamandmestiku klassi ei ole. Käesolevasse standardisse on see lisatud andmekogude (andmebaaside) loogilise või füüsilise haldamise lihtsustamise jaoks ehk konkreetselt selleks, kuidas on otstarbekas luua seos andmekataloogi ja andmebaasi osa vahel ja seda hallata. Osalt tuleneb vajadus ka sellest, et õiguslikult reguleeritud andmekogu, see tähendab andmete struktuur, mille kohta on andmekogu põhimäärus, võib mõnel juhul sisaldada tegelikult üsna eraldi ’töötavaid’ osasid. Just selliseid osasid ongi praktikas otstarbekas hallata kui alamandmestikke.</p>
+<h3 id="136-levitus">1.3.6 Levitus<a class="headerlink" href="#136-levitus" title="Permanent link">&para;</a></h3>
+<p>Levitus (Distribution) on andmestiku salvestamiseks või edastamiseks tehtav andmete tehniline esitus, konkreetseks kasutusjuhuks mõeldud andmestiku terviklik või osaline väljavõte või kasutusmeetod. Levitus võib olla näiteks fail, tabel või teenus. Sageli ongi tegemist eri vormingutes ettevalmistatud failidega.</p>
+<p>Levituse kirjeldamisel lähtutakse standardi DCAT 3.0 versioonist. Levituse kirjeldus võimaldab edasi anda täpsemat teavet andmestiku vormingu ja taaskasutamise tingimuste kohta. Levitus on DCATis rangelt eraldi olemina, millele saab kirjeldada pealkirja (title) nagu see on andmestikul. Eesti andmekirjelduse standardis käsitletakse levitust seotuna andmestikuga. Andmestikus on selleks kirjelduselement, mis viitab levitusele. Andmehalduse määruse ja väärtuslike andmetike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine.</p>
+<p><strong>DCAT määratlus</strong>
+- Andmestiku kindlakujuline esitus. Andmestik võib olla kättesaadav mitmel erineval serialiseeritud kujul, nagu loomulikus keeles, meedia tüübis või vormingus, organiseerituna skeemi, ajalises ulatuses või ruumilises resolutsioonis, detailsuses või profiilis (mida saab täpsustada).<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup></p>
+<ul>
+<li>A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</li>
+</ul>
+<h3 id="137-andmetabel">1.3.7 Andmetabel<a class="headerlink" href="#137-andmetabel" title="Permanent link">&para;</a></h3>
+<p>Tabel on info esitamine ridade ja veergudena.<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup> Selle objektitüübi eraldi välja toomine mudelis ning seeläbi ka sellele eraldi kirjelduse tegemine on vajalik relatsiooniliste andmebaaside kirjeldamise kontekstis, mis koosnevad tabelitest. Andmetabel on selles mudelis esmajoones andmebaasi tabel, mis on andmekirjelduse detailse kirjelduse komponendi juures üks grupeeriv olem. Tabel seob veerud, mis on kirjeldatava relatsioonilise andmebaasi andmeelemendid.</p>
+<p>Objektitüüpi andmed tabeli kujul ei tohi segi ajada tabeliga, mida käsitletakse kui eraldi andmestikku või levitust. Andmekirjelduste koostamisel on vaja arvestada tabeli kahetise tähendusega, milleks on tabel kui eraldi hallatav andmestik ja tabel relatsioonilises andmebaasis.</p>
+<h3 id="138-andmeelement">1.3.8 Andmeelement<a class="headerlink" href="#138-andmeelement" title="Permanent link">&para;</a></h3>
+<p>Andmeelemendi kirjelduse moodustavad selle detailsed kirjelduselemendid. Andmeelemendi kirjeldus võimaldab aru saada elemendi tähendusest ja seostest teiste andmeelementidega.</p>
+<p>Standardis toodud andmeelemendi kirjeldus on eelkõige mõeldud selleks, et relatsioonilise andmebaasi tabelite veerge oleks võimalik kirjeldada andmeelementidena ning moodustada kirjeldatud andmeelemendist andmesõnastiku kirje, nii et kirjeldatud andmeelementidest moodustub andmesõnastik. Andmeelementidest komplektide moodustamiseks on standardis eraldi olem andmeelementide grupp.</p>
+<p>Standardis on kirjelduselemendid esitatud andmekataloogi vaatest eesmärgiga andmeelemendid identifitseerida, neid omavahel seostada ning siduda andmesõnastikuga. Organisatsioonis juba kasutusel olev andmeelementide kirjeldus võib seega olla osaks loodavast andmekataloogist. Andmekataloogis võib kirjeldus sisaldada põhjalikumat teavet andmeelemendi tehnilise realisatsiooni, seotuse kohta ärireeglitega ja andmekvaliteedinõuete kohta (korduvus, kohustuslikkus, vaikeväärtused, täitmise reeglid jt).</p>
+<h3 id="139-andmeelementide-grupp">1.3.9 Andmeelementide grupp<a class="headerlink" href="#139-andmeelementide-grupp" title="Permanent link">&para;</a></h3>
+<p>Andmeelementide grupi moodustavad sisuliselt seotud andmeelemendid. Tavaliselt on normaalkujule viidud relatsioonilises andmebaasis sisuliselt grupeeruvad elemendid eraldi tabelites. Vajadus andmeelemente grupeerida tuleneb vajadusest mõista sisuliselt kokku kuuluvaid, kuid tehniliselt laiali olevate andmeelementide tähendust. Ei ole aga ka välistatud juhud, kus tabeli moodustavadki grupeeruvad andmeeleemendid. Näiteks on koha-aadress eraldi tabelis.</p>
+<p>Tehniliselt on relatsioonilises andmebaasis loogilist kirjet moodustavad tunnused tavaliselt eri veergudes. Samas kirje võib olla ühe või mitme objekti ja toimunud sündmuse kohta. Näiteks lapse sünnil on ema ja laps oma tunnustega ning mitmesugused sünniga seotud tunnused. Need moodustavad loomulikke ja koos kasutatavaid või ainult koos sisulist tähendust omavaid gruppe.</p>
+<p>Lisaks eksisteerib olukordi, kus ei ole lubatud avalikustada detailseid andmekirjeldusi andmeelementide tasemel, kuid on lubatud seda teha grupeeritud tasemel. Samuti on sageli otstarbekas siduda ärimõisteid andmeelementide grupiga. Näiteks sama sünni näite korral on üks isik ’rollis’ ema ja teine ’rollis’ laps. Kindlas kontekstis võib andmeelement ja andmesõnastiku termin näiteks olla: ’ema kaal enne rasedust’, mis on üks andmeelement grupis ’rasedusjärgne jälgimine’.</p>
+<h3 id="1310-andmeteenus">1.3.10 Andmeteenus<a class="headerlink" href="#1310-andmeteenus" title="Permanent link">&para;</a></h3>
+<p>Standard käsitleb andmeteenust DCAT 3.0 versiooni kontekstis. Andmeteenusel puudub ühene seos avaliku sektori asutuste muude teenuse käsitlustega. Tegemist on andmekataloogi pealt, mis ei ole teenuste kataloog, osutatava teenusega, kasutades andmestikke. Samas võivad andmekataloogis loetletud teenused olla seotud muude teenustega. Muude teenuste all on silmas peetud digi- ja muid avalikke teenuseid nagu otsene või tugiteenus (TKTA teenused<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup>), samuti planeerimis- ja finantsvaate teenuseid (TERE teenused<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup>) kui ka tehnilised teenused (X-tee teenused<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup>).</p>
+<p>Andmeteenuste kirjeldus on kuvatav kataloogis teenuste nimekirjana ning teenus on seotud andmestiku ja selle levitustega.</p>
+<p><strong>DCAT määratlus</strong>
+- Operatsioonide kogum, mis võimaldab juurdepääsu ühele või enamale andmestikule või andmetöötlusfunktsioonile
+- A collection of operations that provides access to one or more datasets or data processing functions.</p>
+<h3 id="1311-andmesonastik-ja-arisonastik">1.3.11 Andmesõnastik ja ärisõnastik<a class="headerlink" href="#1311-andmesonastik-ja-arisonastik" title="Permanent link">&para;</a></h3>
+<p>Standardi teiseks komponendiks on sõnastikud, mida on kahte tüüpi: andmesõnastik ja ärisõnastik.<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup> Sõnastikud on oluline semantilise veebi komponent. Sõnastike olulisus seisneb peamiselt selles, et need muudavad nii tehnilistele kui mittetehnilistele töötajatele andmed arusaadavaks ja kasutatavaks. Teisisõnu aitavad need andmeid linkida ja taaskasutada.</p>
+<p>Andmesõnastik on ühelt poolt terminite nimekiri ning teiselt poolt esitab terminitena andmeelementide nimetused (pealkirjad).</p>
+<p>Ärisõnastik, mis esitab valdkonnas või organisatsioonis kasutatavad mõisted ning nende tähistamiseks kasutatavad sõnad ehk terminid ja võimaldab mõistelist arusaamist kasutatavast sõnavarast. Ärisõnastik on organisatsiooni või organisatsioonide üleselt kokku lepitud sõnavara, mida ohjatakse.</p>
+<p>Sõnavara ohjamine (vocabulary control)<sup id="fnref:18"><a class="footnote-ref" href="#fn:18">18</a></sup> tähendab seda, et mõisted, eriti põhimõisted, peaksid olema terminoloogiliselt kokku lepitud ja sisuliselt määratletud. Sageli on vajalik, et ärisõnastik oleks mitmekeelne. Ärisõnastikke võib asutusel olla üks või mitu. Ärisõnastik võib pärida termineid ja mõistete määratlusi valdkonna sõnastikest, terministandarditest või üldistest märksõnastikest, kui viimased on olemas.</p>
+<h3 id="1312-andmesonastiku-ja-arisonastiku-termin">1.3.12 Andmesõnastiku ja ärisõnastiku termin<a class="headerlink" href="#1312-andmesonastiku-ja-arisonastiku-termin" title="Permanent link">&para;</a></h3>
+<p>Sõnastikud koosnevad terminitest. Terminid on mõistete sõnalised esitused. Harvem võivad terminid olla ka lühendid, sõned või muud märgid.</p>
+<p>Andmesõnastiku termin on sõna või fraas, mis võib olla kindla määratlusega ja kindlast terminiallikast või ka mingi üldkeele sõna, millel definitsioon puudub. Kui definitsioon puudub või on tegu sõna või fraasiga, mida pole mõistlik määratleda, võib sel olla sõnaseletus.</p>
+<p>Andmeelement võib olla tähistatud tähendust omava ja arusaadava sõnaga, aga võib olla ka akronüüm, lühend või muu sõne, mis on masinloetav, kuid pole lisaselgitusteta mõistetav. Andmeelemendi tähis on sageli andmemudelis ning võib seetõttu olla inglise keelne. Lisaks tähisele on andmeelemendil kirjeldus, mille aluseks on andmemudel ja mis sageli on andmebaasis andmeelemendi kommentaarina. Praktiline on teha andmeelementidele nimetused (pealkirjad) ning esitata need andmesõnastiku terminitena. Andmesõnastiku terminile lisatakse vajadusel määratlus või selgitus. Andmeelemendi kirjeldus võib sisaldada sõnu, millest andmesõnastiku termin moodustub. Andmesõnastiku terminid on soovitatav luua konteksti avavalt, mis tähendab, et need on pigem liitterminid või terved terminifraasid. Andmesõnastiku terminites kajastuvad mõisted, mille kohta need terminid käivad.</p>
+<p>Ärisõnastiku terminid esitavad mingi valdkonna, andmekogu, laiema protsessi (teenuse) ja harvem andmestike sarja või andmestiku oskussõnavara. Oskussõnavara esitamine andmestiku kirjelduses on tavalisem siis, kui tegemist on uuringut, analüüsi või statistikat esitava andmestikuga, kus tunnused (andmeelemendid) esitavad kindlate definitsioonidega näitajaid, arvandmeid, muutujaid.</p>
+<p>Ärisõnastik on mõistete ja terminite kogum, mida kasutatakse asutuses igapäevaselt rääkides või mis on kasutusel õigusaktides või tehnoloogias. Ärisõnastik peaks olema organisatsiooni tegevuste ja andmete kohta piisavalt täielik. Samas peaks see olema mõisteid piisavalt üldistav (laiemad ja grupeerivad mõisted) ja detailiseeriv (kitsamad ja seotud mõisted) ning lisaks veel ohjama sõnavara.</p>
+<h2 id="14-andmekirjelduse-standardi-kasutusjuhud">1.4 Andmekirjelduse standardi kasutusjuhud<a class="headerlink" href="#14-andmekirjelduse-standardi-kasutusjuhud" title="Permanent link">&para;</a></h2>
+<h3 id="141-integreeriv-lahenemine-andmekirjeldusele">1.4.1 Integreeriv lähenemine andmekirjeldusele<a class="headerlink" href="#141-integreeriv-lahenemine-andmekirjeldusele" title="Permanent link">&para;</a></h3>
+<p>Tervikliku või ka osalise andmekirjelduse koostamine, ajakohasena hoidmine, et see oleks kasutatav usaldusväärse allikana andmete leidmiseks, arusaamiseks ja kasutamiseks, on töömahukas. Selle tõttu on eriti oluline integreeriv lähenemine. See tähendab, et standardile vastavad kirjeldused tehtaks õigel ajal ja õiges kohas. Selliselt on ühekordne kirjeldamine taaskasutatav. Andmekirjelduse tuuma ja selgroo moodustab andmekataloog ja sellesse kataloogitud andmestikud. Neile luuakse ülevaatlik kirjeldus ning kui andmestikke kirjeldatakse sisuliselt, siis detailne kirjeldus. Semantilise komponendina on kirjelduse osaks sõnastikud. Sõnastikel võib olla terminiallikaid väljaspool organisatsiooni, kust on võimalik pärida valdkonna sõnavara.</p>
+<p><img alt="Joonis 2" src="images/joonis2.png" /></p>
+<p><em>Joonis 2: Standardi käsitlusalas olevad andmekirjelduse komponendid ja olemid</em></p>
+<p>Integreeritud lähenemine võimaldab andmeid leida ja kasutada nii organisatsiooni sees kui kuvada või edastada andmekirjeldust, mõnikord koos andmetega, organisatsioonist välja.</p>
+<h3 id="142-andmekirjeldus-organisatsioonis-kasutamiseks">1.4.2 Andmekirjeldus organisatsioonis kasutamiseks<a class="headerlink" href="#142-andmekirjeldus-organisatsioonis-kasutamiseks" title="Permanent link">&para;</a></h3>
+<p>Standardi peamiseks kasutusjuhuks on organisatsioonis andmekirjelduse koostamine enda tarbeks, et oleks parem ja selgem arusaam, mis andmed organisatsioonil on.</p>
+<p>Organisatsiooni sees omakorda võib eristada mitmeid kasutusjuhtusid:
+- Osa organisatsiooni teabe (info) tervikülevaatest, mis on andmekataloog, kus sarjadesse rühmitatud andmestikud on osa organisatsiooni teabe ja dokumentide liigitusskeemist.
+- Omaette vaade andmete leidmiseks ja kasutamiseks, milleks on andmekirjeldus esitatud andmekataloogi kujul. Selle alla võib lugeda ka andmete ettevalmistamise nende avaandmetena avaldamiseks.
+- Kasutamine organisatsiooni sees osana protsessist (ETL) või teenusest, kus andmetöötluse sisu on pigem üksikandmete (ühe kirje) edastamine teenusejuhtumi käigus.
+- Kasutamine organisatsioonis aruande, statistika või muu infot koondava andmetöötluse tarbeks. Sellise töötluse osaks võib olla andmete edastamine andmelattu või muusse andmestruktuuri.</p>
+<h3 id="143-andmekirjeldus-kirjelduste-avaldamiseks-ja-edastamiseks">1.4.3 Andmekirjeldus kirjelduste avaldamiseks ja edastamiseks<a class="headerlink" href="#143-andmekirjeldus-kirjelduste-avaldamiseks-ja-edastamiseks" title="Permanent link">&para;</a></h3>
+<p>Teise olulise rühma andmekirjelduse standardi kasutusjuhtudest moodustavad kirjelduste kasutamised edastamiseks organisatsioonist välja või kättesaadavaks tegemised organisatsiooni  portaalides. Andmekirjeldusi võib edastada  ainult kui metaandmeid ja sel juhul on andmestikule viide kui juurdepääsukohale. Samuti on võimalik, et metaandmed edastatakse koos andmestikuga.</p>
+<p>Erilisel kohal on avaandmetena avaldamine. DCAT standardi kasutamine kirjelduste koostamise alusena on paljus tõukunud avaandmete eesmärgist ja kohustusest. See on aga seotud teiste kasutusjuhtudega, kui andmeid või andmekirjeldusi avaldatakse.</p>
+<p>Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni portaalis võib eristada mitmeid kasutusjuhtusid:
+- Paljud organisatsioonid on loonud oma avaandmete portaalid, milles avaldavad andmestikke kas aruannete või statistikana või pakuvad juurdepääsu oma avaandmetele teenuste kaudu. Sellistes portaalides tehtud avaldamised peaks kasutama selles andmekirjelduse standardis esitatud kirjeldusstruktuure ja -elemente.</p>
+<ul>
+<li>Kuna andmestiku tasandi kirjeldus on loodud DCAT-AP-ga ühilduvana, siis võimaldab see vahetada – kasutades näiteks OAI-PMH andmevahetusprotokolli<sup id="fnref:19"><a class="footnote-ref" href="#fn:19">19</a></sup> – andmeid Euroopa avaandmete portaaliga.<sup id="fnref:20"><a class="footnote-ref" href="#fn:20">20</a></sup></li>
+</ul>
+<h1 id="2-andmekataloogi-ja-selle-olemite-kirjelduselemendid">2. Andmekataloogi ja selle olemite kirjelduselemendid<a class="headerlink" href="#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid" title="Permanent link">&para;</a></h1>
+<p>Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on RIHA, Eesti avaandmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.</p>
+<h2 id="21-andmekataloogi-kirjeldus">2.1 Andmekataloogi kirjeldus<a class="headerlink" href="#21-andmekataloogi-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+<th>DCAT-AP viide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>kirjeldus</td>
+<td>Kataloogi sisuline lühikirjeldus. Peaks iseloomustama andmestikke, mida kataloog sisaldab.</td>
+<td>1..1</td>
+<td>Ruumiandmete lehelt leiad Maa-ameti ruumiandmete kirjeldused.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description">dcterms:description</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description">description</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>omanik</td>
+<td>Organisatsiooni nimetus, kes kataloogi peab.</td>
+<td>1..1</td>
+<td>Statistikaamet<br>Maksu- ja Tolliamet</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher">dcterms:publisher</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher">publisher</a><br>vahemik:<br>DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>pealkiri</td>
+<td>Kataloogi nimetus või tähis.</td>
+<td>1..1</td>
+<td>(Statistikaamet) Statistika andmebaas<br>(Maksu- ja Tolliamet) Statistika ja avaandmed</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title">dcterms:title</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title">title</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>veebisait</td>
+<td>Viide veebisaidile, millel kataloog on juurdepääsetav.</td>
+<td>0..1</td>
+<td>https://andmed.stat.ee/</td>
+<td>viide: <br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage">homepage</a><br>- DCAT-AP: <a href="https://xmlns.com/foaf/spec/">homepage</a><br>vahemik:<br>DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="22-andmestiku-kirjeldus">2.2 Andmestiku kirjeldus<a class="headerlink" href="#22-andmestiku-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+<th>DCAT-AP viide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>andmestiku identifikaator</td>
+<td>Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav.</td>
+<td>1..1</td>
+<td>28289ed9-8472-44c4-958b-91cef59eaada<br>Selgitus: on GUID kujul ning seda võib kasutada URI osana</td>
+<td>DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>andmete piirdaatumid</td>
+<td>Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP).<br>Märkus 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga.<br>Märkus 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882) .Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel.</td>
+<td>0..1</td>
+<td>1993-11-05/2007-06-30<br>Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal">dcterms:temporal</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage">temporal coverage</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime">dcterms:PeriodOfTime</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime">Period of time</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>andmete uuendamise regulaarsus</td>
+<td>Andmestiku andmete uuendamise regulaarsus. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust (EU Frequency Vocabulary).<sup id="fnref:21"><a class="footnote-ref" href="#fn:21">21</a></sup> Täita juhul, kui andmete kogumine või loomine ei toimu pidevalt, vaid perioodiliselt.</td>
+<td>0..1</td>
+<td>Kord aastas</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity">dcterms:accrualPeriodicity</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency">frequency</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency">dcterms:Frequency</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency">Frequency</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>andmestiku seos teise andmestikuga</td>
+<td>Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta.</td>
+<td>0..n</td>
+<td>b49f330-e207-430e-87dd-ca8d5859438b; isPartOf<br>Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartOf) andmestikust “Valimiste andmed” (identifikaatoriga: 8b49f330-e207-430e-87dd-ca8d5859438b)</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>seotud andmestiku identifikaator</td>
+<td>Andmestikuga seotud teise andmestiku identifikaator.</td>
+<td>1..1</td>
+<td>8b49f330-e207-430e-87dd-ca8d5859438b</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>seose tüüp</td>
+<td>Andmestike vahelise seose tüüp Dublin Core seoste klassifikaatori alusel. Täpsemalt on Eesti andmekirjelduse standardis kasutusel neli seose tüüpi:<br>- isPartOf (kirjeldatav andmestik on osa teisest andmestikust)<br>- hasPart (kirjeldatav andmestik sisaldab teist andmestikku)<br>- replaces (eelkäija; kirjeldatav andmestik asendab teist andmestikku)<br>- isReplacedBy (järeltulija; kirjeldatavat andmestikku asendab teine andmestik)</td>
+<td>1..1</td>
+<td>Selgitus: isPartOf ja hasPart on kasutusel andmestiku ja alamandmestiku juures.<br>Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versioneeritavate andmestikega.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isPartOf">dcterms:isPartOf</a><br>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#hasPart">dcterms:hasPart</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_part">has part</a><br>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#replaces">dcterms:replaces</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_replaces">replaces</a><br>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReplacedBy">dcterms:isReplacedBy</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>andmesõnastiku nimi</td>
+<td>Sõnastiku pealkiri.<br>Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“.</td>
+<td>1..1</td>
+<td>Loomeliitude andmekogu (LLA) andmesõnastik</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>andmete päritolu</td>
+<td>Teise andmestiku pealkiri, mida on  kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks.<br>Märkus: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid.</td>
+<td>0..n</td>
+<td>Taimekasvatus<br>Selgitus: Kirjeldatavas andmestikus „Taimekaitsevahendite kasutamine“ on taaskasutatud põllukultuuride kasvupinna andmeid andmestikust „Taimekasvatus“.Andmekogude puhul: Maakataster (MIS)Selgitus: Ehitise aluse maaüksuse katastritunnused ehitisregistris on pärit maakatastrist.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>päritolu andmestiku pealkiri</td>
+<td>Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus.Muu andmestiku puhul selle praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest.</td>
+<td>1..1</td>
+<td>Taimekasvatus<br>Andmekogude puhul: Maakataster (MIS)</td>
+<td>viide:<br>- DCAT-AP: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#provenance">provenance</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement">Provenance Statement</a></td>
+</tr>
+<tr>
+<td>6.2</td>
+<td>päritolu andmestiku URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>b49f330-e207-430e-87dd-ca8d5859427b<br>Selgitus: ühele andmestikule vastav URI</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>geograafiline kaetus</td>
+<td>Andmetega kaetud piirkond või asukoht.<br>Märkus: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding box vormingus koordinaatide esitust.<br>Märkus: kui geograafiline kaetus on märkimata, arvestatakse selle väärtuseks vaikimisi „kogu Eesti“.</td>
+<td>0..n</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>asukoha nimetus</td>
+<td>Piirkonna või asukoha sõnaline nimetus.<br>Eesti asukohtade märkimisel on soovituslik kasutada Eesti haldus- ja asustusjaotuse klassifikaatoris (EHAK) ja kohanimeregistris (KNR) toodud väärtusi.<sup id="fnref:22"><a class="footnote-ref" href="#fn:22">22</a></sup> <br>Välismaiste asukohtade märkimisel on soovituslik kasutada GeoNames kohanimede loetelu.<sup id="fnref:23"><a class="footnote-ref" href="#fn:23">23</a></sup> <br>Märkus: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel.</td>
+<td>0..1</td>
+<td>kogu Eesti;<br>Harju maakond, Kiili vald</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial">dcterms:spatial</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographic coverage</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage">geographical coverage</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location">dcterms:Location</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location">Location</a></td>
+</tr>
+<tr>
+<td>7.2</td>
+<td>asukoha koordinaadid</td>
+<td>Piirkonna või asukoha määratlus koordinaatsüsteemis.<br>Asukoha koordinaadid tuleb märkida <em>bounding box</em> kujul, ehk kahe pikkuskraadi ja kahe laiuskraadi alusel moodustuva väikseima ristkülikuna, mille piiridesse andmed jäävad.<br>Koordinaadid tuleb esitada rahvusvahelises geodeetiliste koordinaatide süsteemis WGS 84 kümnendkraadides vähemalt kahe kümnendkoha täpsusega.<br>Märkus: Integreeritava aadressiotsingu (In-ADS) kasutamisel geograafilise kaetuse märkimiseks esitatakse asukoha koordinaadid automaatselt, asukoha nimetuse valimisel.</td>
+<td>0..1</td>
+<td>"x": "6456676.27"<br>"y": "641451.91"<br>"b": "58.22807"<br>"l": "26.40804"</td>
+<td>-</td>
+</tr>
+<tr>
+<td>8</td>
+<td>avalikustamise kuupäev</td>
+<td>Ametliku avalikustamise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).<br>Märkus: on kasutusel avaandmete puhul</td>
+<td>0..1</td>
+<td>2022-05-25</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued">dcterms:issued</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate">release date</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>HVD kategooria</td>
+<td>Väärtusliku andmestiku (HVD – <em>high value dataset</em>) kategooria vastavalt rakendusmäärusele.<sup id="fnref:24"><a class="footnote-ref" href="#fn:24">24</a></sup><br>2023 lõpus on määratletud kuus väärtuslike andmestike kategooriat: 1) georuumilised andmed; 2) maa seire ja keskkond; 3) meteoroloogiateave; 4) statistika; 5) äriühingud ja äriühingu omandisuhted ning 6) liikuvus.<br>Kirjelduselemendi kasutamine on kohustuslik väärtuslike andmestike kirjeldamisel.</td>
+<td>0..n</td>
+<td>high-value-dataset-category.rdf<br>- georuumilised andmed;<br>- maa seire ja keskkond;<br>- meteoroloogiateave;<br>- statistika;<br>- äriühingud ja äriühingu omandisuhted;<br>- liikuvus.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>juurdepääsutase</td>
+<td>Andmestiku juurdepääsutaseme kirjeldus.<sup id="fnref:25"><a class="footnote-ref" href="#fn:25">25</a></sup><br>Juurdepääsutaseme kirjeldamisel tuleb rakendada Euroopa Liidu Ametlike Teadaannete Talituse poolt loodud kontrollitud sõnastiku väärtuseid:<br>- konfidentsiaalne (<em>confidential</em>)<br>- mitteavalik (<em>non-public</em>)<br>- avalik (<em>public</em>)<br>- piiratud (<em>restricted</em>)<br>- tundlik (<em>sensitive</em>)<br>Märkus: Juurdepääsutaseme märkimine on kohustuslik andmehalduse määruse skoopi kuuluvate andmestike puhul.<br><sup id="fnref:26"><a class="footnote-ref" href="#fn:26">26</a></sup>Märkus: Eestis on üldjuhul juurdepääsutaseme märkimisel vaja kasutada väärtusi “avalik” või “piiratud”.</td>
+<td>0..1</td>
+<td>avalik<br>piiratud</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accessRights">dcterms:accessRights</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights">access rights</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights">access rights</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement">rdfs:RightsStatement</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights Statement</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>kasutusele võtmise kuupäev</td>
+<td>Andmestiku elektroonilise pidamise algusaeg. Kattub enamasti esimese vastava andmestiku kogumiseks, haldamiseks ja avaldamiseks loodud infosüsteemi kasutusele võtmise kuupäevaga.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).<sup id="fnref:27"><a class="footnote-ref" href="#fn:27">27</a></sup><br>Märkus: mitte segi ajada elemendiga „andmete piirdaatumid“.<br>Märkus: on kohustuslik andmekogude jaoks, milles see on andmekogu kasutusele võtmise kuupäev</td>
+<td>0..1</td>
+<td>2010-01-01<br>Selgitus: Andmete infosüsteemi sisestamise, seega kasutusele võtmise kuupäeva jaoks sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aastast.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12</td>
+<td>keel</td>
+<td>Andmestikus kasutatud keel(ed). Kui kirjeldus pole täidetud, eeldatakse vaikimisi eesti keele kasutamist.<br>Andmevahetuses kasutatakse ISO 639-2 standardi alusel defineeritud kolmetähelisi keele koode.<sup id="fnref:28"><a class="footnote-ref" href="#fn:28">28</a></sup></td>
+<td>0..n</td>
+<td>est, ukr</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#language">dcterms:language</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language">language</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language">language</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LinguisticSystem">rdfs:LinguisticSystem</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem">Linguistic system</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td>kirjeldus</td>
+<td>Andmete sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus.<br>Andmekogu kirjeldus on selle asutamise õigusaktis toodud andmete kogumise eesmärk ja andmestiku sisu kirjeldus.<br>Märkus: mitte segi ajada elemendiga „koostamiseesmärk“, mille abil kajastatakse (organisatsiooni) funktsioone ja tegevusi, mille käigus andmed tekivad.</td>
+<td>1..1</td>
+<td>Ehitisregister on andmekogu, mille eesmärk on hoida, anda ja avalikustada teavet kavandatavate, ehitatavate ja olemasolevate ehitiste ning nendega seotud menetluste kohta.<br>Selgitus: andmekogu eesmärk põhimäärusest.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description">dcterms:description</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description">description</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td>kirjelduse muutmiskuupäev</td>
+<td>Andmestiku kirjelduse viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2020-05-25</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified">dcterms:modified</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate">modification date</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td>kohalduvad õigusaktid</td>
+<td>Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel.</td>
+<td>0..n</td>
+<td>http://data.europa.eu/eli/reg_impl/2023/138/oj<br>Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.<br>http://data.europa.eu/eli/reg/2020/868/oj<br>Selgitus: Euroopa andmehalduse määruse kohaldumisel.</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation">applicable legislation</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td>kontaktpunkt</td>
+<td>Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.<sup id="fnref:29"><a class="footnote-ref" href="#fn:29">29</a></sup><br>Märkus: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).<sup id="fnref:30"><a class="footnote-ref" href="#fn:30">30</a></sup></td>
+<td>0..n</td>
+<td>Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint">contact point</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/vcard-rdf/#d4e1819">vcard:Kind</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
+</tr>
+<tr>
+<td>16.1</td>
+<td>kontakti nimi</td>
+<td>Kontakti täisnimi. Igas kontakti kirjes peab sisalduma täpselt üks nimi.</td>
+<td>1..1</td>
+<td>Kultuuriministeerium<br>Selgitus: organisatsiooni nimi.<br>Jüri Tamm<br>Selgitus: kontaktisiku nimi.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>16.2</td>
+<td>kontakti e-posti aadress</td>
+<td>Kontakti e-posti aadress. Igas kontakti kirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber.</td>
+<td>0..1</td>
+<td>min@kul.ee<br>Selgitus: organisatsiooni e-posti aadress.<br>jyri.tamm@mmit.ee<br>Selgitus: kontaktisiku e-posti aadress.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>16.3</td>
+<td>kontakti telefoninumber</td>
+<td>Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber.<br>Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis.</td>
+<td>0..1</td>
+<td>(372) 678 9012</td>
+<td>-</td>
+</tr>
+<tr>
+<td>17</td>
+<td>levituse identifikaator</td>
+<td>Viide andmestiku baasil loodud levitusele.<br>Märkus: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine.</td>
+<td>0..n</td>
+<td>336a3add-efc9-40dc-8830-091205fe20a5</td>
+<td>-</td>
+</tr>
+<tr>
+<td>18</td>
+<td>lühinimetus</td>
+<td>Andmestikule viitamisel kasutatav lühinimetus, mis on sageli akronüüm.<br>Kui andmestik (andmekogu) on juba RIHAs kirjeldatud, kasutatakse RIHA lühinimetust. Andmekogude korral on lühinimetuse kasutamine kohustuslik.</td>
+<td>0..1</td>
+<td>haudi<br>Selgitus: Järva valla kalmistregistri lühinimetus.<br>LLA<br>Selgitus: Loomeliitude andmekogu lühinimetus.</td>
+<td>-</td>
+</tr>
+<tr>
+<td>19</td>
+<td>muu identifikaator</td>
+<td>Teisene viit andmestikule, näiteks DOI, valdkonnapõhine andmestiku identifikaator vms.<br>Märkus: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement.</td>
+<td>0..n</td>
+<td>doi: 10.1308/11340470510582432</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier">other identifier</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier">Identifier</a></td>
+</tr>
+<tr>
+<td>19.1</td>
+<td>muu identifikaatori tüüp</td>
+<td>Identifikaatori tüüp.</td>
+<td>0..1</td>
+<td>doi</td>
+<td>-</td>
+</tr>
+<tr>
+<td>19.2</td>
+<td>muu identifikaatori väärtus</td>
+<td>Teisene viit andmestikule.</td>
+<td>1..1</td>
+<td>10.1308/11340470510582432</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20</td>
+<td>märksõna</td>
+<td>Kontrollitud märksõnastikust võetud üks või mitu andmestiku sisu iseloomustavat märksõna. Märksõna on märksõnastamise käigus dokumendile (siin andmestikule) määratud termin. Märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu.<br>Andmestiku märksõnastamisel kasutatakse üldist või valdkondlikku märksõnastikku. Nendeks võivad olla Eesti märksõnastik (<a href="https://ems.elnet.ee/index.php">EMS</a>), <a href="https://op.europa.eu/et/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a> või muu.</td>
+<td>0..n</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>20.1</td>
+<td>märksõna termin</td>
+<td>Märksõna tekstiline esitus.</td>
+<td>1..1</td>
+<td>ehitus, arhitektuur</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#keyword">dcat:keyword</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword">keyword/tag</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword">keyword</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>20.2</td>
+<td>märksõna URI</td>
+<td>Märksõna viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga märksõna kohta.</td>
+<td>0..1</td>
+<td>https://ems.elnet.ee/id/EMS008645</td>
+<td>-</td>
+</tr>
+<tr>
+<td>21</td>
+<td>omanik</td>
+<td>Andmestiku sisu haldav organisatsioon, kes andmestikku levitab.</td>
+<td>1..1</td>
+<td>Kliimaministeerium<br>Selgitus: ehitisregistrit haldav organisatsioon.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher">dcterms:publisher</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher">publisher</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td>pealkiri</td>
+<td>Andmekogu korral on andmestiku pealkirjaks selle pidamist reguleerivas õigusaktis toodud ametlik nimetus.<br>Muu andmestiku puhul praktikas kasutatav täielik nimetus. Üksikutest tabelitest koosneva andmestike defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest.</td>
+<td>1..1</td>
+<td>Andmekogu: EhitisregisterSelgitus: Ehitisregistri põhimääruses on registri ametlik nimetus ehitisregister.Muu andmestik (kuup): Maakondade vaheline ränne soo järgi.Selgitus: Statistikaameti andmebaasis kuubi pealkiri.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title">dcterms:title</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title">title</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td>seotud tegevused</td>
+<td>Loetelu organisatsiooni ülesannetest / teenustest, mille käigus andmestik tekib ja täieneb.<br>Andmekogu korral sisestada selle asutamise õigusaktis toodud tegevused. Muude andmestike puhul või kui õigusakt tegevusi ei kajasta, organisatsiooni teabe/dokumentide liigitusskeemis toodud sobivad funktsioonid või sarjade aluseks olevad tegevused.<br>Märkus: mitte segi ajada elemendiga „kirjeldus“, milles esitatakse ülevaade andmestiku sisust (kogutavatest andmetest) ja andmekogumise eesmärkidest.</td>
+<td>0..n</td>
+<td>sündmuse registreerimine; ehitise rekonstrueerimisvigade ja lammutamise põhjuste analüüsimine; statistika ja teadusliku uurimistöö tegemine<br>Selgitus: andmetega seotud ülesanded.</td>
+<td>viide: <a href="https://www.w3.org/TR/prov-o/#wasGeneratedBy">prov:wasGeneratedBy</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by">was generated by</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby">was generated by</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/prov-o/#Activity">prov:Activity</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity">Activity</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td>tüüp</td>
+<td>Kirjeldatava andmestiku tüüp Dublin Core Type Vocabulary<sup id="fnref:31"><a class="footnote-ref" href="#fn:31">31</a></sup> loendi alusel.<br>Märkus: Vaikimisi on kirjelduselemendi väärtuseks "dataset" ehk andmestik. Saab kasutada ka muud väärtust, näiteks "text" või "picture".</td>
+<td>0..1</td>
+<td>Dataset</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#type">dcterms:type</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type">type/genre</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type">type</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td>valdkond</td>
+<td>Andmestiku valdkond Eesti märksõnastiku (<a href="https://ems.elnet.ee/index.php">EMS</a>), <a href="https://op.europa.eu/et/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a> või muu alusel.<br>Märkus: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad <a href="https://data.europa.eu/et">Euroopa andmete ametliku portaali</a> valdkondadega (kategooriatega).</td>
+<td>1..n</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>25.1</td>
+<td>ainevaldkond</td>
+<td>Valdkonna nimetus EMSis, EuroVocis või mujal.</td>
+<td>1..1</td>
+<td>44 EHITUS. SANITAARTEHNIKA</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#theme">dcat:theme</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">theme/category</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme">theme</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>25.2</td>
+<td>valdkonna URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta.</td>
+<td>1..1</td>
+<td>https://ems.elnet.ee/id/EMS023309</td>
+<td>-</td>
+</tr>
+<tr>
+<td>26</td>
+<td>vastab standardile</td>
+<td>Tehniline vorming või standard, mis kehtestab andmetele põhjalikumad nõuded või struktuuri.<br>Märkus: HVD andmestiku kirjeldusprofiili puhul soovituslik kirjelduselement.</td>
+<td>0..n</td>
+<td>“Euroopa vähiregistrite käsiraamat ja standard”, mis koondab kõik soovitused ja juhised, mis on seni koostanud ENCRI-töörühmad, samuti Rahvusvahelise Vähiregistrite Assotsiatsiooni (IACR) koostatud ja võrgustiku poolt kohandatud soovitused.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#conformsTo">dcterms:conformsTo</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to">conforms to</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto">conforms to</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Standard">dcterms:Standard</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard">Standard</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td>veebisait</td>
+<td>Viide veebisaidile, millelt saab ligipääsu andmestikule ja/või leiab rohkem teavet andmestiku taaskasutustingimuste ja -võimaluste kohta.<br>Märkus: Mitte segi ajada levituse kirjelduselemendiga „juurdepääsupunkt“.</td>
+<td>0..1</td>
+<td>https://www.ehr.ee/<br>Selgitus: ehitisregistri veebisait.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#landingPage">dcterms:landingPage</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page">landing page</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage">landing page</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://xmlns.com/foaf/spec/">foaf:Document</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
+</tr>
+<tr>
+<td>28</td>
+<td>õiguslik alus</td>
+<td>Andmestiku loomise ja haldamise aluseks oleva õigusakti nimetus ja link allikale.<br>Olemasolul õigusakti nimetus ja link (URL) Riigi Teatajas. Kui õigusakt ei ole Riigi Teatajas avaldatud, lisatakse organisatsiooni kodulehel avaldatud õigusakti link (URL).<br>Märkus: kirjeldusse ei kanta kaudselt andmestiku aluseks olevaid õigusakte,näiteks avaliku teabe seadus, Eesti Vabariigi põhiseadus, vaid ainult otseselt andmestiku aluseks olevaid seaduseid või määruseid.</td>
+<td>0..n</td>
+<td>-</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#isReferencedBy">dcterms:isReferencedBy</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_is_referenced_by">is referenced by</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby">is referenced by</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
+</tr>
+<tr>
+<td>28.1</td>
+<td>õigusakti nimetus</td>
+<td>Andmestiku loomise ja haldamise aluseks oleva õigusakti pealkiri.</td>
+<td>1..1</td>
+<td>Ehitisregistri põhimäärus</td>
+<td>-</td>
+</tr>
+<tr>
+<td>28.2</td>
+<td>õigusakti link</td>
+<td>Viide andmestiku aluseks olevale õigusaktile.<br>Märkus: Riigi Teatajas on võimalik esitada viide hetkel kehtivale tervikteksti versioonile: https://www.riigiteataja.ee/akt/115032019011?leiaKehtiv. Eelistada tuleb viitamist konkreetsele tervikteksti versioonile.</td>
+<td>1..1</td>
+<td>https://www.riigiteataja.ee/akt/105072023239</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="23-andmestiku-levituse-kirjeldus">2.3 Andmestiku levituse kirjeldus<a class="headerlink" href="#23-andmestiku-levituse-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+<th>DCAT-AP viide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ajaline täpsus</td>
+<td>Element viitab levituses sisalduvates andmetes minimaalsele eristatavale ajaperioodile.</td>
+<td>0..1</td>
+<td>tund<br>ööpäev<br>aasta</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution">temporal resolution</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution">temporal resolution</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/xmlschema11-2/#duration">xsd:duration</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration">xsd:duration</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>andmete staatus</td>
+<td>Element viitab levitatavate andmete kindlale kvaliteediseisundile.<br>Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud.</td>
+<td>0..1</td>
+<td>valmis<br>ebasoovitav<br>arenduses<br>mahavõetud</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status">status</a><br>vahemik: <br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>avalikustamise kestus</td>
+<td>Kuupäev, millal levitus viimast päeva kättesaadav on.Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)</td>
+<td>0..1</td>
+<td>2025-06-31</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability">availability</a><br>vahemik: <br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>HVD kategooria</td>
+<td>Vt elemendi kasutamist andmestiku tabelis</td>
+<td>0..n</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>juurdepääsupunkt</td>
+<td>Levituse kasutamist võimaldav või toetav veebileht. Esitab teavet andmestiku juurdepääsukoha kohta.<br>Märkus: mitte segi ajada andmestiku kirjelduselemendiga „veebisait“. Veebisait viitab andmestiku kui terviku kohta lisainfot andvale veebilehele, „juurdepääsupunkt“ asukohale kust on võimalik kirjeldatavat levitust kasutada (avaandmete levituse korral) või selle juurdepääsutingimuste kohta infot saada (piiratud juurdepääsuga levituste korral).</td>
+<td>1..n</td>
+<td>https://andmed.stat.ee/et/stat/majandus__infotehnoloogia__infotehnoloogia-leibkonnas/IT621<br>Selgitus: viit statistika andmebaasi tabelile.<br>https://nma.vta.ee/<br>Selgitus: viit navigatsioonimärkide andmekogumile.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url">access URL</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL">access URL</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>juurdepääsutingimused</td>
+<td>Levituse juurdepääsutingimusi põhjalikumalt kirjeldava veebilehe aadress või vabatekstiline juurdepääsuõiguste kirjeldus.<br>Märkus: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul.</td>
+<td>0..1</td>
+<td>https://www.stat.ee/sites/default/files/2020-08/Konfidentsiaalsete%20andmete%20teaduslikel%20eesm%c3%a4rkidel%20edastamise%20kord%202015.pdf<br>Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid ja tingimusi konfidentsiaalsete andmete taaskasutamisel.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights">dcterms:rights</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights">rights</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights">rights</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement">dcterms:RightsStatement</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights statement</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>kasutuslitsents</td>
+<td>Kogu andmestikule kohalduv kasutuslitsents, kui see on määratud.<br>Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.<sup id="fnref:32"><a class="footnote-ref" href="#fn:32">32</a></sup></td>
+<td>0..1</td>
+<td>CC BY-SA 4.0</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license">dcterms:license</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license">license</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence">license</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument">dcterms:LicenseDocument</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument">License Document</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>kohalduv õigusakt</td>
+<td>Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel.</td>
+<td>0..n</td>
+<td>http://data.europa.eu/eli/reg_impl/2023/138/oj<br>Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.<br>http://data.europa.eu/eli/reg/2020/868/oj<br>Selgitus: Euroopa andmehalduse määruse kohaldumisel:<br>http://data.europa.eu/eli/dir/2019/1024/oj</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation">applicable legislation</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>levituse identifikaator</td>
+<td>Viide andmestiku baasil loodud levitusele.<br>Märkus: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine</td>
+<td>1..1</td>
+<td>336a3add-efc9-40dc-8830-091205fe20a5</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>levituse vorming</td>
+<td>Levituses sisalduvate andmete failivorming.<br>Vormingu märkimisel tuleb kasutada IANA poolt defineeritud vormingute loendit (nn mime-tüübid).<sup id="fnref:33"><a class="footnote-ref" href="#fn:33">33</a></sup><br>Märkus: kirjelduselemendi täitmine on kohustuslik andmehalduse määruse skoopi kuuluvate levituste puhul.</td>
+<td>0..1</td>
+<td>application/json<br>text/csv</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#format">dcterms:format</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format">format</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format">format</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent">Media Type or Extent</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>levituse suurus</td>
+<td>Levituse faili suurus baitides<br>Märkus: kirjelduselemendi täitmine on andmehalduse määruses toodudandmestike puhul kohustuslik, mh tuleb dünaamiliste teenuste kirjeldamisel väärtuseks märkida kogu andmestiku suurus.</td>
+<td>0..1</td>
+<td>160000<br>Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#byteSize">dcat:byteSize</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size">byte size</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize">byte size</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger">xsd:nonNegativeInteger</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="24-andmestike-sarja-kirjeldus">2.4 Andmestike sarja kirjeldus<a class="headerlink" href="#24-andmestike-sarja-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+<th>DCAT-AP viide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>andmete piirdaatumid</td>
+<td>Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP)<br>Märkus: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga.<br>Märkus: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882).<br>Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel.</td>
+<td>0..1</td>
+<td>1993-11-05/2007-06-30<br>Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal">dcterms:temporal</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage">temporal coverage</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime">dcterms:PeriodOfTime</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime">Period of time</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>andmete uuendamise regulaarsus</td>
+<td>Sarja uuendamise regulaarsus; uute andmestike sarja lisamise periood. Kirjelduselemendi väärtused võetakse ELi sageduste sõnastikust.<sup id="fnref:34"><a class="footnote-ref" href="#fn:34">34</a></sup></td>
+<td>0..1</td>
+<td>Kord aastas</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#accrualPeriodicity">dcterms:accrualPeriodicity</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency">frequency</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Frequency">dcterms:Frequency</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency">Frequency</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>avalikustamise kuupäev</td>
+<td>Sarja ametliku avalikustamise kuupäev.Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2022-05-25</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#issued">dcterms:issued</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate">release date</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>esimene andmestik</td>
+<td>Andmestik on esimene selle sarjas.</td>
+<td>0..1</td>
+<td>Remondi- ja rekonstrueerimistööde hinnaindeks, 2017 (kuud)</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#first">dcat:first</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_first">first</a><br>vahemik: <br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries">Dataset member of a Dataset Series</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>geograafiline kaetus</td>
+<td>Andmetega kaetud piirkond või asukoht.<br>Märkus: Eesti andmestike puhul on üldjuhul kohane märkida piirkond riigi, maakonna või kohaliku omavalitsuse tasemel.<br>Märkus: geograafilise kaetuse märkimisel tuleb kasutada piirkonna tekstilist nimetust (näiteks: “Harju maakond”) ja/või bounding boxvormingus koordinaatide esitust.</td>
+<td>0..n</td>
+<td>Kogu Eesti;<br>Harju maakond, Kiili vald<br>Selgitus: piirkond/asukoht tekstina.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#spatial">dcterms:spatial</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographic coverage</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage">geographical coverage</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#Location">dcterms:Location</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location">Location</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>kirjeldus</td>
+<td>Sarja kuuluvate andmestike sisuline lühikirjeldus ja andmetega seotud üldiste eesmärkide kirjeldus.<br>Soovitav on kirjeldada ka andmestiku sarja komponentide ulatus, mis jaotuse tingis.</td>
+<td>1..1</td>
+<td>Remondi- ja rekonstrueerimistööde hinnaindeks aastate võrdluses, mida iseloomustab nimetatud töödele iseloomuliku ehitustegevuse maksumuse muutus ametihoonete puhul ehitusplatsi otsekulude tasemel. Lisaks on 2017. aasta andmed kuude ja kvartalite kaupa.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description">dcterms:description</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description">description</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>kirjelduse muutmiskuupäev</td>
+<td>Andmestike sarja kirjelduse viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2022-05-25</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified">dcterms:modified</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate">modification date</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>kontaktpunkt</td>
+<td>Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.<br>Märkus: kasutatakse vCard ontoloogiat10, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber.</td>
+<td>0..1</td>
+<td>Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint">contact point</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/vcard-rdf/#d4e1819">vcard:Kind</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>omanik</td>
+<td>Andmestike sarja sisu haldav organisatsioon, kes andmestikku levitab.<br>Märkus 1: RIHAKE täidab andmestiku omaniku kirjelduse automaatselt kirjeldajaga seotud organisatsiooni nimetusega.</td>
+<td>0..1</td>
+<td>Majandus- ja Kommunikatsiooniministeerium;<br>Kihnu vallavalitsus</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher">dcterms:publisher</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher">publisher</a><br>vahemik:<br>DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>pealkiri</td>
+<td>Andmestike sarja täielik nimetus.<br>Üksikutest tabelitest koosneva andmestike sarja defineerimisel tuleb pealkirjastamisel lähtuda tabelite pealkirjastamise reeglitest.</td>
+<td>1..1</td>
+<td>Remondi- ja rekonstrueerimistööde hinnanindeks võrreldes eelmise aastaga<br>Liiklusõnnetused aastate kaupa</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title">dcterms:title</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title">title</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>viimane andmestik</td>
+<td>Andmestik on viimane selles sarjas.</td>
+<td>0..1</td>
+<td>Remondi- ja rekonstrueerimistööde hinnanindeks, 2022</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#last">dcat:last</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_last">last</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="25-andmeteenuse-kirjeldus">2.5 Andmeteenuse kirjeldus<a class="headerlink" href="#25-andmeteenuse-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+<th>DCAT-AP viide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>e-posti aadress</td>
+<td>E-posti aadress tagasiside edastamiseks.</td>
+<td>0..1</td>
+<td>info@mmit.ee</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>HVD kategooria</td>
+<td>Vt elemendi kasutamist andmestiku tabelis</td>
+<td>0..n</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>juurdepääsutingimused</td>
+<td>Juhul, kui andmeteenust kasutatakse levituse pakkumiseks, võimaldab lisada viite juurdepääsutingimusi põhjalikumalt kirjeldavale veebilehele või vabatekstilise juurdepääsuõiguste kirjelduse.</td>
+<td>0..1</td>
+<td>Teenuses kasutatavad andmed on avaandmed.</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#rights">dcterms:rights</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights">rights</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights">access rights</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#RightsStatement">rdfs:RightsStatement</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights Statement</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>kasutuslitsents</td>
+<td>Andmeteenusele kohalduv kasutuslitsents.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel.<br>Elemendi täitmisel soovitatakse kasutada Creative Commonsi litsentse.<sup id="fnref:35"><a class="footnote-ref" href="#fn:35">35</a></sup></td>
+<td>0..1</td>
+<td>CC BY-SA 4.0</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#license">dcterms:license</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license">license</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence">license</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#LicenseDocument">dcterms:LicenseDocument</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument">License Document</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>kohalduv õigusakt</td>
+<td>Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid.<br>Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel.<br>Märkus: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga.</td>
+<td>0..n</td>
+<td>Tööturuteenuste ja -toetuste seadus<br>https://www.riigiteataja.ee/akt/948762<br>http://data.europa.eu/eli/reg_impl/2023/138/oj</td>
+<td>viide:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation">applicable legislation</a><br>vahemik:<br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>kontaktileht</td>
+<td>Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada.</td>
+<td>0..1</td>
+<td>https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>kontaktpunkt</td>
+<td>Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks.<br>Märkus: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul.</td>
+<td>0..1</td>
+<td>https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasisideinfo@rik.ee<br>Kultuuriministeerium, min@kul.ee, (372) 628 2222<br>Selgitus: organisatsiooni kontaktandmed.<br>Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012<br>Selgitus: üksikisiku kontaktandmed.</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint">contact point</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/vcard-rdf/#d4e1819">vcard:Kind</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>otspunkti kirjeldus</td>
+<td>Viide otspunkti kaudu kättesaadavate teenuste kirjeldusele (päringute tüübid, parameetrid jne).</td>
+<td>0..n</td>
+<td>https://avaandmed.ariregister.rik.ee/et/ariregistri-avaandmete-api/ettevotja-lihtandmete-paring-staatuse-paring</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description">endpoint description</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription">endpoint description</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>pealkiri</td>
+<td>Andmeteenuse nimi.</td>
+<td>0..1</td>
+<td>Riigikogu liikme sõnavõttude statistika</td>
+<td>viide: <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title">dcterms:title</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title">title</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>viide andmestikule</td>
+<td>Viide andmestikule, mille andmeid andmeteenus pakub.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel.</td>
+<td>0..n</td>
+<td>andmestiku ID</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#servesdataset">dcat:servesDataset</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_serves_dataset">serves dataset</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset">serves dataset</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset">dcat:Dataset</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset">Dataset</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>viide otspunktile</td>
+<td>Viide API peamisele otspunktile või pöördumisteele. Kasutama peaks püsivat viidet.</td>
+<td>1..n</td>
+<td>https://www.riha.ee/api/v1</td>
+<td>viide: <a href="https://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</a><br>- DCAT: <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url">endpoint URL</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL">endpoint URL</a><br>vahemik: <br>- DCAT:(RDF) <a href="https://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a><br>- DCAT-AP: <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td>viide teenuse kättesaadavuse tingimustele</td>
+<td>Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta.<br>Märkus: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel.</td>
+<td>0..n</td>
+<td>https://opendata.digilugu.ee/docs/#/et/howto</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="26-andmebaasi-tabeli-kirjeldus">2.6 Andmebaasi tabeli kirjeldus<a class="headerlink" href="#26-andmebaasi-tabeli-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>andmehoidla</td>
+<td>Tegelikult olemasoleva füüsilise andmebaasi tähis või lühinimetus, millesse tabel kuulub.</td>
+<td>1..1</td>
+<td>riha<br>ehr<br>rr</td>
+</tr>
+<tr>
+<td>2</td>
+<td>kirjelduse muutmise aeg</td>
+<td>Tabeli kirjelduse viimase muutmise kuupäev ja kellaaeg. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: RIHAKEses kattub viimase muutmise aeg andmebaasi viimase skaneerimise ajaga.</td>
+<td>0..1</td>
+<td>2022-03-17T10:10:34,9344</td>
+</tr>
+<tr>
+<td>3</td>
+<td>kommentaar</td>
+<td>Tabeli kommentaar andmebaasis.<br>Märkus: kommentaari on koostanud andmebaasi arendaja või andmebaasi administraator.</td>
+<td>0..1</td>
+<td>Ehitise üldandmete tabel</td>
+</tr>
+<tr>
+<td>4</td>
+<td>nimetus</td>
+<td>Tabeli tähis täpselt sellisel kujul, nagu see on esitatud relatsioonilises andmebaasis.</td>
+<td>1..1</td>
+<td>SYS_LOG<br>EHITIS<br>ISIK</td>
+</tr>
+<tr>
+<td>5</td>
+<td>skeem</td>
+<td>Andmebaasi skeemi nimetus, millesse tabel kuulub.</td>
+<td>0..1</td>
+<td>SYS<br>RIHA<br>RIHA_vana</td>
+</tr>
+</tbody>
+</table>
+<h2 id="27-andmeelemendi-kirjeldus">2.7 Andmeelemendi kirjeldus<a class="headerlink" href="#27-andmeelemendi-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>andmetüüp</td>
+<td>Andmeelemendi andmetüübi tähis algses andmebaasis<br>Märkus: Andmeelemendi andmetüübi loob RIHAKE andmebaasi skaneerimise käigus automaatselt.</td>
+<td>1..1</td>
+<td>int4(10)<br>varchar(255)<br>uuid</td>
+</tr>
+<tr>
+<td>2</td>
+<td>GUID</td>
+<td>Andmeelemendi globaalselt unikaalne identifikaator.<br>Märkus: Andmeelemendi GUIDi loob RIHAKE automaatselt.</td>
+<td>0..1</td>
+<td>123e4567-e89b-12d3-a456-426655440000</td>
+</tr>
+<tr>
+<td>3</td>
+<td>kirjeldus</td>
+<td>Kasutajale mõeldud andmeelemendi sisu, tähenduse, ärireegli ja/või tehniline selgitus.<br>Märkus: Andmeelemendi kirjelduse loob RIHAKE andmebaasi skaneerimise käigus automaatselt (kui see on andmebaasis olemas).</td>
+<td>0..1</td>
+<td>Püsielukoht: elukoht, kus isik veedab enamiku oma igapäevasest puhke- ja uneajast.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>kirjelduse muutmise aeg</td>
+<td>Andmeelemendi kirjelduse viimase muutmise kuupäev ja kellaaeg.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)<br>Märkus: Kirjelduselemendi täidab RIHAKE automaatselt.</td>
+<td>0..1</td>
+<td>2022-03-17T10:10:34,9344</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mõõtühik</td>
+<td>Andmeelemendi mõõtühik SI-süsteemist.<br>Märkus: Üldjuhul kasutatakse mõõtühiku tähist.</td>
+<td>0..1</td>
+<td>isiku pikkust mõõdetakse meetrites, meetri tähis on m;<br>sündmuse kestust mõõdetakse tundides, tunni tähis on h.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>märkused</td>
+<td>Täiendav selgitus andmeelemendi kohta.</td>
+<td>0..1</td>
+<td>Ilmselt muutub haldusreformi tulemusena.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>on primaarvõti</td>
+<td>Kirjelduselement näitab, kas kirjeldatav andmeelement (tabeli veerg) on andmebaasi tabeli primaarvõti.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt.</td>
+<td>0..1</td>
+<td>false<br>true</td>
+</tr>
+<tr>
+<td>8</td>
+<td>seotud loend</td>
+<td>Andmeelemendi täitmisel kasutatud mujalt saadud väärtuste, loendi, koodiloendi või klassifikaatori nimetus või tähis.<br>Loendid on tunnuste (muutujate) nimekirjad, mille hulgast saab valida sobiva väärtuse. Loendid võivad olla muudetavad või mittemuudetavad.<br>Märkus: RIHAKEse kasutajaliideses saab kasutaja valida süsteemi sisestatud loendite hulgast sobiva, RIHAKEse-sisene viide klassifikaatorile sisestatakse automaatselt.</td>
+<td>0..1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>seotud loendi nimetus</td>
+<td>Kasutatava loendi täielik nimetus või lühend.<br>Märkus: Soovitav on kasutada nii nimetust kui ka lühendit, kui viimane on olemas. Mitte kasutada nimetuses versiooni tähist.</td>
+<td>1..1</td>
+<td>EHAK<br>Valitsusfunktsioonide klassifikaator<br>Anesteesia liigid</td>
+</tr>
+<tr>
+<td>8.2</td>
+<td>seotud loendi URI</td>
+<td>Viide seotud loendi URI-le, esitatakse URI-vormingus.Märkus: URI võib viidata nii andmetele samas andmestikus kui ka välistele andmetele.</td>
+<td>0..1</td>
+<td>https://estat.stat.ee/codelists/codelist/AK2008ap<br>http://pub.e-tervis.ee/classifications/Anesteesia%20liigid/1<br>Selgitus: ühele loendile vastav URI</td>
+</tr>
+<tr>
+<td>8.3</td>
+<td>seotud loendi versioon</td>
+<td>Kasutatava loendi versiooni tähis.<br>Märkus: Eraldi rühma moodustavad aegpidevad klassifikaatorid ja loendid, milles hallatakse elementide kehtivust.</td>
+<td>0..1</td>
+<td>AK 2008ap</td>
+</tr>
+<tr>
+<td>9</td>
+<td>staatus</td>
+<td>Andmeelemendi kirjeldatavuse ja kasutatavuse staatus.<br>Kasutatakse selleks, et piiritleda kirjeldatavate elementide hulka ning mitte kirjeldada neid elemente, milles olevatel andmetel pole sisulist tähendust või ei ole andmeelement üldse tegelikult kasutusel.<br>Märkus: RIHAKEses on staatusel kolm võimalikku väärtust: „KIRJELDATAV“, „EI KIRJELDATA“, „EI OLE KASUTUSEL“.</td>
+<td>0..1</td>
+<td>KIRJELDATAV<br>EI KIRJELDATA<br>EI OLE KASUTUSEL</td>
+</tr>
+<tr>
+<td>10</td>
+<td>seos andmesõnastiku terminiga</td>
+<td>Viide andmesõnastiku terminile.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt.</td>
+<td>0..1</td>
+<td>müügipakkumise number;<br>ehitise suletud netopind</td>
+</tr>
+<tr>
+<td>10.1</td>
+<td>seotud termin</td>
+<td>Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.</td>
+<td>0..1</td>
+<td>müügipakkumise number;<br>ehitise suletud netopind</td>
+</tr>
+<tr>
+<td>10.2</td>
+<td>seotud termini URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/DD/89c0607b-2940-4b67-8783-2817c92c2ce4/term1234<br>Selgitus: ühele andmesõnastiku terminile vastav URI</td>
+</tr>
+<tr>
+<td>11</td>
+<td>seos andmeelementide grupiga</td>
+<td>Viide andmeelementide grupile.</td>
+<td>0..1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11.1</td>
+<td>seotud grupi nimi</td>
+<td>Andmeelementide grupi nimetus.</td>
+<td>0..1</td>
+<td>ostuõiguse kehtetuks tunnistamise andmed</td>
+</tr>
+<tr>
+<td>11.2</td>
+<td>seotud grupi URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/123</td>
+</tr>
+<tr>
+<td>12</td>
+<td>tähis</td>
+<td>Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt.</td>
+<td>1..1</td>
+<td>algus_kpv<br>haridus<br>eluk_EHAK<br>jt28</td>
+</tr>
+<tr>
+<td>13</td>
+<td>URI</td>
+<td>Nimest, aadressist või tähisest koosnev URI, mis viitab andmeelemendile ainuliselt.<br>Märkus: Andmeelemendi URI loob RIHAKE automaatselt.</td>
+<td>0..1</td>
+<td>http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI</td>
+</tr>
+<tr>
+<td>14</td>
+<td>viide primaarvõtmele</td>
+<td>Kirjelduselement esitab viite andmeelemendiga seotud primaarvõtmele.<br>Märkus: Andmeelemendi primaarvõtme staatuse loob RIHAKE andmebaasi skaneerimise käigus automaatselt.</td>
+<td>0..1</td>
+<td>riha.comment_id.comment</td>
+</tr>
+</tbody>
+</table>
+<h2 id="28-andmeelementide-grupp">2.8 Andmeelementide grupp<a class="headerlink" href="#28-andmeelementide-grupp" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>kirjeldus</td>
+<td>Kasutajale mõeldud andmeelementide selgitus selle sisu ja tähenduse järgi.</td>
+<td>0..1</td>
+<td>ostuõiguse taotluse ja ostuõiguse kehtivuse andmed ning nõuete täitmise üle järelevalve teostamise andmed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>nimetus</td>
+<td>Andmeelementide kogumit kirjeldav ühine nimetaja.</td>
+<td>1..1</td>
+<td>ostuõiguse kehtetuks tunnistamise andmed</td>
+</tr>
+<tr>
+<td>3</td>
+<td>seos andmeelemendiga</td>
+<td>Viide andmeelemendile.</td>
+<td>0..n</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3.1</td>
+<td>seotud andmeelemendi tähis</td>
+<td>Andmeelemendi tehniline tähis andmebaasis (veeru nimi).<br>Tähis võib olla täheline, numbriline, muu lühend või akronüüm. Tähis on eelistatult semantiliselt arusaadav, kuid ei pruugi seda olla.<br>Märkus: andmeelemendi tähise loeb RIHAKE andmebaasi skaneerimise käigus automaatselt.</td>
+<td>1..1</td>
+<td>algus_kpv<br>haridus<br>eluk_EHAK<br>jt28</td>
+</tr>
+<tr>
+<td>3.2</td>
+<td>seotud andmeelemendi URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt.</td>
+<td>0..1</td>
+<td>http://rihake/70001234/ebis/andmehoidla2/schema1/table13/section<br>Selgitus: ühele andmeelemendile vastav URI.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>seos ärisõnastiku terminiga</td>
+<td>Viide terminile ärisõnastikus.</td>
+<td>0..n</td>
+<td>andmeelemendi grupp: ostuõiguse kehtetuks tunnistamise andmed – ärisõnastikus: ostuõigus; ostuõiguse taotlus<br>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>seotud termin</td>
+<td>Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna.</td>
+<td>1..1</td>
+<td>ostuõigus; ostuõiguse taotlus<br>Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõiguse taotlus.</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>seotud termini URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele ärisõnastiku terminile vastav URI.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/1234</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-sonastikud">3. Sõnastikud<a class="headerlink" href="#3-sonastikud" title="Permanent link">&para;</a></h1>
+<h2 id="31-andmesonastiku-kirjeldus">3.1 Andmesõnastiku kirjeldus<a class="headerlink" href="#31-andmesonastiku-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>kasutusele võtmise kuupäev</td>
+<td>Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>1..1</td>
+<td>2002-09-23</td>
+</tr>
+<tr>
+<td>2</td>
+<td>kirjeldus</td>
+<td>Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse.</td>
+<td>1..1</td>
+<td>Loomeliitude ja looviisikute andmestiku terminite loend</td>
+</tr>
+<tr>
+<td>3</td>
+<td>nimi</td>
+<td>Sõnastiku pealkiri.<br>Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“.</td>
+<td>1..1</td>
+<td>Loomeliitude andmekogu (LLA) andmesõnastik</td>
+</tr>
+<tr>
+<td>4</td>
+<td>omanik</td>
+<td>Sõnastikku haldava isiku nimi.</td>
+<td>1..n</td>
+<td>Jüri Kask</td>
+</tr>
+<tr>
+<td>5</td>
+<td>seotud sõnastiku nimi</td>
+<td>Viide sõnastikus kasutatavatele teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide ärisõnastikule.</td>
+<td>0..n</td>
+<td>Kultuuriministeeriumi ärisõnastik</td>
+</tr>
+<tr>
+<td>6</td>
+<td>seotud sõnastiku URI</td>
+<td>Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt.</td>
+<td>0..n</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7</td>
+</tr>
+<tr>
+<td>7</td>
+<td>URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse andmesõnastike jaoks kasutusele koos RIHAKEse juurutamisega.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>viimase muutmise kuupäev</td>
+<td>Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP)</td>
+<td>0..1</td>
+<td>2021-10-19</td>
+</tr>
+</tbody>
+</table>
+<h2 id="32-andmesonastiku-termini-kirjeldus">3.2 Andmesõnastiku termini kirjeldus<a class="headerlink" href="#32-andmesonastiku-termini-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>allikas</td>
+<td>Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina.</td>
+<td>0..1</td>
+<td>Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik, võib-olla esitatud lingina.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>kehtivus</td>
+<td>Märge selle kohta, kas termin on kasutusel.<br>Termin võib olla kasutusest maha võetud mitmesugustel põhjustel, näiteks andmekoosseisu muutuse tagajärjel.<br>Märkus: kui element ei ole täidetud, eeldatakse, et termin on kasutusel.</td>
+<td>0..1</td>
+<td>Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: <em>true</em> ja <em>false</em> jms.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>määratlus</td>
+<td>Kindlast terminiallikast võetud definitsioon või selgitus.<br>Võimalusel kasutatakse sobivat ärisõnastiku termini määratlust. Sobiva termini määratluse puudumisel ärisõnastikus koostatakse uus termini selgitus andmekirjelduse koostamise käigus.<br>Kui termin on end ise lahti seletav, pole otstarbekas elementi dubleerivalt täita.<br>Märkus: elemendi nimetus on „määratlus“, kuid selle alla kuulub ka selgitus, mis ei ole definitsioon.</td>
+<td>0..1</td>
+<td>igal aastal ühest algav neljakohaline number, mis pannakse pakkumisele selle registreerimisel.<br>Selgitus: määratlus terminile müügipakkumise number.<br>Hoone suletud netopind on kõigi korruste suletud netopindade summa.<br>Selgitus: selgitus termiline ehitise suletud netopind.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>termin</td>
+<td>Mõistet tähistav (liit)sõna või mitmest sõnast koosnev liittermin.<br>Märkus: oluline on teada, et iga termini taga on teadmusüksus ehk mõiste, kuid kõik mõisted on esitatud terminite ehk oskussõnadena.<br>Andmesõnastiku terminid ja mõisted on seotud ärisõnastiku terminite ja mõistetega ning kasutavad terminite tähistamisel ärisõnastiku sõnavara.</td>
+<td>1..1</td>
+<td>müügipakkumise number;<br>ehitise suletud netopind</td>
+</tr>
+<tr>
+<td>5</td>
+<td>loomise kuupäev</td>
+<td>Kuupäev, mil termini kirjeldus lisati andmesõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2018-02-16</td>
+</tr>
+<tr>
+<td>6</td>
+<td>muutmise kuupäev</td>
+<td>Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2022-12-11</td>
+</tr>
+<tr>
+<td>7</td>
+<td>märkused</td>
+<td>Andmesõnastiku mõiste ja termini koostamist, kasutamist jms avav kirjeldus.</td>
+<td>0..1</td>
+<td>Ilmselt muutub haldusreformi tulemusena.<br>Kasutusotstarve ebamäärane</td>
+</tr>
+<tr>
+<td>8</td>
+<td>seos ärisõnastiku terminiga</td>
+<td>Viide terminile ärisõnastikus. Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda ärisõnastiku ja andmesõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt.</td>
+<td>0..n</td>
+<td>andmesõnastikus: müüdud erimärgistatud kütuse kasutusotstarve – ärisõnastikus: erimärgistatud kütus;<br>andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudteeinfrastruktuur</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>seotud termin</td>
+<td>Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna.</td>
+<td>1..1</td>
+<td>erimärgistatud kütus;<br>raudteeinfrastruktuur</td>
+</tr>
+<tr>
+<td>8.2</td>
+<td>seotud termid URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>termini URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234<br>Selgitus: ühele terminile vastav URI.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-arisonastiku-kirjeldus">3.3 Ärisõnastiku kirjeldus<a class="headerlink" href="#33-arisonastiku-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>kasutusele võtmise kuupäev</td>
+<td>Sõnastiku kasutusse võtmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>1..1</td>
+<td>2002-09-23</td>
+</tr>
+<tr>
+<td>2</td>
+<td>kirjeldus</td>
+<td>Sõnastiku kirjeldus, mis selgitab lahti selle kasutusvaldkonna või ulatuse.</td>
+<td>1..1</td>
+<td>Spordi, loomemajanduse ja etenduskunstide andmestike ärisõnastik<br>Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seotud terminikogu koos definitsioonide ja allikaviidetega.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>nimi</td>
+<td>Sõnastiku pealkiri.<br>Soovitatav on sõnastik pealkirjastada nii, et selles on ka viide sõnastikku haldavale organisatsioonile.<br>Märkus: Kui organisatsioonil on ärisõnastikke mitu, siis on soovitav pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi.<br>Märkus: RIHAKEses on kasutusel “Nimetus“.</td>
+<td>1..1</td>
+<td>Kultuuriministeeriumi ärisõnastik<br>Selgitus: pealkirjas on viide sõnastikku haldavale organisatsioonile.<br>Eesti Spordiregistri (ESR) ärisõnastik<br>Selgitus: spordiregistri andmestiku ärisõnastik.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>omanik</td>
+<td>Sõnastikku haldava isiku nimi.</td>
+<td>1..n</td>
+<td>Mari Maasikas</td>
+</tr>
+<tr>
+<td>5</td>
+<td>seotud sõnastiku nimi</td>
+<td>Viide sõnastikus kasutatava teise sõnastiku pealkirjale.<br>Märkus: RIHAKEses viide nii andmesõnastikule, valdkonna sõnastikule kui ka üldisele märksõnastikule.</td>
+<td>0..n</td>
+<td>Loomeliitude andmekogu (LLA) andmesõnastik<br>Kultuurivaldkonna sõnastik<br>Eesti Märksõnastik</td>
+</tr>
+<tr>
+<td>6</td>
+<td>seotud sõnastiku URI</td>
+<td>Viide seotud sõnastiku URI-le, esitatakse URI-vormingus.<br>Märkus: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt.</td>
+<td>0..n</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d</td>
+</tr>
+<tr>
+<td>7</td>
+<td>URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: sõnastiku URI täidab RIHAKE automaatselt, viide võetakse ärisõnastike jaoks kasutusele koos RIHAKEse juurutamisega.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7<br>Selgitus: ühele ärisõnastikule vastav URI.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>viimase muutmise kuupäev</td>
+<td>Sõnastiku viimase muutmise kuupäev.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2021-10-19</td>
+</tr>
+</tbody>
+</table>
+<h2 id="34-arisonastiku-termini-kirjeldus">3.4 Ärisõnastiku termini kirjeldus<a class="headerlink" href="#34-arisonastiku-termini-kirjeldus" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>elemendi nimetus</th>
+<th>määratlus ja kasutamine</th>
+<th>kohustuslik / korduv</th>
+<th>näide</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>allikas</td>
+<td>Terminiallika nimi või pealkiri.<br>Märkus 1: terminiallikad on näiteks valdkonnasõnastik, standard või kirjeldus. Terminiallikaks võib olla ka õigusakt.<br>Märkus 2: terminiallika nimi või pealkiri võib olla esitatud ka lingina.</td>
+<td>0..1</td>
+<td>Statistikaleksikon;<br>Estterm (Eesti Keele Instituudi mitmekeelne terminibaas); http://termin.eki.ee/esterm/<br>Selgitus: termini allikas on sõnastik.<br>Ruumiandmete seadus; https://www.riigiteataja.ee/akt/130062023068<br>Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>loomise kuupäev</td>
+<td>Kuupäev, mil termini kirjeldus lisati ärisõnastikku.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2022-02-16</td>
+</tr>
+<tr>
+<td>3</td>
+<td>märkused</td>
+<td>Ärisõnastiku termini koostamist, kasutamist jms avav kirjeldus.</td>
+<td>0..1</td>
+<td>Ilmselt muutub haldusreformi tulemusena;<br>Kasutusotstarve ebamäärane</td>
+</tr>
+<tr>
+<td>4</td>
+<td>määratlus</td>
+<td>Terminile antud määratlus ehk definitsioon või selgitus.</td>
+<td>1..1</td>
+<td>Seletavas sõnaraamatus: püsielukoha riik – riik, kus inimene on pidevalt elanud või kavatseb elada vähemalt 12 kuud.<br>Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles iga mõiste kohta on esitatud terminid ning mis on organiseeritud, tuues selgelt välja mõistete vahelised suhted ning milles eelisterminitele on lisatud sünonüümid või osasünonüümid.<br>Õigusaktis: Üksikandmed käesoleva seaduse tähenduses on konkreetset statistilist üksust iseloomustavad detailsed andmed.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>määratlus (inglise keeles)</td>
+<td>Termini määratlus või selgitus inglise keeles.</td>
+<td>0..1</td>
+<td>(vastavate terminite ametlik definitsioon või kasutuskontekstist tulenev tõlge)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>muutmise kuupäev</td>
+<td>Kuupäev, mil termini kirjeldust viimati muudeti.<br>Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP).</td>
+<td>0..1</td>
+<td>2022-12-11</td>
+</tr>
+<tr>
+<td>7</td>
+<td>on eelistermin</td>
+<td>Kirjelduselement näitab, kas termin on sünonüümidega võrreldes eelistatav või mitte.</td>
+<td>0..1</td>
+<td>Võimalikud väärtused on: jah ja ei või nende muul kujul tähised: <em>true</em> ja <em>false</em> jms.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>seos ärisõnastiku teise terminiga</td>
+<td>Viide terminile ärisõnastikus.<br>Märkus: RIHAKEse rakendus võimaldab kasutajaliideses siduda omavahel ärisõnastiku termineid. URI-vormingus viide lisatakse RIHAKEse rakenduses automaatselt.</td>
+<td>0..n</td>
+<td>assotsiatiivsuhe:<br>termin arst – termin patsient<br>termin perearst – termin tervisekaart; termin patsient</td>
+</tr>
+<tr>
+<td>8.1</td>
+<td>seotud termin</td>
+<td>Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna.</td>
+<td>1..n</td>
+<td>patsient; tervisekaart; hüvitis</td>
+</tr>
+<tr>
+<td>8.2</td>
+<td>seotud termini URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1</td>
+</tr>
+<tr>
+<td>8.3</td>
+<td>seose tüüp</td>
+<td>Kirjelduselement näitab, millise seose tüübi kaudu on terminid omavahel suhestunud. Seose tüübid on: <br>- hierarhiline suhe – termin on kitsam või laiem; <br>- assotsiatiivsuhe ehk lihtsalt seos; <br>- grupeeriv suhe – termin on ise grupeeriv või kuulub gruppi; <br>- sünonüümsuhe – terminid on samatähenduslikud.<br>Assotsiatiivsuhe väljendab seost terminite vahel, mis on omavahel seotud semantiliselt või kontekstuaalselt ning kui see seos ei ole hierarhiline. Terminite vahel kirjeldatakse see seos, et näidata alternatiive või seost kindlas kasutuskontekstis.<br>Hierarhilises suhtes mahub kitsam termin laiemasse täielikult.<br>Grupeeriv suhe on olemuselt assotsiatiivsuhe, milles termin on seotud kontekstuaalselt ja kontekst on andmestik või osa sellest.<br>Sünonüümsuhe moodustub häälikuliselt erinevate, kuid tähenduselt samade terminite vahel.</td>
+<td>1..1</td>
+<td>hierarhiline suhe:<br>- arst <br>- - kirurg <br>- - - neurokirurg<br>C - Töötlev tööstus <br>10 - Toiduainete tootmine <br>105 - Piimatoodete tootmine<br>Assotsiatiivsuhe:<br>- linnud ja ornitoloogia <br>- raudtee ja sõidupiirkond <br>grupeeriv suhe:<br>- kontaktandmed <br>- - (koha)aadress <br>- - - adressaat <br>sünonüüm:<br>pass – isikutunnistus <br>isik – persoon <br>biograafia – elulugu</td>
+</tr>
+<tr>
+<td>9</td>
+<td>termin</td>
+<td>Kasutusel olevat mõistet tähistav termin, tavaliselt üks või mitu selget erialast tähendust omavat sõna.</td>
+<td>1..1</td>
+<td>elektrivõrk<br>spordiklubi<br>liiklusõnnetus</td>
+</tr>
+<tr>
+<td>10</td>
+<td>termin (inglise keeles)<sup id="fnref:36"><a class="footnote-ref" href="#fn:36">36</a></sup></td>
+<td>Mõiste tähistus inglise keeles.</td>
+<td>0..1</td>
+<td>(vastavate terminite ametlik või kasutuskontekstist tulenev tõlge)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>termini URI</td>
+<td>Vastavalt kokkuleppele konstrueeritud viide URI-vormingus.<br>Märkus: RIHAKEse rakenduses luuakse igale terminile URI automaatselt.</td>
+<td>0..1</td>
+<td>http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Avaliku sektori andmekogude osas on selleks infosüsteemiks <a href="https://www.riha.ee/Avaleht">riigi infosüsteemi haldussüsteem</a> (RIHA). Avaandmete osas on selleks infosüsteemiks <a href="https://andmed.eesti.ee/">Eesti avaandmete teabevärav</a>(andmed.eesti.ee).&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><a href="https://www.w3.org/TR/vocab-dcat-3/">Data Catalog Vocabulary (DCAT) - Version 3</a> (W3C Proposed Recommendation 13 June 2024)&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p><a href="https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300">DCAT Application Profile for data portals in Europe</a>(DCAT-AP 3.0.0)&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p><a href="https://www.dublincore.org/">Dublin Core Metadata Innovation (DCMI)</a>&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>EVS-ISO 15836-1:2019 Informatsioon ja dokumentatsioon. Dublin Core’i metaandmeelemendid. Osa 1: Põhielemendid (kehtiv alates 15.05.2019) ja EVS-ISO 15836-2:2023 Osa 2: DCMI atribuudid ja klassid (kehtiv alates 02.05.2023).&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>EVS-ISO 25964-1:2023 Informatsioon ja dokumentatsioon. Tesaurused ja nende koostalitusvõime teiste sõnastikega. Osa 1: Infootsingu tesaurused ja EVS-ISO 25964-2:2023 Informatsioon ja dokumentatsioon. Tesaurused ja nende koostalitusvõime teiste sõnastikega. Osa 2: Koostalitusvõime teiste sõnastikega (kehtiv alates 02.05.2023).&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Andmekirjelduse määratlus ja selle sisu kirjeldus on esitatud andmekirjelduse juhises.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Andmeteenust on standardis käsitletud DCAT 3.0.0 määratletud tähenduses. Andmeteenus on operatsioonide kogum, mille abil antakse juurdepääs ühele või enamale andmestikule või andmetöötlusfunktsioonile. (A collection of operations that provides access to one or more datasets or data processing functions.)&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Arhiivieeskiri. (RT I, 19.06.2020, 4) § 7 Liigitusskeemi tasandid, lõige 4, punkt 1. Arhiivieeskirja seletuskirjast võib järeldada, et andmete kogumi all on silmas peetud sama, mida riikliku statistika seadus määratleb kui andmestikku. Seletuskirjas on: „Sarja moodustamise ühe tunnusena on lisatud „andmete kogum, mida saab identifitseerida ja koos hallata“. See annab selgema võimaluse andmekogudes oleva teabe liigitamiseks, soodustades sealhulgas ka säilitustähtaegade määramist mistahes andmetele, mida on mõistlik kogumina hallata. Kokkuvõtlikult märkides tähendab see sätte mõttes mistahes andmete kogumit, mida on mõistlik koos hallata (sama säilitustähtaeg, samad eraldamistoimingud hävitamiseks, samad juurdepääsutingimused ja muud võimalikud haldamistoimingud).“&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>Põhjalikum andmestiku selgitus koos määratlustega on andmekirjelduse juhises.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Metadata Terms</a>. Osa 7. DCMI Type Vocabulary&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>Serialiseerimise all tuleb selles kontekstis mõista eelkõige andmestruktuuride või -objektide teisendamist kitsas tehnilises tähenduses mingisse vormingusse, et need andmed oleks salvestatavad failina või edastatavad erinevates võrkudes.&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Põhjalikum andmetabeli selgitus on andmekirjelduse juhises.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>Avalike digiteenuste disainimise tööriistakast. <a href="https://digiriik.eesti.ee/juhend/avalike-teenuste-kataloog">Avalike teenuste kataloog</a>&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Tegevuspõhise eelarvestamise käsiraamat. <a href="https://www.fin.ee/riigi-rahandus-ja-maksud/riigieelarve-ja-eelarvestrateegia/tegevuspohise-eelarvestamise-kasiraamat/teenused">4.3.5. Teenused</a>&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16">
+<p><a href="https://x-tee.ee/catalogue/EE">X-tee alamsüsteemide kataloog teenuste ja WSDL kirjeldustega</a>&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:17">
+<p>Põhjalikum sõnastike selgitus on andmekirjelduse juhises.&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+<li id="fn:18">
+<p>Ohjatav ehk kontrollitud sõnavara (vocabulary control) moodustab märksõnastiku (controlled vocabulary). EVS-ISO 25964-1:2023 määratleb (2.12), et märksõnastik ehk kontrollitud märksõnastik on mõisteid tähistavate terminite, märksõnade või koodide ettekirjutatud loetelu.&#160;<a class="footnote-backref" href="#fnref:18" title="Jump back to footnote 18 in the text">&#8617;</a></p>
+</li>
+<li id="fn:19">
+<p><a href="https://www.openarchives.org/pmh/">Open Archives Initiative Protocol for Metadata Harvesting</a>&#160;<a class="footnote-backref" href="#fnref:19" title="Jump back to footnote 19 in the text">&#8617;</a></p>
+</li>
+<li id="fn:20">
+<p><a href="https://data.europa.eu/en">European data</a>&#160;<a class="footnote-backref" href="#fnref:20" title="Jump back to footnote 20 in the text">&#8617;</a></p>
+</li>
+<li id="fn:21">
+<p><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">EU Vocabularies – Controlled vocabularies – Frequency (versioon 20190619-0)</a>&#160;<a class="footnote-backref" href="#fnref:21" title="Jump back to footnote 21 in the text">&#8617;</a></p>
+</li>
+<li id="fn:22">
+<p>Kirjelduste loomisel on EHAK ja KNR nimetuste loomine võimalik Maa-ameti <a href="https://geoportaal.maaamet.ee/est/teenused/integreeritav-aadressiotsing-in-ads-p504.html">integreeritava aadressiotsingu (In-ADS)</a> teenuse kaudu, mis võimaldab sobivalt täita ka asukoha koordinaadid (bbox).&#160;<a class="footnote-backref" href="#fnref:22" title="Jump back to footnote 22 in the text">&#8617;</a></p>
+</li>
+<li id="fn:23">
+<p><a href="https://www.geonames.org/">GeoNames</a>&#160;<a class="footnote-backref" href="#fnref:23" title="Jump back to footnote 23 in the text">&#8617;</a></p>
+</li>
+<li id="fn:24">
+<p>Vt ka <a href="https://www.riigiteataja.ee/akt/104072017011?leiaKehtiv">avaliku teabe seadus</a> § 4<sup>1</sup> Väärtuslikud andmestikud&#160;<a class="footnote-backref" href="#fnref:24" title="Jump back to footnote 24 in the text">&#8617;</a></p>
+</li>
+<li id="fn:25">
+<p>Eestis on piiratud tasemega teabe tähisena kasutusel termin AK (asutusesiseseks kasutamiseks), vt <a href="https://www.riigiteataja.ee/akt/104072017011?leiaKehtiv">avaliku teabe seadus</a> § 34 Piiratud juurdepääsuga teave ja § 35 Teabe asutusesiseseks tunnistamise alused. Käesolev standard ei sätesta juurdepääsupiiragu määramist õigusakti täpse punkti tasemel.&#160;<a class="footnote-backref" href="#fnref:25" title="Jump back to footnote 25 in the text">&#8617;</a></p>
+</li>
+<li id="fn:26">
+<p>Euroopa Parlamendi ja nõukogu määrus (EL) 2022/868, 30. mai 2022, Euroopa andmehalduse kohta ning millega muudetakse määrust (EL) 2018/1724 (<a href="https://eur-lex.europa.eu/legal-content/ET/TXT/?uri=CELEX:32022R0868">andmehalduse määrus</a>).&#160;<a class="footnote-backref" href="#fnref:26" title="Jump back to footnote 26 in the text">&#8617;</a></p>
+</li>
+<li id="fn:27">
+<p><a href="https://www.iso.org/standard/70907.html">ISO 8601-1:2019 Date and time — Representations for information interchange — Part 1: Basic rules.</a> Kuupäeva sisestamise kuju rakendustes on sellest esitusvormingust erinev ning tavaliselt kujul PP-KK-AAAA.&#160;<a class="footnote-backref" href="#fnref:27" title="Jump back to footnote 27 in the text">&#8617;</a></p>
+</li>
+<li id="fn:28">
+<p><a href="https://www.iso.org/standard/4767.html">ISO 639-2:1998 Codes for the representation of names of languages — Part 2: Alpha-3 code</a>&#160;<a class="footnote-backref" href="#fnref:28" title="Jump back to footnote 28 in the text">&#8617;</a></p>
+</li>
+<li id="fn:29">
+<p>Kontaktpunkti alamelementide kohustuslikkus ja korduvus kehtivad ühe kontakti kontekstis. Näiteks võib igas kontakti kirjes olla täpselt üks nimi, samas ei pruugi andmestiku kirjelduses kontakt olla üldse kirjeldatud (kontakti element ei ole kohutuslik) või on kirjeldatud mitu kontakti (kontakti element on korduv).&#160;<a class="footnote-backref" href="#fnref:29" title="Jump back to footnote 29 in the text">&#8617;</a></p>
+</li>
+<li id="fn:30">
+<p><a href="https://www.w3.org/TR/vcard-rdf/">vCard Ontology - for describing People and Organizations (22 May 2014)</a>&#160;<a class="footnote-backref" href="#fnref:30" title="Jump back to footnote 30 in the text">&#8617;</a></p>
+</li>
+<li id="fn:31">
+<p><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-type-vocabulary/">DCMI Type Vocabulary (2012-06-14)</a>&#160;<a class="footnote-backref" href="#fnref:31" title="Jump back to footnote 31 in the text">&#8617;</a></p>
+</li>
+<li id="fn:32">
+<p><a href="https://creativecommons.org/share-your-work/cclicenses/">Creative Commons licenses</a>&#160;<a class="footnote-backref" href="#fnref:32" title="Jump back to footnote 32 in the text">&#8617;</a></p>
+</li>
+<li id="fn:33">
+<p>Internet Assigned Numbers Authority (IANA). <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">Media types</a>.&#160;<a class="footnote-backref" href="#fnref:33" title="Jump back to footnote 33 in the text">&#8617;</a></p>
+</li>
+<li id="fn:34">
+<p>EU Vocabularies. <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frequency</a>&#160;<a class="footnote-backref" href="#fnref:34" title="Jump back to footnote 34 in the text">&#8617;</a></p>
+</li>
+<li id="fn:35">
+<p><a href="https://creativecommons.org/share-your-work/cclicenses/">Creative Commons licenses</a>&#160;<a class="footnote-backref" href="#fnref:35" title="Jump back to footnote 35 in the text">&#8617;</a></p>
+</li>
+<li id="fn:36">
+<p>Andmekirjeldus ja sõnastik võivad olla läbivalt mitmekeelsed, kuid käesolevas standardi versioonis on ingliskeelsed kirjelduselemendid toodud välja ainult nende 
+elementide kohta, mis on selliselt olemas rakendustes RIHAKE või avaandmete teabevärav.&#160;<a class="footnote-backref" href="#fnref:36" title="Jump back to footnote 36 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
