@@ -7,7 +7,8 @@
 ## Kiirlingid
 - **PDF kujul**: [AH Juhis Lisa 1](legacy/AH_juhis_andmekirjeldus_standard_3.0.1.pdf)
 - **Eelmine versioon**: [Legacy 3.0.1](legacy/index.md)
-- **Viimane mustandversioon**: [Latest editor's draft]()
+- **Viimane ametlik väljalase**: [Latest version](https://e-gov.github.io/Andmekirjelduse-Standard/stable/)
+- **Viimane mustandversioon**: [Latest editor's draft](https://e-gov.github.io/Andmekirjelduse-Standard/draft/)
 
 ## Tagasiside ja muudatusettepanekud
 - **Soovitused ja parandused** esitada *GitHub Issues* kaudu.
@@ -27,6 +28,12 @@
 
 ## Sisukord
 
+- [Andmekirjelduse juhis. Lisa 1 andmekirjelduse standard](#andmekirjelduse-juhis-lisa-1-andmekirjelduse-standard)
+  - [Kiirlingid](#kiirlingid)
+  - [Tagasiside ja muudatusettepanekud](#tagasiside-ja-muudatusettepanekud)
+  - [Versioonihaldus](#versioonihaldus)
+  - [Autorid ja toimetajad](#autorid-ja-toimetajad)
+  - [Sisukord](#sisukord)
   - [Lühendid](#lühendid)
   - [1. Sissejuhatus](#1-sissejuhatus)
   - [1.1 Eessõna](#11-eessõna)
