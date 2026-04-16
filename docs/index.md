@@ -1169,7 +1169,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[e-posti aadress](#251-e-posti-aadress), [HVD kategooria](#252-hvd-kategooria), [juurdepääsutingimused](#253-juurdepaasutingimused), [kasutuslitsents](#254-kasutuslitsents), [kohalduv õigusakt](#255-kohalduv-oigusakt), [kontaktileht](#256-kontaktileht), [kontaktpunkt](#257-kontaktpunkt), [otspunkti kirjeldus](#258-otspunkti-kirjeldus), [pealkiri](#259-pealkiri), [viide andmestikule](#2510-viide-andmestikule), [viide otspunktile](#2511-viide-otspunktile), [viide teenuse kättesaadavuse tingimustele](#2512-viide-teenuse-kattesaadavuse-tingimustele)*
+    - Selles klassis esinevad järgmised atribuudid: *[e-posti aadress](#251-e-posti-aadress), [HVD kategooria](#252-hvd-kategooria), [juurdepääsutingimused](#253-juurdepaasutingimused), [kasutuslitsents](#254-kasutuslitsents), [kohalduv õigusakt](#255-kohalduv-oigusakt), [kontaktileht](#256-kontaktileht), [kontaktpunkt](#257-kontaktpunkt), [otspunkti kirjeldus](#258-otspunkti-kirjeldus), [pealkiri](#259-pealkiri), [viide andmestikule](#2510-viide-andmestikule), [viide otspunktile](#2511-viide-otspunktile), [viide teenuse dokumentatsioonile](#2512-viide-teenuse-dokumentatsioonile)*
 
 ---
 
@@ -1297,11 +1297,11 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="2512-viide-teenuse-kattesaadavuse-tingimustele"></a>
+<a id="2512-viide-teenuse-dokumentatsioonile"></a>
 
 | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---|---|---:|---|---|
-| **viide teenuse kättesaadavuse tingimustele** | - | 0..n | Viide veebilehele, mis pakub teavet andmeteenuse kvaliteedist või annab lisateavet andmeteenuse kohta. **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega seotud andmeteenustel. | - |
+| **viide teenuse dokumentatsioonile** | - | 0..n | Viide veebilehele, kus on kättesaadav teenuse tervikdokumentatsioon (teenuse kirjeldus ja detailid, sh teenuse kättesaadavuse kohta). **Märkus**: kirjelduselemendi täitmine on kohustuslik väärtuslike andmestikega (HVD) seotud andmeteenustel. | - |
 
 !!! example "Näide"
     https://opendata.digilugu.ee/docs/#/et/howto
