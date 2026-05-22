@@ -1,6 +1,7 @@
 ## [Mustandversioon]
 
 ### Muudatused:
+- Parandatud poolik definitsiooniväli (2.2, atribuut "kirjeldus")
 - Issue [#8](https://github.com/e-gov/Andmekirjelduse-Standard/issues/8) Täpsustatud andmeteenuse all välja "viide teenuse dokumentatsioonile".
 
 ---
