@@ -303,7 +303,7 @@ Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni port
 
 ## 2. Andmekataloogi ja selle olemite kirjelduselemendid
 
-Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on RIHA, Eesti avaandmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.
+Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on Eesti andmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.
 
 ---
 
@@ -357,7 +357,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[andmestiku identifikaator](#221-andmestiku-identifikaator), [andmete piirdaatumid](#222-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [seose tüüp](#2242-seose-tuup), [andmesõnastiku nimi](#225-andmesonastiku-nimi), [andmete päritolu](#226-andmete-paritolu), [päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [päritolu andmestiku URI](#2262-paritolu-andmestiku-uri), [geograafiline kaetus](#227-geograafiline-kaetus), [asukoha nimetus](#2271-asukoha-nimetus), [asukoha koordinaadid](#2272-asukoha-koordinaadid), [avalikustamise kuupäev](#228-avalikustamise-kuupaev), [HVD kategooria](#229-hvd-kategooria), [juurdepääsutase](#2210-juurdepaasutase), [kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [keel](#2212-keel), [kirjeldus](#2213-kirjeldus), [kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [kontaktpunkt](#2216-kontaktpunkt), [kontakti nimi](#22161-kontakti-nimi), [kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [kontakti telefoninumber](#22163-kontakti-telefoninumber), [levituse identifikaator](#2217-levituse-identifikaator), [lühinimetus](#2218-luhinimetus), [muu identifikaator](#2219-muu-identifikaator), [muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [märksõna](#2220-marksona), [märksõna termin](#22201-marksona-termin), [märksõna URI](#22202-marksona-uri), [omanik](#2221-omanik), [pealkiri](#2222-pealkiri), [seotud tegevused](#2223-seotud-tegevused), [tüüp](#2224-tuup), [valdkond](#2225-valdkond), [ainevaldkond](#22251-ainevaldkond), [valdkonna URI](#22252-valdkonna-uri), [vastab standardile](#2226-vastab-standardile), [veebisait](#2227-veebisait), [õiguslik alus](#2228-oiguslik-alus), [õigusakti nimetus](#22281-oigusakti-nimetus), [õigusakti link](#22282-oigusakti-link)*
+    - Selles klassis esinevad järgmised atribuudid: *[andmestiku identifikaator](#221-andmestiku-identifikaator), [andmete piirdaatumid](#222-andmete-piirdaatumid), [andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [seose tüüp](#2242-seose-tuup), [andmesõnastiku nimi](#225-andmesonastiku-nimi), [andmete päritolu](#226-andmete-paritolu), [päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [päritolu andmestiku UUID](#2262-paritolu-andmestiku-uuid), [geograafiline kaetus](#227-geograafiline-kaetus), [asukoha nimetus](#2271-asukoha-nimetus), [asukoha koordinaadid](#2272-asukoha-koordinaadid), [avalikustamise kuupäev](#228-avalikustamise-kuupaev), [HVD kategooria](#229-hvd-kategooria), [juurdepääsutase](#2210-juurdepaasutase), [kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [keel](#2212-keel), [kirjeldus](#2213-kirjeldus), [kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [kontaktpunkt](#2216-kontaktpunkt), [kontakti nimi](#22161-kontakti-nimi), [kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [kontakti telefoninumber](#22163-kontakti-telefoninumber), [levituse identifikaator](#2217-levituse-identifikaator), [lühinimetus](#2218-luhinimetus), [muu identifikaator](#2219-muu-identifikaator), [muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [märksõna](#2220-marksona), [märksõna termin](#22201-marksona-termin), [märksõna URI](#22202-marksona-uri), [omanik](#2221-omanik), [pealkiri](#2222-pealkiri), [seotud tegevused](#2223-seotud-tegevused), [tüüp](#2224-tuup), [valdkond](#2225-valdkond), [ainevaldkond](#22251-ainevaldkond), [valdkonna URI](#22252-valdkonna-uri), [vastab standardile](#2226-vastab-standardile), [veebisait](#2227-veebisait), [õiguslik alus](#2228-oiguslik-alus), [õigusakti nimetus](#22281-oigusakti-nimetus), [õigusakti link](#22282-oigusakti-link)*
 
 ---
 
@@ -400,7 +400,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---|---|---:|---|---|
-| **andmestiku seos teise andmestikuga** | - | 0..n | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. | - |
+| **andmestiku seos teise andmestikuga** | - | 0..n | Teave kirjeldatava andmestikuga hierarhiliselt või ajaliselt seotud teiste andmestike kohta. | viide: [dcterms:relation](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#relation) |
 
 !!! example "Näide"
     b49f330-e207-430e-87dd-ca8d5859438b; isPartOf  
@@ -446,7 +446,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---|---|---:|---|---|
-| **andmete päritolu** | - | 0..n | Teise andmestiku pealkiri, mida on kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks. **Märkus**: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid. | - |
+| **andmete päritolu** | - | 0..n | Teise andmestiku pealkiri, mida on kasutatud kirjeldatava andmestiku loomiseks ja/või täiendamiseks. **Märkus**: Mitte segi ajada andmestiku seostega isPartOf ja hasPart, mille abil seotakse omavahel andmestiku ülem- ja alamkomponendid. | viide: [dcterms:source](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#source) |
 
 !!! example "Näide"
     Taimekasvatus  
@@ -468,15 +468,15 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="2262-paritolu-andmestiku-uri"></a>
+<a id="2262-paritolu-andmestiku-uuid"></a>
 
 | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---|---|---:|---|---|
-| **päritolu andmestiku URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. | - |
+| **päritolu andmestiku UUID** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide UUID-vormingus. | - |
 
 !!! example "Näide"
-    b49f330-e207-430e-87dd-ca8d5859427b  
-    Selgitus: ühele andmestikule vastav URI
+    b49f3300-e207-430e-87dd-ca8d5859427b
+    Selgitus: ühele andmestikule vastav UUID
 
 ---
 
