@@ -1,0 +1,20 @@
+.md-grid {
+  max-width: 95rem;
+}
+
+.md-typeset .mermaid {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.md-typeset .mermaid svg {
+  max-width: none !important;
+  width: 125% !important;
+  height: auto !important;
+}
+
+.md-typeset .mermaid text {
+  font-size: 16px !important;
+}
