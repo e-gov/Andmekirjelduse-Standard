@@ -117,6 +117,54 @@ Standard käsitleb andmestiku struktuuri detailset sisemist kirjeldust. See on k
 
 ## 1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed
 
+```mermaid
+flowchart LR
+
+  subgraph G1["Põhiolemid"]
+    Kataloog["Andmekataloog"]
+    Sari["Andmestike sari"]
+    Andmestik["Andmestik"]
+    Levitus["Levitus"]
+    Teenus["Andmeteenus"]
+  end
+
+  subgraph G2["Detailne andmestruktuur"]
+    Tabel["Andmetabel"]
+    Element["Andmeelement"]
+  end
+
+  subgraph G3["Mõistelised olemid"]
+    Andmesonastik["Andmesõnastik"]
+    AndmeTermin["Andmesõnastiku termin"]
+    Arisonastik["Ärisõnastik"]
+    AriTermin["Ärisõnastiku termin"]
+    Loend["Loend / koodiloend"]
+  end
+
+  Kataloog -->|"1 / 0..n"| Sari
+  Kataloog -->|"1 / 0..n"| Andmestik
+  Kataloog -->|"1 / 0..n"| Teenus
+
+  Sari -->|"1 / 0..n"| Andmestik
+
+  Andmestik -->|"1 / 0..n"| Levitus
+  Teenus -->|"1 / 0..n"| Andmestik
+
+  Andmestik -->|"1 / 0..n"| Tabel
+  Tabel -->|"1 / 0..n"| Element
+
+  Andmestik -->|"0..n / 1"| Andmesonastik
+  Andmesonastik -->|"1 / 0..n"| AndmeTermin
+  Arisonastik -->|"1 / 0..n"| AriTermin
+
+  Element -->|"0..n / 0..1"| AndmeTermin
+  Element -->|"0..n / 0..1"| Loend
+  AndmeTermin -->|"0..n / 0..n"| AriTermin
+
+  click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
+  
+```
+
 ### 1.3.1 Komponendid ja olemid
 
 Kirjeldusstandardisse kuuluvad komponendid ja olemid on omavahel seotud. Olemite vahelised seosed on esitatud joonisel 1 ning moodustavad andmekirjelduse.[^7] Sellel on kujutatud, kuidas andmestikud ja nende sarjad on hierarhiliselt osad andmekataloogist. On näidatud, kuidas andmestik on kirjeldatav levitusena, mis on kasutatav andmeteenusena, mida saab edastada organisatsioonist välja ja mida saab pärida.[^8]
