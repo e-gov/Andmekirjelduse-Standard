@@ -161,6 +161,16 @@ flowchart LR
   Element -->|"0..n / 0..1"| Loend
   AndmeTermin -->|"0..n / 0..n"| AriTermin
 
+  classDef oranz fill:#FDE7D7,stroke:#E87511,stroke-width:2px,color:#111111;
+  classDef sinine fill:#DDEEFF,stroke:#1D70B8,stroke-width:2px,color:#111111;
+  classDef roheline fill:#E4F4E8,stroke:#2E8540,stroke-width:2px,color:#111111;
+  classDef hall fill:#F3F4F6,stroke:#6B7280,stroke-width:2px,color:#111111;
+
+  class Kataloog,Teenus oranz;
+  class Andmestik,Sari,Levitus,Tabel,Element sinine;
+  class Andmesonastik,AndmeTermin,Arisonastik,AriTermin roheline;
+  class Loend hall;
+
   click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
   click Andmestik "#22-andmestiku-kirjeldus" "Ava andmekataloogi kirjeldus" _self
   click Levitus "#23-andmestiku-levituse-kirjeldus" "Ava levituse kirjeldus" _self
@@ -168,10 +178,10 @@ flowchart LR
   click Teenus "#25-andmeteenuse-kirjeldus" "Ava andmeteenuse kirjeldus" _self
   click Tabel "#26-andmebaasi-tabeli-kirjeldus" "Ava andmetabeli kirjeldus" _self
   click Element "#27-andmeelemendi-kirjeldus" "Ava andmeelemendi kirjeldus" _self
-  click Andmesonastik "#31-andmesõnastiku-kirjeldus" "Ava andmesõnastiku kirjeldus" _self
-  click AndmeTermin "#32-andmesõnastiku-termini-kirjeldus" "Ava andmesõnastiku termini kirjeldus" _self
-  click Arisonastik "#33-ärisõnastiku-kirjeldus" "Ava ärisõnastiku kirjeldus" _self
-  click AriTermin "#34-ärisõnastiku-termini-kirjeldus" "Ava ärisõnastiku termini kirjeldus" _self
+  click Andmesonastik "#31-andmesonastiku-kirjeldus" "Ava andmesõnastiku kirjeldus" _self
+  click AndmeTermin "#32-andmesonastiku-termini-kirjeldus" "Ava andmesõnastiku termini kirjeldus" _self
+  click Arisonastik "#33-arisonastiku-kirjeldus" "Ava ärisõnastiku kirjeldus" _self
+  click AriTermin "#34-arisonastiku-termini-kirjeldus" "Ava ärisõnastiku termini kirjeldus" _self
 
 ```
 
