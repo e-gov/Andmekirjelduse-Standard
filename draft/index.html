@@ -867,6 +867,51 @@
 <p>Standard on koostatud ühilduvana DCAT-AP 3.0.0-ga. See võimaldab organisatsioonidel andmekataloogis kirjeldada andmestikud ning nende levitused, rühmitada andmestikud sarjadesse. Standardis on samuti andmekataloogis kirjeldatud andmestike andmeteenuste osa. </p>
 <p>Standard käsitleb andmestiku struktuuri detailset sisemist kirjeldust. See on kitsendatud tabeli kirjeldusega, mis on kas nimekirja või risttabeli kujul.</p>
 <h2 id="13-kirjeldusstandardisse-kuuluvate-olemite-ulevaade-ja-seosed">1.3 Kirjeldusstandardisse kuuluvate olemite ülevaade ja seosed<a class="headerlink" href="#13-kirjeldusstandardisse-kuuluvate-olemite-ulevaade-ja-seosed" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+
+  subgraph G1["Põhiolemid"]
+    Kataloog["Andmekataloog"]
+    Sari["Andmestike sari"]
+    Andmestik["Andmestik"]
+    Levitus["Levitus"]
+    Teenus["Andmeteenus"]
+  end
+
+  subgraph G2["Detailne andmestruktuur"]
+    Tabel["Andmetabel"]
+    Element["Andmeelement"]
+  end
+
+  subgraph G3["Mõistelised olemid"]
+    Andmesonastik["Andmesõnastik"]
+    AndmeTermin["Andmesõnastiku termin"]
+    Arisonastik["Ärisõnastik"]
+    AriTermin["Ärisõnastiku termin"]
+    Loend["Loend / koodiloend"]
+  end
+
+  Kataloog --&gt;|"1 / 0..n"| Sari
+  Kataloog --&gt;|"1 / 0..n"| Andmestik
+  Kataloog --&gt;|"1 / 0..n"| Teenus
+
+  Sari --&gt;|"1 / 0..n"| Andmestik
+
+  Andmestik --&gt;|"1 / 0..n"| Levitus
+  Teenus --&gt;|"1 / 0..n"| Andmestik
+
+  Andmestik --&gt;|"1 / 0..n"| Tabel
+  Tabel --&gt;|"1 / 0..n"| Element
+
+  Andmestik --&gt;|"0..n / 1"| Andmesonastik
+  Andmesonastik --&gt;|"1 / 0..n"| AndmeTermin
+  Arisonastik --&gt;|"1 / 0..n"| AriTermin
+
+  Element --&gt;|"0..n / 0..1"| AndmeTermin
+  Element --&gt;|"0..n / 0..1"| Loend
+  AndmeTermin --&gt;|"0..n / 0..n"| AriTermin
+
+  click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
+</code></pre>
 <h3 id="131-komponendid-ja-olemid">1.3.1 Komponendid ja olemid<a class="headerlink" href="#131-komponendid-ja-olemid" title="Permanent link">&para;</a></h3>
 <p>Kirjeldusstandardisse kuuluvad komponendid ja olemid on omavahel seotud. Olemite vahelised seosed on esitatud joonisel 1 ning moodustavad andmekirjelduse.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup> Sellel on kujutatud, kuidas andmestikud ja nende sarjad on hierarhiliselt osad andmekataloogist. On näidatud, kuidas andmestik on kirjeldatav levitusena, mis on kasutatav andmeteenusena, mida saab edastada organisatsioonist välja ja mida saab pärida.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
 <p>Andmestikud ja levitused on andmestruktuurid (üldiselt failid ja/või tabelid). Tabel või muu hästi struktureeritud andmete hulk koosneb andmeelementidest. Andmeelemendid on kirjeldatavad sõnastikes kui terminid ja mõisted. Andmeelemendid on ka grupeeritavad ning see andmeelementide grupp on ka eraldi hallatav. Nii andmetabel kui ka andmeelementide grupp on käsitletav andmeobjektina. Selline andmeobjekt luuakse kas arusaadavuse ehk andmete mõistmise parandamiseks või halduslikult seotud objektina nagu põhiandmete (master data) objekt või kui toimingu või teenuse kontekstis kokku kuuluv kirje (record).</p>
@@ -5324,6 +5369,10 @@ elementide kohta, mis on selliselt olemas rakendustes RIHAKE või avaandmete tea
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
+      
+        <script src="javascripts/mermaid.js"></script>
       
     
   </body>
