@@ -162,7 +162,17 @@ flowchart LR
   AndmeTermin -->|"0..n / 0..n"| AriTermin
 
   click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
-  
+  click Andmestik "#22-andmestiku-kirjeldus" "Ava andmekataloogi kirjeldus" _self
+  click Levitus "#23-andmestiku-levituse-kirjeldus" "Ava levituse kirjeldus" _self
+  click Sari "#24-andmestike-sarja-kirjeldus" "Ava andmestike sarja kirjeldus" _self
+  click Teenus "#25-andmeteenuse-kirjeldus" "Ava andmeteenuse kirjeldus" _self
+  click Tabel "#26-andmebaasi-tabeli-kirjeldus" "Ava andmetabeli kirjeldus" _self
+  click Element "#27-andmeelemendi-kirjeldus" "Ava andmeelemendi kirjeldus" _self
+  click Andmesonastik "#31-andmesõnastiku-kirjeldus" "Ava andmesõnastiku kirjeldus" _self
+  click AndmeTermin "#32-andmesõnastiku-termini-kirjeldus" "Ava andmesõnastiku termini kirjeldus" _self
+  click Arisonastik "#33-ärisõnastiku-kirjeldus" "Ava ärisõnastiku kirjeldus" _self
+  click AriTermin "#34-ärisõnastiku-termini-kirjeldus" "Ava ärisõnastiku termini kirjeldus" _self
+
 ```
 
 ### 1.3.1 Komponendid ja olemid
