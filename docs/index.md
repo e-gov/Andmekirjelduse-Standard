@@ -74,13 +74,13 @@
 
 ## Lühendid
 
-- DCAT – andmekataloogi sõnastik (*Data Catalog Vocabulary*), mis on W3C standard. 
-- DCAT-AP – andmekataloogi sõnastiku rakendusprofiil (*Data Catalog Vocabulary Application Profile*) Euroopa Liidu riikide vahel andmestike ja andmeteenuste kirjelduste vahetamiseks.
-- DGA – Euroopa Parlamendi ja nõukogu määrus (EL) 2022/868, 30. mai 2022, Euroopa  andmehalduse kohta ning millega muudetakse määrust (EL) 2018/1724 (andmehalduse määrus, *Data Governance Act*).
-- HVD – väärtuslikud andmestikud (*high value datasets*) nagu need on määratletud Euroopa Liidu väärtuslike andmestike nimekirja rakendusmääruses ja mis käsitleb andmestikke valdkondi; neid nimetatakse ka kõrgväärtuslikud andmestikud.
-- RIHA – riigi infosüsteemi haldussüsteemi käitlev rakendus.
-- RIHAKE – asutustele loodud rakendus andmekirjelduste koostamiseks ja edastamiseks RIHAsse.
-- ODD – Euroopa Parlamendi ja nõukogu direktiiv (EL) 2019/1024, 20. juuni 2019, avaandmete ja avaliku sektori valduses oleva teabe taaskasutamise kohta. 
+- [DCAT](https://www.w3.org/TR/vocab-dcat-3/) – andmekataloogi sõnastik (*Data Catalog Vocabulary*), mis on W3C standard. 
+- [DCAT-AP](https://op.europa.eu/en/web/eu-vocabularies/dcat-ap) – andmekataloogi sõnastiku rakendusprofiil (*Data Catalog Vocabulary Application Profile*) Euroopa Liidu riikide vahel andmestike ja andmeteenuste kirjelduste vahetamiseks.
+- [DGA](https://digital-strategy.ec.europa.eu/en/policies/data-governance-act) – Euroopa Parlamendi ja nõukogu määrus (EL) 2022/868, 30. mai 2022, Euroopa  andmehalduse kohta ning millega muudetakse määrust (EL) 2018/1724 (andmehalduse määrus, *Data Governance Act*).
+- [HVD](https://data.europa.eu/en/hvd-dashboard) – väärtuslikud andmestikud (*high value datasets*) nagu need on määratletud Euroopa Liidu väärtuslike andmestike nimekirja rakendusmääruses ja mis käsitleb andmestikke valdkondi; neid nimetatakse ka kõrgväärtuslikud andmestikud.
+- [RIHA](https://www.riha.ee/Avaleht) – riigi infosüsteemi haldussüsteemi käitlev rakendus.
+- [RIHAKE](https://abi.ria.ee/rihake/rihake-1) – asutustele loodud rakendus andmekirjelduste koostamiseks ja edastamiseks RIHAsse.
+- [ODD](https://eur-lex.europa.eu/eli/dir/2019/1024/oj/eng) – Euroopa Parlamendi ja nõukogu direktiiv (EL) 2019/1024, 20. juuni 2019, avaandmete ja avaliku sektori valduses oleva teabe taaskasutamise kohta. 
 
 ---
 
@@ -994,7 +994,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 | **avalikustamise kestus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kuupäev, millal levitus viimast päeva kättesaadav on. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide:<br>- DCAT-AP: [availability](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
 !!! example "Näide"
-    2025-06-31
+    2025-06-30
 
 ---
 
