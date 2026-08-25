@@ -1018,13 +1018,13 @@
 </ul>
 <hr />
 <h2 id="2-andmekataloogi-ja-selle-olemite-kirjelduselemendid">2. Andmekataloogi ja selle olemite kirjelduselemendid<a class="headerlink" href="#2-andmekataloogi-ja-selle-olemite-kirjelduselemendid" title="Permanent link">&para;</a></h2>
-<p>Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on Eesti andmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente.</p>
+<p>Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on Eesti andmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente. Kirjelduselemendid on iga olemi piires nummerdatud. Alamelemendid kasutavad hierarhilist nummerdust (nt 4.1, 4.2).</p>
 <hr />
 <h2 id="21-andmekataloogi-kirjeldus">2.1 Andmekataloogi kirjeldus<a class="headerlink" href="#21-andmekataloogi-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog"><strong>DCAT Viide</strong></a></li>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#211-kirjeldus">kirjeldus</a>, <a href="#212-omanik">omanik</a>, <a href="#213-pealkiri">pealkiri</a>, <a href="#214-veebisait">veebisait</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#211-kirjeldus">1. kirjeldus</a>, <a href="#212-omanik">2. omanik</a>, <a href="#213-pealkiri">3. pealkiri</a>, <a href="#214-veebisait">4. veebisait</a></em></li>
 </ul>
 </li>
 </ul>
@@ -1033,6 +1033,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1042,6 +1043,7 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>kirjeldus</strong></td>
 <td><a href="https://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1059,6 +1061,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1068,6 +1071,7 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>omanik</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1088,6 +1092,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1097,6 +1102,7 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>pealkiri</strong></td>
 <td><a href="https://www.w3.org/2000/01/rdf-schema#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1117,6 +1123,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1126,6 +1133,7 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>veebisait</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1143,7 +1151,7 @@
 <ul>
 <li><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset"><strong>DCAT Viide</strong></a></li>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#221-andmestiku-identifikaator">andmestiku identifikaator</a>, <a href="#222-andmete-piirdaatumid">andmete piirdaatumid</a>, <a href="#223-andmete-uuendamise-regulaarsus">andmete uuendamise regulaarsus</a>, <a href="#224-andmestiku-seos-teise-andmestikuga">andmestiku seos teise andmestikuga</a>, <a href="#2241-seotud-andmestiku-identifikaator">seotud andmestiku identifikaator</a>, <a href="#2242-seose-tuup">seose tüüp</a>, <a href="#225-andmesonastiku-nimi">andmesõnastiku nimi</a>, <a href="#226-andmete-paritolu">andmete päritolu</a>, <a href="#2261-paritolu-andmestiku-pealkiri">päritolu andmestiku pealkiri</a>, <a href="#2262-paritolu-andmestiku-uuid">päritolu andmestiku UUID</a>, <a href="#227-geograafiline-kaetus">geograafiline kaetus</a>, <a href="#2271-asukoha-nimetus">asukoha nimetus</a>, <a href="#2272-asukoha-koordinaadid">asukoha koordinaadid</a>, <a href="#228-avalikustamise-kuupaev">avalikustamise kuupäev</a>, <a href="#229-hvd-kategooria">HVD kategooria</a>, <a href="#2210-juurdepaasutase">juurdepääsutase</a>, <a href="#2211-kasutusele-votmise-kuupaev">kasutusele võtmise kuupäev</a>, <a href="#2212-keel">keel</a>, <a href="#2213-kirjeldus">kirjeldus</a>, <a href="#2214-kirjelduse-muutmiskuupaev">kirjelduse muutmiskuupäev</a>, <a href="#2215-kohalduvad-oigusaktid">kohalduvad õigusaktid</a>, <a href="#2216-kontaktpunkt">kontaktpunkt</a>, <a href="#22161-kontakti-nimi">kontakti nimi</a>, <a href="#22162-kontakti-e-posti-aadress">kontakti e-posti aadress</a>, <a href="#22163-kontakti-telefoninumber">kontakti telefoninumber</a>, <a href="#2217-levituse-identifikaator">levituse identifikaator</a>, <a href="#2218-luhinimetus">lühinimetus</a>, <a href="#2219-muu-identifikaator">muu identifikaator</a>, <a href="#22191-muu-identifikaatori-tuup">muu identifikaatori tüüp</a>, <a href="#22192-muu-identifikaatori-vaartus">muu identifikaatori väärtus</a>, <a href="#2220-marksona">märksõna</a>, <a href="#22201-marksona-termin">märksõna termin</a>, <a href="#22202-marksona-uri">märksõna URI</a>, <a href="#2221-omanik">omanik</a>, <a href="#2222-pealkiri">pealkiri</a>, <a href="#2223-seotud-tegevused">seotud tegevused</a>, <a href="#2224-tuup">tüüp</a>, <a href="#2225-valdkond">valdkond</a>, <a href="#22251-ainevaldkond">ainevaldkond</a>, <a href="#22252-valdkonna-uri">valdkonna URI</a>, <a href="#2226-vastab-standardile">vastab standardile</a>, <a href="#2227-veebisait">veebisait</a>, <a href="#2228-oiguslik-alus">õiguslik alus</a>, <a href="#22281-oigusakti-nimetus">õigusakti nimetus</a>, <a href="#22282-oigusakti-link">õigusakti link</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#221-andmestiku-identifikaator">1. andmestiku identifikaator</a>, <a href="#222-andmete-piirdaatumid">2. andmete piirdaatumid</a>, <a href="#223-andmete-uuendamise-regulaarsus">3. andmete uuendamise regulaarsus</a>, <a href="#224-andmestiku-seos-teise-andmestikuga">4. andmestiku seos teise andmestikuga</a>, <a href="#2241-seotud-andmestiku-identifikaator">4.1. seotud andmestiku identifikaator</a>, <a href="#2242-seose-tuup">4.2. seose tüüp</a>, <a href="#225-andmesonastiku-nimi">5. andmesõnastiku nimi</a>, <a href="#226-andmete-paritolu">6. andmete päritolu</a>, <a href="#2261-paritolu-andmestiku-pealkiri">6.1. päritolu andmestiku pealkiri</a>, <a href="#2262-paritolu-andmestiku-uuid">6.2. päritolu andmestiku UUID</a>, <a href="#227-geograafiline-kaetus">7. geograafiline kaetus</a>, <a href="#2271-asukoha-nimetus">7.1. asukoha nimetus</a>, <a href="#2272-asukoha-koordinaadid">7.2. asukoha koordinaadid</a>, <a href="#228-avalikustamise-kuupaev">8. avalikustamise kuupäev</a>, <a href="#229-hvd-kategooria">9. HVD kategooria</a>, <a href="#2210-juurdepaasutase">10. juurdepääsutase</a>, <a href="#2211-kasutusele-votmise-kuupaev">11. kasutusele võtmise kuupäev</a>, <a href="#2212-keel">12. keel</a>, <a href="#2213-kirjeldus">13. kirjeldus</a>, <a href="#2214-kirjelduse-muutmiskuupaev">14. kirjelduse muutmiskuupäev</a>, <a href="#2215-kohalduvad-oigusaktid">15. kohalduvad õigusaktid</a>, <a href="#2216-kontaktpunkt">16. kontaktpunkt</a>, <a href="#22161-kontakti-nimi">16.1. kontakti nimi</a>, <a href="#22162-kontakti-e-posti-aadress">16.2. kontakti e-posti aadress</a>, <a href="#22163-kontakti-telefoninumber">16.3. kontakti telefoninumber</a>, <a href="#2217-levituse-identifikaator">17. levituse identifikaator</a>, <a href="#2218-luhinimetus">18. lühinimetus</a>, <a href="#2219-muu-identifikaator">19. muu identifikaator</a>, <a href="#22191-muu-identifikaatori-tuup">19.1. muu identifikaatori tüüp</a>, <a href="#22192-muu-identifikaatori-vaartus">19.2. muu identifikaatori väärtus</a>, <a href="#2220-marksona">20. märksõna</a>, <a href="#22201-marksona-termin">20.1. märksõna termin</a>, <a href="#22202-marksona-uri">20.2. märksõna URI</a>, <a href="#2221-omanik">21. omanik</a>, <a href="#2222-pealkiri">22. pealkiri</a>, <a href="#2223-seotud-tegevused">23. seotud tegevused</a>, <a href="#2224-tuup">24. tüüp</a>, <a href="#2225-valdkond">25. valdkond</a>, <a href="#22251-ainevaldkond">25.1. ainevaldkond</a>, <a href="#22252-valdkonna-uri">25.2. valdkonna URI</a>, <a href="#2226-vastab-standardile">26. vastab standardile</a>, <a href="#2227-veebisait">27. veebisait</a>, <a href="#2228-oiguslik-alus">28. õiguslik alus</a>, <a href="#22281-oigusakti-nimetus">28.1. õigusakti nimetus</a>, <a href="#22282-oigusakti-link">28.2. õigusakti link</a></em></li>
 </ul>
 </li>
 </ul>
@@ -1152,6 +1160,7 @@
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1161,6 +1170,7 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>andmestiku identifikaator</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1179,6 +1189,7 @@ Selgitus: on GUID kujul ning seda võib kasutada URI osana</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1188,6 +1199,7 @@ Selgitus: on GUID kujul ning seda võib kasutada URI osana</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>andmete piirdaatumid</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime">Period of time</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1206,6 +1218,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1215,6 +1228,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>andmete uuendamise regulaarsus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency">Frequency</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1232,6 +1246,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1241,6 +1256,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>andmestiku seos teise andmestikuga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -1259,6 +1275,7 @@ Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartO
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1268,6 +1285,7 @@ Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartO
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4.1</td>
 <td><strong>seotud andmestiku identifikaator</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -1285,6 +1303,7 @@ Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartO
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1294,6 +1313,7 @@ Selgitus: kirjeldatav andmestik “Riigikogu valimiste andmed” on osa (isPartO
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4.2</td>
 <td><strong>seose tüüp</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -1312,6 +1332,7 @@ Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versi
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1321,6 +1342,7 @@ Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versi
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>andmesõnastiku nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -1338,6 +1360,7 @@ Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versi
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1347,6 +1370,7 @@ Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versi
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>andmete päritolu</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -1367,6 +1391,7 @@ Selgitus: Ehitise aluse maaüksuse katastritunnused ehitisregistris on pärit ma
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1376,6 +1401,7 @@ Selgitus: Ehitise aluse maaüksuse katastritunnused ehitisregistris on pärit ma
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6.1</td>
 <td><strong>päritolu andmestiku pealkiri</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement">Provenance Statement</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1394,6 +1420,7 @@ Andmekogude puhul: Maakataster (MIS)</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1403,6 +1430,7 @@ Andmekogude puhul: Maakataster (MIS)</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6.2</td>
 <td><strong>päritolu andmestiku UUID</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1421,6 +1449,7 @@ Selgitus: ühele andmestikule vastav UUID</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1430,6 +1459,7 @@ Selgitus: ühele andmestikule vastav UUID</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>geograafiline kaetus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location">Location</a></td>
 <td style="text-align: right;">0..n</td>
@@ -1443,6 +1473,7 @@ Selgitus: ühele andmestikule vastav UUID</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1452,6 +1483,7 @@ Selgitus: ühele andmestikule vastav UUID</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7.1</td>
 <td><strong>asukoha nimetus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location">Location</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1470,6 +1502,7 @@ Harju maakond, Kiili vald</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1479,6 +1512,7 @@ Harju maakond, Kiili vald</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7.2</td>
 <td><strong>asukoha koordinaadid</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1499,6 +1533,7 @@ Harju maakond, Kiili vald</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1508,6 +1543,7 @@ Harju maakond, Kiili vald</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>avalikustamise kuupäev</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1525,6 +1561,7 @@ Harju maakond, Kiili vald</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1534,6 +1571,7 @@ Harju maakond, Kiili vald</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>HVD kategooria</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -1557,6 +1595,7 @@ Harju maakond, Kiili vald</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1566,6 +1605,7 @@ Harju maakond, Kiili vald</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>juurdepääsutase</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights Statement</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1584,6 +1624,7 @@ piiratud</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1593,6 +1634,7 @@ piiratud</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>kasutusele võtmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1611,6 +1653,7 @@ Selgitus: ... sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aas
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1620,6 +1663,7 @@ Selgitus: ... sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aas
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">12</td>
 <td><strong>keel</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Linguisticsystem">Linguistic system</a></td>
 <td style="text-align: right;">0..n</td>
@@ -1637,6 +1681,7 @@ Selgitus: ... sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aas
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1646,6 +1691,7 @@ Selgitus: ... sobiv aasta on 2010; samas paberkujul olid andmed olemas 1992. aas
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">13</td>
 <td><strong>kirjeldus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -1664,6 +1710,7 @@ Selgitus: andmekogu eesmärk põhimäärusest.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1673,6 +1720,7 @@ Selgitus: andmekogu eesmärk põhimäärusest.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">14</td>
 <td><strong>kirjelduse muutmiskuupäev</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
 <td style="text-align: right;">0..1</td>
@@ -1690,6 +1738,7 @@ Selgitus: andmekogu eesmärk põhimäärusest.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1699,6 +1748,7 @@ Selgitus: andmekogu eesmärk põhimäärusest.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">15</td>
 <td><strong>kohalduvad õigusaktid</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
 <td style="text-align: right;">0..n</td>
@@ -1719,6 +1769,7 @@ Selgitus: Euroopa andmehalduse määruse kohaldumisel.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1728,6 +1779,7 @@ Selgitus: Euroopa andmehalduse määruse kohaldumisel.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">16</td>
 <td><strong>kontaktpunkt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
 <td style="text-align: right;">0..n</td>
@@ -1748,6 +1800,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1757,6 +1810,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">16.1</td>
 <td><strong>kontakti nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -1777,6 +1831,7 @@ Selgitus: kontaktisiku nimi.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1786,6 +1841,7 @@ Selgitus: kontaktisiku nimi.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">16.2</td>
 <td><strong>kontakti e-posti aadress</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1806,6 +1862,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1815,6 +1872,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">16.3</td>
 <td><strong>kontakti telefoninumber</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1832,6 +1890,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1841,6 +1900,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">17</td>
 <td><strong>levituse identifikaator</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -1858,6 +1918,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1867,6 +1928,7 @@ Selgitus: kontaktisiku e-posti aadress.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">18</td>
 <td><strong>lühinimetus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1887,6 +1949,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1896,6 +1959,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">19</td>
 <td><strong>muu identifikaator</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier">Identifier</a></td>
 <td style="text-align: right;">0..n</td>
@@ -1913,6 +1977,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1922,6 +1987,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">19.1</td>
 <td><strong>muu identifikaatori tüüp</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -1939,6 +2005,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1948,6 +2015,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">19.2</td>
 <td><strong>muu identifikaatori väärtus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -1965,6 +2033,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1974,6 +2043,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">20</td>
 <td><strong>märksõna</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -1987,6 +2057,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -1996,6 +2067,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">20.1</td>
 <td><strong>märksõna termin</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2013,6 +2085,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2022,6 +2095,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">20.2</td>
 <td><strong>märksõna URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -2039,6 +2113,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2048,6 +2123,7 @@ Selgitus: Loomeliitude andmekogu lühinimetus.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">21</td>
 <td><strong>omanik</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2066,6 +2142,7 @@ Selgitus: ehitisregistrit haldav organisatsioon.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2075,6 +2152,7 @@ Selgitus: ehitisregistrit haldav organisatsioon.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">22</td>
 <td><strong>pealkiri</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2095,6 +2173,7 @@ Selgitus: Statistikaameti andmebaasis kuubi pealkiri.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2104,6 +2183,7 @@ Selgitus: Statistikaameti andmebaasis kuubi pealkiri.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">23</td>
 <td><strong>seotud tegevused</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity">Activity</a></td>
 <td style="text-align: right;">0..n</td>
@@ -2122,6 +2202,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2131,6 +2212,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">24</td>
 <td><strong>tüüp</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2148,6 +2230,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2157,6 +2240,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">25</td>
 <td><strong>valdkond</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..n</td>
@@ -2170,6 +2254,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2179,6 +2264,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">25.1</td>
 <td><strong>ainevaldkond</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2196,6 +2282,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2205,6 +2292,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">25.2</td>
 <td><strong>valdkonna URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -2222,6 +2310,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2231,6 +2320,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">26</td>
 <td><strong>vastab standardile</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard">Standard</a></td>
 <td style="text-align: right;">0..n</td>
@@ -2248,6 +2338,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2257,6 +2348,7 @@ Selgitus: andmetega seotud ülesanded.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">27</td>
 <td><strong>veebisait</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document">Document</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2275,6 +2367,7 @@ Selgitus: ehitisregistri veebisait.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2284,6 +2377,7 @@ Selgitus: ehitisregistri veebisait.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">28</td>
 <td><strong>õiguslik alus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
 <td style="text-align: right;">0..n</td>
@@ -2297,6 +2391,7 @@ Selgitus: ehitisregistri veebisait.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2306,6 +2401,7 @@ Selgitus: ehitisregistri veebisait.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">28.1</td>
 <td><strong>õigusakti nimetus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -2323,6 +2419,7 @@ Selgitus: ehitisregistri veebisait.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2332,6 +2429,7 @@ Selgitus: ehitisregistri veebisait.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">28.2</td>
 <td><strong>õigusakti link</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -2349,7 +2447,7 @@ Selgitus: ehitisregistri veebisait.</p>
 <ul>
 <li><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution"><strong>DCAT Viide</strong></a></li>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#231-ajaline-tapsus">ajaline täpsus</a>, <a href="#232-andmete-staatus">andmete staatus</a>, <a href="#233-avalikustamise-kestus">avalikustamise kestus</a>, <a href="#234-hvd-kategooria">HVD kategooria</a>, <a href="#235-juurdepaasupunkt">juurdepääsupunkt</a>, <a href="#236-juurdepaasutingimused">juurdepääsutingimused</a>, <a href="#237-kasutuslitsents">kasutuslitsents</a>, <a href="#238-kohalduv-oigusakt">kohalduv õigusakt</a>, <a href="#239-levituse-identifikaator">levituse identifikaator</a>, <a href="#2310-levituse-vorming">levituse vorming</a>, <a href="#2311-levituse-suurus">levituse suurus</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#231-ajaline-tapsus">1. ajaline täpsus</a>, <a href="#232-andmete-staatus">2. andmete staatus</a>, <a href="#233-avalikustamise-kestus">3. avalikustamise kestus</a>, <a href="#234-hvd-kategooria">4. HVD kategooria</a>, <a href="#235-juurdepaasupunkt">5. juurdepääsupunkt</a>, <a href="#236-juurdepaasutingimused">6. juurdepääsutingimused</a>, <a href="#237-kasutuslitsents">7. kasutuslitsents</a>, <a href="#238-kohalduv-oigusakt">8. kohalduv õigusakt</a>, <a href="#239-levituse-identifikaator">9. levituse identifikaator</a>, <a href="#2310-levituse-vorming">10. levituse vorming</a>, <a href="#2311-levituse-suurus">11. levituse suurus</a></em></li>
 </ul>
 </li>
 </ul>
@@ -2358,6 +2456,7 @@ Selgitus: ehitisregistri veebisait.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2367,6 +2466,7 @@ Selgitus: ehitisregistri veebisait.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>ajaline täpsus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:duration">xsd:duration</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2386,6 +2486,7 @@ aasta</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2395,6 +2496,7 @@ aasta</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>andmete staatus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2415,6 +2517,7 @@ mahavõetud</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2424,6 +2527,7 @@ mahavõetud</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>avalikustamise kestus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept">Concept</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2441,6 +2545,7 @@ mahavõetud</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2450,6 +2555,7 @@ mahavõetud</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>HVD kategooria</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -2463,6 +2569,7 @@ mahavõetud</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2472,6 +2579,7 @@ mahavõetud</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>juurdepääsupunkt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
 <td style="text-align: right;">1..n</td>
@@ -2492,6 +2600,7 @@ Selgitus: viit navigatsioonimärkide andmekogumile.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2501,6 +2610,7 @@ Selgitus: viit navigatsioonimärkide andmekogumile.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>juurdepääsutingimused</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights Statement</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2519,6 +2629,7 @@ Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid 
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2528,6 +2639,7 @@ Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid 
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>kasutuslitsents</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument">License Document</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2545,6 +2657,7 @@ Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid 
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2554,6 +2667,7 @@ Selgitus: Viidatud dokument selgitab põhjalikult statistikaameti põhimõtteid 
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>kohalduv õigusakt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
 <td style="text-align: right;">0..n</td>
@@ -2575,6 +2689,7 @@ http://data.europa.eu/eli/dir/2019/1024/oj</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2584,6 +2699,7 @@ http://data.europa.eu/eli/dir/2019/1024/oj</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>levituse identifikaator</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -2601,6 +2717,7 @@ http://data.europa.eu/eli/dir/2019/1024/oj</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2610,6 +2727,7 @@ http://data.europa.eu/eli/dir/2019/1024/oj</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>levituse vorming</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent">Media Type or Extent</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2628,6 +2746,7 @@ text/csv</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2637,6 +2756,7 @@ text/csv</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>levituse suurus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#xsd:nonNegativeInteger">xsd:nonNegativeInteger</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2655,7 +2775,7 @@ Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.</p>
 <ul>
 <li><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series"><strong>DCAT Viide</strong></a></li>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#241-andmete-piirdaatumid">andmete piirdaatumid</a>, <a href="#242-andmete-uuendamise-regulaarsus">andmete uuendamise regulaarsus</a>, <a href="#243-avalikustamise-kuupaev">avalikustamise kuupäev</a>, <a href="#244-esimene-andmestik">esimene andmestik</a>, <a href="#245-geograafiline-kaetus">geograafiline kaetus</a>, <a href="#246-kirjeldus">kirjeldus</a>, <a href="#247-kirjelduse-muutmiskuupaev">kirjelduse muutmiskuupäev</a>, <a href="#248-kontaktpunkt">kontaktpunkt</a>, <a href="#249-omanik">omanik</a>, <a href="#2410-pealkiri">pealkiri</a>, <a href="#2411-viimane-andmestik">viimane andmestik</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#241-andmete-piirdaatumid">1. andmete piirdaatumid</a>, <a href="#242-andmete-uuendamise-regulaarsus">2. andmete uuendamise regulaarsus</a>, <a href="#243-avalikustamise-kuupaev">3. avalikustamise kuupäev</a>, <a href="#244-esimene-andmestik">4. esimene andmestik</a>, <a href="#245-geograafiline-kaetus">5. geograafiline kaetus</a>, <a href="#246-kirjeldus">6. kirjeldus</a>, <a href="#247-kirjelduse-muutmiskuupaev">7. kirjelduse muutmiskuupäev</a>, <a href="#248-kontaktpunkt">8. kontaktpunkt</a>, <a href="#249-omanik">9. omanik</a>, <a href="#2410-pealkiri">10. pealkiri</a>, <a href="#2411-viimane-andmestik">11. viimane andmestik</a></em></li>
 </ul>
 </li>
 </ul>
@@ -2664,6 +2784,7 @@ Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2673,6 +2794,7 @@ Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>andmete piirdaatumid</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime">Period of time</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2691,6 +2813,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2700,6 +2823,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>andmete uuendamise regulaarsus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency">Frequency</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2717,6 +2841,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2726,6 +2851,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>avalikustamise kuupäev</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2743,6 +2869,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2752,6 +2879,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>esimene andmestik</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetmemberofaDatasetSeries">Dataset member of a Dataset Series</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2769,6 +2897,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2778,6 +2907,7 @@ Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>geograafiline kaetus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location">Location</a></td>
 <td style="text-align: right;">0..n</td>
@@ -2797,6 +2927,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2806,6 +2937,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>kirjeldus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2823,6 +2955,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2832,6 +2965,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>kirjelduse muutmiskuupäev</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral">Temporal Literal</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2849,6 +2983,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2858,6 +2993,7 @@ Selgitus: piirkond/asukoht tekstina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>kontaktpunkt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2878,6 +3014,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2887,6 +3024,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>omanik</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent">Agent</a></td>
 <td style="text-align: right;">0..1</td>
@@ -2905,6 +3043,7 @@ Kihnu vallavalitsus</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2914,6 +3053,7 @@ Kihnu vallavalitsus</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>pealkiri</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">1..1</td>
@@ -2932,6 +3072,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2941,6 +3082,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>viimane andmestik</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -2958,7 +3100,7 @@ Liiklusõnnetused aastate kaupa</p>
 <ul>
 <li><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service"><strong>DCAT Viide</strong></a></li>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#251-e-posti-aadress">e-posti aadress</a>, <a href="#252-hvd-kategooria">HVD kategooria</a>, <a href="#253-juurdepaasutingimused">juurdepääsutingimused</a>, <a href="#254-kasutuslitsents">kasutuslitsents</a>, <a href="#255-kohalduv-oigusakt">kohalduv õigusakt</a>, <a href="#256-kontaktileht">kontaktileht</a>, <a href="#257-kontaktpunkt">kontaktpunkt</a>, <a href="#258-otspunkti-kirjeldus">otspunkti kirjeldus</a>, <a href="#259-pealkiri">pealkiri</a>, <a href="#2510-viide-andmestikule">viide andmestikule</a>, <a href="#2511-viide-otspunktile">viide otspunktile</a>, <a href="#2512-viide-teenuse-dokumentatsioonile">viide teenuse dokumentatsioonile</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#251-e-posti-aadress">1. e-posti aadress</a>, <a href="#252-hvd-kategooria">2. HVD kategooria</a>, <a href="#253-juurdepaasutingimused">3. juurdepääsutingimused</a>, <a href="#254-kasutuslitsents">4. kasutuslitsents</a>, <a href="#255-kohalduv-oigusakt">5. kohalduv õigusakt</a>, <a href="#256-kontaktileht">6. kontaktileht</a>, <a href="#257-kontaktpunkt">7. kontaktpunkt</a>, <a href="#258-otspunkti-kirjeldus">8. otspunkti kirjeldus</a>, <a href="#259-pealkiri">9. pealkiri</a>, <a href="#2510-viide-andmestikule">10. viide andmestikule</a>, <a href="#2511-viide-otspunktile">11. viide otspunktile</a>, <a href="#2512-viide-teenuse-dokumentatsioonile">12. viide teenuse dokumentatsioonile</a></em></li>
 </ul>
 </li>
 </ul>
@@ -2967,6 +3109,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -2976,6 +3119,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>e-posti aadress</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -2993,6 +3137,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3002,6 +3147,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>HVD kategooria</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -3015,6 +3161,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3024,6 +3171,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>juurdepääsutingimused</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement">Rights Statement</a></td>
 <td style="text-align: right;">0..1</td>
@@ -3041,6 +3189,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3050,6 +3199,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>kasutuslitsents</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument">License Document</a></td>
 <td style="text-align: right;">0..1</td>
@@ -3067,6 +3217,7 @@ Liiklusõnnetused aastate kaupa</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3076,6 +3227,7 @@ Liiklusõnnetused aastate kaupa</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>kohalduv õigusakt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource">Legal Resource</a></td>
 <td style="text-align: right;">0..n</td>
@@ -3095,6 +3247,7 @@ http://data.europa.eu/eli/reg_impl/2023/138/oj</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3104,6 +3257,7 @@ http://data.europa.eu/eli/reg_impl/2023/138/oj</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>kontaktileht</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3121,6 +3275,7 @@ http://data.europa.eu/eli/reg_impl/2023/138/oj</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3130,6 +3285,7 @@ http://data.europa.eu/eli/reg_impl/2023/138/oj</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>kontaktpunkt</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind">Kind</a></td>
 <td style="text-align: right;">0..1</td>
@@ -3151,6 +3307,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3160,6 +3317,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>otspunkti kirjeldus</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
 <td style="text-align: right;">0..n</td>
@@ -3177,6 +3335,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3186,6 +3345,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>pealkiri</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal">Literal</a></td>
 <td style="text-align: right;">0..1</td>
@@ -3203,6 +3363,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3212,6 +3373,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>viide andmestikule</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset">Dataset</a></td>
 <td style="text-align: right;">0..n</td>
@@ -3229,6 +3391,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3238,6 +3401,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>viide otspunktile</strong></td>
 <td><a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource">Resource</a></td>
 <td style="text-align: right;">1..n</td>
@@ -3255,6 +3419,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3264,6 +3429,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">12</td>
 <td><strong>viide teenuse dokumentatsioonile</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -3280,7 +3446,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <h2 id="26-andmebaasi-tabeli-kirjeldus">2.6 Andmebaasi tabeli kirjeldus<a class="headerlink" href="#26-andmebaasi-tabeli-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#261-andmehoidla">andmehoidla</a>, <a href="#262-kirjelduse-muutmise-aeg">kirjelduse muutmise aeg</a>, <a href="#263-kommentaar">kommentaar</a>, <a href="#264-nimetus">nimetus</a>, <a href="#265-skeem">skeem</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#261-andmehoidla">1. andmehoidla</a>, <a href="#262-kirjelduse-muutmise-aeg">2. kirjelduse muutmise aeg</a>, <a href="#263-kommentaar">3. kommentaar</a>, <a href="#264-nimetus">4. nimetus</a>, <a href="#265-skeem">5. skeem</a></em></li>
 </ul>
 </li>
 </ul>
@@ -3289,6 +3455,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3297,6 +3464,7 @@ Selgitus: üksikisiku kontaktandmed.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>andmehoidla</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3315,6 +3483,7 @@ rr</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3323,6 +3492,7 @@ rr</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>kirjelduse muutmise aeg</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3339,6 +3509,7 @@ rr</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3347,6 +3518,7 @@ rr</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>kommentaar</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3363,6 +3535,7 @@ rr</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3371,6 +3544,7 @@ rr</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>nimetus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3389,6 +3563,7 @@ ISIK</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3397,6 +3572,7 @@ ISIK</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>skeem</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3414,7 +3590,7 @@ RIHA_vana</p>
 <h2 id="27-andmeelemendi-kirjeldus">2.7 Andmeelemendi kirjeldus<a class="headerlink" href="#27-andmeelemendi-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#271-andmetuup">andmetüüp</a>, <a href="#272-guid">GUID</a>, <a href="#273-kirjeldus">kirjeldus</a>, <a href="#274-kirjelduse-muutmise-aeg">kirjelduse muutmise aeg</a>, <a href="#275-mootuhik">mõõtühik</a>, <a href="#276-markused">märkused</a>, <a href="#277-on-primaarvoti">on primaarvõti</a>, <a href="#278-seotud-loend">seotud loend</a>, <a href="#2781-seotud-loendi-nimetus">seotud loendi nimetus</a>, <a href="#2782-seotud-loendi-uri">seotud loendi URI</a>, <a href="#2783-seotud-loendi-versioon">seotud loendi versioon</a>, <a href="#279-staatus">staatus</a>, <a href="#2710-seos-andmesonastiku-terminiga">seos andmesõnastiku terminiga</a>, <a href="#27101-seotud-termin">seotud termin</a>, <a href="#27102-seotud-termini-uri">seotud termini URI</a>, <a href="#2711-seos-andmeelementide-grupiga">seos andmeelementide grupiga</a>, <a href="#27111-seotud-grupi-nimi">seotud grupi nimi</a>, <a href="#27112-seotud-grupi-uri">seotud grupi URI</a>, <a href="#2712-tahis">tähis</a>, <a href="#2713-uri">URI</a>, <a href="#2714-viide-primaarvotmele">viide primaarvõtmele</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#271-andmetuup">1. andmetüüp</a>, <a href="#272-guid">2. GUID</a>, <a href="#273-kirjeldus">3. kirjeldus</a>, <a href="#274-kirjelduse-muutmise-aeg">4. kirjelduse muutmise aeg</a>, <a href="#275-mootuhik">5. mõõtühik</a>, <a href="#276-markused">6. märkused</a>, <a href="#277-on-primaarvoti">7. on primaarvõti</a>, <a href="#278-seotud-loend">8. seotud loend</a>, <a href="#2781-seotud-loendi-nimetus">8.1. seotud loendi nimetus</a>, <a href="#2782-seotud-loendi-uri">8.2. seotud loendi URI</a>, <a href="#2783-seotud-loendi-versioon">8.3. seotud loendi versioon</a>, <a href="#279-staatus">9. staatus</a>, <a href="#2710-seos-andmesonastiku-terminiga">10. seos andmesõnastiku terminiga</a>, <a href="#27101-seotud-termin">10.1. seotud termin</a>, <a href="#27102-seotud-termini-uri">10.2. seotud termini URI</a>, <a href="#2711-seos-andmeelementide-grupiga">11. seos andmeelementide grupiga</a>, <a href="#27111-seotud-grupi-nimi">11.1. seotud grupi nimi</a>, <a href="#27112-seotud-grupi-uri">11.2. seotud grupi URI</a>, <a href="#2712-tahis">12. tähis</a>, <a href="#2713-uri">13. URI</a>, <a href="#2714-viide-primaarvotmele">14. viide primaarvõtmele</a></em></li>
 </ul>
 </li>
 </ul>
@@ -3423,6 +3599,7 @@ RIHA_vana</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3431,6 +3608,7 @@ RIHA_vana</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>andmetüüp</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3449,6 +3627,7 @@ uuid</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3457,6 +3636,7 @@ uuid</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>GUID</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3473,6 +3653,7 @@ uuid</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3481,6 +3662,7 @@ uuid</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>kirjeldus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3497,6 +3679,7 @@ uuid</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3505,6 +3688,7 @@ uuid</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>kirjelduse muutmise aeg</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3521,6 +3705,7 @@ uuid</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3529,6 +3714,7 @@ uuid</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>mõõtühik</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3546,6 +3732,7 @@ sündmuse kestust mõõdetakse tundides, tunni tähis on h.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3554,6 +3741,7 @@ sündmuse kestust mõõdetakse tundides, tunni tähis on h.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>märkused</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3570,6 +3758,7 @@ sündmuse kestust mõõdetakse tundides, tunni tähis on h.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3578,6 +3767,7 @@ sündmuse kestust mõõdetakse tundides, tunni tähis on h.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>on primaarvõti</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3595,6 +3785,7 @@ true</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3603,6 +3794,7 @@ true</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>seotud loend</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3615,6 +3807,7 @@ true</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3623,6 +3816,7 @@ true</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.1</td>
 <td><strong>seotud loendi nimetus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3641,6 +3835,7 @@ Anesteesia liigid</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3649,6 +3844,7 @@ Anesteesia liigid</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.2</td>
 <td><strong>seotud loendi URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3667,6 +3863,7 @@ Selgitus: ühele loendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3675,6 +3872,7 @@ Selgitus: ühele loendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.3</td>
 <td><strong>seotud loendi versioon</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3691,6 +3889,7 @@ Selgitus: ühele loendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3699,6 +3898,7 @@ Selgitus: ühele loendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>staatus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3717,6 +3917,7 @@ EI OLE KASUTUSEL</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3725,6 +3926,7 @@ EI OLE KASUTUSEL</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>seos andmesõnastiku terminiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3742,6 +3944,7 @@ ehitise suletud netopind</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3750,6 +3953,7 @@ ehitise suletud netopind</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10.1</td>
 <td><strong>seotud termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3767,6 +3971,7 @@ ehitise suletud netopind</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3775,6 +3980,7 @@ ehitise suletud netopind</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10.2</td>
 <td><strong>seotud termini URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3792,6 +3998,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3800,6 +4007,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>seos andmeelementide grupiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3812,6 +4020,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3820,6 +4029,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11.1</td>
 <td><strong>seotud grupi nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3836,6 +4046,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3844,6 +4055,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11.2</td>
 <td><strong>seotud grupi URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3860,6 +4072,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3868,6 +4081,7 @@ Selgitus: ühele andmesõnastiku terminile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">12</td>
 <td><strong>tähis</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3887,6 +4101,7 @@ jt28</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3895,6 +4110,7 @@ jt28</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">13</td>
 <td><strong>URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3912,6 +4128,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3920,6 +4137,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">14</td>
 <td><strong>viide primaarvõtmele</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3935,7 +4153,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <h2 id="28-andmeelementide-grupp">2.8 Andmeelementide grupp<a class="headerlink" href="#28-andmeelementide-grupp" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#281-kirjeldus">kirjeldus</a>, <a href="#282-nimetus">nimetus</a>, <a href="#283-seos-andmeelemendiga">seos andmeelemendiga</a>, <a href="#2831-seotud-andmeelemendi-tahis">seotud andmeelemendi tähis</a>, <a href="#2832-seotud-andmeelemendi-uri">seotud andmeelemendi URI</a>, <a href="#284-seos-arisõnastiku-terminiga">seos ärisõnastiku terminiga</a>, <a href="#2841-seotud-termin">seotud termin</a>, <a href="#2842-seotud-termini-uri">seotud termini URI</a>, <a href="#285-uri">URI</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#281-kirjeldus">1. kirjeldus</a>, <a href="#282-nimetus">2. nimetus</a>, <a href="#283-seos-andmeelemendiga">3. seos andmeelemendiga</a>, <a href="#2831-seotud-andmeelemendi-tahis">3.1. seotud andmeelemendi tähis</a>, <a href="#2832-seotud-andmeelemendi-uri">3.2. seotud andmeelemendi URI</a>, <a href="#284-seos-arisõnastiku-terminiga">4. seos ärisõnastiku terminiga</a>, <a href="#2841-seotud-termin">4.1. seotud termin</a>, <a href="#2842-seotud-termini-uri">4.2. seotud termini URI</a>, <a href="#285-uri">5. URI</a></em></li>
 </ul>
 </li>
 </ul>
@@ -3944,6 +4162,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3952,6 +4171,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>kirjeldus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -3968,6 +4188,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -3976,6 +4197,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>nimetus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -3992,6 +4214,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4000,6 +4223,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>seos andmeelemendiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4012,6 +4236,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4020,6 +4245,7 @@ Selgitus: ühele andmeelemendile vastav URI</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3.1</td>
 <td><strong>seotud andmeelemendi tähis</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4039,6 +4265,7 @@ jt28</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4047,6 +4274,7 @@ jt28</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3.2</td>
 <td><strong>seotud andmeelemendi URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4064,6 +4292,7 @@ Selgitus: ühele andmeelemendile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4072,6 +4301,7 @@ Selgitus: ühele andmeelemendile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>seos ärisõnastiku terminiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4089,6 +4319,7 @@ http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4097,6 +4328,7 @@ http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4.1</td>
 <td><strong>seotud termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4114,6 +4346,7 @@ Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõi
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4122,6 +4355,7 @@ Selgitus: andmeelemendi grupil on seos terminiga ostuõigus ja terminiga ostuõi
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4.2</td>
 <td><strong>seotud termini URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4139,6 +4373,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4147,6 +4382,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4163,7 +4399,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <h2 id="31-andmesonastiku-kirjeldus">3.1 Andmesõnastiku kirjeldus<a class="headerlink" href="#31-andmesonastiku-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#311-kasutusele-votmise-kuupaev">kasutusele võtmise kuupäev</a>, <a href="#312-kirjeldus">kirjeldus</a>, <a href="#313-nimi">nimi</a>, <a href="#314-omanik">omanik</a>, <a href="#315-seotud-sonastiku-nimi">seotud sõnastiku nimi</a>, <a href="#316-seotud-sonastiku-uri">seotud sõnastiku URI</a>, <a href="#317-uri">URI</a>, <a href="#318-viimase-muutmise-kuupaev">viimase muutmise kuupäev</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#311-kasutusele-votmise-kuupaev">1. kasutusele võtmise kuupäev</a>, <a href="#312-kirjeldus">2. kirjeldus</a>, <a href="#313-nimi">3. nimi</a>, <a href="#314-omanik">4. omanik</a>, <a href="#315-seotud-sonastiku-nimi">5. seotud sõnastiku nimi</a>, <a href="#316-seotud-sonastiku-uri">6. seotud sõnastiku URI</a>, <a href="#317-uri">7. URI</a>, <a href="#318-viimase-muutmise-kuupaev">8. viimase muutmise kuupäev</a></em></li>
 </ul>
 </li>
 </ul>
@@ -4172,6 +4408,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4180,6 +4417,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>kasutusele võtmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4196,6 +4434,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4204,6 +4443,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>kirjeldus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4220,6 +4460,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4228,6 +4469,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4244,6 +4486,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4252,6 +4495,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>omanik</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..n</td>
@@ -4268,6 +4512,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4276,6 +4521,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>seotud sõnastiku nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4292,6 +4538,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4300,6 +4547,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>seotud sõnastiku URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4316,6 +4564,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4324,6 +4573,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4340,6 +4590,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4348,6 +4599,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>viimase muutmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4363,7 +4615,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <h2 id="32-andmesonastiku-termini-kirjeldus">3.2 Andmesõnastiku termini kirjeldus<a class="headerlink" href="#32-andmesonastiku-termini-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#321-allikas">allikas</a>, <a href="#322-kehtivus">kehtivus</a>, <a href="#323-maaratlus">määratlus</a>, <a href="#324-termin">termin</a>, <a href="#325-loomise-kuupaev">loomise kuupäev</a>, <a href="#326-muutmise-kuupaev">muutmise kuupäev</a>, <a href="#327-markused">märkused</a>, <a href="#328-seos-arisõnastiku-terminiga">seos ärisõnastiku terminiga</a>, <a href="#3281-seotud-termin">seotud termin</a>, <a href="#3282-seotud-termid-uri">seotud termid URI</a>, <a href="#329-termini-uri">termini URI</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#321-allikas">1. allikas</a>, <a href="#322-kehtivus">2. kehtivus</a>, <a href="#323-maaratlus">3. määratlus</a>, <a href="#324-termin">4. termin</a>, <a href="#325-loomise-kuupaev">5. loomise kuupäev</a>, <a href="#326-muutmise-kuupaev">6. muutmise kuupäev</a>, <a href="#327-markused">7. märkused</a>, <a href="#328-seos-arisõnastiku-terminiga">8. seos ärisõnastiku terminiga</a>, <a href="#3281-seotud-termin">8.1. seotud termin</a>, <a href="#3282-seotud-termid-uri">8.2. seotud termid URI</a>, <a href="#329-termini-uri">9. termini URI</a></em></li>
 </ul>
 </li>
 </ul>
@@ -4372,6 +4624,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4380,6 +4633,7 @@ Selgitus: ühele ärisõnastiku terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>allikas</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4400,6 +4654,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4408,6 +4663,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>kehtivus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4424,6 +4680,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4432,6 +4689,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>määratlus</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4451,6 +4709,7 @@ Selgitus: selgitus terminile ehitise suletud netopind.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4459,6 +4718,7 @@ Selgitus: selgitus terminile ehitise suletud netopind.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4476,6 +4736,7 @@ ehitise suletud netopind</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4484,6 +4745,7 @@ ehitise suletud netopind</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>loomise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4500,6 +4762,7 @@ ehitise suletud netopind</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4508,6 +4771,7 @@ ehitise suletud netopind</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>muutmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4524,6 +4788,7 @@ ehitise suletud netopind</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4532,6 +4797,7 @@ ehitise suletud netopind</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>märkused</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4549,6 +4815,7 @@ Kasutusotstarve ebamäärane</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4557,6 +4824,7 @@ Kasutusotstarve ebamäärane</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>seos ärisõnastiku terminiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4574,6 +4842,7 @@ andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudte
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4582,6 +4851,7 @@ andmesõnastikus: jaamavahe blokeering, raudteetruup – ärisõnastikus: raudte
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.1</td>
 <td><strong>seotud termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4599,6 +4869,7 @@ raudteeinfrastruktuur</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4607,6 +4878,7 @@ raudteeinfrastruktuur</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.2</td>
 <td><strong>seotud termid URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4624,6 +4896,7 @@ Selgitus: ühele terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4632,6 +4905,7 @@ Selgitus: ühele terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>termini URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4648,7 +4922,7 @@ Selgitus: ühele terminile vastav URI.</p>
 <h2 id="33-arisonastiku-kirjeldus">3.3 Ärisõnastiku kirjeldus<a class="headerlink" href="#33-arisonastiku-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#331-kasutusele-votmise-kuupaev">kasutusele võtmise kuupäev</a>, <a href="#332-kirjeldus">kirjeldus</a>, <a href="#333-nimi">nimi</a>, <a href="#334-omanik">omanik</a>, <a href="#335-seotud-sonastiku-nimi">seotud sõnastiku nimi</a>, <a href="#336-seotud-sonastiku-uri">seotud sõnastiku URI</a>, <a href="#337-uri">URI</a>, <a href="#338-viimase-muutmise-kuupaev">viimase muutmise kuupäev</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#331-kasutusele-votmise-kuupaev">1. kasutusele võtmise kuupäev</a>, <a href="#332-kirjeldus">2. kirjeldus</a>, <a href="#333-nimi">3. nimi</a>, <a href="#334-omanik">4. omanik</a>, <a href="#335-seotud-sonastiku-nimi">5. seotud sõnastiku nimi</a>, <a href="#336-seotud-sonastiku-uri">6. seotud sõnastiku URI</a>, <a href="#337-uri">7. URI</a>, <a href="#338-viimase-muutmise-kuupaev">8. viimase muutmise kuupäev</a></em></li>
 </ul>
 </li>
 </ul>
@@ -4657,6 +4931,7 @@ Selgitus: ühele terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4665,6 +4940,7 @@ Selgitus: ühele terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>kasutusele võtmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4681,6 +4957,7 @@ Selgitus: ühele terminile vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4689,6 +4966,7 @@ Selgitus: ühele terminile vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>kirjeldus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4706,6 +4984,7 @@ Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seot
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4714,6 +4993,7 @@ Sporditegevuse korraldamise ja juhtimisega ning sporditegevuses osalemisega seot
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4733,6 +5013,7 @@ Selgitus: spordiregistri andmestiku ärisõnastik.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4741,6 +5022,7 @@ Selgitus: spordiregistri andmestiku ärisõnastik.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>omanik</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..n</td>
@@ -4757,6 +5039,7 @@ Selgitus: spordiregistri andmestiku ärisõnastik.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4765,6 +5048,7 @@ Selgitus: spordiregistri andmestiku ärisõnastik.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>seotud sõnastiku nimi</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4783,6 +5067,7 @@ Eesti Märksõnastik</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4791,6 +5076,7 @@ Eesti Märksõnastik</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>seotud sõnastiku URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -4807,6 +5093,7 @@ Eesti Märksõnastik</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4815,6 +5102,7 @@ Eesti Märksõnastik</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4832,6 +5120,7 @@ Selgitus: ühele ärisõnastikule vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4840,6 +5129,7 @@ Selgitus: ühele ärisõnastikule vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>viimase muutmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4855,7 +5145,7 @@ Selgitus: ühele ärisõnastikule vastav URI.</p>
 <h2 id="34-arisonastiku-termini-kirjeldus">3.4 Ärisõnastiku termini kirjeldus<a class="headerlink" href="#34-arisonastiku-termini-kirjeldus" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Atribuudid</strong><ul>
-<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#341-allikas">allikas</a>, <a href="#342-loomise-kuupaev">loomise kuupäev</a>, <a href="#343-markused">märkused</a>, <a href="#344-maaratlus">määratlus</a>, <a href="#345-maaratlus-inglise-keeles">määratlus (inglise keeles)</a>, <a href="#346-muutmise-kuupaev">muutmise kuupäev</a>, <a href="#347-on-eelistermin">on eelistermin</a>, <a href="#348-seos-arisõnastiku-teise-terminiga">seos ärisõnastiku teise terminiga</a>, <a href="#3481-seotud-termin">seotud termin</a>, <a href="#3482-seotud-termini-uri">seotud termini URI</a>, <a href="#3483-seose-tuup">seose tüüp</a>, <a href="#349-termin">termin</a>, <a href="#3410-termin-inglise-keeles">termin (inglise keeles)</a>, <a href="#3411-termini-uri">termini URI</a></em></li>
+<li>Selles klassis esinevad järgmised atribuudid: <em><a href="#341-allikas">1. allikas</a>, <a href="#342-loomise-kuupaev">2. loomise kuupäev</a>, <a href="#343-markused">3. märkused</a>, <a href="#344-maaratlus">4. määratlus</a>, <a href="#345-maaratlus-inglise-keeles">5. määratlus (inglise keeles)</a>, <a href="#346-muutmise-kuupaev">6. muutmise kuupäev</a>, <a href="#347-on-eelistermin">7. on eelistermin</a>, <a href="#348-seos-arisõnastiku-teise-terminiga">8. seos ärisõnastiku teise terminiga</a>, <a href="#3481-seotud-termin">8.1. seotud termin</a>, <a href="#3482-seotud-termini-uri">8.2. seotud termini URI</a>, <a href="#3483-seose-tuup">8.3. seose tüüp</a>, <a href="#349-termin">9. termin</a>, <a href="#3410-termin-inglise-keeles">10. termin (inglise keeles)</a>, <a href="#3411-termini-uri">11. termini URI</a></em></li>
 </ul>
 </li>
 </ul>
@@ -4864,6 +5154,7 @@ Selgitus: ühele ärisõnastikule vastav URI.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4872,6 +5163,7 @@ Selgitus: ühele ärisõnastikule vastav URI.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">1</td>
 <td><strong>allikas</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4892,6 +5184,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4900,6 +5193,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">2</td>
 <td><strong>loomise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4916,6 +5210,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4924,6 +5219,7 @@ Selgitus: termini allikas on õigusakt, võib-olla esitatud lingina.</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">3</td>
 <td><strong>märkused</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4941,6 +5237,7 @@ Kasutusotstarve ebamäärane</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4949,6 +5246,7 @@ Kasutusotstarve ebamäärane</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">4</td>
 <td><strong>määratlus</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -4967,6 +5265,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4975,6 +5274,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">5</td>
 <td><strong>määratlus (inglise keeles)</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -4991,6 +5291,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -4999,6 +5300,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">6</td>
 <td><strong>muutmise kuupäev</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -5015,6 +5317,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5023,6 +5326,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">7</td>
 <td><strong>on eelistermin</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -5039,6 +5343,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5047,6 +5352,7 @@ Standardis: tesaurus – märksõnastik või struktureeritud sõnastik, milles i
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8</td>
 <td><strong>seos ärisõnastiku teise terminiga</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..n</td>
@@ -5065,6 +5371,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5073,6 +5380,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.1</td>
 <td><strong>seotud termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..n</td>
@@ -5089,6 +5397,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5097,6 +5406,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.2</td>
 <td><strong>seotud termini URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -5113,6 +5423,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5121,6 +5432,7 @@ termin perearst – termin tervisekaart; termin patsient</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">8.3</td>
 <td><strong>seose tüüp</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -5154,6 +5466,7 @@ biograafia – elulugu</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5162,6 +5475,7 @@ biograafia – elulugu</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">9</td>
 <td><strong>termin</strong></td>
 <td>-</td>
 <td style="text-align: right;">1..1</td>
@@ -5180,6 +5494,7 @@ liiklusõnnetus</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5188,6 +5503,7 @@ liiklusõnnetus</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">10</td>
 <td><strong>termin (inglise keeles)</strong><sup id="fnref:36"><a class="footnote-ref" href="#fn:36">36</a></sup></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
@@ -5204,6 +5520,7 @@ liiklusõnnetus</p>
 <table>
 <thead>
 <tr>
+<th style="text-align: right;">#</th>
 <th>Atribuut</th>
 <th>Vahemik</th>
 <th style="text-align: right;">Kardinaalsus</th>
@@ -5212,6 +5529,7 @@ liiklusõnnetus</p>
 </thead>
 <tbody>
 <tr>
+<td style="text-align: right;">11</td>
 <td><strong>termini URI</strong></td>
 <td>-</td>
 <td style="text-align: right;">0..1</td>
