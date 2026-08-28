@@ -147,12 +147,6 @@ flowchart LR
     AriTermin["Ärisõnastiku termin"]
   end
 
-  subgraph G4["Legend"]
-    LegendOranz["Andmekataloogi ja andmeteenuse olemid"]
-    LegendSinine["Andmestiku ja detailse andmestruktuuri olemid"]
-    LegendRoheline["Sõnastike ja terminoloogia olemid"]
-  end
-
   Kataloog -->|"1 / 0..n"| Sari
   Kataloog -->|"1 / 0..n"| Andmestik
   Kataloog -->|"1 / 0..n"| Teenus
@@ -183,10 +177,6 @@ flowchart LR
   class Andmestik,Sari,Levitus,Tabel,Element,Grupp sinine;
   class Andmesonastik,AndmeTermin,Arisonastik,AriTermin roheline;
 
-  class LegendOranz oranz;
-  class LegendSinine sinine;
-  class LegendRoheline roheline;
-
   click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
   click Andmestik "#22-andmestiku-kirjeldus" "Ava andmestiku kirjeldus" _self
   click Levitus "#23-andmestiku-levituse-kirjeldus" "Ava levituse kirjeldus" _self
@@ -201,6 +191,18 @@ flowchart LR
   click AriTermin "#34-arisonastiku-termini-kirjeldus" "Ava ärisõnastiku termini kirjeldus" _self
 
 ```
+
+<div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: flex-start; margin-top: 12px;">
+  <span style="background:#FDE7D7; border:2px solid #E87511; padding:4px 8px;">
+    Andmekataloogi ja andmeteenuse olemid
+  </span>
+  <span style="background:#DDEEFF; border:2px solid #1D70B8; padding:4px 8px;">
+    Andmestiku ja detailse andmestruktuuri olemid
+  </span>
+  <span style="background:#E4F4E8; border:2px solid #2E8540; padding:4px 8px;">
+    Sõnastike ja terminoloogia olemid
+  </span>
+</div>
 
 *Joonis 1: Tervikliku andmekirjelduse koostamisel komponentide vahel toimivad seosed.*
 
