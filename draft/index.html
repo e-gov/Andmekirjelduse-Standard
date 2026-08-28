@@ -885,6 +885,7 @@
   subgraph G2["Detailne andmestruktuur"]
     Tabel["Andmetabel"]
     Element["Andmeelement"]
+    Grupp["Andmeelementide grupp"]
   end
 
   subgraph G3["Mõistelised olemid"]
@@ -892,7 +893,12 @@
     AndmeTermin["Andmesõnastiku termin"]
     Arisonastik["Ärisõnastik"]
     AriTermin["Ärisõnastiku termin"]
-    Loend["Loend / koodiloend"]
+  end
+
+  subgraph G4["Legend"]
+    LegendOranz["Andmekataloogi ja andmeteenuse olemid"]
+    LegendSinine["Andmestiku ja detailse andmestruktuuri olemid"]
+    LegendRoheline["Sõnastike ja terminoloogia olemid"]
   end
 
   Kataloog --&gt;|"1 / 0..n"| Sari
@@ -906,32 +912,37 @@
 
   Andmestik --&gt;|"1 / 0..n"| Tabel
   Tabel --&gt;|"1 / 0..n"| Element
+  Andmestik --&gt;|"1 / 0..n"| Element
+
+  Grupp --&gt;|"0..1 / 0..n"| Element
 
   Andmestik --&gt;|"0..n / 1"| Andmesonastik
   Andmesonastik --&gt;|"1 / 0..n"| AndmeTermin
   Arisonastik --&gt;|"1 / 0..n"| AriTermin
 
   Element --&gt;|"0..n / 0..1"| AndmeTermin
-  Element --&gt;|"0..n / 0..1"| Loend
   AndmeTermin --&gt;|"0..n / 0..n"| AriTermin
 
   classDef oranz fill:#FDE7D7,stroke:#E87511,stroke-width:2px,color:#111111;
   classDef sinine fill:#DDEEFF,stroke:#1D70B8,stroke-width:2px,color:#111111;
   classDef roheline fill:#E4F4E8,stroke:#2E8540,stroke-width:2px,color:#111111;
-  classDef hall fill:#F3F4F6,stroke:#6B7280,stroke-width:2px,color:#111111;
 
   class Kataloog,Teenus oranz;
-  class Andmestik,Sari,Levitus,Tabel,Element sinine;
+  class Andmestik,Sari,Levitus,Tabel,Element,Grupp sinine;
   class Andmesonastik,AndmeTermin,Arisonastik,AriTermin roheline;
-  class Loend hall;
+
+  class LegendOranz oranz;
+  class LegendSinine sinine;
+  class LegendRoheline roheline;
 
   click Kataloog "#21-andmekataloogi-kirjeldus" "Ava andmekataloogi kirjeldus" _self
-  click Andmestik "#22-andmestiku-kirjeldus" "Ava andmekataloogi kirjeldus" _self
+  click Andmestik "#22-andmestiku-kirjeldus" "Ava andmestiku kirjeldus" _self
   click Levitus "#23-andmestiku-levituse-kirjeldus" "Ava levituse kirjeldus" _self
   click Sari "#24-andmestike-sarja-kirjeldus" "Ava andmestike sarja kirjeldus" _self
   click Teenus "#25-andmeteenuse-kirjeldus" "Ava andmeteenuse kirjeldus" _self
   click Tabel "#26-andmebaasi-tabeli-kirjeldus" "Ava andmetabeli kirjeldus" _self
   click Element "#27-andmeelemendi-kirjeldus" "Ava andmeelemendi kirjeldus" _self
+  click Grupp "#28-andmeelementide-grupp" "Ava andmeelementide grupi kirjeldus" _self
   click Andmesonastik "#31-andmesonastiku-kirjeldus" "Ava andmesõnastiku kirjeldus" _self
   click AndmeTermin "#32-andmesonastiku-termini-kirjeldus" "Ava andmesõnastiku termini kirjeldus" _self
   click Arisonastik "#33-arisonastiku-kirjeldus" "Ava ärisõnastiku kirjeldus" _self
