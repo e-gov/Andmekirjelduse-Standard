@@ -435,7 +435,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. andmestiku identifikaator](#221-andmestiku-identifikaator), [2. andmete piirdaatumid](#222-andmete-piirdaatumid), [3. andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [4. andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [4.1. seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [4.2. seose tüüp](#2242-seose-tuup), [5. andmesõnastiku nimi](#225-andmesonastiku-nimi), [6. andmete päritolu](#226-andmete-paritolu), [6.1. päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [6.2. päritolu andmestiku UUID](#2262-paritolu-andmestiku-uuid), [7. geograafiline kaetus](#227-geograafiline-kaetus), [7.1. asukoha nimetus](#2271-asukoha-nimetus), [7.2. asukoha koordinaadid](#2272-asukoha-koordinaadid), [8. avalikustamise kuupäev](#228-avalikustamise-kuupaev), [9. HVD kategooria](#229-hvd-kategooria), [10. juurdepääsutase](#2210-juurdepaasutase), [11. kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [12. keel](#2212-keel), [13. kirjeldus](#2213-kirjeldus), [14. kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [15. kohalduvad õigusaktid](#2215-kohalduvad-oigusaktid), [16. kontaktpunkt](#2216-kontaktpunkt), [16.1. kontakti nimi](#22161-kontakti-nimi), [16.2. kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [16.3. kontakti telefoninumber](#22163-kontakti-telefoninumber), [17. levituse identifikaator](#2217-levituse-identifikaator), [18. lühinimetus](#2218-luhinimetus), [19. muu identifikaator](#2219-muu-identifikaator), [19.1. muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [19.2. muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [20. märksõna](#2220-marksona), [20.1. märksõna termin](#22201-marksona-termin), [20.2. märksõna URI](#22202-marksona-uri), [21. omanik](#2221-omanik), [22. pealkiri](#2222-pealkiri), [23. seotud tegevused](#2223-seotud-tegevused), [24. tüüp](#2224-tuup), [25. valdkond](#2225-valdkond), [25.1. ainevaldkond](#22251-ainevaldkond), [25.2. valdkonna URI](#22252-valdkonna-uri), [26. vastab standardile](#2226-vastab-standardile), [27. veebisait](#2227-veebisait), [28. õiguslik alus](#2228-oiguslik-alus), [28.1. õigusakti nimetus](#22281-oigusakti-nimetus), [28.2. õigusakti link](#22282-oigusakti-link)*
+    - Selles klassis esinevad järgmised atribuudid: *[1. andmestiku identifikaator](#221-andmestiku-identifikaator), [2. andmete piirdaatumid](#222-andmete-piirdaatumid), [3. andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [4. andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [4.1. seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [4.2. seose tüüp](#2242-seose-tuup), [6. andmete päritolu](#226-andmete-paritolu), [6.1. päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [6.2. päritolu andmestiku UUID](#2262-paritolu-andmestiku-uuid), [7. geograafiline kaetus](#227-geograafiline-kaetus), [7.1. asukoha nimetus](#2271-asukoha-nimetus), [7.2. asukoha koordinaadid](#2272-asukoha-koordinaadid), [8. avalikustamise kuupäev](#228-avalikustamise-kuupaev), [9. HVD kategooria](#229-hvd-kategooria), [10. juurdepääsutase](#2210-juurdepaasutase), [11. kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [12. keel](#2212-keel), [13. kirjeldus](#2213-kirjeldus), [14. kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [15. kohalduv õigusakt](#2215-kohalduv-oigusakt), [16. kontaktpunkt](#2216-kontaktpunkt), [16.1. kontakti nimi](#22161-kontakti-nimi), [16.2. kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [16.3. kontakti telefoninumber](#22163-kontakti-telefoninumber), [17. levituse identifikaator](#2217-levituse-identifikaator), [18. lühinimetus](#2218-luhinimetus), [19. muu identifikaator](#2219-muu-identifikaator), [19.1. muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [19.2. muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [20. märksõna](#2220-marksona), [20.1. märksõna termin](#22201-marksona-termin), [20.2. märksõna URI](#22202-marksona-uri), [21. omanik](#2221-omanik), [22. pealkiri](#2222-pealkiri), [23. seotud tegevused](#2223-seotud-tegevused), [24. tüüp](#2224-tuup), [25. valdkond](#2225-valdkond), [25.1. ainevaldkond](#22251-ainevaldkond), [25.2. valdkonna URI](#22252-valdkonna-uri), [26. vastab standardile](#2226-vastab-standardile), [27. veebisait](#2227-veebisait), [28. õiguslik alus](#2228-oiguslik-alus), [28.1. õigusakti nimetus](#22281-oigusakti-nimetus), [28.2. õigusakti link](#22282-oigusakti-link)*
 
 ---
 
@@ -447,7 +447,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 !!! example "Näide"
     28289ed9-8472-44c4-958b-91cef59eaada  
-    Selgitus: on GUID kujul ning seda võib kasutada URI osana
+    Selgitus: on UUID kujul ning seda võib kasutada URI osana
 
 ---
 
@@ -455,11 +455,14 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 2 | **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus** 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus** 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
+| 2 | **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Ajavahemik, mille kohta on andmed olemas ja/või avaldatud. Ajavahemiku algus- ja lõppdaatum esitatakse ISO 8601-1 kohaselt aasta (AAAA), kuu (AAAA-KK) või päeva (AAAA-KK-PP) täpsusega. Lõppdaatum võib puududa. **Märkus** 1: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus** 2: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
 
-!!! example "Näide"
+!!! example "Näited"
     1993-11-05/2007-06-30  
     Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.
+
+    1993-11/  
+    Selgitus: Andmestiku andmed hõlmavad perioodi alates 1993. aasta novembrist. Algusdaatum on esitatud kuu täpsusega ning lõppdaatum on määramata.
 
 ---
 
@@ -506,17 +509,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 !!! example "Näide"
     Selgitus: isPartOf ja hasPart on kasutusel andmestiku ja alamandmestiku juures.  
     Selgitus: replaces ja isReplacedBy on kasutusel juhul kui tegemist on n-ö versioneeritavate andmestikega.
-
----
-
-<a id="225-andmesonastiku-nimi"></a>
-
-| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
-|---:|---|---|---:|---|---|
-| 5 | **andmesõnastiku nimi** | - | 1..1 | Sõnastiku pealkiri. Soovitatav on andmesõnastiku pealkirjas kasutada sõnastikule vastava andmestiku ja selle domeeni nimetusi. **Märkus**: RIHAKEses on kasutusel “Nimetus“. | - |
-
-!!! example "Näide"
-    Loomeliitude andmekogu (LLA) andmesõnastik
 
 ---
 
@@ -671,24 +663,28 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 14 | **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestiku kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
+| 14 | **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestiku kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: Eesti andmekirjelduse standardis esitatakse kirjelduse muutmiskuupäev andmestiku kirjelduse juures, kuna kataloogikirjet (Catalog Record) ei käsitleta eraldi olemina. DCAT-is ja DCAT-AP-s kuulub metaandmekirje muutmiskuupäev kataloogikirje juurde ning seda eristatakse andmestiku enda muutmiskuupäevast. | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date (Catalog Record)](https://www.w3.org/TR/vocab-dcat-3/#Property:record_update_date)<br>- DCAT-AP: [modification date (Catalogue Record)](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2020-05-25
 
 ---
 
-<a id="2215-kohalduvad-oigusaktid"></a>
+<a id="2215-kohalduv-oigusakt"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 15 | **kohalduvad õigusaktid** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmestikule kohalduvale Euroopa Liidu õigusaktile, mis reguleerib andmestiku ja/või andmestiku kirjelduse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
+| 15 | **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmestikule kohalduvale õigusaktile, mis reguleerib andmestiku avaldamist ja sellele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmestike puhul. Kirjelduselementi võib kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
-!!! example "Näide"
+!!! example "Näited"
     http://data.europa.eu/eli/reg_impl/2023/138/oj  
-    Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.  
-    http://data.europa.eu/eli/reg/2020/868/oj  
-    Selgitus: Euroopa andmehalduse määruse kohaldumisel.
+    Selgitus: kõrgväärtuslike andmestike rakendusmäärus.
+
+    http://data.europa.eu/eli/reg/2022/868/oj  
+    Selgitus: Euroopa andmehalduse määrus.
+
+    http://data.europa.eu/eli/dir/2019/1024/oj  
+    Selgitus: avaandmete direktiiv.
 
 ---
 
@@ -699,9 +695,9 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 | 16 | **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Andmestiku kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed.[^29] **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi (nimi, e-posti aadress, telefoninumber).[^30] | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
-    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    Kultuuriministeerium, min@kul.ee, +3726282222 
     Selgitus: organisatsiooni kontaktandmed.  
-    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Jüri Tamm, jyri.tamm@mmit.ee, +3726282222 
     Selgitus: üksikisiku kontaktandmed.
 
 ---
@@ -738,10 +734,10 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 16.3 | **kontakti telefoninumber** | - | 0..1 | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest, kas e-posti aadress või telefoninumber. Telefoninumber peab olema esitatud ITU-T E.123 soovituses ette nähtud notatsioonis. | - |
+| 16.3 | **kontakti telefoninumber** | - | 0..1 | Kontakti telefoninumber. Igas kontaktikirjes peab sisalduma vähemalt üks kahest: kas e-posti aadress või telefoninumber. Telefoninumber esitatakse rahvusvahelisel kujul koos riigikoodiga, mille ees on plussmärk (+), näiteks +3726789012. **Märkus**: vCardi ontoloogiat kasutavas RDF-andmevahetuses esitatakse telefoninumber `tel:`-URI-na, näiteks `tel:+3726789012`. | [vcard:hasTelephone](https://www.w3.org/TR/vcard-rdf/) |
 
 !!! example "Näide"
-    (372) 678 9012
+    +3726789012
 
 ---
 
@@ -749,7 +745,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 17 | **levituse identifikaator** | - | 0..n | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | - |
+| 17 | **levituse identifikaator** | - | 0..n | Viide andmestikuga seotud levituse kirjeldusele (vt [2.3 Andmestiku levituse kirjeldus](#23-andmestiku-levituse-kirjeldus)). **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | - |
 
 !!! example "Näide"
     336a3add-efc9-40dc-8830-091205fe20a5
@@ -1060,14 +1056,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 8 | **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja avaldamisele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
+| 8 | **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide levitusele kohalduvale õigusaktile, mis reguleerib levituse avaldamist ja sellele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate levituste puhul. Kirjelduselementi võib kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
-!!! example "Näide"
+!!! example "Näited"
     http://data.europa.eu/eli/reg_impl/2023/138/oj  
-    Selgitus: kasutada väärtuslike andmestike rakendusmääruse kohaldumisel.  
-    http://data.europa.eu/eli/reg/2020/868/oj  
-    Selgitus: Euroopa andmehalduse määruse kohaldumisel.  
-    http://data.europa.eu/eli/dir/2019/1024/oj
+    Selgitus: kõrgväärtuslike andmestike rakendusmäärus.
+
+    http://data.europa.eu/eli/reg/2022/868/oj  
+    Selgitus: Euroopa andmehalduse määrus.
+
+    http://data.europa.eu/eli/dir/2019/1024/oj  
+    Selgitus: avaandmete direktiiv.
 
 ---
 
@@ -1118,11 +1117,14 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 1 | **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP/AAAA-KK-PP). **Märkus**: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus**: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
+| 1 | **andmete piirdaatumid** | [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) | 0..1 | Andmestike sarjas sisalduvate andmete piirdaatumid. See näitab, millist ajaperioodi andmed katavad. Ajavahemiku algus- ja lõppdaatum esitatakse ISO 8601-1 kohaselt aasta (AAAA), kuu (AAAA-KK) või päeva (AAAA-KK-PP) täpsusega. Lõppdaatum võib puududa. **Märkus**: andmete piirdaatumeid ei tohi segi ajada andmekogumise või -sisestamise piirdaatumitega, samuti andmestiku kasutusele võtmise kuupäevaga. **Märkus**: algusdaatumiks arvatakse kirje tegemise (dokumenteerimise) fakti või aega, mitte seotud aeg minevikust (näiteks hoone ehitamine aastal 1882). Lõppdaatumi märkimine on võimalik ja tarvilik ainult lõpetatud andmestike kirjeldamisel. | viide: [dcterms:temporal](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#temporal)<br>- DCAT: [temporal coverage](https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal)<br>- DCAT-AP: [temporal coverage](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage)<br>vahemik: <br>- DCAT:(RDF) [dcterms:PeriodOfTime](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#PeriodOfTime)<br>- DCAT-AP: [Period of time](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime) |
 
-!!! example "Näide"
+!!! example "Näited"
     1993-11-05/2007-06-30  
     Selgitus: Andmestik katab sisus perioodi 1993-11-05/2007-06-30, mis on kohane ka piirdaatumitena märkimiseks, kuigi andmete avalikustamine toimus alles aastal 2003.
+
+    1993-11/  
+    Selgitus: Andmestike sarja andmed hõlmavad perioodi alates 1993. aasta novembrist. Algusdaatum on esitatud kuu täpsusega ning lõppdaatum on määramata.
 
 ---
 
@@ -1187,7 +1189,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 7 | **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestike sarja kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date)<br>- DCAT-AP: [modification date](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
+| 7 | **kirjelduse muutmiskuupäev** | [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) | 0..1 | Andmestike sarja kirjelduse viimase muutmise kuupäev. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). **Märkus**: Eesti andmekirjelduse standardis esitatakse kirjelduse muutmiskuupäev andmestike sarja kirjelduse juures, kuna kataloogikirjet (Catalog Record) ei käsitleta eraldi olemina. DCAT-is ja DCAT-AP-s kuulub metaandmekirje muutmiskuupäev kataloogikirje juurde ning seda eristatakse andmestike sarja enda muutmiskuupäevast. | viide: [dcterms:modified](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#modified)<br>- DCAT: [update/modification date (Catalog Record)](https://www.w3.org/TR/vocab-dcat-3/#Property:record_update_date)<br>- DCAT-AP: [modification date (Catalogue Record)](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.modificationdate)<br>vahemik: <br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Temporal Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#TemporalLiteral) |
 
 !!! example "Näide"
     2022-05-25
@@ -1198,12 +1200,12 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 8 | **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
+| 8 | **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Andmestike sarja kontakt: organisatsioon või üksikisik ning alamelementidena kontaktandmed. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel kolm alamelementi: nimi, e-posti aadress, telefoninumber. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
-    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    Kultuuriministeerium, min@kul.ee, +3726282222 
     Selgitus: organisatsiooni kontaktandmed.  
-    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Jüri Tamm, jyri.tamm@mmit.ee, +3726282222 
     Selgitus: üksikisiku kontaktandmed.
 
 ---
@@ -1296,12 +1298,17 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 5 | **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ning sellele seatud nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Samas on kirjelduselementi lubatud kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. **Märkus**: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga. | viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
+| 5 | **kohalduv õigusakt** | [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) | 0..n | Viide andmeteenusele kohalduvale õigusaktile, mis reguleerib andmeteenuse osutamist ja sellele kohalduvaid nõudeid. Kohalduva õigusakti märkimine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD), avaandmete direktiivi (ODD) ja Euroopa andmehalduse määruse (DGA) kohaldamisalasse kuuluvate andmeteenuste puhul. Kirjelduselementi võib kasutada ka muude õigusaktide (näiteks INSPIRE) kohaldumisel. **Märkus**: Kirjelduse koostamisel on soovitatav andmeteenusele kohalduv õigusakt täita automaatselt andmestiku kirjelduse samanimelise kirjelduselemendi sisuga.| viide:<br>- DCAT-AP: [applicable legislation](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.applicablelegislation)<br>vahemik:<br>- DCAT-AP: [Legal Resource](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource) |
 
-!!! example "Näide"
-    Tööturuteenuste ja -toetuste seadus  
-    https://www.riigiteataja.ee/akt/948762  
-    http://data.europa.eu/eli/reg_impl/2023/138/oj
+!!! example "Näited"
+    http://data.europa.eu/eli/reg_impl/2023/138/oj  
+    Selgitus: kõrgväärtuslike andmestike rakendusmäärus.
+
+    http://data.europa.eu/eli/reg/2022/868/oj  
+    Selgitus: Euroopa andmehalduse määrus.
+
+    http://data.europa.eu/eli/dir/2019/1024/oj  
+    Selgitus: avaandmete direktiiv.
 
 ---
 
@@ -1320,13 +1327,13 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 7 | **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..1 | Kontaktandmed, mida saab kasutada andmestiku kohta kommentaaride edastamiseks. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
+| 7 | **kontaktpunkt** | [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) | 0..n | Kontaktandmed, mida saab kasutada andmeteenuse kohta kommentaaride edastamiseks. **Märkus**: kasutatakse vCard ontoloogiat, millest omakorda on kasutusel veebileht ja e-posti aadress. Kasutamine on kohustuslik kõrgväärtuslike andmestike rakendusmääruse (HVD) kohaldamisalasse kuuluvate andmestike andmeteenuste puhul. | viide: [dcat:contactPoint](https://www.w3.org/ns/dcat#contactPoint)<br>- DCAT: [contact point](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point)<br>- DCAT-AP: [contact point](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.contactpoint)<br>vahemik: <br>- DCAT:(RDF) [vcard:Kind](https://www.w3.org/TR/vcard-rdf/#d4e1819)<br>- DCAT-AP: [Kind](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind) |
 
 !!! example "Näide"
-    https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasisideinfo@rik.ee  
-    Kultuuriministeerium, min@kul.ee, (372) 628 2222  
+    https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside info@rik.ee  
+    Kultuuriministeerium, min@kul.ee, +3726282222  
     Selgitus: organisatsiooni kontaktandmed.  
-    Jüri Tamm, jyri.tamm@mmit.ee, (372) 678 9012  
+    Jüri Tamm, jyri.tamm@mmit.ee, +3726282222 
     Selgitus: üksikisiku kontaktandmed.
 
 ---
