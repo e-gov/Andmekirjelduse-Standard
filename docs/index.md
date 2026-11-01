@@ -96,7 +96,7 @@ Andmekataloogi sõnastiku DCAT paljud kirjelduselemendid on seotud kirjeldusstan
 
 Sõnastike kirjelduselementide osas on arvestatud Eesti standardiks üle võetud rahvusvahelise standardiga ISO 25964 „Tesaurused ja nende koostalitusvõime teiste sõnastikega.“[^6] Seda eelkõige kasutatava terminoloogia osas.
 
-[^1]: Avaliku sektori andmekogude osas on selleks infosüsteemiks [riigi infosüsteemi haldussüsteem](https://www.riha.ee/Avaleht) (RIHA). Avaandmete osas on selleks infosüsteemiks [Eesti avaandmete teabevärav](https://andmed.eesti.ee/)(andmed.eesti.ee). 
+[^1]: Avaliku sektori andmekogude osas on selleks infosüsteemiks [riigi infosüsteemi haldussüsteem](https://www.riha.ee/Avaleht) (RIHA). Avaandmete osas on selleks infosüsteemiks [Andmete teabevärav](https://andmed.eesti.ee/)(andmed.eesti.ee). 
 [^2]: [Data Catalog Vocabulary (DCAT) - Version 3](https://www.w3.org/TR/vocab-dcat-3/) (W3C Proposed Recommendation 13 June 2024)
 [^3]: [DCAT Application Profile for data portals in Europe](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/300)(DCAT-AP 3.0.0)
 [^4]: [Dublin Core Metadata Innovation (DCMI)](https://www.dublincore.org/)
@@ -238,7 +238,7 @@ Sarja mõiste on kasutusel arhiivi- ja dokumendihalduses. Arhiivieeskirjas on pu
 
 ### 1.3.4 Andmestik
 
-Andmestik (Dataset) on terviklikult identifitseeritav ja hallatav andmete kogum.[^10] Andmestiku tüüpe on mitmesuguseid ning kataloogis on need kokku viidavad Dublin Core inforessursi tüüpidega.[^11] Dublin Core inforessursi tüüpide märksõnastikus on andmestik (dataset) üks märksõna. Praktikas on andmekataloogis enamasti andmestiku tüüpi inforessursid. See tähendab, et andmestik võib olla terve õiguslikult kehtestatud andmekogu või ka infosüsteem. Samas on võimalik nii andmekogusid kui infosüsteeme hallata sisuliselt või tehniliselt määratletud ja eristatavate osade kaupa, mida võib nimetada alamandmestikeks. Kui andmekogu kui andmestikku määravad kriteeriumid on peamiselt selle eraldi õiguslik olemasolu, siis paljud infosüsteemid, andmebaasid või nende osad on organisatsiooniliselt või tehniliselt hallatavad andmestikena ning samuti on avaandmete portaalides ja mujal andmestikeks teksti, pildi jms tüüpi andmestikud. 
+Andmestik (Dataset) on terviklikult identifitseeritav ja hallatav andmete kogum.[^10] Andmestiku tüüpe on mitmesuguseid ning kataloogis on need kokku viidavad Dublin Core inforessursi tüüpidega.[^11] Dublin Core inforessursi tüüpide märksõnastikus on andmestik (dataset) üks märksõna. Praktikas on andmekataloogis enamasti andmestiku tüüpi inforessursid. See tähendab, et andmestik võib olla terve õiguslikult kehtestatud andmekogu või ka infosüsteem. Samas on võimalik nii andmekogusid kui infosüsteeme hallata sisuliselt või tehniliselt määratletud ja eristatavate osade kaupa, mida võib nimetada alamandmestikeks. Kui andmekogu kui andmestikku määravad kriteeriumid on peamiselt selle eraldi õiguslik olemasolu, siis paljud infosüsteemid, andmebaasid või nende osad on organisatsiooniliselt või tehniliselt hallatavad andmestikena ning samuti on andmeportaalides ja mujal andmestikeks teksti, pildi jms tüüpi andmestikud. 
 
 **DCAT määratlus**
 - Ühe isiku [või organisatsiooni] avaldatud või hallatud andmete kogum, mis on tehtud kättesaadavaks või alla laetavaks ühel või enamal esituskujul.
@@ -370,9 +370,9 @@ Teise olulise rühma andmekirjelduse standardi kasutusjuhtudest moodustavad kirj
 Erilisel kohal on avaandmetena avaldamine. DCAT standardi kasutamine kirjelduste koostamise alusena on paljus tõukunud avaandmete eesmärgist ja kohustusest. See on aga seotud teiste kasutusjuhtudega, kui andmeid või andmekirjeldusi avaldatakse.
 
 Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni portaalis võib eristada mitmeid kasutusjuhtusid:
-- Paljud organisatsioonid on loonud oma avaandmete portaalid, milles avaldavad andmestikke kas aruannete või statistikana või pakuvad juurdepääsu oma avaandmetele teenuste kaudu. Sellistes portaalides tehtud avaldamised peaks kasutama selles andmekirjelduse standardis esitatud kirjeldusstruktuure ja -elemente.
+- Paljud organisatsioonid on loonud oma andmeportaalid, milles avaldavad andmestikke kas aruannete või statistikana või pakuvad juurdepääsu oma avaandmetele teenuste kaudu. Sellistes portaalides tehtud avaldamised peaks kasutama selles andmekirjelduse standardis esitatud kirjeldusstruktuure ja -elemente.
 
-- Kuna andmestiku tasandi kirjeldus on loodud DCAT-AP-ga ühilduvana, siis võimaldab see vahetada – kasutades näiteks OAI-PMH andmevahetusprotokolli[^19] – andmeid Euroopa avaandmete portaaliga.[^20]
+- Kuna andmestiku tasandi kirjeldus on loodud DCAT-AP-ga ühilduvana, siis võimaldab see vahetada – kasutades näiteks OAI-PMH andmevahetusprotokolli[^19] – andmeid Euroopa andmeportaaliga.[^20]
 
 [^19]: [Open Archives Initiative Protocol for Metadata Harvesting](https://www.openarchives.org/pmh/)
 [^20]: [European data](https://data.europa.eu/en)
@@ -381,7 +381,7 @@ Andmekirjelduste edastamiseks organisatsioonist välja või organisatsiooni port
 
 ## 2. Andmekataloogi ja selle olemite kirjelduselemendid
 
-Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on Eesti andmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente. Kirjelduselemendid on iga olemi piires nummerdatud. Alamelemendid kasutavad hierarhilist nummerdust (nt 4.1, 4.2).
+Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud on kirjelduselemendid, mis arvestavad riigi kesksete andmehaldust toetavate rakenduste nõuetega, milleks on Andmete teabevärav ja RIHAKE. Ära on jäetud andmekataloogi kirje (Catalog record) olem, mis ei ole Eestis kasutusel. Elemendid on järjestatud olemites alfabeetiliselt v.a juhul, kui olemil on alamelemente. Kirjelduselemendid on iga olemi piires nummerdatud. Alamelemendid kasutavad hierarhilist nummerdust (nt 4.1, 4.2).
 
 ---
 
@@ -435,7 +435,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. andmestiku identifikaator](#221-andmestiku-identifikaator), [2. andmete piirdaatumid](#222-andmete-piirdaatumid), [3. andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [4. andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [4.1. seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [4.2. seose tüüp](#2242-seose-tuup), [6. andmete päritolu](#226-andmete-paritolu), [6.1. päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [6.2. päritolu andmestiku UUID](#2262-paritolu-andmestiku-uuid), [7. geograafiline kaetus](#227-geograafiline-kaetus), [7.1. asukoha nimetus](#2271-asukoha-nimetus), [7.2. asukoha koordinaadid](#2272-asukoha-koordinaadid), [8. avalikustamise kuupäev](#228-avalikustamise-kuupaev), [9. HVD kategooria](#229-hvd-kategooria), [10. juurdepääsutase](#2210-juurdepaasutase), [11. kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [12. keel](#2212-keel), [13. kirjeldus](#2213-kirjeldus), [14. kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [15. kohalduv õigusakt](#2215-kohalduv-oigusakt), [16. kontaktpunkt](#2216-kontaktpunkt), [16.1. kontakti nimi](#22161-kontakti-nimi), [16.2. kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [16.3. kontakti telefoninumber](#22163-kontakti-telefoninumber), [17. levituse identifikaator](#2217-levituse-identifikaator), [18. lühinimetus](#2218-luhinimetus), [19. muu identifikaator](#2219-muu-identifikaator), [19.1. muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [19.2. muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [20. märksõna](#2220-marksona), [20.1. märksõna termin](#22201-marksona-termin), [20.2. märksõna URI](#22202-marksona-uri), [21. omanik](#2221-omanik), [22. pealkiri](#2222-pealkiri), [23. seotud tegevused](#2223-seotud-tegevused), [24. tüüp](#2224-tuup), [25. valdkond](#2225-valdkond), [25.1. ainevaldkond](#22251-ainevaldkond), [25.2. valdkonna URI](#22252-valdkonna-uri), [26. vastab standardile](#2226-vastab-standardile), [27. veebisait](#2227-veebisait), [28. õiguslik alus](#2228-oiguslik-alus), [28.1. õigusakti nimetus](#22281-oigusakti-nimetus), [28.2. õigusakti link](#22282-oigusakti-link)*
+    - Selles klassis esinevad järgmised atribuudid: *[1. andmestiku identifikaator](#221-andmestiku-identifikaator), [2. andmete piirdaatumid](#222-andmete-piirdaatumid), [3. andmete uuendamise regulaarsus](#223-andmete-uuendamise-regulaarsus), [4. andmestiku seos teise andmestikuga](#224-andmestiku-seos-teise-andmestikuga), [4.1. seotud andmestiku identifikaator](#2241-seotud-andmestiku-identifikaator), [4.2. seose tüüp](#2242-seose-tuup), [6. andmete päritolu](#226-andmete-paritolu), [6.1. päritolu andmestiku pealkiri](#2261-paritolu-andmestiku-pealkiri), [6.2. päritolu andmestiku UUID](#2262-paritolu-andmestiku-uuid), [7. geograafiline kaetus](#227-geograafiline-kaetus), [7.1. asukoha nimetus](#2271-asukoha-nimetus), [7.2. asukoha koordinaadid](#2272-asukoha-koordinaadid), [8. avalikustamise kuupäev](#228-avalikustamise-kuupaev), [9. HVD kategooria](#229-hvd-kategooria), [10. juurdepääsutase](#2210-juurdepaasutase), [11. kasutusele võtmise kuupäev](#2211-kasutusele-votmise-kuupaev), [12. keel](#2212-keel), [13. kirjeldus](#2213-kirjeldus), [14. kirjelduse muutmiskuupäev](#2214-kirjelduse-muutmiskuupaev), [15. kohalduv õigusakt](#2215-kohalduv-oigusakt), [16. kontaktpunkt](#2216-kontaktpunkt), [16.1. kontakti nimi](#22161-kontakti-nimi), [16.2. kontakti e-posti aadress](#22162-kontakti-e-posti-aadress), [16.3. kontakti telefoninumber](#22163-kontakti-telefoninumber), [17. levituse identifikaator](#2217-levituse-identifikaator), [18. lühinimetus](#2218-luhinimetus), [19. muu identifikaator](#2219-muu-identifikaator), [19.1. muu identifikaatori tüüp](#22191-muu-identifikaatori-tuup), [19.2. muu identifikaatori väärtus](#22192-muu-identifikaatori-vaartus), [20. märksõna](#2220-marksona), [20.1. märksõna termin](#22201-marksona-termin), [20.2. märksõna URI](#22202-marksona-uri), [21. valdaja](#2221-valdaja), [22. pealkiri](#2222-pealkiri), [23. seotud tegevused](#2223-seotud-tegevused), [24. tüüp](#2224-tuup), [25. valdkond](#2225-valdkond), [25.1. ainevaldkond](#22251-ainevaldkond), [25.2. valdkonna URI](#22252-valdkonna-uri), [26. vastab standardile](#2226-vastab-standardile), [27. veebisait](#2227-veebisait), [28. õiguslik alus](#2228-oiguslik-alus), [28.1. õigusakti nimetus](#22281-oigusakti-nimetus), [28.2. õigusakti link](#22282-oigusakti-link)*
 
 ---
 
@@ -443,7 +443,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 1 | **andmestiku identifikaator** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 1..1 | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Eesti andmete teabevärav. | DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
+| 1 | **andmestiku identifikaator** | [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) | 1..1 | Andmestikule omistatud unikaalne ja püsiv identifikaator. Identifikaatori võib omistada alliksüsteem või sihtsüsteem, näiteks Andmete teabevärav. | DCAT-AP: [Document](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document) |
 
 !!! example "Näide"
     28289ed9-8472-44c4-958b-91cef59eaada  
@@ -829,11 +829,11 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="2221-omanik"></a>
+<a id="2221-valdaja"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 21 | **omanik** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher)<br>vahemik:<br>- DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
+| 21 | **valdaja** | [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) | 1..1 | Andmestiku sisu haldav organisatsioon, kes andmestikku levitab. | viide: [dcterms:publisher](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#publisher)<br>- DCAT: [publisher](https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher)<br>- DCAT-AP: [publisher](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher)<br>vahemik:<br>- DCAT-AP: [Agent](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent) |
 
 !!! example "Näide"
     Kliimaministeerium  
@@ -882,7 +882,11 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 25 | **valdkond** | - | 1..n | Andmestiku valdkond Eesti märksõnastiku (EMS), EuroVoc või muu alusel. **Märkus**: avaandmete portaalis on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad Euroopa andmete ametliku portaali valdkondadega (kategooriatega). | - |
+| 25 | **valdkond** | - | 1..n | Andmestiku valdkond Eesti märksõnastiku (EMS), EuroVoc või muu alusel. **Märkus**: andmete teabeväravas on EMSi valdkonnad seotud seal olevate valdkondadega, mis ühilduvad Euroopa andmete ametliku portaali valdkondadega (kategooriatega). | - |
+
+!!! example "Näide"
+    44 EHITUS. SANITAARTEHNIKA  
+    Selgitus: Andmestiku valdkond on esitatud Eesti märksõnastiku (EMS) järgi.
 
 ---
 
@@ -901,7 +905,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 25.2 | **valdkonna URI** | - | 1..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. | - |
+| 25.2 | **valdkonna URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. Kui kasutatavas märksõnastikus on URI-d, siis pannakse URI iga valdkonna märksõna kohta. | - |
 
 !!! example "Näide"
     https://ems.elnet.ee/id/EMS023309
@@ -965,7 +969,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. ajaline täpsus](#231-ajaline-tapsus), [2. andmete staatus](#232-andmete-staatus), [3. avalikustamise kestus](#233-avalikustamise-kestus), [4. HVD kategooria](#234-hvd-kategooria), [5. juurdepääsupunkt](#235-juurdepaasupunkt), [6. juurdepääsutingimused](#236-juurdepaasutingimused), [7. kasutuslitsents](#237-kasutuslitsents), [8. kohalduv õigusakt](#238-kohalduv-oigusakt), [9. levituse identifikaator](#239-levituse-identifikaator), [10. levituse vorming](#2310-levituse-vorming), [11. levituse suurus](#2311-levituse-suurus)*
+    - Selles klassis esinevad järgmised atribuudid: *[1. ajaline täpsus](#231-ajaline-tapsus), [2. andmete staatus](#232-andmete-staatus), [3. kavandatud kättesaadavus](#233-kavandatud-kattesaadavus), [4. HVD kategooria](#234-hvd-kategooria), [5. juurdepääsupunkt](#235-juurdepaasupunkt), [6. juurdepääsutingimused](#236-juurdepaasutingimused), [7. kasutuslitsents](#237-kasutuslitsents), [8. kohalduv õigusakt](#238-kohalduv-oigusakt), [9. levituse kirjelduse identifikaator](#239-levituse-kirjelduse-identifikaator), [10. levituse vorming](#2310-levituse-vorming), [11. levituse suurus](#2311-levituse-suurus), [12. kirjeldus](#2312-kirjeldus), [13. pealkiri](#2313-pealkiri)*
 
 ---
 
@@ -986,24 +990,41 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 2 | **andmete staatus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Element viitab levitatavate andmete kindlale kvaliteediseisundile. Avaandmete teabevärav eristab nelja staatust: valmis, ebasoovitav, arenduses, mahavõetud. | viide:<br>- DCAT-AP: [status](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
+| 2 | **andmete staatus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Levituse staatus selle elutsükli ja valmiduse seisukohast. Staatus näitab, kas levitus on täielik, väljatöötamisel, kasutamiseks enam mitte soovitatav või tagasi võetud. Väärtuse määramisel kasutatakse Euroopa Liidu väljaannete talituse hallatavat kontrollitud sõnastikku „Distribution status“. Võimalikud väärtused on: täielik (Completed), taunitav (Deprecated), töös (Under Development) ja tagasi võetud (Withdrawn). **Märkus**: Staatus kirjeldab levituse elutsüklit, mitte selles sisalduvate andmete kvaliteeti. | viide: [adms:status](https://www.w3.org/TR/vocab-adms/#adms-status)<br>- DCAT-AP: [status](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status)<br>- Kontrollitud sõnastik: [Distribution status](https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status)<br>vahemik:<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
-!!! example "Näide"
-    valmis  
-    ebasoovitav  
-    arenduses  
-    mahavõetud
+!!! example "Näited"
+    http://publications.europa.eu/resource/authority/distribution-status/COMPLETED  
+    Selgitus: täielik (Completed). Levitus on valmis.
+
+    http://publications.europa.eu/resource/authority/distribution-status/DEPRECATED  
+    Selgitus: taunitav (Deprecated). Levituse kasutamine ei ole enam soovitatav.
+
+    http://publications.europa.eu/resource/authority/distribution-status/DEVELOP  
+    Selgitus: töös (Under Development). Levitus on väljatöötamisel.
+
+    http://publications.europa.eu/resource/authority/distribution-status/WITHDRAWN  
+    Selgitus: tagasi võetud (Withdrawn). Levitus on kasutusest tagasi võetud.
 
 ---
 
-<a id="233-avalikustamise-kestus"></a>
+<a id="233-kavandatud-kattesaadavus"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 3 | **avalikustamise kestus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Kuupäev, millal levitus viimast päeva kättesaadav on. Kuupäev esitatakse ISO 8601-1 vormingus (AAAA-KK-PP). | viide:<br>- DCAT-AP: [availability](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability)<br>vahemik: <br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
+| 3 | **kavandatud kättesaadavus** | [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) | 0..1 | Teave selle kohta, kui pikaks ajaks on kavandatud levituse kättesaadavus. Väärtus esitatakse Euroopa Liidu kontrollitud sõnastiku „Planned availability“ alusel. Võimalikud väärtused on ajutine (Temporary), katsetuslik (Experimental), kättesaadav (Available) ja püsiv (Stable). | viide: [dcatap:availability](http://data.europa.eu/r5r/availability)<br>- DCAT-AP: [availability](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability)<br>- Kontrollitud sõnastik: [Planned availability](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/planned-availability)<br>vahemik:<br>- DCAT-AP: [Concept](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept) |
 
-!!! example "Näide"
-    2025-06-30
+!!! example "Näited"
+    http://publications.europa.eu/resource/authority/planned-availability/TEMPORARY  
+    Selgitus: ajutine kättesaadavus.
+
+    http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL  
+    Selgitus: katsetuslik, lühiajaliselt kavandatud kättesaadavus.
+
+    http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE  
+    Selgitus: keskmiseks ajavahemikuks kavandatud kättesaadavus.
+
+    http://publications.europa.eu/resource/authority/planned-availability/STABLE  
+    Selgitus: pikaajaliselt kavandatud kättesaadavus.
 
 ---
 
@@ -1070,14 +1091,15 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="239-levituse-identifikaator"></a>
+<a id="239-levituse-kirjelduse-identifikaator"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
 |---:|---|---|---:|---|---|
-| 9 | **levituse identifikaator** | - | 1..1 | Viide andmestiku baasil loodud levitusele. **Märkus**: Andmehalduse määruse ja väärtuslike andmestike rakendusmääruse skoobis olevate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. | - |
+| 9 | **levituse kirjelduse identifikaator** | - | 1..1 | Levituse kirjeldusele omistatud unikaalne ja püsiv identifikaator, mille abil saab levituse kirjeldust üheselt tuvastada. Identifikaator võib olla esitatud UUID-na. **Märkus**: Andmehalduse määruse ja kõrgväärtuslike andmestike rakendusmääruse kohaldamisalasse kuuluvate andmestike kirjeldamisel on kohustuslik vähemalt ühe levituse kirjeldamine. Levituse kirjelduse identifikaatorit ei tohi segi ajada levituse juurdepääsuaadressiga. | - |
 
 !!! example "Näide"
-    336a3add-efc9-40dc-8830-091205fe20a5
+    336a3add-efc9-40dc-8830-091205fe20a5  
+    Selgitus: levituse kirjelduse identifikaator UUID-vormingus.
 
 ---
 
@@ -1102,6 +1124,30 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 !!! example "Näide"
     160000  
     Selgitus: levituse suuruseks on 160000 baiti, ehk ligikaudu 160 kB.
+
+---
+
+<a id="2312-kirjeldus"></a>
+
+| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---:|---|---|---:|---|---|
+| 12 | **kirjeldus** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 0..n | Levituse sisuline lühikirjeldus, mis selgitab levituse sisu ja eripära. **Märkus**: Kirjeldust võib esitada mitmes keeles. Keeleversioonid esitatakse eraldi väärtustena koos vastava keeletähisega. | viide: [dcterms:description](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description)<br>- DCAT: [description](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_description)<br>- DCAT-AP: [description](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.description)<br>vahemik:<br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
+
+!!! example "Näited"
+    "Andmestiku levitus CSV-vormingus."@et  
+    "Distribution of the dataset in CSV format."@en
+
+---
+
+<a id="2313-pealkiri"></a>
+
+| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
+|---:|---|---|---:|---|---|
+| 13 | **pealkiri** | [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) | 1..n | Levitusele antud nimetus, mis võimaldab seda eristada sama andmestiku teistest levitustest. **Märkus**: Pealkirja võib esitada mitmes keeles. Keeleversioonid esitatakse eraldi väärtustena koos vastava keeletähisega. | viide: [dcterms:title](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#title)<br>- DCAT: [title](https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_title)<br>- DCAT-AP: [title](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.title)<br>vahemik:<br>- DCAT:(RDF) [rdfs:Literal](https://www.w3.org/2000/01/rdf-schema#Literal)<br>- DCAT-AP: [Literal](https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Literal) |
+
+!!! example "Näited"
+    "Rahvastikuandmed (CSV)"@et  
+    "Population data (CSV)"@en
 
 ---
 
@@ -2366,4 +2412,4 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 [^34]: EU Vocabularies. [Frequency](https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency)
 [^35]: [Creative Commons licenses](https://creativecommons.org/share-your-work/cclicenses/)
 [^36]: Andmekirjeldus ja sõnastik võivad olla läbivalt mitmekeelsed, kuid käesolevas standardi versioonis on ingliskeelsed kirjelduselemendid toodud välja ainult nende 
-elementide kohta, mis on selliselt olemas rakendustes RIHAKE või avaandmete teabevärav.
+elementide kohta, mis on selliselt olemas rakendustes RIHAKE või andmete teabevärav.
