@@ -1295,18 +1295,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 - [**DCAT Viide**](https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service)
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. e-posti aadress](#251-e-posti-aadress), [2. HVD kategooria](#252-hvd-kategooria), [3. juurdepääsutingimused](#253-juurdepaasutingimused), [4. kasutuslitsents](#254-kasutuslitsents), [5. kohalduv õigusakt](#255-kohalduv-oigusakt), [6. kontaktileht](#256-kontaktileht), [7. kontaktpunkt](#257-kontaktpunkt), [8. otspunkti kirjeldus](#258-otspunkti-kirjeldus), [9. pealkiri](#259-pealkiri), [10. viide andmestikule](#2510-viide-andmestikule), [11. viide otspunktile](#2511-viide-otspunktile), [12. viide teenuse dokumentatsioonile](#2512-viide-teenuse-dokumentatsioonile)*
-
----
-
-<a id="251-e-posti-aadress"></a>
-
-| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
-|---:|---|---|---:|---|---|
-| 1 | **e-posti aadress** | - | 0..1 | E-posti aadress tagasiside edastamiseks. | - |
-
-!!! example "Näide"
-    info@mmit.ee
+    - Selles klassis esinevad järgmised atribuudid: *[2. HVD kategooria](#252-hvd-kategooria), [3. juurdepääsutingimused](#253-juurdepaasutingimused), [4. kasutuslitsents](#254-kasutuslitsents), [5. kohalduv õigusakt](#255-kohalduv-oigusakt), [7. kontaktpunkt](#257-kontaktpunkt), [8. otspunkti kirjeldus](#258-otspunkti-kirjeldus), [9. pealkiri](#259-pealkiri), [10. viide andmestikule](#2510-viide-andmestikule), [11. viide otspunktile](#2511-viide-otspunktile), [12. viide teenuse dokumentatsioonile](#2512-viide-teenuse-dokumentatsioonile)*
 
 ---
 
@@ -1355,17 +1344,6 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
     http://data.europa.eu/eli/dir/2019/1024/oj  
     Selgitus: avaandmete direktiiv.
-
----
-
-<a id="256-kontaktileht"></a>
-
-| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon | Viited |
-|---:|---|---|---:|---|---|
-| 6 | **kontaktileht** | - | 0..1 | Veebileht, mis võimaldab ühendust võtta (nt veebivorm) või sisaldab teavet kuidas kontakti saada. | - |
-
-!!! example "Näide"
-    https://avaandmed.ariregister.rik.ee/#ettepanekud-ja-tagasiside
 
 ---
 
@@ -1871,7 +1849,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 ## 3.1 Andmesõnastiku kirjeldus
 
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. kasutusele võtmise kuupäev](#311-kasutusele-votmise-kuupaev), [2. kirjeldus](#312-kirjeldus), [3. nimi](#313-nimi), [4. omanik](#314-omanik), [5. seotud sõnastiku nimi](#315-seotud-sonastiku-nimi), [6. seotud sõnastiku URI](#316-seotud-sonastiku-uri), [7. URI](#317-uri), [8. viimase muutmise kuupäev](#318-viimase-muutmise-kuupaev)*
+    - Selles klassis esinevad järgmised atribuudid: *[1. kasutusele võtmise kuupäev](#311-kasutusele-votmise-kuupaev), [2. kirjeldus](#312-kirjeldus), [3. nimi](#313-nimi), [4. valdaja](#314-valdaja), [7. URI](#317-uri), [8. viimase muutmise kuupäev](#318-viimase-muutmise-kuupaev)*
 
 ---
 
@@ -1908,36 +1886,14 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="314-omanik"></a>
+<a id="314-valdaja"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
 |---:|---|---|---:|---|
-| 4 | **omanik** | - | 1..n | Sõnastikku haldava isiku nimi. |
+| 4 | **valdaja** | - | 1..n | Andmesõnastiku haldamise eest vastutava organisatsiooni nimi. |
 
 !!! example "Näide"
-    Jüri Kask
-
----
-
-<a id="315-seotud-sonastiku-nimi"></a>
-
-| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---:|---|---|---:|---|
-| 5 | **seotud sõnastiku nimi** | - | 0..n | Viide sõnastikus kasutatavatele teise sõnastiku pealkirjale. **Märkus**: RIHAKEses viide ärisõnastikule. |
-
-!!! example "Näide"
-    Kultuuriministeeriumi ärisõnastik
-
----
-
-<a id="316-seotud-sonastiku-uri"></a>
-
-| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
-|---:|---|---|---:|---|
-| 6 | **seotud sõnastiku URI** | - | 0..n | Viide seotud sõnastiku URI-le, esitatakse URI-vormingus. **Märkus**: RIHAKEse rakendus võimaldab seotud sõnastiku valimist kasutajaliideses, URI täidetakse rakenduse poolt automaatselt. |
-
-!!! example "Näide"
-    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7
+    Statistikaamet
 
 ---
 
@@ -1966,7 +1922,7 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 ## 3.2 Andmesõnastiku termini kirjeldus
 
 - **Atribuudid**
-    - Selles klassis esinevad järgmised atribuudid: *[1. allikas](#321-allikas), [2. kehtivus](#322-kehtivus), [3. määratlus](#323-maaratlus), [4. termin](#324-termin), [5. loomise kuupäev](#325-loomise-kuupaev), [6. muutmise kuupäev](#326-muutmise-kuupaev), [7. märkused](#327-markused), [8. seos ärisõnastiku terminiga](#328-seos-arisõnastiku-terminiga), [8.1. seotud termin](#3281-seotud-termin), [8.2. seotud termid URI](#3282-seotud-termid-uri), [9. termini URI](#329-termini-uri)*
+    - Selles klassis esinevad järgmised atribuudid: *[1. allikas](#321-allikas), [2. kehtivus](#322-kehtivus), [3. määratlus](#323-maaratlus), [4. termin](#324-termin), [5. loomise kuupäev](#325-loomise-kuupaev), [6. muutmise kuupäev](#326-muutmise-kuupaev), [7. märkused](#327-markused), [8. seos ärisõnastiku terminiga](#328-seos-arisõnastiku-terminiga), [8.1. seotud termin](#3281-seotud-termin), [8.2. seotud termini URI](#3282-seotud-termini-uri), [8.3. seotud ärisõnastik](#3283-seotud-arisonastik), [8.4. seotud ärisõnastiku URI](#3284-seotud-arisonastiku-uri), [9. termini URI](#329-termini-uri)*
 
 ---
 
@@ -2080,15 +2036,37 @@ Kirjeldused põhinevad suures osas standardi DCAT-AP 3.0.0 versioonil. Lisatud o
 
 ---
 
-<a id="3282-seotud-termid-uri"></a>
+<a id="3282-seotud-termini-uri"></a>
 
 | # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
 |---:|---|---|---:|---|
-| 8.2 | **seotud termid URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
+| 8.2 | **seotud termini URI** | - | 0..1 | Vastavalt kokkuleppele konstrueeritud viide URI-vormingus. |
 
 !!! example "Näide"
     http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7/term1234  
     Selgitus: ühele terminile vastav URI.
+
+---
+
+<a id="3283-seotud-arisonastik"></a>
+
+| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---:|---|---|---:|---|
+| 8.3 | **seotud ärisõnastik** | - | 1..1 | Ärisõnastiku nimetus, millesse atribuudis „seotud termin“ (8.1) kirjeldatud termin kuulub. |
+
+!!! example "Näide"
+    Kultuuriministeeriumi ärisõnastik
+
+---
+
+<a id="3284-seotud-arisonastiku-uri"></a>
+
+| # | Atribuut | Vahemik | Kardinaalsus | Definitsioon |
+|---:|---|---|---:|---|
+| 8.4 | **seotud ärisõnastiku URI** | - | 0..1 | URI-vormingus viide ärisõnastikule, millesse seotud termin kuulub. |
+
+!!! example "Näide"
+    http://rihake/70006317/BV/12c6725b-3778-a5ab-7445-2635d99ea4e7
 
 ---
 
